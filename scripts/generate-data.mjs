@@ -1,24 +1,10 @@
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import path from 'node:path';
+import { validateEventsArray } from './lib/events-validation.mjs';
 
 const root = process.cwd();
 const sourcePath = path.resolve(root, 'public/data/events.json');
 const outDir = path.resolve(root, 'public/data/cache');
-
-function assertDate(dateValue) {
-  const ok = /^\d{4}-\d{2}-\d{2}$/.test(dateValue);
-  if (!ok) throw new Error(`Invalid date format: ${dateValue}. Use YYYY-MM-DD.`);
-}
-
-function isRecord(value) {
-  return (
-    typeof value === 'object' &&
-    value !== null &&
-    typeof value.wins === 'number' &&
-    typeof value.losses === 'number' &&
-    typeof value.draws === 'number'
-  );
-}
 
 function mergeRecord(a, b) {
   return {
@@ -36,26 +22,11 @@ async function main() {
   const checkOnly = process.argv.includes('--check');
   const sourceRaw = await readFile(sourcePath, 'utf8');
   const events = JSON.parse(sourceRaw);
-
-  if (!Array.isArray(events)) {
-    throw new Error('events.json must contain array of events');
-  }
-
-  const eventIds = new Set();
+  validateEventsArray(events);
   const byPlayer = new Map();
 
   for (const event of events) {
-    if (eventIds.has(event.id)) {
-      throw new Error(`Duplicate event id: ${event.id}`);
-    }
-    eventIds.add(event.id);
-    assertDate(event.date);
-
     for (const row of event.standings) {
-      if (!isRecord(row.match) || !isRecord(row.game)) {
-        throw new Error(`Invalid match/game record in event ${event.id}, player ${row.playerId}`);
-      }
-
       const current = byPlayer.get(row.playerId) ?? {
         id: row.playerId,
         name: row.playerName,

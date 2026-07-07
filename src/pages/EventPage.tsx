@@ -3,6 +3,24 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { formatRecord, getEventById } from '../lib/data';
 import type { EventItem } from '../types';
 
+function formatRoundCell(round: EventItem['standings'][number]['rounds'][number] | undefined): string {
+  if (!round) return '-';
+  if (round.resultType === 'BYE') return 'BYE';
+  if (round.resultType === 'ID') return 'ID';
+  return formatRecord(round.game ?? round.match);
+}
+
+function getRoundResultClass(round: EventItem['standings'][number]['rounds'][number] | undefined): string {
+  if (!round) return '';
+  if (round.resultType === 'BYE') return 'round-win';
+  if (round.resultType === 'ID') return '';
+
+  const game = round.game ?? round.match;
+  if (game.wins > game.losses) return 'round-win';
+  if (game.wins < game.losses) return 'round-loss';
+  return 'round-draw';
+}
+
 function EventPage() {
   const { id } = useParams();
   const [eventData, setEventData] = useState<EventItem | null>(null);
@@ -50,7 +68,7 @@ function EventPage() {
               <th>Match</th>
               <th>Game</th>
               {Array.from({ length: maxRounds }, (_, index) => (
-                <th key={`round-head-${index + 1}`}>R{index + 1}</th>
+                <th key={`round-head-${index + 1}`}>Round {index + 1}</th>
               ))}
             </tr>
           </thead>
@@ -74,7 +92,12 @@ function EventPage() {
                 <td>{formatRecord(row.game)}</td>
                 {Array.from({ length: maxRounds }, (_, roundIndex) => {
                   const found = row.rounds.find((item) => item.round === roundIndex + 1);
-                  return <td key={`${row.playerId}-r${roundIndex + 1}`}>{found ? formatRecord(found.match) : '-'}</td>;
+                  const roundClass = getRoundResultClass(found);
+                  return (
+                    <td key={`${row.playerId}-r${roundIndex + 1}`} className={roundClass}>
+                      {formatRoundCell(found)}
+                    </td>
+                  );
                 })}
               </tr>
             ))}

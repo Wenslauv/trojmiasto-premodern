@@ -1,0 +1,28 @@
+{
+  "name": "Summer League 2026 | Premodern #1/6",
+  "date": "2026-07-15",
+  "location": "Gdansk",
+  "standings": [
+    {
+      "localId": "pA",
+      "rank": 1,
+      "playerName": "Player A",
+      "points": 12,
+      "deck": { "name": "Mono-Red Aggro", "colors": "R" },
+      "rounds": [
+        {
+          "round": 1,
+          "opponentLocalId": "pB",
+          "game": { "wins": 2, "losses": 0, "draws": 0 }
+        },
+        {
+          "round": 2,
+          "opponentLocalId": "pC",
+          "game": { "wins": 2, "losses": 1, "draws": 0 }
+        },
+        { "round": 3, "resultType": "BYE" },
+        { "round": 4, "resultType": "ID" }
+      ]
+    }
+  ]
+}

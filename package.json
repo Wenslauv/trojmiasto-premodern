@@ -7,6 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "add-event": "node scripts/add-event.mjs",
+    "export-event": "node scripts/export-event.mjs",
+    "update-event": "node scripts/update-event.mjs",
     "generate-data": "node scripts/generate-data.mjs",
     "check-data": "node scripts/generate-data.mjs --check"
   },

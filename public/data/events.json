@@ -1,209 +1,361 @@
 [
   {
-    "id": "442142",
-    "name": "Summer League 2026 | Standard #6/12",
-    "date": "2026-07-07",
+    "id": "20260706-sidequest-weekly-06-07-2026",
+    "name": "Sidequest weekly 06-07-2026",
+    "date": "2026-07-06",
     "location": "Gdansk",
     "standings": [
       {
+        "localId": "ML",
         "rank": 1,
-        "playerId": "brv",
-        "playerName": "Brozhat Rostislav",
-        "points": 7,
-        "deck": { "name": "Izzet Spellementals", "colors": "UR" },
-        "match": { "wins": 2, "losses": 1, "draws": 1 },
-        "game": { "wins": 6, "losses": 3, "draws": 0 },
-        "rounds": [
-          { "round": 1, "opponentPlayerId": "lat", "match": { "wins": 1, "losses": 1, "draws": 0 } },
-          { "round": 2, "opponentPlayerId": "yv", "match": { "wins": 1, "losses": 0, "draws": 0 } },
-          { "round": 3, "opponentPlayerId": "ds", "match": { "wins": 0, "losses": 1, "draws": 0 } },
-          { "round": 4, "opponentPlayerId": "lat", "match": { "wins": 1, "losses": 0, "draws": 1 } }
-        ]
-      },
-      {
-        "rank": 2,
-        "playerId": "lat",
-        "playerName": "Latkovich Nikita",
-        "points": 7,
-        "deck": { "name": "Simic Artifacts", "colors": "UG" },
-        "match": { "wins": 2, "losses": 1, "draws": 1 },
-        "game": { "wins": 5, "losses": 5, "draws": 0 },
-        "rounds": [
-          { "round": 1, "opponentPlayerId": "brv", "match": { "wins": 1, "losses": 1, "draws": 0 } },
-          { "round": 2, "opponentPlayerId": "ds", "match": { "wins": 2, "losses": 1, "draws": 0 } },
-          { "round": 3, "opponentPlayerId": "yv", "match": { "wins": 0, "losses": 2, "draws": 0 } },
-          { "round": 4, "opponentPlayerId": "brv", "match": { "wins": 1, "losses": 0, "draws": 1 } }
-        ]
-      },
-      {
-        "rank": 3,
-        "playerId": "yv",
-        "playerName": "Yurel Vladislav",
-        "points": 7,
-        "deck": { "name": "Mono-Blue Elementals", "colors": "U" },
-        "match": { "wins": 2, "losses": 1, "draws": 1 },
-        "game": { "wins": 6, "losses": 3, "draws": 0 },
-        "rounds": [
-          { "round": 1, "opponentPlayerId": "ds", "match": { "wins": 1, "losses": 1, "draws": 0 } },
-          { "round": 2, "opponentPlayerId": "brv", "match": { "wins": 0, "losses": 1, "draws": 0 } },
-          { "round": 3, "opponentPlayerId": "lat", "match": { "wins": 2, "losses": 0, "draws": 0 } },
-          { "round": 4, "opponentPlayerId": "ds", "match": { "wins": 1, "losses": 0, "draws": 1 } }
-        ]
-      },
-      {
-        "rank": 4,
-        "playerId": "ds",
-        "playerName": "Derkach Sergey",
-        "points": 1,
-        "deck": { "name": "Rakdos Goblins", "colors": "BR" },
-        "match": { "wins": 0, "losses": 3, "draws": 1 },
-        "game": { "wins": 1, "losses": 7, "draws": 0 },
-        "rounds": [
-          { "round": 1, "opponentPlayerId": "yv", "match": { "wins": 1, "losses": 1, "draws": 0 } },
-          { "round": 2, "opponentPlayerId": "lat", "match": { "wins": 1, "losses": 2, "draws": 0 } },
-          { "round": 3, "opponentPlayerId": "brv", "match": { "wins": 1, "losses": 2, "draws": 0 } },
-          { "round": 4, "opponentPlayerId": "yv", "match": { "wins": 0, "losses": 1, "draws": 1 } }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "441900",
-    "name": "Summer League 2026 | Pioneer #5/12",
-    "date": "2026-07-02",
-    "location": "Sopot",
-    "standings": [
-      {
-        "rank": 1,
-        "playerId": "brv",
-        "playerName": "Brozhat Rostislav",
-        "points": 12,
-        "deck": { "name": "Izzet Spellementals", "colors": "UR" },
-        "match": { "wins": 4, "losses": 0, "draws": 0 },
-        "game": { "wins": 8, "losses": 2, "draws": 0 },
-        "rounds": [
-          { "round": 1, "opponentPlayerId": "lat", "match": { "wins": 2, "losses": 0, "draws": 0 } },
-          { "round": 2, "opponentPlayerId": "ap", "match": { "wins": 2, "losses": 1, "draws": 0 } },
-          { "round": 3, "opponentPlayerId": "ki", "match": { "wins": 2, "losses": 1, "draws": 0 } },
-          { "round": 4, "opponentPlayerId": "ki", "match": { "wins": 2, "losses": 0, "draws": 0 } }
-        ]
-      },
-      {
-        "rank": 2,
-        "playerId": "lat",
-        "playerName": "Latkovich Nikita",
+        "playerName": "Maciej Lbik",
         "points": 9,
-        "deck": { "name": "Orzhov Monument", "colors": "WB" },
-        "match": { "wins": 3, "losses": 1, "draws": 0 },
-        "game": { "wins": 6, "losses": 4, "draws": 0 },
+        "deck": {
+          "name": "Quiet Tribe",
+          "colors": "GWUR"
+        },
         "rounds": [
-          { "round": 1, "opponentPlayerId": "brv", "match": { "wins": 0, "losses": 2, "draws": 0 } },
-          { "round": 2, "opponentPlayerId": "ki", "match": { "wins": 2, "losses": 0, "draws": 0 } },
-          { "round": 3, "opponentPlayerId": "ap", "match": { "wins": 2, "losses": 1, "draws": 0 } },
-          { "round": 4, "opponentPlayerId": "ap", "match": { "wins": 2, "losses": 1, "draws": 0 } }
-        ]
+          {
+            "round": 1,
+            "resultType": "BYE",
+            "opponentPlayerId": null,
+            "match": {
+              "wins": 1,
+              "losses": 0,
+              "draws": 0
+            },
+            "game": {
+              "wins": 0,
+              "losses": 0,
+              "draws": 0
+            }
+          },
+          {
+            "round": 2,
+            "opponentLocalId": "WK",
+            "game": {
+              "wins": 2,
+              "losses": 1,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p02",
+            "match": {
+              "wins": 1,
+              "losses": 0,
+              "draws": 0
+            }
+          },
+          {
+            "round": 3,
+            "opponentLocalId": "WC",
+            "game": {
+              "wins": 2,
+              "losses": 0,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p03",
+            "match": {
+              "wins": 1,
+              "losses": 0,
+              "draws": 0
+            }
+          }
+        ],
+        "playerId": "p01",
+        "match": {
+          "wins": 3,
+          "losses": 0,
+          "draws": 0
+        },
+        "game": {
+          "wins": 4,
+          "losses": 1,
+          "draws": 0
+        }
       },
       {
-        "rank": 3,
-        "playerId": "ap",
-        "playerName": "Paulouski Tsimafei",
+        "localId": "WK",
+        "rank": 2,
+        "playerName": "Wiaczasłau Kukhtsiuk",
         "points": 6,
-        "deck": { "name": "Rakdos Aggro", "colors": "BR" },
-        "match": { "wins": 2, "losses": 2, "draws": 0 },
-        "game": { "wins": 5, "losses": 6, "draws": 0 },
+        "deck": {
+          "name": "Replenish",
+          "colors": "UW"
+        },
         "rounds": [
-          { "round": 1, "opponentPlayerId": "ki", "match": { "wins": 2, "losses": 1, "draws": 0 } },
-          { "round": 2, "opponentPlayerId": "brv", "match": { "wins": 1, "losses": 2, "draws": 0 } },
-          { "round": 3, "opponentPlayerId": "lat", "match": { "wins": 1, "losses": 2, "draws": 0 } },
-          { "round": 4, "opponentPlayerId": "lat", "match": { "wins": 1, "losses": 2, "draws": 0 } }
-        ]
+          {
+            "round": 1,
+            "opponentLocalId": "JR",
+            "game": {
+              "wins": 2,
+              "losses": 1,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p04",
+            "match": {
+              "wins": 1,
+              "losses": 0,
+              "draws": 0
+            }
+          },
+          {
+            "round": 2,
+            "opponentLocalId": "ML",
+            "game": {
+              "wins": 1,
+              "losses": 2,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p01",
+            "match": {
+              "wins": 0,
+              "losses": 1,
+              "draws": 0
+            }
+          },
+          {
+            "round": 3,
+            "opponentLocalId": "DK",
+            "game": {
+              "wins": 2,
+              "losses": 0,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p05",
+            "match": {
+              "wins": 1,
+              "losses": 0,
+              "draws": 0
+            }
+          }
+        ],
+        "playerId": "p02",
+        "match": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
+        "game": {
+          "wins": 5,
+          "losses": 3,
+          "draws": 0
+        }
       },
       {
-        "rank": 4,
-        "playerId": "ki",
-        "playerName": "Kondibor Nikita",
-        "points": 3,
-        "deck": { "name": "Niv to Light", "colors": "WUBRG" },
-        "match": { "wins": 1, "losses": 3, "draws": 0 },
-        "game": { "wins": 3, "losses": 7, "draws": 0 },
-        "rounds": [
-          { "round": 1, "opponentPlayerId": "ap", "match": { "wins": 1, "losses": 2, "draws": 0 } },
-          { "round": 2, "opponentPlayerId": "lat", "match": { "wins": 0, "losses": 2, "draws": 0 } },
-          { "round": 3, "opponentPlayerId": "brv", "match": { "wins": 1, "losses": 2, "draws": 0 } },
-          { "round": 4, "opponentPlayerId": "brv", "match": { "wins": 0, "losses": 2, "draws": 0 } }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "441610",
-    "name": "Summer League 2026 | Modern #2/9",
-    "date": "2026-06-20",
-    "location": "Gdynia",
-    "standings": [
-      {
-        "rank": 1,
-        "playerId": "nv",
-        "playerName": "Novikov Valentine",
-        "points": 10,
-        "deck": { "name": "Esper Goryo", "colors": "WUB" },
-        "match": { "wins": 3, "losses": 0, "draws": 1 },
-        "game": { "wins": 7, "losses": 3, "draws": 0 },
-        "rounds": [
-          { "round": 1, "opponentPlayerId": "brv", "match": { "wins": 2, "losses": 1, "draws": 0 } },
-          { "round": 2, "opponentPlayerId": "ap", "match": { "wins": 2, "losses": 0, "draws": 0 } },
-          { "round": 3, "opponentPlayerId": "lat", "match": { "wins": 1, "losses": 1, "draws": 1 } },
-          { "round": 4, "opponentPlayerId": "brv", "match": { "wins": 2, "losses": 1, "draws": 0 } },
-          { "round": 5, "opponentPlayerId": null, "match": { "wins": 0, "losses": 0, "draws": 0 } }
-        ]
-      },
-      {
-        "rank": 2,
-        "playerId": "brv",
-        "playerName": "Brozhat Rostislav",
-        "points": 9,
-        "deck": { "name": "Izzet Aggro", "colors": "UR" },
-        "match": { "wins": 3, "losses": 1, "draws": 0 },
-        "game": { "wins": 6, "losses": 4, "draws": 0 },
-        "rounds": [
-          { "round": 1, "opponentPlayerId": "nv", "match": { "wins": 1, "losses": 2, "draws": 0 } },
-          { "round": 2, "opponentPlayerId": "lat", "match": { "wins": 2, "losses": 1, "draws": 0 } },
-          { "round": 3, "opponentPlayerId": "ap", "match": { "wins": 2, "losses": 0, "draws": 0 } },
-          { "round": 4, "opponentPlayerId": "nv", "match": { "wins": 1, "losses": 2, "draws": 0 } },
-          { "round": 5, "opponentPlayerId": null, "match": { "wins": 0, "losses": 0, "draws": 0 } }
-        ]
-      },
-      {
+        "localId": "WC",
         "rank": 3,
-        "playerId": "lat",
-        "playerName": "Latkovich Nikita",
-        "points": 7,
-        "deck": { "name": "Temur Rhinos", "colors": "URG" },
-        "match": { "wins": 2, "losses": 1, "draws": 1 },
-        "game": { "wins": 6, "losses": 5, "draws": 0 },
+        "playerName": "Wojciech Ć...",
+        "points": 6,
+        "deck": {
+          "name": "Stasis",
+          "colors": "U"
+        },
         "rounds": [
-          { "round": 1, "opponentPlayerId": "ap", "match": { "wins": 1, "losses": 1, "draws": 1 } },
-          { "round": 2, "opponentPlayerId": "brv", "match": { "wins": 1, "losses": 2, "draws": 0 } },
-          { "round": 3, "opponentPlayerId": "nv", "match": { "wins": 1, "losses": 1, "draws": 1 } },
-          { "round": 4, "opponentPlayerId": "ap", "match": { "wins": 2, "losses": 1, "draws": 0 } },
-          { "round": 5, "opponentPlayerId": null, "match": { "wins": 0, "losses": 0, "draws": 0 } }
-        ]
+          {
+            "round": 1,
+            "opponentLocalId": "DK",
+            "game": {
+              "wins": 2,
+              "losses": 0,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p05",
+            "match": {
+              "wins": 1,
+              "losses": 0,
+              "draws": 0
+            }
+          },
+          {
+            "round": 2,
+            "opponentLocalId": "JR",
+            "game": {
+              "wins": 2,
+              "losses": 1,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p04",
+            "match": {
+              "wins": 1,
+              "losses": 0,
+              "draws": 0
+            }
+          },
+          {
+            "round": 3,
+            "opponentLocalId": "ML",
+            "game": {
+              "wins": 0,
+              "losses": 2,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p01",
+            "match": {
+              "wins": 0,
+              "losses": 1,
+              "draws": 0
+            }
+          }
+        ],
+        "playerId": "p03",
+        "match": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
+        "game": {
+          "wins": 4,
+          "losses": 3,
+          "draws": 0
+        }
       },
       {
+        "localId": "JR",
         "rank": 4,
-        "playerId": "ap",
-        "playerName": "Paulouski Tsimafei",
+        "playerName": "Jakub Rąbalsky",
         "points": 3,
-        "deck": { "name": "Dimir Midrange", "colors": "UB" },
-        "match": { "wins": 1, "losses": 3, "draws": 0 },
-        "game": { "wins": 4, "losses": 7, "draws": 0 },
+        "deck": {
+          "name": "Moneyball",
+          "colors": "B"
+        },
         "rounds": [
-          { "round": 1, "opponentPlayerId": "lat", "match": { "wins": 1, "losses": 1, "draws": 1 } },
-          { "round": 2, "opponentPlayerId": "nv", "match": { "wins": 0, "losses": 2, "draws": 0 } },
-          { "round": 3, "opponentPlayerId": "brv", "match": { "wins": 0, "losses": 2, "draws": 0 } },
-          { "round": 4, "opponentPlayerId": "lat", "match": { "wins": 1, "losses": 2, "draws": 0 } },
-          { "round": 5, "opponentPlayerId": null, "match": { "wins": 0, "losses": 0, "draws": 0 } }
-        ]
+          {
+            "round": 1,
+            "opponentLocalId": "WK",
+            "game": {
+              "wins": 1,
+              "losses": 2,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p02",
+            "match": {
+              "wins": 0,
+              "losses": 1,
+              "draws": 0
+            }
+          },
+          {
+            "round": 2,
+            "opponentLocalId": "WC",
+            "game": {
+              "wins": 1,
+              "losses": 2,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p03",
+            "match": {
+              "wins": 0,
+              "losses": 1,
+              "draws": 0
+            }
+          },
+          {
+            "round": 3,
+            "resultType": "BYE",
+            "opponentPlayerId": null,
+            "match": {
+              "wins": 1,
+              "losses": 0,
+              "draws": 0
+            },
+            "game": {
+              "wins": 0,
+              "losses": 0,
+              "draws": 0
+            }
+          }
+        ],
+        "playerId": "p04",
+        "match": {
+          "wins": 1,
+          "losses": 2,
+          "draws": 0
+        },
+        "game": {
+          "wins": 2,
+          "losses": 4,
+          "draws": 0
+        }
+      },
+      {
+        "localId": "DK",
+        "rank": 5,
+        "playerName": "Damian Krasny",
+        "points": 3,
+        "deck": {
+          "name": "Sneak and Show",
+          "colors": "UR"
+        },
+        "rounds": [
+          {
+            "round": 1,
+            "opponentLocalId": "WC",
+            "game": {
+              "wins": 0,
+              "losses": 2,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p03",
+            "match": {
+              "wins": 0,
+              "losses": 1,
+              "draws": 0
+            }
+          },
+          {
+            "round": 2,
+            "resultType": "BYE",
+            "opponentPlayerId": null,
+            "match": {
+              "wins": 1,
+              "losses": 0,
+              "draws": 0
+            },
+            "game": {
+              "wins": 0,
+              "losses": 0,
+              "draws": 0
+            }
+          },
+          {
+            "round": 3,
+            "opponentLocalId": "WK",
+            "game": {
+              "wins": 0,
+              "losses": 2,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p02",
+            "match": {
+              "wins": 0,
+              "losses": 1,
+              "draws": 0
+            }
+          }
+        ],
+        "playerId": "p05",
+        "match": {
+          "wins": 1,
+          "losses": 2,
+          "draws": 0
+        },
+        "game": {
+          "wins": 0,
+          "losses": 4,
+          "draws": 0
+        }
       }
     ]
   }

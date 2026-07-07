@@ -71,7 +71,12 @@ export async function getPlayersList(): Promise<PlayerListItem[]> {
       eventsCount: value.events,
       matchWinPercent: Number(matchWinPercent(value.match).toFixed(2)),
     }))
-    .sort((a, b) => b.eventsCount - a.eventsCount || a.name.localeCompare(b.name));
+    .sort(
+      (a, b) =>
+        b.eventsCount - a.eventsCount ||
+        b.matchWinPercent - a.matchWinPercent ||
+        a.name.localeCompare(b.name),
+    );
 }
 
 export async function getPlayerById(id: string): Promise<PlayerDetail | undefined> {

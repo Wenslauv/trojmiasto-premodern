@@ -11,11 +11,16 @@ export type DeckRef = {
 
 export type RoundResult = {
   round: number;
+  opponentLocalId?: string | number;
+  opponentPlayerName?: string;
   opponentPlayerId: string | null;
+  resultType?: 'PLAYED' | 'BYE' | 'ID';
   match: RecordStat;
+  game?: RecordStat;
 };
 
 export type Standing = {
+  localId?: string | number;
   rank: number;
   playerId: string;
   playerName: string;

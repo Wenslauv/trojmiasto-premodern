@@ -1,77 +1,55 @@
 [
   {
-    "id": "brv",
-    "name": "Brozhat Rostislav",
-    "eventsCount": 3,
-    "matchWinPercent": 75,
+    "id": "p05",
+    "name": "Damian Krasny",
+    "eventsCount": 1,
+    "matchWinPercent": 33.33,
     "favoriteDeck": {
-      "name": "Izzet Spellementals",
+      "name": "Sneak and Show",
       "colors": "UR",
-      "count": 2
-    }
-  },
-  {
-    "id": "lat",
-    "name": "Latkovich Nikita",
-    "eventsCount": 3,
-    "matchWinPercent": 58.33,
-    "favoriteDeck": {
-      "name": "Simic Artifacts",
-      "colors": "UG",
       "count": 1
     }
   },
   {
-    "id": "ap",
-    "name": "Paulouski Tsimafei",
-    "eventsCount": 2,
-    "matchWinPercent": 37.5,
-    "favoriteDeck": {
-      "name": "Rakdos Aggro",
-      "colors": "BR",
-      "count": 1
-    }
-  },
-  {
-    "id": "ds",
-    "name": "Derkach Sergey",
+    "id": "p04",
+    "name": "Jakub Rąbalsky",
     "eventsCount": 1,
-    "matchWinPercent": 0,
+    "matchWinPercent": 33.33,
     "favoriteDeck": {
-      "name": "Rakdos Goblins",
-      "colors": "BR",
+      "name": "Moneyball",
+      "colors": "B",
       "count": 1
     }
   },
   {
-    "id": "ki",
-    "name": "Kondibor Nikita",
+    "id": "p01",
+    "name": "Maciej Lbik",
     "eventsCount": 1,
-    "matchWinPercent": 25,
+    "matchWinPercent": 100,
     "favoriteDeck": {
-      "name": "Niv to Light",
-      "colors": "WUBRG",
+      "name": "Quiet Tribe",
+      "colors": "GWUR",
       "count": 1
     }
   },
   {
-    "id": "nv",
-    "name": "Novikov Valentine",
+    "id": "p02",
+    "name": "Wiaczasłau Kukhtsiuk",
     "eventsCount": 1,
-    "matchWinPercent": 75,
+    "matchWinPercent": 66.67,
     "favoriteDeck": {
-      "name": "Esper Goryo",
-      "colors": "WUB",
+      "name": "Replenish",
+      "colors": "UW",
       "count": 1
     }
   },
   {
-    "id": "yv",
-    "name": "Yurel Vladislav",
+    "id": "p03",
+    "name": "Wojciech Ć...",
     "eventsCount": 1,
-    "matchWinPercent": 50,
+    "matchWinPercent": 66.67,
     "favoriteDeck": {
-      "name": "Mono-Blue Elementals",
+      "name": "Stasis",
       "colors": "U",
       "count": 1
     }
