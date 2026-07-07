@@ -1,0 +1,138 @@
+:root {
+  --bg: #f5f0e6;
+  --bg-strong: #efe6d5;
+  --text: #1e2329;
+  --accent: #8f2d1f;
+  --accent-soft: #c96b37;
+  --border: #d7c8b0;
+  --muted: #6f6a62;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 15% 20%, #f8ead4 0%, transparent 45%),
+    radial-gradient(circle at 80% 10%, #f0d9c4 0%, transparent 40%),
+    var(--bg);
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+}
+
+.sidebar {
+  border-right: 1px solid var(--border);
+  padding: 20px;
+  background: linear-gradient(180deg, var(--bg-strong), #efe9dc);
+}
+
+.sidebar h1 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.sidebar nav {
+  display: grid;
+  gap: 8px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: var(--text);
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+
+.sidebar a.active {
+  background: var(--accent);
+  color: #fff;
+}
+
+.content {
+  padding: 22px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.facts {
+  display: grid;
+  gap: 6px;
+  margin-bottom: 12px;
+  color: var(--muted);
+}
+
+.facts p {
+  margin: 0;
+}
+
+.table-wrap {
+  overflow: auto;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #fff;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 920px;
+}
+
+th,
+td {
+  border-bottom: 1px solid #eee5d7;
+  text-align: left;
+  padding: 10px;
+  white-space: nowrap;
+}
+
+thead th {
+  background: #f9f5ee;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+tbody tr {
+  cursor: pointer;
+}
+
+tbody tr:hover {
+  background: #fff8ed;
+}
+
+.link-btn {
+  all: unset;
+  cursor: pointer;
+  color: var(--accent);
+  border-bottom: 1px dashed var(--accent-soft);
+}
+
+@media (max-width: 960px) {
+  .app-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    border-right: 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .sidebar nav {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .sidebar a {
+    text-align: center;
+  }
+}

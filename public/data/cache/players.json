@@ -1,0 +1,79 @@
+[
+  {
+    "id": "brv",
+    "name": "Brozhat Rostislav",
+    "eventsCount": 3,
+    "matchWinPercent": 75,
+    "favoriteDeck": {
+      "name": "Izzet Spellementals",
+      "colors": "UR",
+      "count": 2
+    }
+  },
+  {
+    "id": "lat",
+    "name": "Latkovich Nikita",
+    "eventsCount": 3,
+    "matchWinPercent": 58.33,
+    "favoriteDeck": {
+      "name": "Simic Artifacts",
+      "colors": "UG",
+      "count": 1
+    }
+  },
+  {
+    "id": "ap",
+    "name": "Paulouski Tsimafei",
+    "eventsCount": 2,
+    "matchWinPercent": 37.5,
+    "favoriteDeck": {
+      "name": "Rakdos Aggro",
+      "colors": "BR",
+      "count": 1
+    }
+  },
+  {
+    "id": "ds",
+    "name": "Derkach Sergey",
+    "eventsCount": 1,
+    "matchWinPercent": 0,
+    "favoriteDeck": {
+      "name": "Rakdos Goblins",
+      "colors": "BR",
+      "count": 1
+    }
+  },
+  {
+    "id": "ki",
+    "name": "Kondibor Nikita",
+    "eventsCount": 1,
+    "matchWinPercent": 25,
+    "favoriteDeck": {
+      "name": "Niv to Light",
+      "colors": "WUBRG",
+      "count": 1
+    }
+  },
+  {
+    "id": "nv",
+    "name": "Novikov Valentine",
+    "eventsCount": 1,
+    "matchWinPercent": 75,
+    "favoriteDeck": {
+      "name": "Esper Goryo",
+      "colors": "WUB",
+      "count": 1
+    }
+  },
+  {
+    "id": "yv",
+    "name": "Yurel Vladislav",
+    "eventsCount": 1,
+    "matchWinPercent": 50,
+    "favoriteDeck": {
+      "name": "Mono-Blue Elementals",
+      "colors": "U",
+      "count": 1
+    }
+  }
+]
