@@ -1,0 +1,370 @@
+{
+  "decks": [
+    {
+      "name": "BG Rock",
+      "colors": "BG",
+      "slug": "bg-rock"
+    },
+    {
+      "name": "Darigaaz midrange",
+      "colors": "BRG",
+      "slug": "darigaaz-midrange"
+    },
+    {
+      "name": "Death & taxes",
+      "colors": "W",
+      "slug": "death-taxes"
+    },
+    {
+      "name": "Moneyball",
+      "colors": "B",
+      "slug": "moneyball"
+    },
+    {
+      "name": "Monoblack",
+      "colors": "B",
+      "slug": "monoblack"
+    },
+    {
+      "name": "Quiet Tribe",
+      "colors": "GWUR",
+      "slug": "quiet-tribe"
+    },
+    {
+      "name": "Replenish",
+      "colors": "UW",
+      "slug": "replenish"
+    },
+    {
+      "name": "RG Aggro",
+      "colors": "RG",
+      "slug": "rg-aggro"
+    },
+    {
+      "name": "Sneak and Show",
+      "colors": "UR",
+      "slug": "sneak-and-show"
+    },
+    {
+      "name": "Stasis",
+      "colors": "U",
+      "slug": "stasis"
+    }
+  ],
+  "matrix": {
+    "BG Rock": {
+      "Darigaaz midrange": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "Death & taxes": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "Replenish": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "RG Aggro": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      }
+    },
+    "Darigaaz midrange": {
+      "BG Rock": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "Death & taxes": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "Moneyball": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "Monoblack": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "Replenish": {
+        "wins": 0,
+        "losses": 2,
+        "draws": 0,
+        "matches": 2,
+        "winPercent": 0
+      },
+      "RG Aggro": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      }
+    },
+    "Death & taxes": {
+      "BG Rock": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "Darigaaz midrange": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "Moneyball": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "Monoblack": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "Replenish": {
+        "wins": 1,
+        "losses": 1,
+        "draws": 0,
+        "matches": 2,
+        "winPercent": 50
+      },
+      "RG Aggro": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      }
+    },
+    "Moneyball": {
+      "Darigaaz midrange": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "Death & taxes": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "Replenish": {
+        "wins": 0,
+        "losses": 2,
+        "draws": 0,
+        "matches": 2,
+        "winPercent": 0
+      },
+      "Stasis": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      }
+    },
+    "Monoblack": {
+      "Darigaaz midrange": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "Death & taxes": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "Replenish": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "RG Aggro": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      }
+    },
+    "Quiet Tribe": {
+      "Replenish": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "Stasis": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      }
+    },
+    "Replenish": {
+      "BG Rock": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "Darigaaz midrange": {
+        "wins": 2,
+        "losses": 0,
+        "draws": 0,
+        "matches": 2,
+        "winPercent": 100
+      },
+      "Death & taxes": {
+        "wins": 1,
+        "losses": 1,
+        "draws": 0,
+        "matches": 2,
+        "winPercent": 50
+      },
+      "Moneyball": {
+        "wins": 2,
+        "losses": 0,
+        "draws": 0,
+        "matches": 2,
+        "winPercent": 100
+      },
+      "Monoblack": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "Quiet Tribe": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "Sneak and Show": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      }
+    },
+    "RG Aggro": {
+      "BG Rock": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "Darigaaz midrange": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "Death & taxes": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "Monoblack": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      }
+    },
+    "Sneak and Show": {
+      "Replenish": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "Stasis": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      }
+    },
+    "Stasis": {
+      "Moneyball": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "Quiet Tribe": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "Sneak and Show": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      }
+    }
+  }
+}
