@@ -11,6 +11,8 @@
     "export-event": "node scripts/export-event.mjs",
     "update-event": "node scripts/update-event.mjs",
     "generate-data": "node scripts/generate-data.mjs",
+    "generate-matrix": "node scripts/generate-data.mjs --matrix-only",
+    "reset-matrix": "node scripts/generate-data.mjs --matrix-only --reset-matchups",
     "check-data": "node scripts/generate-data.mjs --check"
   },
   "dependencies": {

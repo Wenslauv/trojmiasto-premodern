@@ -1,10 +1,12 @@
-import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import { readFile, writeFile, mkdir, unlink } from 'node:fs/promises';
 import path from 'node:path';
 import { validateEventsArray } from './lib/events-validation.mjs';
 
 const root = process.cwd();
 const sourcePath = path.resolve(root, 'public/data/events.json');
 const outDir = path.resolve(root, 'public/data/cache');
+const matchupOutPath = path.resolve(outDir, 'matchups.json');
+const matchupRulesPath = path.resolve(root, 'config/matchup-deck-rules.json');
 
 function mergeRecord(a, b) {
   return {
@@ -37,10 +39,69 @@ function normalizeDeckKey(value) {
     .replace(/\s+/g, ' ');
 }
 
+function safeArray(value) {
+  return Array.isArray(value) ? value : [];
+}
+
+async function loadMatchupDeckRules() {
+  try {
+    const raw = await readFile(matchupRulesPath, 'utf8');
+    const parsed = JSON.parse(raw);
+    const groups = safeArray(parsed.groups)
+      .map((group) => ({
+        name: typeof group.name === 'string' ? group.name.trim() : '',
+        colors: typeof group.colors === 'string' ? group.colors.trim() : '',
+        aliases: safeArray(group.aliases).filter((alias) => typeof alias === 'string' && alias.trim() !== '').map((alias) => alias.trim()),
+      }))
+      .filter((group) => group.name !== '' && group.colors !== '' && group.aliases.length > 0);
+
+    return { groups };
+  } catch (error) {
+    if (error && typeof error === 'object' && 'code' in error && error.code === 'ENOENT') {
+      return { groups: [] };
+    }
+    throw error;
+  }
+}
+
+function buildDeckRuleAliasMap(rules) {
+  const aliasMap = new Map();
+
+  for (const group of rules.groups) {
+    const canonical = {
+      name: group.name,
+      colors: group.colors,
+    };
+
+    const aliases = [group.name, ...group.aliases];
+    for (const alias of aliases) {
+      aliasMap.set(normalizeDeckKey(alias), canonical);
+    }
+  }
+
+  return aliasMap;
+}
+
+function applyDeckRule(name, colors, aliasMap) {
+  const canonical = aliasMap.get(normalizeDeckKey(name));
+  if (!canonical) {
+    return { name, colors };
+  }
+
+  return {
+    name: canonical.name,
+    colors: canonical.colors,
+  };
+}
+
 async function main() {
   const checkOnly = process.argv.includes('--check');
+  const matrixOnly = process.argv.includes('--matrix-only');
+  const resetMatchups = process.argv.includes('--reset-matchups');
   const sourceRaw = await readFile(sourcePath, 'utf8');
   const events = JSON.parse(sourceRaw);
+  const matchupRules = await loadMatchupDeckRules();
+  const deckRuleAliasMap = buildDeckRuleAliasMap(matchupRules);
   validateEventsArray(events);
   const byPlayer = new Map();
 
@@ -128,7 +189,8 @@ async function main() {
       const deckName = row.deck?.name;
       const deckColors = row.deck?.colors;
       if (typeof deckName !== 'string' || typeof deckColors !== 'string') continue;
-      const canonicalDeck = ensureDeck(deckName, deckColors);
+      const ruledDeck = applyDeckRule(deckName, deckColors, deckRuleAliasMap);
+      const canonicalDeck = ensureDeck(ruledDeck.name, ruledDeck.colors);
       playerToDeck.set(row.playerId, { name: canonicalDeck.name, colors: canonicalDeck.colors });
     }
 
@@ -195,14 +257,33 @@ async function main() {
   }
 
   await mkdir(outDir, { recursive: true });
-  await writeFile(path.resolve(outDir, 'players.json'), `${JSON.stringify(players, null, 2)}\n`, 'utf8');
-  await writeFile(path.resolve(outDir, 'events-summary.json'), `${JSON.stringify(events.map((e) => ({
-    id: e.id,
-    name: e.name,
-    date: e.date,
-    players: e.standings.length,
-  })), null, 2)}\n`, 'utf8');
-  await writeFile(path.resolve(outDir, 'matchups.json'), `${JSON.stringify({ decks, matrix }, null, 2)}\n`, 'utf8');
+  if (resetMatchups) {
+    try {
+      await unlink(matchupOutPath);
+      console.log('Cleared existing public/data/cache/matchups.json');
+    } catch (error) {
+      if (!(error && typeof error === 'object' && 'code' in error && error.code === 'ENOENT')) {
+        throw error;
+      }
+    }
+  }
+
+  if (!matrixOnly) {
+    await writeFile(path.resolve(outDir, 'players.json'), `${JSON.stringify(players, null, 2)}\n`, 'utf8');
+    await writeFile(path.resolve(outDir, 'events-summary.json'), `${JSON.stringify(events.map((e) => ({
+      id: e.id,
+      name: e.name,
+      date: e.date,
+      players: e.standings.length,
+    })), null, 2)}\n`, 'utf8');
+  }
+
+  await writeFile(matchupOutPath, `${JSON.stringify({ decks, matrix }, null, 2)}\n`, 'utf8');
+
+  if (matrixOnly) {
+    console.log('Generated matchup matrix in public/data/cache/matchups.json');
+    return;
+  }
 
   console.log('Generated cache files in public/data/cache');
 }

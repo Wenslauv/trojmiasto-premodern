@@ -16,11 +16,6 @@
       "slug": "death-taxes"
     },
     {
-      "name": "Moneyball",
-      "colors": "B",
-      "slug": "moneyball"
-    },
-    {
       "name": "Monoblack",
       "colors": "B",
       "slug": "monoblack"
@@ -97,18 +92,11 @@
         "matches": 1,
         "winPercent": 100
       },
-      "Moneyball": {
-        "wins": 1,
-        "losses": 0,
-        "draws": 0,
-        "matches": 1,
-        "winPercent": 100
-      },
       "Monoblack": {
-        "wins": 1,
+        "wins": 2,
         "losses": 0,
         "draws": 0,
-        "matches": 1,
+        "matches": 2,
         "winPercent": 100
       },
       "Replenish": {
@@ -141,19 +129,12 @@
         "matches": 1,
         "winPercent": 0
       },
-      "Moneyball": {
-        "wins": 1,
-        "losses": 0,
-        "draws": 0,
-        "matches": 1,
-        "winPercent": 100
-      },
       "Monoblack": {
-        "wins": 0,
+        "wins": 1,
         "losses": 1,
         "draws": 0,
-        "matches": 1,
-        "winPercent": 0
+        "matches": 2,
+        "winPercent": 50
       },
       "Replenish": {
         "wins": 1,
@@ -170,59 +151,36 @@
         "winPercent": 100
       }
     },
-    "Moneyball": {
+    "Monoblack": {
       "Darigaaz midrange": {
-        "wins": 0,
-        "losses": 1,
-        "draws": 0,
-        "matches": 1,
-        "winPercent": 0
-      },
-      "Death & taxes": {
-        "wins": 0,
-        "losses": 1,
-        "draws": 0,
-        "matches": 1,
-        "winPercent": 0
-      },
-      "Replenish": {
         "wins": 0,
         "losses": 2,
         "draws": 0,
         "matches": 2,
         "winPercent": 0
       },
-      "Stasis": {
-        "wins": 0,
-        "losses": 1,
-        "draws": 0,
-        "matches": 1,
-        "winPercent": 0
-      }
-    },
-    "Monoblack": {
-      "Darigaaz midrange": {
-        "wins": 0,
-        "losses": 1,
-        "draws": 0,
-        "matches": 1,
-        "winPercent": 0
-      },
       "Death & taxes": {
         "wins": 1,
-        "losses": 0,
+        "losses": 1,
         "draws": 0,
-        "matches": 1,
-        "winPercent": 100
+        "matches": 2,
+        "winPercent": 50
       },
       "Replenish": {
         "wins": 0,
+        "losses": 3,
+        "draws": 0,
+        "matches": 3,
+        "winPercent": 0
+      },
+      "RG Aggro": {
+        "wins": 0,
         "losses": 1,
         "draws": 0,
         "matches": 1,
         "winPercent": 0
       },
-      "RG Aggro": {
+      "Stasis": {
         "wins": 0,
         "losses": 1,
         "draws": 0,
@@ -268,18 +226,11 @@
         "matches": 2,
         "winPercent": 50
       },
-      "Moneyball": {
-        "wins": 2,
-        "losses": 0,
-        "draws": 0,
-        "matches": 2,
-        "winPercent": 100
-      },
       "Monoblack": {
-        "wins": 1,
+        "wins": 3,
         "losses": 0,
         "draws": 0,
-        "matches": 1,
+        "matches": 3,
         "winPercent": 100
       },
       "Quiet Tribe": {
@@ -344,7 +295,7 @@
       }
     },
     "Stasis": {
-      "Moneyball": {
+      "Monoblack": {
         "wins": 1,
         "losses": 0,
         "draws": 0,
