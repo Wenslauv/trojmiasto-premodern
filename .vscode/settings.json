@@ -1,7 +1,7 @@
 {
   "github.copilot.chat.codeGeneration.instructions": [
     {
-      "text": "When committing a newly added event, use a one-line commit message in this exact format: event: add {event_name}. The {event_name} must be taken from the event JSON 'name' field."
+      "text": "When committing a newly added event, use a one-line commit message in this format: event: add {event_name}. The {event_name} must be taken from the event JSON 'name' field. For standings-only events, optional suffix is allowed: event: add {event_name} (standings-only)."
     }
   ]
 }
