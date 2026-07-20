@@ -41,14 +41,6 @@ function WinratesPage() {
 
   return (
     <section>
-      <h2>Winrates</h2>
-      <p className="muted-note">
-        Matrix is generated from round-by-round events only. Standings-only events are skipped.
-      </p>
-      <p className="muted-note">
-        Icon placeholders: put 64x64 PNG files in public/icons/decks named as deck slugs (example: replenish.png).
-      </p>
-
       <div className="matrix-wrap">
         <table className="matrix-table">
           <thead>

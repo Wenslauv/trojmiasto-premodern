@@ -144,6 +144,7 @@ body.theme-decks {
 
 .content {
   padding: 22px;
+  min-width: 0;
 }
 
 h2 {
@@ -159,11 +160,6 @@ h2 {
 
 .facts p {
   margin: 0;
-}
-
-.muted-note {
-  margin: 0 0 8px;
-  color: var(--muted);
 }
 
 .table-wrap {
@@ -225,7 +221,11 @@ td.round-loss {
 }
 
 .matrix-wrap {
-  overflow: auto;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   border: 1px solid var(--border);
   border-radius: 10px;
   background: #fff;
