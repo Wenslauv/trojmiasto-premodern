@@ -1,5 +1,297 @@
 [
   {
+    "name": "Sidequest weekly 20-07-2026",
+    "date": "2026-07-20",
+    "location": "Gdansk",
+    "standings": [
+      {
+        "localId": "JR",
+        "rank": 1,
+        "playerName": "Jakub Rąbalsky",
+        "points": 6,
+        "deck": {
+          "name": "Darigaaz midrange",
+          "colors": "BRG"
+        },
+        "rounds": [
+          {
+            "round": 1,
+            "opponentLocalId": "WK",
+            "game": {
+              "wins": 1,
+              "losses": 2,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p10",
+            "match": {
+              "wins": 0,
+              "losses": 1,
+              "draws": 0
+            }
+          },
+          {
+            "round": 2,
+            "opponentLocalId": "DK",
+            "game": {
+              "wins": 2,
+              "losses": 0,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p05",
+            "match": {
+              "wins": 1,
+              "losses": 0,
+              "draws": 0
+            }
+          },
+          {
+            "round": 3,
+            "opponentLocalId": "MK",
+            "game": {
+              "wins": 2,
+              "losses": 1,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p06",
+            "match": {
+              "wins": 1,
+              "losses": 0,
+              "draws": 0
+            }
+          }
+        ],
+        "playerId": "p04",
+        "match": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
+        "game": {
+          "wins": 5,
+          "losses": 3,
+          "draws": 0
+        }
+      },
+      {
+        "localId": "WK",
+        "rank": 2,
+        "playerName": "Wiachaslau Kukhtsiuk",
+        "points": 6,
+        "deck": {
+          "name": "Replenish",
+          "colors": "UW"
+        },
+        "rounds": [
+          {
+            "round": 1,
+            "opponentLocalId": "JR",
+            "game": {
+              "wins": 2,
+              "losses": 1,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p04",
+            "match": {
+              "wins": 1,
+              "losses": 0,
+              "draws": 0
+            }
+          },
+          {
+            "round": 2,
+            "opponentLocalId": "MK",
+            "game": {
+              "wins": 1,
+              "losses": 2,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p06",
+            "match": {
+              "wins": 0,
+              "losses": 1,
+              "draws": 0
+            }
+          },
+          {
+            "round": 3,
+            "opponentLocalId": "DK",
+            "game": {
+              "wins": 2,
+              "losses": 0,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p05",
+            "match": {
+              "wins": 1,
+              "losses": 0,
+              "draws": 0
+            }
+          }
+        ],
+        "playerId": "p10",
+        "match": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
+        "game": {
+          "wins": 5,
+          "losses": 3,
+          "draws": 0
+        }
+      },
+      {
+        "localId": "MK",
+        "rank": 3,
+        "playerName": "Marcin Kowalski",
+        "points": 6,
+        "deck": {
+          "name": "Death & taxes",
+          "colors": "W"
+        },
+        "rounds": [
+          {
+            "round": 1,
+            "opponentLocalId": "DK",
+            "game": {
+              "wins": 2,
+              "losses": 1,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p05",
+            "match": {
+              "wins": 1,
+              "losses": 0,
+              "draws": 0
+            }
+          },
+          {
+            "round": 2,
+            "opponentLocalId": "WK",
+            "game": {
+              "wins": 2,
+              "losses": 1,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p10",
+            "match": {
+              "wins": 1,
+              "losses": 0,
+              "draws": 0
+            }
+          },
+          {
+            "round": 3,
+            "opponentLocalId": "JR",
+            "game": {
+              "wins": 1,
+              "losses": 2,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p04",
+            "match": {
+              "wins": 0,
+              "losses": 1,
+              "draws": 0
+            }
+          }
+        ],
+        "playerId": "p06",
+        "match": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
+        "game": {
+          "wins": 5,
+          "losses": 4,
+          "draws": 0
+        }
+      },
+      {
+        "localId": "DK",
+        "rank": 4,
+        "playerName": "Damian Krasny",
+        "points": 0,
+        "deck": {
+          "name": "Moneyball",
+          "colors": "B"
+        },
+        "rounds": [
+          {
+            "round": 1,
+            "opponentLocalId": "MK",
+            "game": {
+              "wins": 1,
+              "losses": 2,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p06",
+            "match": {
+              "wins": 0,
+              "losses": 1,
+              "draws": 0
+            }
+          },
+          {
+            "round": 2,
+            "opponentLocalId": "JR",
+            "game": {
+              "wins": 0,
+              "losses": 2,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p04",
+            "match": {
+              "wins": 0,
+              "losses": 1,
+              "draws": 0
+            }
+          },
+          {
+            "round": 3,
+            "opponentLocalId": "WK",
+            "game": {
+              "wins": 0,
+              "losses": 2,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p10",
+            "match": {
+              "wins": 0,
+              "losses": 1,
+              "draws": 0
+            }
+          }
+        ],
+        "playerId": "p05",
+        "match": {
+          "wins": 0,
+          "losses": 3,
+          "draws": 0
+        },
+        "game": {
+          "wins": 1,
+          "losses": 6,
+          "draws": 0
+        }
+      }
+    ],
+    "id": "20260720-sidequest-weekly-20-07-2026"
+  },
+  {
     "name": "Futurex monthly 18.07.2026",
     "date": "2026-07-18",
     "location": "Gdynia",
