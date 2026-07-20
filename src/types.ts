@@ -11,6 +11,7 @@ export type DeckRef = {
 
 export type RoundResult = {
   round: number;
+  opponentPlayerRef?: string;
   opponentLocalId?: string | number;
   opponentPlayerName?: string;
   opponentPlayerId: string | null;
@@ -21,6 +22,7 @@ export type RoundResult = {
 
 export type Standing = {
   localId?: string | number;
+  playerRef?: string;
   rank: number;
   playerId: string;
   playerName: string;
@@ -33,6 +35,7 @@ export type Standing = {
 
 export type EventItem = {
   id: string;
+  mode?: 'roundByRound' | 'standingsOnly';
   name: string;
   date: string;
   location: string;

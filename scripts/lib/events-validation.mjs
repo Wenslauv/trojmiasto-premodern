@@ -53,6 +53,13 @@ function assertOptionalString(value, fieldName) {
   }
 }
 
+function assertMode(value, fieldName) {
+  if (value === undefined) return;
+  if (value !== 'roundByRound' && value !== 'standingsOnly') {
+    throw new Error(`Field "${fieldName}" must be "roundByRound" or "standingsOnly" when provided.`);
+  }
+}
+
 function sameRecord(a, b) {
   return a.wins === b.wins && a.losses === b.losses && a.draws === b.draws;
 }
@@ -83,6 +90,9 @@ export function validateEvent(event, indexHint = 'new event') {
   assertNonEmptyString(event.name, `${indexHint}.name`);
   assertNonEmptyString(event.location, `${indexHint}.location`);
   assertDate(event.date);
+  assertMode(event.mode, `${indexHint}.mode`);
+
+  const mode = event.mode ?? 'roundByRound';
 
   if (!Array.isArray(event.standings) || event.standings.length === 0) {
     throw new Error(`Field "${indexHint}.standings" must be a non-empty array.`);
@@ -93,13 +103,13 @@ export function validateEvent(event, indexHint = 'new event') {
   const localKeyByPlayerId = new Map();
   const roundsByLocalKey = new Map();
   const byeByRound = new Map();
-  let expectedRoundsCount = null;
 
   for (const [rowIndex, row] of event.standings.entries()) {
     const rowHint = `${indexHint}.standings[${rowIndex}]`;
     assertInteger(row.rank, `${rowHint}.rank`);
     assertInteger(row.points, `${rowHint}.points`);
     assertOptionalLocalId(row.localId, `${rowHint}.localId`);
+    assertOptionalString(row.playerRef, `${rowHint}.playerRef`);
     assertNonEmptyString(row.playerId, `${rowHint}.playerId`);
     assertNonEmptyString(row.playerName, `${rowHint}.playerName`);
 
@@ -119,18 +129,11 @@ export function validateEvent(event, indexHint = 'new event') {
       localKeyByPlayerId.set(row.playerId, row.playerId);
     }
 
-    if (!Array.isArray(row.rounds)) {
-      throw new Error(`Field "${rowHint}.rounds" must be an array.`);
+    if (row.rounds !== undefined && !Array.isArray(row.rounds)) {
+      throw new Error(`Field "${rowHint}.rounds" must be an array when provided.`);
     }
 
-    const currentRoundsCount = row.rounds.length;
-    if (expectedRoundsCount === null) {
-      expectedRoundsCount = currentRoundsCount;
-    } else if (currentRoundsCount !== expectedRoundsCount) {
-      throw new Error(
-        `All players must have same rounds count in ${indexHint}. Expected ${expectedRoundsCount}, got ${currentRoundsCount} at ${rowHint}.`,
-      );
-    }
+    const rounds = Array.isArray(row.rounds) ? row.rounds : [];
 
     const playerLocalKey = localKeyByPlayerId.get(row.playerId);
     const playerRounds = new Map();
@@ -144,12 +147,13 @@ export function validateEvent(event, indexHint = 'new event') {
     assertOptionalRecord(row.match, `${rowHint}.match`);
     assertOptionalRecord(row.game, `${rowHint}.game`);
 
-    for (const [roundIndex, round] of row.rounds.entries()) {
+    for (const [roundIndex, round] of rounds.entries()) {
       const roundHint = `${rowHint}.rounds[${roundIndex}]`;
       assertInteger(round.round, `${roundHint}.round`);
       if (!(round.opponentPlayerId === undefined || round.opponentPlayerId === null || typeof round.opponentPlayerId === 'string')) {
         throw new Error(`Field "${roundHint}.opponentPlayerId" must be string, null, or omitted.`);
       }
+      assertOptionalString(round.opponentPlayerRef, `${roundHint}.opponentPlayerRef`);
       assertOptionalLocalId(round.opponentLocalId, `${roundHint}.opponentLocalId`);
       assertOptionalString(round.opponentPlayerName, `${roundHint}.opponentPlayerName`);
 
@@ -171,7 +175,7 @@ export function validateEvent(event, indexHint = 'new event') {
         }
       }
 
-      if (resultType === 'PLAYED') {
+      if (mode === 'roundByRound' && resultType === 'PLAYED') {
         const hasMatch = round.match !== undefined;
         const hasGame = round.game !== undefined;
         if (!hasMatch && !hasGame) {
@@ -193,7 +197,7 @@ export function validateEvent(event, indexHint = 'new event') {
         }
       }
 
-      if (resultType === 'BYE') {
+      if (mode === 'roundByRound' && resultType === 'BYE') {
         if (round.match !== undefined) {
           if (!isRecord(round.match)) {
             throw new Error(`Invalid record object at ${roundHint}.match.`);
@@ -204,7 +208,7 @@ export function validateEvent(event, indexHint = 'new event') {
         }
       }
 
-      if (resultType === 'ID') {
+      if (mode === 'roundByRound' && resultType === 'ID') {
         if (round.match !== undefined) {
           if (!isRecord(round.match)) {
             throw new Error(`Invalid record object at ${roundHint}.match.`);
@@ -215,7 +219,7 @@ export function validateEvent(event, indexHint = 'new event') {
         }
       }
 
-      if (round.game !== undefined) {
+      if (mode === 'roundByRound' && round.game !== undefined) {
         if (!isRecord(round.game)) {
           throw new Error(`Invalid record object at ${roundHint}.game.`);
         }
@@ -225,8 +229,19 @@ export function validateEvent(event, indexHint = 'new event') {
       }
     }
 
+    if (mode === 'standingsOnly') {
+      if (!isRecord(row.match)) {
+        throw new Error(`Field "${rowHint}.match" must be provided in standingsOnly mode.`);
+      }
+      if (!isRecord(row.game)) {
+        throw new Error(`Field "${rowHint}.game" must be provided in standingsOnly mode.`);
+      }
+    }
+
     roundsByLocalKey.set(playerLocalKey, playerRounds);
   }
+
+  if (mode === 'standingsOnly') return;
 
   // Pairing consistency: if A references B in round X, B must reference A in round X with mirrored result.
   for (const [localKey, roundsMap] of roundsByLocalKey.entries()) {
