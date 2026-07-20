@@ -38,19 +38,27 @@ npm run add-event -- --file public/data/incoming-2026-07-15.json
 ```
 
 Notes about `playerId`:
+- Preferred for repeat players: use `playerRef` instead of retyping full name.
+- `playerRef` can be existing `playerId`, full player name, or common alias (for example initials like `wk`).
 - In incoming/template files you can omit `playerId` completely.
-- You can keep real stable IDs if you already have them.
+- For known players, `playerName` can also be omitted if `playerRef` or stable `playerId` is provided.
 - If you use temporary IDs like `player-a` / `player-b` (or `auto`), script will auto-resolve IDs.
 - If `playerName` already exists in the dataset, existing ID is reused automatically.
 - For new names, script creates a new ID in format `pNN`.
+- If alias is ambiguous, script returns an error with candidate players; use explicit `playerId` in that case.
 
 Notes about round opponents:
 - Recommended: use text `localId` in standings and `opponentLocalId` in rounds (event-local references).
 - Example: player `{ "localId": "pB", ... }` can be referenced as `"opponentLocalId": "pB"`.
 - Numeric local IDs are also supported for backward compatibility.
+- You can also use `opponentPlayerRef` in rounds (same rules as `playerRef`).
 - You can set `opponentPlayerName` in each round instead of `opponentPlayerId`.
 - Script will resolve it to `opponentPlayerId` automatically when possible.
 - If opponent is unknown at the moment, you can leave `opponentPlayerId` omitted (it becomes `null`).
+
+Notes about dropped players:
+- Players can have different number of rounds.
+- If player drops, simply omit missing rounds for that player.
 
 Notes about special round results:
 - `resultType: "BYE"`: counts as match `1-0-0`, game `0-0-0`.
@@ -68,6 +76,24 @@ Notes about round records:
 Notes about standings totals:
 - `standings[].match` and `standings[].game` are auto-calculated from `rounds` on add/update.
 - In incoming/template files you can omit standings totals and keep only round-level data.
+
+Standings-only mode (no round details available):
+- Set event `"mode": "standingsOnly"`.
+- In this mode `rounds` are optional and round pairing validation is skipped.
+- You must provide `standings[].match` and `standings[].game` explicitly.
+
+Example standings-only row:
+
+```json
+{
+  "rank": 1,
+  "playerRef": "p02",
+  "points": 12,
+  "deck": { "name": "Replenish", "colors": "WU" },
+  "match": { "wins": 4, "losses": 0, "draws": 0 },
+  "game": { "wins": 8, "losses": 2, "draws": 0 }
+}
+```
 
 3. Regenerate derived data:
 
