@@ -42,6 +42,25 @@ export type EventItem = {
   standings: Standing[];
 };
 
+export type DeckMatchupCell = {
+  wins: number;
+  losses: number;
+  draws: number;
+  matches: number;
+  winPercent: number;
+};
+
+export type DeckMatchupDeck = {
+  name: string;
+  colors: string;
+  slug: string;
+};
+
+export type DeckMatchupMatrix = {
+  decks: DeckMatchupDeck[];
+  matrix: Record<string, Record<string, DeckMatchupCell>>;
+};
+
 export type PlayerListItem = {
   id: string;
   name: string;

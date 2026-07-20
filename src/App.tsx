@@ -4,6 +4,7 @@ import PlayersPage from './pages/PlayersPage';
 import PlayerPage from './pages/PlayerPage';
 import EventPage from './pages/EventPage';
 import DecksPage from './pages/DecksPage';
+import WinratesPage from './pages/WinratesPage';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <NavLink to="/events">Events</NavLink>
           <NavLink to="/players">Players</NavLink>
           <NavLink to="/decks">Decks</NavLink>
+          <NavLink to="/winrates">Winrates</NavLink>
         </nav>
       </aside>
       <main className="content">
@@ -24,6 +26,7 @@ function App() {
           <Route path="/players" element={<PlayersPage />} />
           <Route path="/player/:id" element={<PlayerPage />} />
           <Route path="/decks" element={<DecksPage />} />
+          <Route path="/winrates" element={<WinratesPage />} />
           <Route path="*" element={<Navigate to="/events" replace />} />
         </Routes>
       </main>

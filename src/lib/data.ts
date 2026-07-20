@@ -1,11 +1,13 @@
-import type { EventItem, PlayerDetail, PlayerListItem, RecordStat } from '../types';
+import type { DeckMatchupMatrix, EventItem, PlayerDetail, PlayerListItem, RecordStat } from '../types';
 
 type Cache = {
   events: EventItem[] | null;
+  matchups: DeckMatchupMatrix | null;
 };
 
 const cache: Cache = {
   events: null,
+  matchups: null,
 };
 
 function mergeRecord(left: RecordStat, right: RecordStat): RecordStat {
@@ -39,6 +41,13 @@ export async function getEvents(): Promise<EventItem[]> {
   const data = await fetchJson<EventItem[]>('data/events.json');
   cache.events = [...data].sort((a, b) => b.date.localeCompare(a.date));
   return cache.events;
+}
+
+export async function getMatchups(): Promise<DeckMatchupMatrix> {
+  if (cache.matchups) return cache.matchups;
+  const data = await fetchJson<DeckMatchupMatrix>('data/cache/matchups.json');
+  cache.matchups = data;
+  return data;
 }
 
 export async function getEventById(id: string): Promise<EventItem | undefined> {
