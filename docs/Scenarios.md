@@ -8,6 +8,12 @@
 cp public/data/new-event.template.json public/data/incoming-YYYY-MM-DD.json
 ```
 
+Alternative (auto-create file):
+
+```bash
+npm run new-event-file
+```
+
 2. Fill event data in `public/data/incoming-YYYY-MM-DD.json`.
 
 3. Validate append:
@@ -45,6 +51,12 @@ npm run build
 ```
 
 ## 3. Add Standings-Only Event
+
+Create file from template:
+
+```bash
+npm run new-standings-file
+```
 
 1. Create event JSON with:
 - `mode: "standingsOnly"`

@@ -7,6 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "new-event-file": "node scripts/new-event-file.mjs",
+    "new-standings-file": "node scripts/new-event-file.mjs --mode standings",
     "add-event": "node scripts/add-event.mjs",
     "export-event": "node scripts/export-event.mjs",
     "update-event": "node scripts/update-event.mjs",
