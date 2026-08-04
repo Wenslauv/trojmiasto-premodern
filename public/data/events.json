@@ -1,5 +1,366 @@
 [
   {
+    "name": "Sidequest weekly 03-08-2026",
+    "date": "2026-08-03",
+    "location": "Gdansk",
+    "mode": "roundByRound",
+    "standings": [
+      {
+        "localId": "WK",
+        "rank": 1,
+        "playerName": "Wiachaslau Kukhtsiuk",
+        "points": 9,
+        "deck": {
+          "name": "BW Control",
+          "colors": "WB"
+        },
+        "rounds": [
+          {
+            "round": 1,
+            "opponentLocalId": "WC",
+            "game": {
+              "wins": 2,
+              "losses": 0,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p11",
+            "match": {
+              "wins": 1,
+              "losses": 0,
+              "draws": 0
+            }
+          },
+          {
+            "round": 2,
+            "opponentLocalId": "JB",
+            "game": {
+              "wins": 2,
+              "losses": 0,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p12",
+            "match": {
+              "wins": 1,
+              "losses": 0,
+              "draws": 0
+            }
+          },
+          {
+            "round": 3,
+            "opponentLocalId": "MK",
+            "game": {
+              "wins": 2,
+              "losses": 0,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p06",
+            "match": {
+              "wins": 1,
+              "losses": 0,
+              "draws": 0
+            }
+          }
+        ],
+        "playerId": "p10",
+        "match": {
+          "wins": 3,
+          "losses": 0,
+          "draws": 0
+        },
+        "game": {
+          "wins": 6,
+          "losses": 0,
+          "draws": 0
+        }
+      },
+      {
+        "localId": "WC",
+        "rank": 2,
+        "playerName": "Wojciech Ćwikliński",
+        "points": 6,
+        "deck": {
+          "name": "Gro-a-tog",
+          "colors": "WUBG"
+        },
+        "rounds": [
+          {
+            "round": 1,
+            "opponentLocalId": "WK",
+            "game": {
+              "wins": 0,
+              "losses": 2,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p10",
+            "match": {
+              "wins": 0,
+              "losses": 1,
+              "draws": 0
+            }
+          },
+          {
+            "round": 2,
+            "opponentLocalId": "MK",
+            "game": {
+              "wins": 2,
+              "losses": 1,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p06",
+            "match": {
+              "wins": 1,
+              "losses": 0,
+              "draws": 0
+            }
+          },
+          {
+            "round": 3,
+            "resultType": "BYE",
+            "opponentPlayerId": null,
+            "match": {
+              "wins": 1,
+              "losses": 0,
+              "draws": 0
+            },
+            "game": {
+              "wins": 0,
+              "losses": 0,
+              "draws": 0
+            }
+          }
+        ],
+        "playerId": "p11",
+        "match": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
+        "game": {
+          "wins": 2,
+          "losses": 3,
+          "draws": 0
+        }
+      },
+      {
+        "localId": "ML",
+        "rank": 3,
+        "playerName": "Maciej Lbik",
+        "points": 6,
+        "deck": {
+          "name": "Quiet Tribe",
+          "colors": "GWUR"
+        },
+        "rounds": [
+          {
+            "round": 1,
+            "opponentLocalId": "MK",
+            "game": {
+              "wins": 0,
+              "losses": 2,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p06",
+            "match": {
+              "wins": 0,
+              "losses": 1,
+              "draws": 0
+            }
+          },
+          {
+            "round": 2,
+            "resultType": "BYE",
+            "opponentPlayerId": null,
+            "match": {
+              "wins": 1,
+              "losses": 0,
+              "draws": 0
+            },
+            "game": {
+              "wins": 0,
+              "losses": 0,
+              "draws": 0
+            }
+          },
+          {
+            "round": 3,
+            "opponentLocalId": "JB",
+            "game": {
+              "wins": 2,
+              "losses": 0,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p12",
+            "match": {
+              "wins": 1,
+              "losses": 0,
+              "draws": 0
+            }
+          }
+        ],
+        "playerId": "p01",
+        "match": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
+        "game": {
+          "wins": 2,
+          "losses": 2,
+          "draws": 0
+        }
+      },
+      {
+        "localId": "JB",
+        "rank": 4,
+        "playerName": "Janush Bulakowski",
+        "points": 3,
+        "deck": {
+          "name": "Survival Infestation",
+          "colors": "BG"
+        },
+        "rounds": [
+          {
+            "round": 1,
+            "resultType": "BYE",
+            "opponentPlayerId": null,
+            "match": {
+              "wins": 1,
+              "losses": 0,
+              "draws": 0
+            },
+            "game": {
+              "wins": 0,
+              "losses": 0,
+              "draws": 0
+            }
+          },
+          {
+            "round": 2,
+            "opponentLocalId": "WK",
+            "game": {
+              "wins": 0,
+              "losses": 2,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p10",
+            "match": {
+              "wins": 0,
+              "losses": 1,
+              "draws": 0
+            }
+          },
+          {
+            "round": 3,
+            "opponentLocalId": "ML",
+            "game": {
+              "wins": 0,
+              "losses": 2,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p01",
+            "match": {
+              "wins": 0,
+              "losses": 1,
+              "draws": 0
+            }
+          }
+        ],
+        "playerId": "p12",
+        "match": {
+          "wins": 1,
+          "losses": 2,
+          "draws": 0
+        },
+        "game": {
+          "wins": 0,
+          "losses": 4,
+          "draws": 0
+        }
+      },
+      {
+        "localId": "MK",
+        "rank": 5,
+        "playerName": "Marcin Kowalski",
+        "points": 3,
+        "deck": {
+          "name": "Death & Taxes",
+          "colors": "W"
+        },
+        "rounds": [
+          {
+            "round": 1,
+            "opponentLocalId": "ML",
+            "game": {
+              "wins": 2,
+              "losses": 0,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p01",
+            "match": {
+              "wins": 1,
+              "losses": 0,
+              "draws": 0
+            }
+          },
+          {
+            "round": 2,
+            "opponentLocalId": "WC",
+            "game": {
+              "wins": 1,
+              "losses": 2,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p11",
+            "match": {
+              "wins": 0,
+              "losses": 1,
+              "draws": 0
+            }
+          },
+          {
+            "round": 3,
+            "opponentLocalId": "WK",
+            "game": {
+              "wins": 0,
+              "losses": 2,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p10",
+            "match": {
+              "wins": 0,
+              "losses": 1,
+              "draws": 0
+            }
+          }
+        ],
+        "playerId": "p06",
+        "match": {
+          "wins": 1,
+          "losses": 2,
+          "draws": 0
+        },
+        "game": {
+          "wins": 3,
+          "losses": 4,
+          "draws": 0
+        }
+      }
+    ],
+    "id": "20260803-sidequest-weekly-03-08-2026"
+  },
+  {
     "name": "Sidequest weekly 20-07-2026",
     "date": "2026-07-20",
     "location": "Gdansk",

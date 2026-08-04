@@ -6,14 +6,24 @@
       "slug": "bg-rock"
     },
     {
+      "name": "BW Control",
+      "colors": "WB",
+      "slug": "bw-control"
+    },
+    {
       "name": "Darigaaz midrange",
       "colors": "BRG",
       "slug": "darigaaz-midrange"
     },
     {
-      "name": "Death & taxes",
+      "name": "Death & Taxes",
       "colors": "W",
       "slug": "death-taxes"
+    },
+    {
+      "name": "Gro-a-tog",
+      "colors": "WUBG",
+      "slug": "gro-a-tog"
     },
     {
       "name": "Monoblack",
@@ -44,6 +54,11 @@
       "name": "Stasis",
       "colors": "U",
       "slug": "stasis"
+    },
+    {
+      "name": "Survival Infestation",
+      "colors": "BG",
+      "slug": "survival-infestation"
     }
   ],
   "matrix": {
@@ -55,7 +70,7 @@
         "matches": 1,
         "winPercent": 0
       },
-      "Death & taxes": {
+      "Death & Taxes": {
         "wins": 0,
         "losses": 1,
         "draws": 0,
@@ -77,6 +92,29 @@
         "winPercent": 100
       }
     },
+    "BW Control": {
+      "Death & Taxes": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "Gro-a-tog": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "Survival Infestation": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      }
+    },
     "Darigaaz midrange": {
       "BG Rock": {
         "wins": 1,
@@ -85,7 +123,7 @@
         "matches": 1,
         "winPercent": 100
       },
-      "Death & taxes": {
+      "Death & Taxes": {
         "wins": 1,
         "losses": 0,
         "draws": 0,
@@ -114,7 +152,7 @@
         "winPercent": 0
       }
     },
-    "Death & taxes": {
+    "Death & Taxes": {
       "BG Rock": {
         "wins": 1,
         "losses": 0,
@@ -122,7 +160,21 @@
         "matches": 1,
         "winPercent": 100
       },
+      "BW Control": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
       "Darigaaz midrange": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "Gro-a-tog": {
         "wins": 0,
         "losses": 1,
         "draws": 0,
@@ -135,6 +187,13 @@
         "draws": 0,
         "matches": 2,
         "winPercent": 50
+      },
+      "Quiet Tribe": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
       },
       "Replenish": {
         "wins": 1,
@@ -151,6 +210,22 @@
         "winPercent": 100
       }
     },
+    "Gro-a-tog": {
+      "BW Control": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "Death & Taxes": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      }
+    },
     "Monoblack": {
       "Darigaaz midrange": {
         "wins": 0,
@@ -159,7 +234,7 @@
         "matches": 2,
         "winPercent": 0
       },
-      "Death & taxes": {
+      "Death & Taxes": {
         "wins": 1,
         "losses": 1,
         "draws": 0,
@@ -189,6 +264,13 @@
       }
     },
     "Quiet Tribe": {
+      "Death & Taxes": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
       "Replenish": {
         "wins": 1,
         "losses": 0,
@@ -197,6 +279,13 @@
         "winPercent": 100
       },
       "Stasis": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "Survival Infestation": {
         "wins": 1,
         "losses": 0,
         "draws": 0,
@@ -219,7 +308,7 @@
         "matches": 2,
         "winPercent": 100
       },
-      "Death & taxes": {
+      "Death & Taxes": {
         "wins": 1,
         "losses": 1,
         "draws": 0,
@@ -263,7 +352,7 @@
         "matches": 1,
         "winPercent": 100
       },
-      "Death & taxes": {
+      "Death & Taxes": {
         "wins": 0,
         "losses": 1,
         "draws": 0,
@@ -315,6 +404,22 @@
         "draws": 0,
         "matches": 1,
         "winPercent": 100
+      }
+    },
+    "Survival Infestation": {
+      "BW Control": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "Quiet Tribe": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
       }
     }
   }

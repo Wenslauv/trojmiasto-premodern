@@ -11,6 +11,17 @@
     }
   },
   {
+    "id": "p06",
+    "name": "Marcin Kowalski",
+    "eventsCount": 3,
+    "matchWinPercent": 50,
+    "favoriteDeck": {
+      "name": "Death & Taxes",
+      "colors": "W",
+      "count": 2
+    }
+  },
+  {
     "id": "p05",
     "name": "Damian Krasny",
     "eventsCount": 2,
@@ -22,13 +33,24 @@
     }
   },
   {
-    "id": "p06",
-    "name": "Marcin Kowalski",
+    "id": "p01",
+    "name": "Maciej Lbik",
     "eventsCount": 2,
-    "matchWinPercent": 57.14,
+    "matchWinPercent": 83.33,
     "favoriteDeck": {
-      "name": "Death & taxes",
-      "colors": "W",
+      "name": "Quiet Tribe",
+      "colors": "GWUR",
+      "count": 2
+    }
+  },
+  {
+    "id": "p10",
+    "name": "Wiachaslau Kukhtsiuk",
+    "eventsCount": 2,
+    "matchWinPercent": 83.33,
+    "favoriteDeck": {
+      "name": "BW Control",
+      "colors": "WB",
       "count": 1
     }
   },
@@ -55,13 +77,13 @@
     }
   },
   {
-    "id": "p01",
-    "name": "Maciej Lbik",
+    "id": "p12",
+    "name": "Janush Bulakowski",
     "eventsCount": 1,
-    "matchWinPercent": 100,
+    "matchWinPercent": 33.33,
     "favoriteDeck": {
-      "name": "Quiet Tribe",
-      "colors": "GWUR",
+      "name": "Survival Infestation",
+      "colors": "BG",
       "count": 1
     }
   },
@@ -88,17 +110,6 @@
     }
   },
   {
-    "id": "p10",
-    "name": "Wiachaslau Kukhtsiuk",
-    "eventsCount": 1,
-    "matchWinPercent": 66.67,
-    "favoriteDeck": {
-      "name": "Replenish",
-      "colors": "UW",
-      "count": 1
-    }
-  },
-  {
     "id": "p03",
     "name": "Wojciech Ć...",
     "eventsCount": 1,
@@ -106,6 +117,17 @@
     "favoriteDeck": {
       "name": "Stasis",
       "colors": "U",
+      "count": 1
+    }
+  },
+  {
+    "id": "p11",
+    "name": "Wojciech Ćwikliński",
+    "eventsCount": 1,
+    "matchWinPercent": 66.67,
+    "favoriteDeck": {
+      "name": "Gro-a-tog",
+      "colors": "WUBG",
       "count": 1
     }
   }
