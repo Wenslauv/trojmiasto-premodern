@@ -18,6 +18,65 @@ function mergeRecord(left: RecordStat, right: RecordStat): RecordStat {
   };
 }
 
+function normalizePlayerKey(value: string): string {
+  return value
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .trim()
+    .replace(/\s+/g, ' ');
+}
+
+function comparePlayerIds(a: string, b: string): number {
+  const aMatch = /^p(\d+)$/i.exec(a);
+  const bMatch = /^p(\d+)$/i.exec(b);
+  if (aMatch && bMatch) {
+    return Number(aMatch[1]) - Number(bMatch[1]);
+  }
+  return a.localeCompare(b);
+}
+
+type PlayerBucket = {
+  key: string;
+  id: string;
+  name: string;
+  ids: Set<string>;
+  events: number;
+  match: RecordStat;
+};
+
+function buildPlayerBuckets(events: EventItem[]): {
+  buckets: Map<string, PlayerBucket>;
+  idToBucketKey: Map<string, string>;
+} {
+  const buckets = new Map<string, PlayerBucket>();
+  const idToBucketKey = new Map<string, string>();
+
+  for (const event of events) {
+    for (const row of event.standings) {
+      const key = normalizePlayerKey(row.playerName) || row.playerId;
+      const current = buckets.get(key) ?? {
+        key,
+        id: row.playerId,
+        name: row.playerName,
+        ids: new Set<string>(),
+        events: 0,
+        match: { wins: 0, losses: 0, draws: 0 },
+      };
+
+      current.ids.add(row.playerId);
+      current.id = [...current.ids].sort(comparePlayerIds)[0] ?? current.id;
+      current.events += 1;
+      current.match = mergeRecord(current.match, row.match);
+
+      buckets.set(key, current);
+      idToBucketKey.set(row.playerId, key);
+    }
+  }
+
+  return { buckets, idToBucketKey };
+}
+
 export function formatRecord(record: RecordStat): string {
   return `${record.wins}-${record.losses}-${record.draws}`;
 }
@@ -57,24 +116,11 @@ export async function getEventById(id: string): Promise<EventItem | undefined> {
 
 export async function getPlayersList(): Promise<PlayerListItem[]> {
   const events = await getEvents();
-  const byId = new Map<string, { name: string; events: number; match: RecordStat }>();
+  const { buckets } = buildPlayerBuckets(events);
 
-  for (const event of events) {
-    for (const row of event.standings) {
-      const current = byId.get(row.playerId) ?? {
-        name: row.playerName,
-        events: 0,
-        match: { wins: 0, losses: 0, draws: 0 },
-      };
-      current.events += 1;
-      current.match = mergeRecord(current.match, row.match);
-      byId.set(row.playerId, current);
-    }
-  }
-
-  return [...byId.entries()]
-    .map(([id, value]) => ({
-      id,
+  return [...buckets.values()]
+    .map((value) => ({
+      id: value.id,
       name: value.name,
       preferredColors: '',
       eventsCount: value.events,
@@ -90,12 +136,21 @@ export async function getPlayersList(): Promise<PlayerListItem[]> {
 
 export async function getPlayerById(id: string): Promise<PlayerDetail | undefined> {
   const events = await getEvents();
-  const playerName = events.flatMap((event) => event.standings).find((standing) => standing.playerId === id)?.playerName;
+  const { buckets, idToBucketKey } = buildPlayerBuckets(events);
+  const directKey = idToBucketKey.get(id);
+  const normalizedIdAsName = normalizePlayerKey(id);
+  const key = directKey ?? (buckets.has(normalizedIdAsName) ? normalizedIdAsName : undefined);
+  if (!key) return undefined;
+
+  const bucket = buckets.get(key);
+  if (!bucket) return undefined;
+
+  const allIds = bucket.ids;
 
   const rows = events
     .flatMap((event) =>
       event.standings
-        .filter((standing) => standing.playerId === id)
+        .filter((standing) => allIds.has(standing.playerId))
         .map((standing) => ({
           eventId: event.id,
           eventName: event.name,
@@ -124,8 +179,8 @@ export async function getPlayerById(id: string): Promise<PlayerDetail | undefine
   const favoriteDeckEntry = [...deckCounter.entries()].sort((a, b) => b[1].count - a[1].count)[0];
 
   return {
-    id,
-    name: playerName ?? id,
+    id: bucket.id,
+    name: bucket.name,
     match: totalMatch,
     favoriteDeck: favoriteDeckEntry
       ? {

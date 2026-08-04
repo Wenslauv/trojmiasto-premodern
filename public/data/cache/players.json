@@ -1,5 +1,16 @@
 [
   {
+    "id": "p02",
+    "name": "Wiaczasłau Kukhtsiuk",
+    "eventsCount": 4,
+    "matchWinPercent": 84.62,
+    "favoriteDeck": {
+      "name": "Replenish",
+      "colors": "UW",
+      "count": 3
+    }
+  },
+  {
     "id": "p04",
     "name": "Jakub Rąbalsky",
     "eventsCount": 3,
@@ -44,25 +55,14 @@
     }
   },
   {
-    "id": "p10",
-    "name": "Wiaczasłau Kukhtsiuk",
+    "id": "p03",
+    "name": "Wojciech Ćwikliński",
     "eventsCount": 2,
-    "matchWinPercent": 83.33,
+    "matchWinPercent": 66.67,
     "favoriteDeck": {
-      "name": "BW Control",
-      "colors": "WB",
+      "name": "Gro-a-tog",
+      "colors": "WUBG",
       "count": 1
-    }
-  },
-  {
-    "id": "p02",
-    "name": "Wiaczasłau Kukhtsiuk",
-    "eventsCount": 2,
-    "matchWinPercent": 85.71,
-    "favoriteDeck": {
-      "name": "Replenish",
-      "colors": "WU",
-      "count": 2
     }
   },
   {
@@ -106,28 +106,6 @@
     "favoriteDeck": {
       "name": "Monoblack",
       "colors": "B",
-      "count": 1
-    }
-  },
-  {
-    "id": "p11",
-    "name": "Wojciech Ćwikliński",
-    "eventsCount": 1,
-    "matchWinPercent": 66.67,
-    "favoriteDeck": {
-      "name": "Gro-a-tog",
-      "colors": "WUBG",
-      "count": 1
-    }
-  },
-  {
-    "id": "p03",
-    "name": "Wojciech Ćwikliński",
-    "eventsCount": 1,
-    "matchWinPercent": 66.67,
-    "favoriteDeck": {
-      "name": "Stasis",
-      "colors": "U",
       "count": 1
     }
   }

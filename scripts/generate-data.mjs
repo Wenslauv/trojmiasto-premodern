@@ -39,6 +39,24 @@ function normalizeDeckKey(value) {
     .replace(/\s+/g, ' ');
 }
 
+function normalizePlayerKey(value) {
+  return String(value)
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .trim()
+    .replace(/\s+/g, ' ');
+}
+
+function comparePlayerIds(a, b) {
+  const aMatch = /^p(\d+)$/i.exec(String(a));
+  const bMatch = /^p(\d+)$/i.exec(String(b));
+  if (aMatch && bMatch) {
+    return Number(aMatch[1]) - Number(bMatch[1]);
+  }
+  return String(a).localeCompare(String(b));
+}
+
 function safeArray(value) {
   return Array.isArray(value) ? value : [];
 }
@@ -107,14 +125,21 @@ async function main() {
 
   for (const event of events) {
     for (const row of event.standings) {
-      const current = byPlayer.get(row.playerId) ?? {
+      const mergeKey = normalizePlayerKey(row.playerName) || String(row.playerId);
+      const current = byPlayer.get(mergeKey) ?? {
         id: row.playerId,
         name: row.playerName,
+        ids: new Set(),
         eventsCount: 0,
         match: { wins: 0, losses: 0, draws: 0 },
         decks: new Map(),
       };
 
+      current.ids.add(row.playerId);
+      const canonicalId = [...current.ids].sort(comparePlayerIds)[0];
+      if (canonicalId) {
+        current.id = canonicalId;
+      }
       current.eventsCount += 1;
       current.match = mergeRecord(current.match, row.match);
 
@@ -126,7 +151,7 @@ async function main() {
       deckCurrent.count += 1;
       current.decks.set(row.deck.name, deckCurrent);
 
-      byPlayer.set(row.playerId, current);
+      byPlayer.set(mergeKey, current);
     }
   }
 
