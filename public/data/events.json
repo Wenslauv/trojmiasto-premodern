@@ -8,7 +8,7 @@
       {
         "localId": "WK",
         "rank": 1,
-        "playerName": "Wiachaslau Kukhtsiuk",
+        "playerName": "Wiaczasłau Kukhtsiuk",
         "points": 9,
         "deck": {
           "name": "BW Control",
@@ -439,7 +439,7 @@
       {
         "localId": "WK",
         "rank": 2,
-        "playerName": "Wiachaslau Kukhtsiuk",
+        "playerName": "Wiaczasłau Kukhtsiuk",
         "points": 6,
         "deck": {
           "name": "Replenish",
@@ -650,7 +650,8 @@
         }
       }
     ],
-    "id": "20260720-sidequest-weekly-20-07-2026"
+    "id": "20260720-sidequest-weekly-20-07-2026",
+    "mode": "roundByRound"
   },
   {
     "name": "Futurex monthly 18.07.2026",
@@ -1332,7 +1333,7 @@
       {
         "localId": "WC",
         "rank": 3,
-        "playerName": "Wojciech Ć...",
+        "playerName": "Wojciech Ćwikliński",
         "points": 6,
         "deck": {
           "name": "Stasis",
@@ -1540,6 +1541,7 @@
           "draws": 0
         }
       }
-    ]
+    ],
+    "mode": "roundByRound"
   }
 ]

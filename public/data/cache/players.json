@@ -45,7 +45,7 @@
   },
   {
     "id": "p10",
-    "name": "Wiachaslau Kukhtsiuk",
+    "name": "Wiaczasłau Kukhtsiuk",
     "eventsCount": 2,
     "matchWinPercent": 83.33,
     "favoriteDeck": {
@@ -110,17 +110,6 @@
     }
   },
   {
-    "id": "p03",
-    "name": "Wojciech Ć...",
-    "eventsCount": 1,
-    "matchWinPercent": 66.67,
-    "favoriteDeck": {
-      "name": "Stasis",
-      "colors": "U",
-      "count": 1
-    }
-  },
-  {
     "id": "p11",
     "name": "Wojciech Ćwikliński",
     "eventsCount": 1,
@@ -128,6 +117,17 @@
     "favoriteDeck": {
       "name": "Gro-a-tog",
       "colors": "WUBG",
+      "count": 1
+    }
+  },
+  {
+    "id": "p03",
+    "name": "Wojciech Ćwikliński",
+    "eventsCount": 1,
+    "matchWinPercent": 66.67,
+    "favoriteDeck": {
+      "name": "Stasis",
+      "colors": "U",
       "count": 1
     }
   }

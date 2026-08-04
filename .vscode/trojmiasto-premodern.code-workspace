@@ -4,5 +4,12 @@
 			"path": ".."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"chat.tools.terminal.autoApprove": {
+			"/^git add public/data/events\\.json public/data/cache/events-summary\\.json public/data/cache/matchups\\.json public/data/cache/players\\.json public/data/sidequest_03-08-2026\\.json && git commit -m \"Add sidequest event 2026-08-03\"$/": {
+				"approve": true,
+				"matchCommandLine": true
+			}
+		}
+	}
 }
