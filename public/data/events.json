@@ -1,5 +1,450 @@
 [
   {
+    "id": "20260810-sidequest-weekly-10-08-2026",
+    "name": "Sidequest weekly 10-08-2026",
+    "date": "2026-08-10",
+    "location": "Gdansk",
+    "mode": "roundByRound",
+    "standings": [
+      {
+        "localId": "Marcin",
+        "rank": 1,
+        "playerName": "Marcin Kowalski",
+        "playerRef": "p06",
+        "points": 12,
+        "deck": {
+          "name": "Devourer",
+          "colors": "UR"
+        },
+        "rounds": [
+          {
+            "round": 1,
+            "opponentLocalId": "Maciej",
+            "game": {
+              "wins": 2,
+              "losses": 0,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p01",
+            "match": {
+              "wins": 1,
+              "losses": 0,
+              "draws": 0
+            }
+          },
+          {
+            "round": 2,
+            "opponentLocalId": "Piotr",
+            "game": {
+              "wins": 2,
+              "losses": 0,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p13",
+            "match": {
+              "wins": 1,
+              "losses": 0,
+              "draws": 0
+            }
+          },
+          {
+            "round": 3,
+            "opponentLocalId": "Jakub",
+            "game": {
+              "wins": 2,
+              "losses": 0,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p04",
+            "match": {
+              "wins": 1,
+              "losses": 0,
+              "draws": 0
+            }
+          },
+          {
+            "round": 4,
+            "opponentLocalId": "Damian",
+            "game": {
+              "wins": 2,
+              "losses": 0,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p05",
+            "match": {
+              "wins": 1,
+              "losses": 0,
+              "draws": 0
+            }
+          }
+        ],
+        "match": {
+          "wins": 4,
+          "losses": 0,
+          "draws": 0
+        },
+        "game": {
+          "wins": 8,
+          "losses": 0,
+          "draws": 0
+        },
+        "playerId": "p06"
+      },
+      {
+        "localId": "Maciej",
+        "rank": 2,
+        "playerName": "Maciej Lbik",
+        "playerRef": "p01",
+        "points": 7,
+        "deck": {
+          "name": "Quiet Tribe",
+          "colors": "GWUR"
+        },
+        "rounds": [
+          {
+            "round": 1,
+            "opponentLocalId": "Marcin",
+            "game": {
+              "wins": 0,
+              "losses": 2,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p06",
+            "match": {
+              "wins": 0,
+              "losses": 1,
+              "draws": 0
+            }
+          },
+          {
+            "round": 2,
+            "resultType": "BYE",
+            "opponentPlayerId": null,
+            "match": {
+              "wins": 1,
+              "losses": 0,
+              "draws": 0
+            },
+            "game": {
+              "wins": 0,
+              "losses": 0,
+              "draws": 0
+            }
+          },
+          {
+            "round": 3,
+            "opponentLocalId": "Piotr",
+            "game": {
+              "wins": 2,
+              "losses": 0,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p13",
+            "match": {
+              "wins": 1,
+              "losses": 0,
+              "draws": 0
+            }
+          },
+          {
+            "round": 4,
+            "opponentLocalId": "Jakub",
+            "game": {
+              "wins": 1,
+              "losses": 1,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p04",
+            "match": {
+              "wins": 0,
+              "losses": 0,
+              "draws": 1
+            }
+          }
+        ],
+        "match": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 1
+        },
+        "game": {
+          "wins": 3,
+          "losses": 3,
+          "draws": 0
+        },
+        "playerId": "p01"
+      },
+      {
+        "localId": "Piotr",
+        "rank": 3,
+        "playerName": "Piotr Orlowski",
+        "playerRef": "new:piotr",
+        "points": 6,
+        "deck": {
+          "name": "MonoRed Ponza",
+          "colors": "R"
+        },
+        "rounds": [
+          {
+            "round": 1,
+            "opponentLocalId": "Damian",
+            "game": {
+              "wins": 2,
+              "losses": 0,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p05",
+            "match": {
+              "wins": 1,
+              "losses": 0,
+              "draws": 0
+            }
+          },
+          {
+            "round": 2,
+            "opponentLocalId": "Marcin",
+            "game": {
+              "wins": 0,
+              "losses": 2,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p06",
+            "match": {
+              "wins": 0,
+              "losses": 1,
+              "draws": 0
+            }
+          },
+          {
+            "round": 3,
+            "opponentLocalId": "Maciej",
+            "game": {
+              "wins": 0,
+              "losses": 2,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p01",
+            "match": {
+              "wins": 0,
+              "losses": 1,
+              "draws": 0
+            }
+          },
+          {
+            "round": 4,
+            "resultType": "BYE",
+            "opponentPlayerId": null,
+            "match": {
+              "wins": 1,
+              "losses": 0,
+              "draws": 0
+            },
+            "game": {
+              "wins": 0,
+              "losses": 0,
+              "draws": 0
+            }
+          }
+        ],
+        "match": {
+          "wins": 2,
+          "losses": 2,
+          "draws": 0
+        },
+        "game": {
+          "wins": 2,
+          "losses": 4,
+          "draws": 0
+        },
+        "playerId": "p13"
+      },
+      {
+        "localId": "Damian",
+        "rank": 4,
+        "playerName": "Damian Krasny",
+        "playerRef": "p05",
+        "points": 6,
+        "deck": {
+          "name": "Reanimator",
+          "colors": "UBR"
+        },
+        "rounds": [
+          {
+            "round": 1,
+            "opponentLocalId": "Piotr",
+            "game": {
+              "wins": 0,
+              "losses": 2,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p13",
+            "match": {
+              "wins": 0,
+              "losses": 1,
+              "draws": 0
+            }
+          },
+          {
+            "round": 2,
+            "opponentLocalId": "Jakub",
+            "game": {
+              "wins": 2,
+              "losses": 1,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p04",
+            "match": {
+              "wins": 1,
+              "losses": 0,
+              "draws": 0
+            }
+          },
+          {
+            "round": 3,
+            "resultType": "BYE",
+            "opponentPlayerId": null,
+            "match": {
+              "wins": 1,
+              "losses": 0,
+              "draws": 0
+            },
+            "game": {
+              "wins": 0,
+              "losses": 0,
+              "draws": 0
+            }
+          },
+          {
+            "round": 4,
+            "opponentLocalId": "Marcin",
+            "game": {
+              "wins": 0,
+              "losses": 2,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p06",
+            "match": {
+              "wins": 0,
+              "losses": 1,
+              "draws": 0
+            }
+          }
+        ],
+        "match": {
+          "wins": 2,
+          "losses": 2,
+          "draws": 0
+        },
+        "game": {
+          "wins": 2,
+          "losses": 5,
+          "draws": 0
+        },
+        "playerId": "p05"
+      },
+      {
+        "localId": "Jakub",
+        "rank": 5,
+        "playerName": "Jakub Rąbalsky",
+        "playerRef": "p04",
+        "points": 4,
+        "deck": {
+          "name": "TerraOath",
+          "colors": "GWr"
+        },
+        "rounds": [
+          {
+            "round": 1,
+            "resultType": "BYE",
+            "opponentPlayerId": null,
+            "match": {
+              "wins": 1,
+              "losses": 0,
+              "draws": 0
+            },
+            "game": {
+              "wins": 0,
+              "losses": 0,
+              "draws": 0
+            }
+          },
+          {
+            "round": 2,
+            "opponentLocalId": "Damian",
+            "game": {
+              "wins": 1,
+              "losses": 2,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p05",
+            "match": {
+              "wins": 0,
+              "losses": 1,
+              "draws": 0
+            }
+          },
+          {
+            "round": 3,
+            "opponentLocalId": "Marcin",
+            "game": {
+              "wins": 0,
+              "losses": 2,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p06",
+            "match": {
+              "wins": 0,
+              "losses": 1,
+              "draws": 0
+            }
+          },
+          {
+            "round": 4,
+            "opponentLocalId": "Maciej",
+            "game": {
+              "wins": 1,
+              "losses": 1,
+              "draws": 0
+            },
+            "resultType": "PLAYED",
+            "opponentPlayerId": "p01",
+            "match": {
+              "wins": 0,
+              "losses": 0,
+              "draws": 1
+            }
+          }
+        ],
+        "match": {
+          "wins": 1,
+          "losses": 2,
+          "draws": 1
+        },
+        "game": {
+          "wins": 2,
+          "losses": 5,
+          "draws": 0
+        },
+        "playerId": "p04"
+      }
+    ]
+  },
+  {
     "name": "Sidequest weekly 03-08-2026",
     "date": "2026-08-03",
     "location": "Gdansk",

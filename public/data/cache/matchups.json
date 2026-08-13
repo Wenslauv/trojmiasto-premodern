@@ -21,6 +21,11 @@
       "slug": "death-taxes"
     },
     {
+      "name": "Devourer",
+      "colors": "UR",
+      "slug": "devourer"
+    },
+    {
       "name": "Gro-a-tog",
       "colors": "WUBG",
       "slug": "gro-a-tog"
@@ -31,9 +36,19 @@
       "slug": "monoblack"
     },
     {
+      "name": "MonoRed Ponza",
+      "colors": "R",
+      "slug": "monored-ponza"
+    },
+    {
       "name": "Quiet Tribe",
       "colors": "GWUR",
       "slug": "quiet-tribe"
+    },
+    {
+      "name": "Reanimator",
+      "colors": "UBR",
+      "slug": "reanimator"
     },
     {
       "name": "Replenish",
@@ -59,6 +74,11 @@
       "name": "Survival Infestation",
       "colors": "BG",
       "slug": "survival-infestation"
+    },
+    {
+      "name": "TerraOath",
+      "colors": "GWr",
+      "slug": "terraoath"
     }
   ],
   "matrix": {
@@ -210,6 +230,36 @@
         "winPercent": 100
       }
     },
+    "Devourer": {
+      "MonoRed Ponza": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "Quiet Tribe": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "Reanimator": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "TerraOath": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      }
+    },
     "Gro-a-tog": {
       "BW Control": {
         "wins": 0,
@@ -263,6 +313,29 @@
         "winPercent": 0
       }
     },
+    "MonoRed Ponza": {
+      "Devourer": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "Quiet Tribe": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "Reanimator": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      }
+    },
     "Quiet Tribe": {
       "Death & Taxes": {
         "wins": 0,
@@ -270,6 +343,20 @@
         "draws": 0,
         "matches": 1,
         "winPercent": 0
+      },
+      "Devourer": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "MonoRed Ponza": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
       },
       "Replenish": {
         "wins": 1,
@@ -286,6 +373,36 @@
         "winPercent": 100
       },
       "Survival Infestation": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "TerraOath": {
+        "wins": 0,
+        "losses": 0,
+        "draws": 1,
+        "matches": 1,
+        "winPercent": 0
+      }
+    },
+    "Reanimator": {
+      "Devourer": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "MonoRed Ponza": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "TerraOath": {
         "wins": 1,
         "losses": 0,
         "draws": 0,
@@ -415,6 +532,29 @@
         "winPercent": 0
       },
       "Quiet Tribe": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      }
+    },
+    "TerraOath": {
+      "Devourer": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "Quiet Tribe": {
+        "wins": 0,
+        "losses": 0,
+        "draws": 1,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "Reanimator": {
         "wins": 0,
         "losses": 1,
         "draws": 0,
