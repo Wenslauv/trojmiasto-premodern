@@ -69,7 +69,7 @@ function PlayerPage() {
                   </button>
                 </td>
                 <td>{formatRecord(row.match)}</td>
-                <td>{formatRecord(row.game)}</td>
+                <td>{formatRecord(row.game ?? row.match)}</td>
               </tr>
             ))}
           </tbody>

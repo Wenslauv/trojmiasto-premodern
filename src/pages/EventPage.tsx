@@ -89,7 +89,7 @@ function EventPage() {
                   </button>
                 </td>
                 <td>{formatRecord(row.match)}</td>
-                <td>{formatRecord(row.game)}</td>
+                <td>{formatRecord(row.game ?? row.match)}</td>
                 {Array.from({ length: maxRounds }, (_, roundIndex) => {
                   const found = row.rounds.find((item) => item.round === roundIndex + 1);
                   const roundClass = getRoundResultClass(found);

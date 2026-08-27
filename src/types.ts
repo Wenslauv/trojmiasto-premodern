@@ -29,7 +29,7 @@ export type Standing = {
   points: number;
   deck: DeckRef;
   match: RecordStat;
-  game: RecordStat;
+  game?: RecordStat;
   rounds: RoundResult[];
 };
 
@@ -77,7 +77,7 @@ export type PlayerEventRow = {
   rankDisplay: string;
   deck: DeckRef;
   match: RecordStat;
-  game: RecordStat;
+  game?: RecordStat;
 };
 
 export type PlayerDetail = {

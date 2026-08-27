@@ -77,7 +77,8 @@ function buildPlayerBuckets(events: EventItem[]): {
   return { buckets, idToBucketKey };
 }
 
-export function formatRecord(record: RecordStat): string {
+export function formatRecord(record?: RecordStat): string {
+  if (!record) return '-';
   return `${record.wins}-${record.losses}-${record.draws}`;
 }
 

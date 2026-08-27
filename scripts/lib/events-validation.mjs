@@ -233,8 +233,8 @@ export function validateEvent(event, indexHint = 'new event') {
       if (!isRecord(row.match)) {
         throw new Error(`Field "${rowHint}.match" must be provided in standingsOnly mode.`);
       }
-      if (!isRecord(row.game)) {
-        throw new Error(`Field "${rowHint}.game" must be provided in standingsOnly mode.`);
+      if (row.game !== undefined && row.game !== null && !isRecord(row.game)) {
+        throw new Error(`Field "${rowHint}.game" must be a valid record object when provided.`);
       }
     }
 
