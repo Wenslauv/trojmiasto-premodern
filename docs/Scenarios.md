@@ -1,31 +1,38 @@
 # Scenarios
 
+## Data layout
+
+- `public/data/events.json` — canonical source of truth for all published events
+- `public/data/events/` — individual event files and incoming files used during import/export workflows
+- `public/data/templates/` — starter JSON templates for new events
+- `public/data/cache/` — generated cache files used by the frontend
+
 ## 1. Add New Round-by-Round Event
 
-1. Copy template:
+1. Copy a template:
 
 ```bash
-cp public/data/new-event.template.json public/data/incoming-YYYY-MM-DD.json
+cp public/data/templates/new-event.template.json public/data/events/incoming-YYYY-MM-DD.json
 ```
 
-Alternative (auto-create file):
+Alternative (auto-create file in the events folder):
 
 ```bash
 npm run new-event-file
 ```
 
-2. Fill event data in `public/data/incoming-YYYY-MM-DD.json`.
+2. Fill event data in `public/data/events/incoming-YYYY-MM-DD.json`.
 
 3. Validate append:
 
 ```bash
-npm run add-event -- --file public/data/incoming-YYYY-MM-DD.json --dry-run
+npm run add-event -- --file public/data/events/incoming-YYYY-MM-DD.json --dry-run
 ```
 
 4. Apply append:
 
 ```bash
-npm run add-event -- --file public/data/incoming-YYYY-MM-DD.json
+npm run add-event -- --file public/data/events/incoming-YYYY-MM-DD.json
 ```
 
 5. Rebuild caches:
@@ -44,7 +51,7 @@ npm run build
 ## 2. Add New Event and Remove Source File
 
 ```bash
-npm run add-event -- --file public/data/incoming-YYYY-MM-DD.json --delete-source
+npm run add-event -- --file public/data/events/incoming-YYYY-MM-DD.json --delete-source
 npm run generate-data
 npm run check-data
 npm run build
@@ -52,7 +59,7 @@ npm run build
 
 ## 3. Add Standings-Only Event
 
-Create file from template:
+Create an event file from the standings template:
 
 ```bash
 npm run new-standings-file
@@ -66,8 +73,8 @@ npm run new-standings-file
 2. Run:
 
 ```bash
-npm run add-event -- --file public/data/incoming-YYYY-MM-DD.json --dry-run
-npm run add-event -- --file public/data/incoming-YYYY-MM-DD.json
+npm run add-event -- --file public/data/events/incoming-YYYY-MM-DD.json --dry-run
+npm run add-event -- --file public/data/events/incoming-YYYY-MM-DD.json
 npm run generate-data
 npm run check-data
 npm run build
@@ -82,8 +89,8 @@ npm run build
 3. Run:
 
 ```bash
-npm run add-event -- --file public/data/incoming-YYYY-MM-DD.json --dry-run
-npm run add-event -- --file public/data/incoming-YYYY-MM-DD.json
+npm run add-event -- --file public/data/events/incoming-YYYY-MM-DD.json --dry-run
+npm run add-event -- --file public/data/events/incoming-YYYY-MM-DD.json
 npm run generate-data
 npm run check-data
 npm run build
@@ -96,13 +103,13 @@ npm run build
 - `playerRef: "Full Name"`
 - `playerRef: "alias"`
 
-2. For new player, provide `playerName`; ID is auto-generated.
+2. For a new player, provide `playerName`; the ID is auto-generated.
 
 3. Validate and apply:
 
 ```bash
-npm run add-event -- --file public/data/incoming-YYYY-MM-DD.json --dry-run
-npm run add-event -- --file public/data/incoming-YYYY-MM-DD.json
+npm run add-event -- --file public/data/events/incoming-YYYY-MM-DD.json --dry-run
+npm run add-event -- --file public/data/events/incoming-YYYY-MM-DD.json
 ```
 
 ## 6. Fix Existing Event
@@ -110,24 +117,24 @@ npm run add-event -- --file public/data/incoming-YYYY-MM-DD.json
 1. Export event:
 
 ```bash
-npm run export-event -- --id EVENT_ID --out public/data/edit-EVENT_ID.json
+npm run export-event -- --id EVENT_ID --out public/data/events/edit-EVENT_ID.json
 ```
 
-2. Edit file.
+2. Edit the exported file.
 
-3. Validate update:
+3. Validate the update:
 
 ```bash
-npm run update-event -- --id EVENT_ID --file public/data/edit-EVENT_ID.json --dry-run
+npm run update-event -- --id EVENT_ID --file public/data/events/edit-EVENT_ID.json --dry-run
 ```
 
-4. Apply update:
+4. Apply the update:
 
 ```bash
-npm run update-event -- --id EVENT_ID --file public/data/edit-EVENT_ID.json
+npm run update-event -- --id EVENT_ID --file public/data/events/edit-EVENT_ID.json
 ```
 
-5. Rebuild + validate:
+5. Rebuild and validate:
 
 ```bash
 npm run generate-data
@@ -139,7 +146,7 @@ npm run build
 
 1. Edit `config/matchup-deck-rules.json`.
 
-2. Rebuild matrix only:
+2. Rebuild the matrix only:
 
 ```bash
 npm run generate-matrix
