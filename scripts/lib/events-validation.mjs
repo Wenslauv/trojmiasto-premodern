@@ -60,6 +60,20 @@ function assertMode(value, fieldName) {
   }
 }
 
+function assertEventType(value, fieldName) {
+  if (value === undefined || value === null) return;
+  if (value !== 'weekly' && value !== 'monthly') {
+    throw new Error(`Field "${fieldName}" must be "weekly" or "monthly" when provided.`);
+  }
+}
+
+function assertPlace(value, fieldName) {
+  if (value === undefined || value === null) return;
+  if (value !== 'Futurex' && value !== 'SideQuest') {
+    throw new Error(`Field "${fieldName}" must be "Futurex" or "SideQuest" when provided.`);
+  }
+}
+
 function sameRecord(a, b) {
   return a.wins === b.wins && a.losses === b.losses && a.draws === b.draws;
 }
@@ -91,6 +105,8 @@ export function validateEvent(event, indexHint = 'new event') {
   assertNonEmptyString(event.location, `${indexHint}.location`);
   assertDate(event.date);
   assertMode(event.mode, `${indexHint}.mode`);
+  assertEventType(event.type, `${indexHint}.type`);
+  assertPlace(event.place, `${indexHint}.place`);
 
   const mode = event.mode ?? 'roundByRound';
 

@@ -1,5 +1,6 @@
 {
-  "name": "Weekly Premodern Standings",
+  "place": "SideQuest",
+  "type": "weekly",
   "date": "2026-07-20",
   "location": "Gdansk",
   "mode": "standingsOnly",

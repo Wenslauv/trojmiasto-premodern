@@ -36,6 +36,8 @@ export type Standing = {
 export type EventItem = {
   id: string;
   mode?: 'roundByRound' | 'standingsOnly';
+  type?: 'weekly' | 'monthly';
+  place?: 'Futurex' | 'SideQuest';
   name: string;
   date: string;
   location: string;

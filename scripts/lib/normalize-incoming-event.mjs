@@ -8,6 +8,53 @@ function normalizeText(value) {
     .replace(/\s+/g, ' ');
 }
 
+function normalizeEventType(value) {
+  if (typeof value !== 'string') return null;
+  const text = value.trim().toLowerCase();
+  if (text === 'weekly' || text === 'monthly') return text;
+  if (text.includes('weekly')) return 'weekly';
+  if (text.includes('monthly')) return 'monthly';
+  return null;
+}
+
+function normalizePlace(value) {
+  if (typeof value !== 'string') return null;
+  const text = value.trim().toLowerCase();
+  if (text === 'futurex') return 'Futurex';
+  if (text === 'sidequest') return 'SideQuest';
+  if (text.includes('futurex')) return 'Futurex';
+  if (text.includes('sidequest')) return 'SideQuest';
+  return null;
+}
+
+function inferEventMetaFromName(name) {
+  if (typeof name !== 'string') return { place: null, type: null };
+  const text = name.toLowerCase();
+  return {
+    place: normalizePlace(text),
+    type: normalizeEventType(text),
+  };
+}
+
+function ensureEventMetadata(event) {
+  const inferred = inferEventMetaFromName(event.name);
+  const place = normalizePlace(event.place ?? event.club ?? event.host ?? '') ?? inferred.place;
+  const type = normalizeEventType(event.type ?? event.eventType ?? '') ?? inferred.type;
+
+  if (place && type) {
+    event.place = place;
+    event.type = type;
+  }
+
+  if (typeof event.name !== 'string' || event.name.trim() === '') {
+    if (place && type) {
+      event.name = `${place} ${type}`;
+    }
+  }
+
+  return event;
+}
+
 function aliasesFromName(name) {
   const normalized = normalizeText(name);
   if (!normalized) return [];
@@ -150,6 +197,7 @@ function resolveByReference(reference, knownPlayers, hint) {
 export function normalizeIncomingEvent(incomingEvent, currentEvents) {
   const normalized = structuredClone(incomingEvent);
   const knownPlayers = buildKnownPlayers(currentEvents);
+  ensureEventMetadata(normalized);
   normalized.mode = normalizeMode(normalized.mode);
 
   let nextAutoId = knownPlayers.maxAutoId + 1;
