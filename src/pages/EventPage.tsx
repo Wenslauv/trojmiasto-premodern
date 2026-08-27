@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { formatRecord, getEventById } from '../lib/data';
+import { formatDate, formatRecord, getEventById } from '../lib/data';
 import type { EventItem } from '../types';
 
 function formatRoundCell(round: EventItem['standings'][number]['rounds'][number] | undefined): string {
@@ -52,7 +52,7 @@ function EventPage() {
     <section>
       <h2>{eventData.name}</h2>
       <div className="facts">
-        <p>Date: {eventData.date}</p>
+        <p>Date: {formatDate(eventData.date)}</p>
         <p>Players: {eventData.standings.length}</p>
         <p>Location: {eventData.location}</p>
       </div>

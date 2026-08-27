@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { getEvents } from '../lib/data';
+import { formatDate, getEvents } from '../lib/data';
 import type { EventItem } from '../types';
 
 function EventsPage() {
@@ -35,7 +35,7 @@ function EventsPage() {
               return (
                 <tr key={event.id} onClick={() => navigate(`/event/${event.id}`)}>
                   <td>{event.name}</td>
-                  <td>{event.date}</td>
+                  <td>{formatDate(event.date)}</td>
                   <td>{event.standings.length}</td>
                   <td>
                     <button

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { formatRecord, getPlayerById, matchWinPercent } from '../lib/data';
+import { formatDate, formatRecord, getPlayerById, matchWinPercent } from '../lib/data';
 import type { PlayerDetail } from '../types';
 
 function PlayerPage() {
@@ -59,7 +59,7 @@ function PlayerPage() {
                     {row.eventName}
                   </button>
                 </td>
-                <td>{row.date}</td>
+                <td>{formatDate(row.date)}</td>
                 <td>{row.points}</td>
                 <td>{row.rankDisplay}</td>
                 <td>{row.deck.colors}</td>
