@@ -45,6 +45,11 @@ function EventPage() {
     return Math.max(...eventData.standings.map((row) => row.rounds.length), 0);
   }, [eventData]);
 
+  const hasGames = useMemo(() => {
+    if (!eventData) return false;
+    return eventData.standings.some((row) => row.game);
+  }, [eventData]);
+
   if (error) return <p>{error}</p>;
   if (!eventData) return <p>Loading...</p>;
 
@@ -63,10 +68,10 @@ function EventPage() {
               <th>Place</th>
               <th>Name</th>
               <th>Points</th>
-              <th>Deck Colors</th>
+              <th>Matches</th>
+              {hasGames && <th>Games</th>}
               <th>Deck Name</th>
-              <th>Match</th>
-              <th>Game</th>
+              <th>Deck Colors</th>
               {Array.from({ length: maxRounds }, (_, index) => (
                 <th key={`round-head-${index + 1}`}>Round {index + 1}</th>
               ))}
@@ -82,14 +87,14 @@ function EventPage() {
                   </button>
                 </td>
                 <td>{row.points}</td>
-                <td>{row.deck.colors}</td>
+                <td>{formatRecord(row.match)}</td>
+                {hasGames && <td>{formatRecord(row.game)}</td>}
                 <td>
                   <button className="link-btn" onClick={() => navigate('/decks')}>
                     {row.deck.name}
                   </button>
                 </td>
-                <td>{formatRecord(row.match)}</td>
-                <td>{formatRecord(row.game ?? row.match)}</td>
+                <td>{row.deck.colors}</td>
                 {Array.from({ length: maxRounds }, (_, roundIndex) => {
                   const found = row.rounds.find((item) => item.round === roundIndex + 1);
                   const roundClass = getRoundResultClass(found);
