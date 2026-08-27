@@ -1,7 +1,6 @@
 [
   {
     "id": "20260817-sidequest-weekly-premodern-17-08-2026",
-    "name": "SideQuest weekly Premodern | 17.08.2026",
     "date": "2026-08-17",
     "location": "Gdansk",
     "mode": "standingsOnly",
@@ -150,10 +149,12 @@
         "playerId": "p09",
         "rounds": []
       }
-    ]
+    ],
+    "type": "weekly",
+    "place": "SideQuest",
+    "name": "SideQuest weekly"
   },
   {
-    "name": "Futurex Monthly Premodern | 14.08.2026",
     "date": "2026-08-14",
     "location": "Gdynia",
     "mode": "standingsOnly",
@@ -411,11 +412,13 @@
         "rounds": []
       }
     ],
-    "id": "20260814-futurex-monthly-premodern-14-08-2026"
+    "id": "20260814-futurex-monthly-premodern-14-08-2026",
+    "type": "monthly",
+    "place": "Futurex",
+    "name": "Futurex monthly"
   },
   {
     "id": "20260810-sidequest-weekly-10-08-2026",
-    "name": "Sidequest weekly 10-08-2026",
     "date": "2026-08-10",
     "location": "Gdansk",
     "mode": "roundByRound",
@@ -856,10 +859,12 @@
         },
         "playerId": "p04"
       }
-    ]
+    ],
+    "type": "weekly",
+    "place": "SideQuest",
+    "name": "SideQuest weekly"
   },
   {
-    "name": "Sidequest weekly 03-08-2026",
     "date": "2026-08-03",
     "location": "Gdansk",
     "mode": "roundByRound",
@@ -1217,10 +1222,12 @@
         }
       }
     ],
-    "id": "20260803-sidequest-weekly-03-08-2026"
+    "id": "20260803-sidequest-weekly-03-08-2026",
+    "type": "weekly",
+    "place": "SideQuest",
+    "name": "SideQuest weekly"
   },
   {
-    "name": "Sidequest weekly 20-07-2026",
     "date": "2026-07-20",
     "location": "Gdansk",
     "standings": [
@@ -1510,10 +1517,12 @@
       }
     ],
     "id": "20260720-sidequest-weekly-20-07-2026",
-    "mode": "roundByRound"
+    "mode": "roundByRound",
+    "type": "weekly",
+    "place": "SideQuest",
+    "name": "SideQuest weekly"
   },
   {
-    "name": "Futurex monthly 18.07.2026",
     "date": "2026-07-18",
     "location": "Gdynia",
     "standings": [
@@ -2040,11 +2049,14 @@
         }
       }
     ],
-    "id": "20260718-futurex-monthly-18-07-2026"
+    "id": "20260718-futurex-monthly-18-07-2026",
+    "type": "monthly",
+    "place": "Futurex",
+    "name": "Futurex monthly",
+    "mode": "roundByRound"
   },
   {
     "id": "20260706-sidequest-weekly-06-07-2026",
-    "name": "Sidequest weekly 06-07-2026",
     "date": "2026-07-06",
     "location": "Gdansk",
     "standings": [
@@ -2401,6 +2413,9 @@
         }
       }
     ],
-    "mode": "roundByRound"
+    "mode": "roundByRound",
+    "type": "weekly",
+    "place": "SideQuest",
+    "name": "SideQuest weekly"
   }
 ]

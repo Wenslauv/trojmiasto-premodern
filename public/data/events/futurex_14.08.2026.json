@@ -1,5 +1,4 @@
 {
-  "name": "Futurex Monthly Premodern | 14.08.2026",
   "date": "2026-08-14",
   "location": "Gdynia",
   "mode": "standingsOnly",
@@ -9,112 +8,255 @@
       "playerRef": "new:wiktor-witkowski",
       "playerName": "Wiktor Witkowski",
       "points": 10,
-      "deck": { "name": "Unknown Deck", "colors": "?" },
-      "match": { "wins": 3, "losses": 0, "draws": 1 }
+      "deck": {
+        "name": "Unknown Deck",
+        "colors": "?"
+      },
+      "match": {
+        "wins": 3,
+        "losses": 0,
+        "draws": 1
+      },
+      "localId": "s1",
+      "playerId": "p14",
+      "rounds": []
     },
     {
       "rank": 2,
       "playerRef": "p03",
       "playerName": "Wojciech Ćwikliński",
       "points": 9,
-      "deck": { "name": "Unknown Deck", "colors": "?" },
-      "match": { "wins": 3, "losses": 1, "draws": 0 }
+      "deck": {
+        "name": "Unknown Deck",
+        "colors": "?"
+      },
+      "match": {
+        "wins": 3,
+        "losses": 1,
+        "draws": 0
+      },
+      "localId": "s2",
+      "playerId": "p03",
+      "rounds": []
     },
     {
       "rank": 3,
       "playerRef": "p06",
       "playerName": "Marcin Kowalski",
       "points": 9,
-      "deck": { "name": "Unknown Deck", "colors": "?" },
-      "match": { "wins": 3, "losses": 1, "draws": 0 }
+      "deck": {
+        "name": "Unknown Deck",
+        "colors": "?"
+      },
+      "match": {
+        "wins": 3,
+        "losses": 1,
+        "draws": 0
+      },
+      "localId": "s3",
+      "playerId": "p06",
+      "rounds": []
     },
     {
       "rank": 4,
       "playerRef": "new:jakub-domasla",
       "playerName": "Jakub Domasła...",
       "points": 9,
-      "deck": { "name": "Unknown Deck", "colors": "?" },
-      "match": { "wins": 3, "losses": 1, "draws": 0 }
+      "deck": {
+        "name": "Unknown Deck",
+        "colors": "?"
+      },
+      "match": {
+        "wins": 3,
+        "losses": 1,
+        "draws": 0
+      },
+      "localId": "s4",
+      "playerId": "p15",
+      "rounds": []
     },
     {
       "rank": 5,
       "playerRef": "p09",
       "playerName": "Piotr Zieliński",
       "points": 7,
-      "deck": { "name": "Unknown Deck", "colors": "?" },
-      "match": { "wins": 2, "losses": 1, "draws": 1 }
+      "deck": {
+        "name": "Unknown Deck",
+        "colors": "?"
+      },
+      "match": {
+        "wins": 2,
+        "losses": 1,
+        "draws": 1
+      },
+      "localId": "s5",
+      "playerId": "p09",
+      "rounds": []
     },
     {
       "rank": 6,
       "playerRef": "p04",
       "playerName": "Jakub Rąbalsky",
       "points": 6,
-      "deck": { "name": "Unknown Deck", "colors": "?" },
-      "match": { "wins": 2, "losses": 2, "draws": 0 }
+      "deck": {
+        "name": "Unknown Deck",
+        "colors": "?"
+      },
+      "match": {
+        "wins": 2,
+        "losses": 2,
+        "draws": 0
+      },
+      "localId": "s6",
+      "playerId": "p04",
+      "rounds": []
     },
     {
       "rank": 7,
       "playerRef": "new:antek-matusiak",
       "playerName": "Antek Matusiak",
       "points": 6,
-      "deck": { "name": "Unknown Deck", "colors": "?" },
-      "match": { "wins": 2, "losses": 2, "draws": 0 }
+      "deck": {
+        "name": "Unknown Deck",
+        "colors": "?"
+      },
+      "match": {
+        "wins": 2,
+        "losses": 2,
+        "draws": 0
+      },
+      "localId": "s7",
+      "playerId": "p16",
+      "rounds": []
     },
     {
       "rank": 8,
       "playerRef": "p08",
       "playerName": "Maciek Maciek",
       "points": 6,
-      "deck": { "name": "Unknown Deck", "colors": "?" },
-      "match": { "wins": 2, "losses": 2, "draws": 0 }
+      "deck": {
+        "name": "Unknown Deck",
+        "colors": "?"
+      },
+      "match": {
+        "wins": 2,
+        "losses": 2,
+        "draws": 0
+      },
+      "localId": "s8",
+      "playerId": "p08",
+      "rounds": []
     },
     {
       "rank": 9,
       "playerRef": "new:michael-barge",
       "playerName": "Michael Barge",
       "points": 6,
-      "deck": { "name": "Unknown Deck", "colors": "?" },
-      "match": { "wins": 2, "losses": 2, "draws": 0 }
+      "deck": {
+        "name": "Unknown Deck",
+        "colors": "?"
+      },
+      "match": {
+        "wins": 2,
+        "losses": 2,
+        "draws": 0
+      },
+      "localId": "s9",
+      "playerId": "p17",
+      "rounds": []
     },
     {
       "rank": 10,
       "playerRef": "new:marek-bien",
       "playerName": "Marek Bień",
       "points": 6,
-      "deck": { "name": "Unknown Deck", "colors": "?" },
-      "match": { "wins": 2, "losses": 2, "draws": 0 }
+      "deck": {
+        "name": "Unknown Deck",
+        "colors": "?"
+      },
+      "match": {
+        "wins": 2,
+        "losses": 2,
+        "draws": 0
+      },
+      "localId": "s10",
+      "playerId": "p18",
+      "rounds": []
     },
     {
       "rank": 11,
       "playerRef": "new:bartlomiej-bry",
       "playerName": "Bartłomiej Bry...",
       "points": 3,
-      "deck": { "name": "Unknown Deck", "colors": "?" },
-      "match": { "wins": 1, "losses": 3, "draws": 0 }
+      "deck": {
+        "name": "Unknown Deck",
+        "colors": "?"
+      },
+      "match": {
+        "wins": 1,
+        "losses": 3,
+        "draws": 0
+      },
+      "localId": "s11",
+      "playerId": "p19",
+      "rounds": []
     },
     {
       "rank": 12,
       "playerRef": "new:arkadiusz-haber",
       "playerName": "Arkadiusz Haber",
       "points": 3,
-      "deck": { "name": "Unknown Deck", "colors": "?" },
-      "match": { "wins": 1, "losses": 3, "draws": 0 }
+      "deck": {
+        "name": "Unknown Deck",
+        "colors": "?"
+      },
+      "match": {
+        "wins": 1,
+        "losses": 3,
+        "draws": 0
+      },
+      "localId": "s12",
+      "playerId": "p20",
+      "rounds": []
     },
     {
       "rank": 13,
       "playerRef": "p05",
       "playerName": "Damian Krasny",
       "points": 3,
-      "deck": { "name": "Unknown Deck", "colors": "?" },
-      "match": { "wins": 1, "losses": 3, "draws": 0 }
+      "deck": {
+        "name": "Unknown Deck",
+        "colors": "?"
+      },
+      "match": {
+        "wins": 1,
+        "losses": 3,
+        "draws": 0
+      },
+      "localId": "s13",
+      "playerId": "p05",
+      "rounds": []
     },
     {
       "rank": 14,
       "playerRef": "p07",
       "playerName": "Adam Modrzejewski",
       "points": 0,
-      "deck": { "name": "Unknown Deck", "colors": "?" },
-      "match": { "wins": 0, "losses": 4, "draws": 0 }
+      "deck": {
+        "name": "Unknown Deck",
+        "colors": "?"
+      },
+      "match": {
+        "wins": 0,
+        "losses": 4,
+        "draws": 0
+      },
+      "localId": "s14",
+      "playerId": "p07",
+      "rounds": []
     }
-  ]
+  ],
+  "id": "20260814-futurex-monthly-premodern-14-08-2026",
+  "type": "monthly",
+  "place": "Futurex"
 }
