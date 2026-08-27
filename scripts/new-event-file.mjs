@@ -9,8 +9,12 @@ function parseArg(flag) {
   return process.argv[idx + 1] ?? null;
 }
 
-function todayIsoDate() {
-  return new Date().toISOString().slice(0, 10);
+function todayEventDate() {
+  const now = new Date();
+  const day = String(now.getDate()).padStart(2, '0');
+  const month = String(now.getMonth() + 1).padStart(2, '0');
+  const year = now.getFullYear();
+  return `${day}.${month}.${year}`;
 }
 
 function resolveTemplate(mode) {
@@ -23,7 +27,7 @@ function resolveTemplate(mode) {
 function resolveOutput(mode, outArg) {
   if (outArg) return path.resolve(root, outArg);
   const suffix = mode === 'standings' ? '-standings' : '';
-  return path.resolve(root, `public/data/events/incoming-${todayIsoDate()}${suffix}.json`);
+  return path.resolve(root, `public/data/events/incoming_${todayEventDate()}${suffix}.json`);
 }
 
 async function main() {
