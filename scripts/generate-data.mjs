@@ -174,7 +174,15 @@ async function main() {
   const matrixCounters = new Map();
   const seenPairRounds = new Set();
 
+  function isUnknownDeckName(value) {
+    return typeof value === 'string' && normalizeDeckKey(value) === 'unknown deck';
+  }
+
   function ensureDeck(name, colors) {
+    if (isUnknownDeckName(name)) {
+      return null;
+    }
+
     const deckKey = normalizeDeckKey(name);
     const existingCanonical = deckNameKeyToCanonical.get(deckKey);
     if (existingCanonical) {
@@ -210,13 +218,19 @@ async function main() {
   for (const event of events) {
     const playerToDeck = new Map();
 
-    for (const row of event.standings) {
-      const deckName = row.deck?.name;
-      const deckColors = row.deck?.colors;
-      if (typeof deckName !== 'string' || typeof deckColors !== 'string') continue;
-      const ruledDeck = applyDeckRule(deckName, deckColors, deckRuleAliasMap);
-      const canonicalDeck = ensureDeck(ruledDeck.name, ruledDeck.colors);
-      playerToDeck.set(row.playerId, { name: canonicalDeck.name, colors: canonicalDeck.colors });
+    if (event.mode !== 'standingsOnly') {
+      for (const row of event.standings) {
+        const deckName = row.deck?.name;
+        const deckColors = row.deck?.colors;
+        if (typeof deckName !== 'string' || typeof deckColors !== 'string') continue;
+        if (isUnknownDeckName(deckName)) continue;
+
+        const ruledDeck = applyDeckRule(deckName, deckColors, deckRuleAliasMap);
+        const canonicalDeck = ensureDeck(ruledDeck.name, ruledDeck.colors);
+        if (!canonicalDeck) continue;
+
+        playerToDeck.set(row.playerId, { name: canonicalDeck.name, colors: canonicalDeck.colors });
+      }
     }
 
     if (event.mode === 'standingsOnly') continue;
