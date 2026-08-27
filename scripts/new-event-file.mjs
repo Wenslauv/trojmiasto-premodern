@@ -15,15 +15,15 @@ function todayIsoDate() {
 
 function resolveTemplate(mode) {
   if (mode === 'standings') {
-    return path.resolve(root, 'public/data/new-event.standings-only.template.json');
+    return path.resolve(root, 'public/data/templates/new-event.standings-only.template.json');
   }
-  return path.resolve(root, 'public/data/new-event.template.json');
+  return path.resolve(root, 'public/data/templates/new-event.template.json');
 }
 
 function resolveOutput(mode, outArg) {
   if (outArg) return path.resolve(root, outArg);
   const suffix = mode === 'standings' ? '-standings' : '';
-  return path.resolve(root, `public/data/incoming-${todayIsoDate()}${suffix}.json`);
+  return path.resolve(root, `public/data/events/incoming-${todayIsoDate()}${suffix}.json`);
 }
 
 async function main() {

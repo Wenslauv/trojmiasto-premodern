@@ -1,0 +1,186 @@
+{
+  "name": "Futurex monthly 18.07.2026",
+  "date": "2026-07-18",
+  "location": "Gdynia",
+  "standings": [
+    {
+      "localId": "WK",
+      "rank": 1,
+      "playerName": "Wiaczasłau Kukhtsiuk",
+      "points": 12,
+      "deck": { "name": "Replenish", "colors": "WU" },
+      "rounds": [
+        {
+          "round": 1,
+          "opponentLocalId": "MM",
+          "game": { "wins": 2, "losses": 1, "draws": 0 }
+        },
+        {
+          "round": 2,
+          "opponentLocalId": "JR",
+          "game": { "wins": 2, "losses": 1, "draws": 0 }
+        },
+        {
+          "round": 3,
+          "opponentLocalId": "PZ",
+          "game": { "wins": 2, "losses": 0, "draws": 0 }
+        },
+        {
+          "round": 4,
+          "opponentLocalId": "MK",
+          "game": { "wins": 2, "losses": 1, "draws": 0 }
+        }
+      ]
+    },
+
+    {
+      "localId": "MK",
+      "rank": 2,
+      "playerName": "Marcin Kowalski",
+      "points": 6,
+      "deck": { "name": "Death & Taxes", "colors": "W" },
+      "rounds": [
+        {
+          "round": 1,
+          "opponentLocalId": "AM",
+          "game": { "wins": 2, "losses": 0, "draws": 0 }
+        },
+        {
+          "round": 2,
+          "opponentLocalId": "PZ",
+          "game": { "wins": 0, "losses": 2, "draws": 0 }
+        },
+        {
+          "round": 3,
+          "opponentLocalId": "MM",
+          "game": { "wins": 2, "losses": 0, "draws": 0 }
+        },
+        {
+          "round": 4,
+          "opponentLocalId": "WK",
+          "game": { "wins": 1, "losses": 2, "draws": 0 }
+        }
+      ]
+    },
+
+    {
+      "localId": "JR",
+      "rank": 3,
+      "playerName": "Jakub Rąbalsky",
+      "points": 6,
+      "deck": { "name": "Darigaaz midrange", "colors": "BRG" },
+      "rounds": [
+        {
+          "round": 1,
+          "opponentLocalId": "PZ",
+          "game": { "wins": 2, "losses": 0, "draws": 0 }
+        },
+        {
+          "round": 2,
+          "opponentLocalId": "WK",
+          "game": { "wins": 1, "losses": 2, "draws": 0 }
+        },
+        {
+          "round": 3,
+          "opponentLocalId": "AM",
+          "game": { "wins": 0, "losses": 2, "draws": 0 }
+        },
+        {
+          "round": 4,
+          "opponentLocalId": "MM",
+          "game": { "wins": 2, "losses": 1, "draws": 0 }
+        }
+      ]
+    },
+
+    {
+      "localId": "AM",
+      "rank": 4,
+      "playerName": "Adam Modrzejewski",
+      "points": 6,
+      "deck": { "name": "RG Aggro", "colors": "RG" },
+      "rounds": [
+        {
+          "round": 1,
+          "opponentLocalId": "MK",
+          "game": { "wins": 0, "losses": 2, "draws": 0 }
+        },
+        {
+          "round": 2,
+          "opponentLocalId": "MM",
+          "game": { "wins": 1, "losses": 2, "draws": 0 }
+        },
+        {
+          "round": 3,
+          "opponentLocalId": "JR",
+          "game": { "wins": 2, "losses": 0, "draws": 0 }
+        },
+        {
+          "round": 4,
+          "opponentLocalId": "PZ",
+          "game": { "wins": 2, "losses": 1, "draws": 0 }
+        }
+      ]
+    },
+
+    {
+      "localId": "MM",
+      "rank": 5,
+      "playerName": "Maciek Maciek",
+      "points": 3,
+      "deck": { "name": "BG Rock", "colors": "BG" },
+      "rounds": [
+        {
+          "round": 1,
+          "opponentLocalId": "WK",
+          "game": { "wins": 1, "losses": 2, "draws": 0 }
+        },
+        {
+          "round": 2,
+          "opponentLocalId": "AM",
+          "game": { "wins": 2, "losses": 1, "draws": 0 }
+        },
+        {
+          "round": 3,
+          "opponentLocalId": "MK",
+          "game": { "wins": 0, "losses": 2, "draws": 0 }
+        },
+        {
+          "round": 4,
+          "opponentLocalId": "JR",
+          "game": { "wins": 1, "losses": 2, "draws": 0 }
+        }
+      ]
+    },
+
+    {
+      "localId": "PZ",
+      "rank": 6,
+      "playerName": "Piotr Zieliński",
+      "points": 3,
+      "deck": { "name": "Monoblack", "colors": "B" },
+      "rounds": [
+        {
+          "round": 1,
+          "opponentLocalId": "JR",
+          "game": { "wins": 0, "losses": 2, "draws": 0 }
+        },
+        {
+          "round": 2,
+          "opponentLocalId": "MK",
+          "game": { "wins": 2, "losses": 0, "draws": 0 }
+        },
+        {
+          "round": 3,
+          "opponentLocalId": "WK",
+          "game": { "wins": 0, "losses": 2, "draws": 0 }
+        },
+        {
+          "round": 4,
+          "opponentLocalId": "AM",
+          "game": { "wins": 1, "losses": 2, "draws": 0 }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Weekly Premodern Standings",
+  "date": "2026-07-20",
+  "location": "Gdansk",
+  "mode": "standingsOnly",
+  "standings": [
+    {
+      "rank": 1,
+      "playerRef": "p02",
+      "points": 12,
+      "deck": { "name": "Replenish", "colors": "WU" },
+      "match": { "wins": 4, "losses": 0, "draws": 0 },
+      "game": { "wins": 8, "losses": 2, "draws": 0 }
+    },
+    {
+      "rank": 2,
+      "playerName": "New Player",
+      "points": 9,
+      "deck": { "name": "Monoblack", "colors": "B" },
+      "match": { "wins": 3, "losses": 1, "draws": 0 },
+      "game": { "wins": 6, "losses": 4, "draws": 0 }
+    }
+  ]
+}

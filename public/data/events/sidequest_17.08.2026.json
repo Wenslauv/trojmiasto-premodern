@@ -1,0 +1,73 @@
+{
+  "id": "20260817-sidequest-weekly-premodern-17-08-2026",
+  "name": "SideQuest weekly Premodern | 17.08.2026",
+  "date": "2026-08-17",
+  "location": "Gdansk",
+  "mode": "standingsOnly",
+  "standings": [
+    {
+      "rank": 1,
+      "playerRef": "p04",
+      "playerName": "Jakub Rąbalsky",
+      "points": 7,
+      "deck": { "name": "TerraOath", "colors": "GWr" },
+      "match": { "wins": 2, "losses": 0, "draws": 1 }
+    },
+    {
+      "rank": 2,
+      "playerRef": "new:marek-palubicki",
+      "playerName": "Marek Pałub...",
+      "points": 6,
+      "deck": { "name": "Standstill", "colors": "WU" },
+      "match": { "wins": 2, "losses": 1, "draws": 0 }
+    },
+    {
+      "rank": 3,
+      "playerRef": "p06",
+      "playerName": "Marcin Kowalski",
+      "points": 6,
+      "deck": { "name": "Pattern Rector", "colors": "WUB" },
+      "match": { "wins": 2, "losses": 1, "draws": 0 }
+    },
+    {
+      "rank": 4,
+      "playerRef": "new:michal-sekierski",
+      "playerName": "Michał Sekie...",
+      "points": 5,
+      "deck": { "name": "Cradle Control", "colors": "Gr" },
+      "match": { "wins": 1, "losses": 0, "draws": 2 }
+    },
+    {
+      "rank": 5,
+      "playerRef": "p05",
+      "playerName": "Damian Krasny",
+      "points": 4,
+      "deck": { "name": "Darigaaz Midrange", "colors": "RBG" },
+      "match": { "wins": 1, "losses": 1, "draws": 1 }
+    },
+    {
+      "rank": 6,
+      "playerRef": "new:grzegorz-tal",
+      "playerName": "Grzegorz Tal...",
+      "points": 3,
+      "deck": { "name": "Stiflenought", "colors": "U" },
+      "match": { "wins": 1, "losses": 2, "draws": 0 }
+    },
+    {
+      "rank": 7,
+      "playerRef": "new:piotr",
+      "playerName": "Piotr Orlowski",
+      "points": 2,
+      "deck": { "name": "The Rock", "colors": "BG" },
+      "match": { "wins": 0, "losses": 1, "draws": 2 }
+    },
+    {
+      "rank": 8,
+      "playerRef": "p09",
+      "playerName": "Piotr Zieliński",
+      "points": 0,
+      "deck": { "name": "Mono Black Control", "colors": "B" },
+      "match": { "wins": 0, "losses": 3, "draws": 0 }
+    }
+  ]
+}

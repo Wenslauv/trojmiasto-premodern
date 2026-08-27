@@ -1,0 +1,64 @@
+{
+  "name": "Sidequest weekly 10-08-2026",
+  "date": "2026-08-10",
+  "location": "Gdansk",
+  "rounds": {
+    "1": [
+      { "player": "Jakub", "result": "bye" },
+      { "player1": "Piotr", "player2": "Damian", "result": "2-0" },
+      { "player1": "Marcin", "player2": "Maciej", "result": "2-0" }
+    ],
+    "2": [
+      { "player": "Maciej", "result": "bye" },
+      { "player1": "Damian", "player2": "Jakub", "result": "2-1" },
+      { "player1": "Marcin", "player2": "Piotr", "result": "2-0" }
+    ],
+    "3": [
+      { "player": "Damian", "result": "bye" },
+      { "player1": "Marcin", "player2": "Jakub", "result": "2-0" },
+      { "player1": "Maciej", "player2": "Piotr", "result": "2-0" }
+    ],
+    "4": [
+      { "player": "Piotr", "result": "bye" },
+      { "player1": "Marcin", "player2": "Damian", "result": "2-0" },
+      { "player1": "Jakub", "player2": "Maciej", "result": "1-1" }
+    ]
+  },
+  "standings": [
+    {
+      "rank": 1,
+      "localId": "Marcin",
+      "playerRef": "p06",
+      "points": 12,
+      "deck": { "name": "Devourer", "colors": "UR" }
+    },
+    {
+      "rank": 2,
+      "localId": "Maciej",
+      "playerRef": "p01",
+      "points": 7,
+      "deck": { "name": "Quiet Tribe", "colors": "GWUR" }
+    },
+    {
+      "rank": 3,
+      "localId": "Piotr",
+      "playerName": "Piotr Orlowski",
+      "points": 6,
+      "deck": { "name": "MonoRed Ponza", "colors": "R" }
+    },
+    {
+      "rank": 4,
+      "localId": "Damian",
+      "playerRef": "p05",
+      "points": 6,
+      "deck": { "name": "Reanimator", "colors": "UBR" }
+    },
+    {
+      "rank": 5,
+      "localId": "Jakub",
+      "playerRef": "p04",
+      "points": 4,
+      "deck": { "name": "TerraOath", "colors": "GWr" }
+    }
+  ]
+}

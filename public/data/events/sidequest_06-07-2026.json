@@ -1,0 +1,125 @@
+{
+  "id": "20260706-sidequest-weekly-06-07-2026",
+  "name": "Sidequest weekly 06-07-2026",
+  "date": "2026-07-06",
+  "location": "Gdansk",
+  "standings": [
+    {
+      "localId": "ML",
+      "rank": 1,
+      "playerName": "Maciej Lbik",
+      "points": 9,
+      "deck": { "name": "Quiet Tribe", "colors": "GWUR" },
+      "rounds": [
+        {
+          "round": 1,
+          "resultType": "BYE"
+        },
+        {
+          "round": 2,
+          "opponentLocalId": "WK",
+          "game": { "wins": 2, "losses": 1, "draws": 0 }
+        },
+        {
+          "round": 3,
+          "opponentLocalId": "WC",
+          "game": { "wins": 2, "losses": 0, "draws": 0 }
+        }
+      ]
+    },
+    {
+      "localId": "WK",
+      "rank": 2,
+      "playerName": "Wiaczasłau Kukhtsiuk",
+      "points": 6,
+      "deck": { "name": "Replenish", "colors": "UW" },
+      "rounds": [
+        {
+          "round": 1,
+          "opponentLocalId": "JR",
+          "game": { "wins": 2, "losses": 1, "draws": 0 }
+        },
+        {
+          "round": 2,
+          "opponentLocalId": "ML",
+          "game": { "wins": 1, "losses": 2, "draws": 0 }
+        },
+        {
+          "round": 3,
+          "opponentLocalId": "DK",
+          "game": { "wins": 2, "losses": 0, "draws": 0 }
+        }
+      ]
+    },
+    {
+      "localId": "WC",
+      "rank": 3,
+      "playerName": "Wojciech Ć...",
+      "points": 6,
+      "deck": { "name": "Stasis", "colors": "U" },
+      "rounds": [
+        {
+          "round": 1,
+          "opponentLocalId": "DK",
+          "game": { "wins": 2, "losses": 0, "draws": 0 }
+        },
+        {
+          "round": 2,
+          "opponentLocalId": "JR",
+          "game": { "wins": 2, "losses": 1, "draws": 0 }
+        },
+        {
+          "round": 3,
+          "opponentLocalId": "ML",
+          "game": { "wins": 0, "losses": 2, "draws": 0 }
+        }
+      ]
+    },
+    {
+      "localId": "JR",
+      "rank": 4,
+      "playerName": "Jakub Rąbalsky",
+      "points": 3,
+      "deck": { "name": "Moneyball", "colors": "B" },
+      "rounds": [
+        {
+          "round": 1,
+          "opponentLocalId": "WK",
+          "game": { "wins": 1, "losses": 2, "draws": 0 }
+        },
+        {
+          "round": 2,
+          "opponentLocalId": "WC",
+          "game": { "wins": 1, "losses": 2, "draws": 0 }
+        },
+        {
+          "round": 3,
+          "resultType": "BYE"
+        }
+      ]
+    },
+    {
+      "localId": "DK",
+      "rank": 5,
+      "playerName": "Damian Krasny",
+      "points": 3,
+      "deck": { "name": "Sneak and Show", "colors": "UR" },
+      "rounds": [
+        {
+          "round": 1,
+          "opponentLocalId": "WC",
+          "game": { "wins": 0, "losses": 2, "draws": 0 }
+        },
+        {
+          "round": 2,
+          "resultType": "BYE"
+        },
+        {
+          "round": 3,
+          "opponentLocalId": "WK",
+          "game": { "wins": 0, "losses": 2, "draws": 0 }
+        }
+      ]
+    }
+  ]
+}

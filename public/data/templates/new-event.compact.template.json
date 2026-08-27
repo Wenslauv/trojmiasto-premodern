@@ -1,0 +1,64 @@
+{
+  "name": "Summer League 2026 | Premodern #1/6",
+  "date": "2026-07-15",
+  "location": "Gdansk",
+  "rounds": {
+    "1": [
+      { "player": "A", "result": "bye" },
+      { "player1": "B", "player2": "C", "result": "2-0" },
+      { "player1": "D", "player2": "E", "result": "2-0" }
+    ],
+    "2": [
+      { "player": "E", "result": "bye" },
+      { "player1": "C", "player2": "A", "result": "2-1" },
+      { "player1": "D", "player2": "B", "result": "2-0" }
+    ],
+    "3": [
+      { "player": "C", "result": "bye" },
+      { "player1": "D", "player2": "A", "result": "2-0" },
+      { "player1": "E", "player2": "B", "result": "2-0" }
+    ],
+    "4": [
+      { "player": "B", "result": "bye" },
+      { "player1": "D", "player2": "C", "result": "2-0" },
+      { "player1": "A", "player2": "E", "result": "1-1" }
+    ]
+  },
+  "standings": [
+    {
+      "rank": 1,
+      "localId": "D",
+      "playerName": "Marcin",
+      "points": 12,
+      "deck": { "name": "Replenish", "colors": "WU" }
+    },
+    {
+      "rank": 2,
+      "localId": "E",
+      "playerName": "Damian",
+      "points": 7,
+      "deck": { "name": "Goblins", "colors": "R" }
+    },
+    {
+      "rank": 3,
+      "localId": "B",
+      "playerName": "Piotr",
+      "points": 6,
+      "deck": { "name": "UW Control", "colors": "WU" }
+    },
+    {
+      "rank": 4,
+      "localId": "C",
+      "playerName": "Jakub",
+      "points": 6,
+      "deck": { "name": "The Rock", "colors": "BG" }
+    },
+    {
+      "rank": 5,
+      "localId": "A",
+      "playerName": "Maciej",
+      "points": 4,
+      "deck": { "name": "Monoblack", "colors": "B" }
+    }
+  ]
+}
