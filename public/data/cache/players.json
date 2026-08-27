@@ -2,7 +2,7 @@
   {
     "id": "p04",
     "name": "Jakub Rąbalsky",
-    "eventsCount": 8,
+    "eventsCount": 7,
     "matchWinPercent": 50,
     "favoriteDeck": {
       "name": "TerraOath",
@@ -13,8 +13,8 @@
   {
     "id": "p06",
     "name": "Marcin Kowalski",
-    "eventsCount": 8,
-    "matchWinPercent": 67.86,
+    "eventsCount": 7,
+    "matchWinPercent": 66.67,
     "favoriteDeck": {
       "name": "Pattern Rector",
       "colors": "WUB",
@@ -24,19 +24,19 @@
   {
     "id": "p05",
     "name": "Damian Krasny",
-    "eventsCount": 7,
-    "matchWinPercent": 29.17,
+    "eventsCount": 6,
+    "matchWinPercent": 30,
     "favoriteDeck": {
-      "name": "Unknown Deck",
-      "colors": "?",
-      "count": 2
+      "name": "Darigaaz Wurm",
+      "colors": "RBG",
+      "count": 1
     }
   },
   {
     "id": "p09",
     "name": "Piotr Zieliński",
-    "eventsCount": 5,
-    "matchWinPercent": 27.78,
+    "eventsCount": 4,
+    "matchWinPercent": 21.43,
     "favoriteDeck": {
       "name": "Mono Black Control",
       "colors": "B",
@@ -55,28 +55,6 @@
     }
   },
   {
-    "id": "p03",
-    "name": "Wojciech Ćwikliński",
-    "eventsCount": 4,
-    "matchWinPercent": 71.43,
-    "favoriteDeck": {
-      "name": "Unknown Deck",
-      "colors": "?",
-      "count": 2
-    }
-  },
-  {
-    "id": "p07",
-    "name": "Adam Modrzejewski",
-    "eventsCount": 3,
-    "matchWinPercent": 16.67,
-    "favoriteDeck": {
-      "name": "Unknown Deck",
-      "colors": "?",
-      "count": 2
-    }
-  },
-  {
     "id": "p01",
     "name": "Maciej Lbik",
     "eventsCount": 3,
@@ -85,17 +63,6 @@
       "name": "Quiet Tribe",
       "colors": "GWUR",
       "count": 3
-    }
-  },
-  {
-    "id": "p08",
-    "name": "Maciek Maciek",
-    "eventsCount": 3,
-    "matchWinPercent": 41.67,
-    "favoriteDeck": {
-      "name": "Unknown Deck",
-      "colors": "?",
-      "count": 2
     }
   },
   {
@@ -110,36 +77,25 @@
     }
   },
   {
-    "id": "p16",
-    "name": "Antek Matusiak",
-    "eventsCount": 2,
-    "matchWinPercent": 50,
+    "id": "p03",
+    "name": "Wojciech Ćwikliński",
+    "eventsCount": 3,
+    "matchWinPercent": 70,
     "favoriteDeck": {
       "name": "Unknown Deck",
       "colors": "?",
-      "count": 2
+      "count": 1
     }
   },
   {
-    "id": "p20",
-    "name": "Arkadiusz Haber",
+    "id": "p07",
+    "name": "Adam Modrzejewski",
     "eventsCount": 2,
     "matchWinPercent": 25,
     "favoriteDeck": {
       "name": "Unknown Deck",
       "colors": "?",
-      "count": 2
-    }
-  },
-  {
-    "id": "p19",
-    "name": "Bartłomiej Bry...",
-    "eventsCount": 2,
-    "matchWinPercent": 25,
-    "favoriteDeck": {
-      "name": "Unknown Deck",
-      "colors": "?",
-      "count": 2
+      "count": 1
     }
   },
   {
@@ -154,25 +110,14 @@
     }
   },
   {
-    "id": "p15",
-    "name": "Jakub Domasła...",
+    "id": "p08",
+    "name": "Maciek Maciek",
     "eventsCount": 2,
-    "matchWinPercent": 75,
+    "matchWinPercent": 37.5,
     "favoriteDeck": {
       "name": "Unknown Deck",
       "colors": "?",
-      "count": 2
-    }
-  },
-  {
-    "id": "p18",
-    "name": "Marek Bień",
-    "eventsCount": 2,
-    "matchWinPercent": 50,
-    "favoriteDeck": {
-      "name": "Unknown Deck",
-      "colors": "?",
-      "count": 2
+      "count": 1
     }
   },
   {
@@ -187,17 +132,6 @@
     }
   },
   {
-    "id": "p17",
-    "name": "Michael Barge",
-    "eventsCount": 2,
-    "matchWinPercent": 50,
-    "favoriteDeck": {
-      "name": "Unknown Deck",
-      "colors": "?",
-      "count": 2
-    }
-  },
-  {
     "id": "p22",
     "name": "Michał Sekie...",
     "eventsCount": 2,
@@ -209,14 +143,47 @@
     }
   },
   {
-    "id": "p14",
-    "name": "Wiktor Witkowski",
-    "eventsCount": 2,
+    "id": "p16",
+    "name": "Antek Matusiak",
+    "eventsCount": 1,
+    "matchWinPercent": 50,
+    "favoriteDeck": {
+      "name": "Unknown Deck",
+      "colors": "?",
+      "count": 1
+    }
+  },
+  {
+    "id": "p20",
+    "name": "Arkadiusz Haber",
+    "eventsCount": 1,
+    "matchWinPercent": 25,
+    "favoriteDeck": {
+      "name": "Unknown Deck",
+      "colors": "?",
+      "count": 1
+    }
+  },
+  {
+    "id": "p19",
+    "name": "Bartłomiej Bry...",
+    "eventsCount": 1,
+    "matchWinPercent": 25,
+    "favoriteDeck": {
+      "name": "Unknown Deck",
+      "colors": "?",
+      "count": 1
+    }
+  },
+  {
+    "id": "p15",
+    "name": "Jakub Domasła...",
+    "eventsCount": 1,
     "matchWinPercent": 75,
     "favoriteDeck": {
       "name": "Unknown Deck",
       "colors": "?",
-      "count": 2
+      "count": 1
     }
   },
   {
@@ -227,6 +194,39 @@
     "favoriteDeck": {
       "name": "Survival Infestation",
       "colors": "BG",
+      "count": 1
+    }
+  },
+  {
+    "id": "p18",
+    "name": "Marek Bień",
+    "eventsCount": 1,
+    "matchWinPercent": 50,
+    "favoriteDeck": {
+      "name": "Unknown Deck",
+      "colors": "?",
+      "count": 1
+    }
+  },
+  {
+    "id": "p17",
+    "name": "Michael Barge",
+    "eventsCount": 1,
+    "matchWinPercent": 50,
+    "favoriteDeck": {
+      "name": "Unknown Deck",
+      "colors": "?",
+      "count": 1
+    }
+  },
+  {
+    "id": "p14",
+    "name": "Wiktor Witkowski",
+    "eventsCount": 1,
+    "matchWinPercent": 75,
+    "favoriteDeck": {
+      "name": "Unknown Deck",
+      "colors": "?",
       "count": 1
     }
   }
