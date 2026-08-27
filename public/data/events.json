@@ -1,5 +1,158 @@
 [
   {
+    "name": "Futurex Monthly Premodern | 28.08.2026",
+    "date": "2026-08-28",
+    "location": "Gdansk",
+    "mode": "standingsOnly",
+    "standings": [
+      {
+        "rank": 1,
+        "playerRef": "p04",
+        "playerName": "Jakub Rąbalsky",
+        "points": 7,
+        "deck": {
+          "name": "TerraOath",
+          "colors": "GWr"
+        },
+        "match": {
+          "wins": 2,
+          "losses": 0,
+          "draws": 1
+        },
+        "localId": "s1",
+        "playerId": "p04",
+        "rounds": []
+      },
+      {
+        "rank": 2,
+        "playerRef": "new:marek-palubicki",
+        "playerName": "Marek Pałub...",
+        "points": 6,
+        "deck": {
+          "name": "Landstill",
+          "colors": "WU"
+        },
+        "match": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
+        "localId": "s2",
+        "playerId": "p21",
+        "rounds": []
+      },
+      {
+        "rank": 3,
+        "playerRef": "p06",
+        "playerName": "Marcin Kowalski",
+        "points": 6,
+        "deck": {
+          "name": "Pattern Rector",
+          "colors": "WUB"
+        },
+        "match": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
+        "localId": "s3",
+        "playerId": "p06",
+        "rounds": []
+      },
+      {
+        "rank": 4,
+        "playerRef": "new:michal-sekierski",
+        "playerName": "Michał Sekie...",
+        "points": 5,
+        "deck": {
+          "name": "Cradle Control",
+          "colors": "BG"
+        },
+        "match": {
+          "wins": 1,
+          "losses": 0,
+          "draws": 2
+        },
+        "localId": "s4",
+        "playerId": "p22",
+        "rounds": []
+      },
+      {
+        "rank": 5,
+        "playerRef": "p05",
+        "playerName": "Damian Krasny",
+        "points": 4,
+        "deck": {
+          "name": "Darigaaz Wurm",
+          "colors": "RBG"
+        },
+        "match": {
+          "wins": 1,
+          "losses": 1,
+          "draws": 1
+        },
+        "localId": "s5",
+        "playerId": "p05",
+        "rounds": []
+      },
+      {
+        "rank": 6,
+        "playerRef": "new:grzegorz-tal",
+        "playerName": "Grzegorz Tal...",
+        "points": 3,
+        "deck": {
+          "name": "Stiflenought",
+          "colors": "WB"
+        },
+        "match": {
+          "wins": 1,
+          "losses": 2,
+          "draws": 0
+        },
+        "localId": "s6",
+        "playerId": "p23",
+        "rounds": []
+      },
+      {
+        "rank": 7,
+        "playerRef": "new:piotr",
+        "playerName": "Piotr Orlowski",
+        "points": 2,
+        "deck": {
+          "name": "The Rock",
+          "colors": "BG"
+        },
+        "match": {
+          "wins": 0,
+          "losses": 1,
+          "draws": 2
+        },
+        "localId": "s7",
+        "playerId": "p13",
+        "rounds": []
+      },
+      {
+        "rank": 8,
+        "playerRef": "p09",
+        "playerName": "Piotr Zieliński",
+        "points": 0,
+        "deck": {
+          "name": "Mono Black Control",
+          "colors": "B"
+        },
+        "match": {
+          "wins": 0,
+          "losses": 3,
+          "draws": 0
+        },
+        "localId": "s8",
+        "playerId": "p09",
+        "rounds": []
+      }
+    ],
+    "id": "20260828-futurex-monthly-premodern-28-08-2026"
+  },
+  {
     "name": "Weekly Premodern Standings",
     "date": "2026-08-27",
     "location": "Gdansk",
@@ -231,6 +384,159 @@
       }
     ],
     "id": "20260827-weekly-premodern-standings"
+  },
+  {
+    "id": "20260817-sidequest-weekly-premodern-17-08-2026",
+    "name": "SideQuest weekly Premodern | 17.08.2026",
+    "date": "2026-08-17",
+    "location": "Gdansk",
+    "mode": "standingsOnly",
+    "standings": [
+      {
+        "rank": 1,
+        "playerRef": "p04",
+        "playerName": "Jakub Rąbalsky",
+        "points": 7,
+        "deck": {
+          "name": "TerraOath",
+          "colors": "GWr"
+        },
+        "match": {
+          "wins": 2,
+          "losses": 0,
+          "draws": 1
+        },
+        "localId": "s1",
+        "playerId": "p04",
+        "rounds": []
+      },
+      {
+        "rank": 2,
+        "playerRef": "new:marek-palubicki",
+        "playerName": "Marek Pałub...",
+        "points": 6,
+        "deck": {
+          "name": "Standstill",
+          "colors": "WU"
+        },
+        "match": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
+        "localId": "s2",
+        "playerId": "p21",
+        "rounds": []
+      },
+      {
+        "rank": 3,
+        "playerRef": "p06",
+        "playerName": "Marcin Kowalski",
+        "points": 6,
+        "deck": {
+          "name": "Pattern Rector",
+          "colors": "WUB"
+        },
+        "match": {
+          "wins": 2,
+          "losses": 1,
+          "draws": 0
+        },
+        "localId": "s3",
+        "playerId": "p06",
+        "rounds": []
+      },
+      {
+        "rank": 4,
+        "playerRef": "new:michal-sekierski",
+        "playerName": "Michał Sekie...",
+        "points": 5,
+        "deck": {
+          "name": "Cradle Control",
+          "colors": "Gr"
+        },
+        "match": {
+          "wins": 1,
+          "losses": 0,
+          "draws": 2
+        },
+        "localId": "s4",
+        "playerId": "p22",
+        "rounds": []
+      },
+      {
+        "rank": 5,
+        "playerRef": "p05",
+        "playerName": "Damian Krasny",
+        "points": 4,
+        "deck": {
+          "name": "Darigaaz Midrange",
+          "colors": "RBG"
+        },
+        "match": {
+          "wins": 1,
+          "losses": 1,
+          "draws": 1
+        },
+        "localId": "s5",
+        "playerId": "p05",
+        "rounds": []
+      },
+      {
+        "rank": 6,
+        "playerRef": "new:grzegorz-tal",
+        "playerName": "Grzegorz Tal...",
+        "points": 3,
+        "deck": {
+          "name": "Stiflenought",
+          "colors": "U"
+        },
+        "match": {
+          "wins": 1,
+          "losses": 2,
+          "draws": 0
+        },
+        "localId": "s6",
+        "playerId": "p23",
+        "rounds": []
+      },
+      {
+        "rank": 7,
+        "playerRef": "new:piotr",
+        "playerName": "Piotr Orlowski",
+        "points": 2,
+        "deck": {
+          "name": "The Rock",
+          "colors": "BG"
+        },
+        "match": {
+          "wins": 0,
+          "losses": 1,
+          "draws": 2
+        },
+        "localId": "s7",
+        "playerId": "p13",
+        "rounds": []
+      },
+      {
+        "rank": 8,
+        "playerRef": "p09",
+        "playerName": "Piotr Zieliński",
+        "points": 0,
+        "deck": {
+          "name": "Mono Black Control",
+          "colors": "B"
+        },
+        "match": {
+          "wins": 0,
+          "losses": 3,
+          "draws": 0
+        },
+        "localId": "s8",
+        "playerId": "p09",
+        "rounds": []
+      }
+    ]
   },
   {
     "name": "Futurex Monthly Premodern | 14.08.2026",
