@@ -1,4 +1,12 @@
-import type { DeckMatchupMatrix, EventItem, PlayerDeckStat, PlayerDetail, PlayerListItem, RecordStat } from '../types';
+import type {
+  DeckMatchupMatrix,
+  EventItem,
+  PlayerDeckStat,
+  PlayerDetail,
+  PlayerListItem,
+  RecordStat,
+  Standing,
+} from '../types';
 
 type Cache = {
   events: EventItem[] | null;
@@ -16,6 +24,21 @@ function mergeRecord(left: RecordStat, right: RecordStat): RecordStat {
     losses: left.losses + right.losses,
     draws: left.draws + right.draws,
   };
+}
+
+// Byes are baked into a standing's overall match record, so we recompute the record from
+// individual rounds (excluding BYE) whenever round data is available. Standings-only events
+// have no rounds, so byes can't be separated there and the raw record is used as-is.
+function effectiveMatchRecord(standing: Standing): RecordStat {
+  if (!standing.rounds || standing.rounds.length === 0) {
+    return standing.match;
+  }
+  let record: RecordStat = { wins: 0, losses: 0, draws: 0 };
+  for (const round of standing.rounds) {
+    if (round.resultType === 'BYE') continue;
+    record = mergeRecord(record, round.match);
+  }
+  return record;
 }
 
 function normalizePlayerKey(value: string): string {
@@ -67,7 +90,7 @@ function buildPlayerBuckets(events: EventItem[]): {
       current.ids.add(row.playerId);
       current.id = [...current.ids].sort(comparePlayerIds)[0] ?? current.id;
       current.events += 1;
-      current.match = mergeRecord(current.match, row.match);
+      current.match = mergeRecord(current.match, effectiveMatchRecord(row));
 
       buckets.set(key, current);
       idToBucketKey.set(row.playerId, key);
@@ -98,7 +121,7 @@ export function formatDate(isoDate: string): string {
 export function matchWinPercent(record: RecordStat): number {
   const played = record.wins + record.losses + record.draws;
   if (played === 0) return 0;
-  return (record.wins / played) * 100;
+  return ((record.wins + record.draws * 0.5) / played) * 100;
 }
 
 async function fetchJson<T>(path: string): Promise<T> {
@@ -183,8 +206,14 @@ export async function getPlayerById(id: string): Promise<PlayerDetail | undefine
   let totalMatch: RecordStat = { wins: 0, losses: 0, draws: 0 };
   const deckCounter = new Map<string, { count: number; colors: string }>();
 
+  for (const event of events) {
+    for (const standing of event.standings) {
+      if (!allIds.has(standing.playerId)) continue;
+      totalMatch = mergeRecord(totalMatch, effectiveMatchRecord(standing));
+    }
+  }
+
   for (const row of rows) {
-    totalMatch = mergeRecord(totalMatch, row.match);
     const deckValue = deckCounter.get(row.deck.name) ?? { count: 0, colors: row.deck.colors };
     deckValue.count += 1;
     deckCounter.set(row.deck.name, deckValue);
@@ -238,7 +267,7 @@ function buildPlayerDeckStats(events: EventItem[], playerIds: Set<string>): Play
         match: { wins: 0, losses: 0, draws: 0 },
         matchups: new Map<string, { name: string; match: RecordStat }>(),
       };
-      current.match = mergeRecord(current.match, standing.match);
+      current.match = mergeRecord(current.match, effectiveMatchRecord(standing));
 
       for (const round of standing.rounds ?? []) {
         if (round.resultType && round.resultType !== 'PLAYED') continue;

@@ -16,6 +16,21 @@ function mergeRecord(a, b) {
   };
 }
 
+// Byes are baked into a standing's overall match record, so we recompute the record from
+// individual rounds (excluding BYE) whenever round data is available. Standings-only events
+// have no rounds, so byes can't be separated there and the raw record is used as-is.
+function effectiveMatchRecord(standing) {
+  if (!Array.isArray(standing.rounds) || standing.rounds.length === 0) {
+    return standing.match;
+  }
+  let record = { wins: 0, losses: 0, draws: 0 };
+  for (const round of standing.rounds) {
+    if (round.resultType === 'BYE') continue;
+    record = mergeRecord(record, round.match);
+  }
+  return record;
+}
+
 function round2(value) {
   return Math.round(value * 100) / 100;
 }
@@ -141,7 +156,7 @@ async function main() {
         current.id = canonicalId;
       }
       current.eventsCount += 1;
-      current.match = mergeRecord(current.match, row.match);
+      current.match = mergeRecord(current.match, effectiveMatchRecord(row));
 
       const deckCurrent = current.decks.get(row.deck.name) ?? {
         name: row.deck.name,
@@ -163,7 +178,7 @@ async function main() {
         id: player.id,
         name: player.name,
         eventsCount: player.eventsCount,
-        matchWinPercent: played === 0 ? 0 : round2((player.match.wins / played) * 100),
+        matchWinPercent: played === 0 ? 0 : round2(((player.match.wins + player.match.draws * 0.5) / played) * 100),
         favoriteDeck,
       };
     })
@@ -285,7 +300,7 @@ async function main() {
         losses: counter.losses,
         draws: counter.draws,
         matches: counter.matches,
-        winPercent: played === 0 ? 0 : round2((counter.wins / played) * 100),
+        winPercent: played === 0 ? 0 : round2(((counter.wins + counter.draws * 0.5) / played) * 100),
       };
     }
   }

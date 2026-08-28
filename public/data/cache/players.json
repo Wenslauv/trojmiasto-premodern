@@ -3,7 +3,7 @@
     "id": "p04",
     "name": "Jakub Rąbalsky",
     "eventsCount": 6,
-    "matchWinPercent": 47.62,
+    "matchWinPercent": 47.37,
     "favoriteDeck": {
       "name": "TerraOath",
       "colors": "GWr",
@@ -25,7 +25,7 @@
     "id": "p05",
     "name": "Damian Krasny",
     "eventsCount": 5,
-    "matchWinPercent": 29.41,
+    "matchWinPercent": 23.33,
     "favoriteDeck": {
       "name": "Darigaaz Midrange",
       "colors": "RBG",
@@ -47,7 +47,7 @@
     "id": "p01",
     "name": "Maciej Lbik",
     "eventsCount": 3,
-    "matchWinPercent": 70,
+    "matchWinPercent": 64.29,
     "favoriteDeck": {
       "name": "Quiet Tribe",
       "colors": "GWUR",
@@ -58,7 +58,7 @@
     "id": "p09",
     "name": "Piotr Zieliński",
     "eventsCount": 3,
-    "matchWinPercent": 27.27,
+    "matchWinPercent": 31.82,
     "favoriteDeck": {
       "name": "Mono Black Control",
       "colors": "B",
@@ -69,7 +69,7 @@
     "id": "p03",
     "name": "Wojciech Ćwikliński",
     "eventsCount": 3,
-    "matchWinPercent": 70,
+    "matchWinPercent": 66.67,
     "favoriteDeck": {
       "name": "Unknown Deck",
       "colors": "?",
@@ -102,7 +102,7 @@
     "id": "p13",
     "name": "Piotr Orlowski",
     "eventsCount": 2,
-    "matchWinPercent": 28.57,
+    "matchWinPercent": 33.33,
     "favoriteDeck": {
       "name": "The Rock",
       "colors": "BG",
@@ -168,7 +168,7 @@
     "id": "p12",
     "name": "Janush Bulakowski",
     "eventsCount": 1,
-    "matchWinPercent": 33.33,
+    "matchWinPercent": 0,
     "favoriteDeck": {
       "name": "Survival Infestation",
       "colors": "BG",
@@ -212,7 +212,7 @@
     "id": "p22",
     "name": "Michał Sekie...",
     "eventsCount": 1,
-    "matchWinPercent": 33.33,
+    "matchWinPercent": 66.67,
     "favoriteDeck": {
       "name": "Cradle Control",
       "colors": "Gr",
@@ -223,7 +223,7 @@
     "id": "p14",
     "name": "Wiktor Witkowski",
     "eventsCount": 1,
-    "matchWinPercent": 75,
+    "matchWinPercent": 87.5,
     "favoriteDeck": {
       "name": "Unknown Deck",
       "colors": "?",

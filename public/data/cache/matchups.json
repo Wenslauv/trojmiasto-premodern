@@ -384,7 +384,7 @@
         "losses": 0,
         "draws": 1,
         "matches": 1,
-        "winPercent": 0
+        "winPercent": 50
       }
     },
     "Reanimator": {
@@ -552,7 +552,7 @@
         "losses": 0,
         "draws": 1,
         "matches": 1,
-        "winPercent": 0
+        "winPercent": 50
       },
       "Reanimator": {
         "wins": 0,
