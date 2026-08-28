@@ -1,4 +1,4 @@
-import type { DeckMatchupMatrix, EventItem, PlayerDetail, PlayerListItem, RecordStat } from '../types';
+import type { DeckMatchupMatrix, EventItem, PlayerDeckStat, PlayerDetail, PlayerListItem, RecordStat } from '../types';
 
 type Cache = {
   events: EventItem[] | null;
@@ -192,6 +192,8 @@ export async function getPlayerById(id: string): Promise<PlayerDetail | undefine
 
   const favoriteDeckEntry = [...deckCounter.entries()].sort((a, b) => b[1].count - a[1].count)[0];
 
+  const deckStats = buildPlayerDeckStats(events, allIds);
+
   return {
     id: bucket.id,
     name: bucket.name,
@@ -203,5 +205,78 @@ export async function getPlayerById(id: string): Promise<PlayerDetail | undefine
         }
       : null,
     events: rows,
+    deckStats,
   };
+}
+
+function recordTotal(record: RecordStat): number {
+  return record.wins + record.losses + record.draws;
+}
+
+function compareByWinPercentThenTotal(
+  a: { matchWinPercent: number; match: RecordStat },
+  b: { matchWinPercent: number; match: RecordStat },
+): number {
+  if (b.matchWinPercent !== a.matchWinPercent) return b.matchWinPercent - a.matchWinPercent;
+  return recordTotal(b.match) - recordTotal(a.match);
+}
+
+function buildPlayerDeckStats(events: EventItem[], playerIds: Set<string>): PlayerDeckStat[] {
+  const deckAgg = new Map<
+    string,
+    { name: string; colors: string; match: RecordStat; matchups: Map<string, { name: string; match: RecordStat }> }
+  >();
+
+  for (const event of events) {
+    for (const standing of event.standings) {
+      if (!playerIds.has(standing.playerId)) continue;
+
+      const deckKey = normalizePlayerKey(standing.deck.name) || standing.deck.name;
+      const current = deckAgg.get(deckKey) ?? {
+        name: standing.deck.name,
+        colors: standing.deck.colors,
+        match: { wins: 0, losses: 0, draws: 0 },
+        matchups: new Map<string, { name: string; match: RecordStat }>(),
+      };
+      current.match = mergeRecord(current.match, standing.match);
+
+      for (const round of standing.rounds ?? []) {
+        if (round.resultType && round.resultType !== 'PLAYED') continue;
+        if (!round.opponentPlayerId) continue;
+
+        const opponent = event.standings.find((row) => row.playerId === round.opponentPlayerId);
+        if (!opponent) continue;
+
+        const opponentKey = normalizePlayerKey(opponent.deck.name) || opponent.deck.name;
+        const existingMatchup = current.matchups.get(opponentKey) ?? {
+          name: opponent.deck.name,
+          match: { wins: 0, losses: 0, draws: 0 },
+        };
+        existingMatchup.match = mergeRecord(existingMatchup.match, round.match);
+        current.matchups.set(opponentKey, existingMatchup);
+      }
+
+      deckAgg.set(deckKey, current);
+    }
+  }
+
+  return [...deckAgg.values()]
+    .map((agg) => {
+      const matchups = [...agg.matchups.values()]
+        .map((matchup) => ({
+          deckName: matchup.name,
+          match: matchup.match,
+          matchWinPercent: Number(matchWinPercent(matchup.match).toFixed(2)),
+        }))
+        .sort(compareByWinPercentThenTotal);
+
+      return {
+        deckName: agg.name,
+        colors: agg.colors,
+        match: agg.match,
+        matchWinPercent: Number(matchWinPercent(agg.match).toFixed(2)),
+        matchups,
+      };
+    })
+    .sort(compareByWinPercentThenTotal);
 }

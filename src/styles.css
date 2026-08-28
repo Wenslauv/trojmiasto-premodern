@@ -327,6 +327,59 @@ td.round-loss {
   font-size: 0.75rem;
 }
 
+.deck-stats {
+  display: grid;
+  gap: 12px;
+}
+
+.deck-stat-block {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #fff;
+  padding: 0 14px;
+}
+
+.deck-stat-block summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 14px 0;
+}
+
+.deck-stat-block summary::-webkit-details-marker {
+  display: none;
+}
+
+.deck-stat-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.deck-stat-record {
+  color: var(--muted);
+}
+
+.deck-stat-winrate {
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-weight: 700;
+}
+
+.deck-matchup-table {
+  width: 100%;
+  min-width: 0;
+  margin: 0 0 14px;
+}
+
+.deck-matchup-table th,
+.deck-matchup-table td {
+  padding: 6px 10px;
+  white-space: nowrap;
+}
+
 .winrates-good {
   background: #edf8d7;
   color: #294f13;

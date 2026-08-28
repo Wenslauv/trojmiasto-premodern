@@ -3,6 +3,16 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { formatDate, formatRecord, getPlayerById, matchWinPercent } from '../lib/data';
 import type { PlayerDetail } from '../types';
 
+function getWinrateTone(value: number): string {
+  if (value > 55) return 'winrates-good';
+  if (value < 45) return 'winrates-bad';
+  return 'winrates-neutral';
+}
+
+function formatRecordTotal(record: { wins: number; losses: number; draws: number }): string {
+  return `total ${record.wins + record.losses + record.draws}`;
+}
+
 function PlayerPage() {
   const { id } = useParams();
   const [player, setPlayer] = useState<PlayerDetail | null>(null);
@@ -74,6 +84,47 @@ function PlayerPage() {
             ))}
           </tbody>
         </table>
+      </div>
+
+      <h3>Deck Performance</h3>
+      <div className="deck-stats">
+        {player.deckStats.map((deck) => (
+          <details className="deck-stat-block" key={deck.deckName}>
+            <summary>
+              <span className="deck-stat-name">{deck.deckName}</span>
+              <span className={`deck-stat-winrate ${getWinrateTone(deck.matchWinPercent)}`}>
+                {deck.matchWinPercent.toFixed(2)}%
+              </span>
+              <span className="deck-stat-record">
+                {formatRecord(deck.match)} ({formatRecordTotal(deck.match)})
+              </span>
+            </summary>
+            {deck.matchups.length > 0 && (
+              <table className="deck-matchup-table">
+                <thead>
+                  <tr>
+                    <th>Deck</th>
+                    <th>Winrate</th>
+                    <th>Record</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {deck.matchups.map((matchup) => (
+                    <tr key={matchup.deckName}>
+                      <td>{matchup.deckName}</td>
+                      <td className={getWinrateTone(matchup.matchWinPercent)}>
+                        {matchup.matchWinPercent.toFixed(2)}%
+                      </td>
+                      <td>
+                        {formatRecord(matchup.match)} ({formatRecordTotal(matchup.match)})
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            )}
+          </details>
+        ))}
       </div>
     </section>
   );

@@ -82,10 +82,25 @@ export type PlayerEventRow = {
   game?: RecordStat;
 };
 
+export type PlayerDeckMatchupStat = {
+  deckName: string;
+  match: RecordStat;
+  matchWinPercent: number;
+};
+
+export type PlayerDeckStat = {
+  deckName: string;
+  colors: string;
+  match: RecordStat;
+  matchWinPercent: number;
+  matchups: PlayerDeckMatchupStat[];
+};
+
 export type PlayerDetail = {
   id: string;
   name: string;
   match: RecordStat;
   favoriteDeck: DeckRef | null;
   events: PlayerEventRow[];
+  deckStats: PlayerDeckStat[];
 };
