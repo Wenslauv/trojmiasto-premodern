@@ -11,8 +11,8 @@
       "slug": "bw-control"
     },
     {
-      "name": "Darigaaz midrange",
-      "colors": "BRG",
+      "name": "Darigaaz Midrange",
+      "colors": "RBG",
       "slug": "darigaaz-midrange"
     },
     {
@@ -26,9 +26,19 @@
       "slug": "devourer"
     },
     {
+      "name": "Enchantress",
+      "colors": "GW",
+      "slug": "enchantress"
+    },
+    {
       "name": "Gro-a-tog",
       "colors": "WUBG",
       "slug": "gro-a-tog"
+    },
+    {
+      "name": "Mono Black Control",
+      "colors": "B",
+      "slug": "mono-black-control"
     },
     {
       "name": "Monoblack",
@@ -39,6 +49,11 @@
       "name": "MonoRed Ponza",
       "colors": "R",
       "slug": "monored-ponza"
+    },
+    {
+      "name": "Oath Stasis",
+      "colors": "UG",
+      "slug": "oath-stasis"
     },
     {
       "name": "Quiet Tribe",
@@ -71,19 +86,34 @@
       "slug": "stasis"
     },
     {
+      "name": "Stiflenought",
+      "colors": "U",
+      "slug": "stiflenought"
+    },
+    {
       "name": "Survival Infestation",
       "colors": "BG",
       "slug": "survival-infestation"
     },
     {
+      "name": "TerraGeddon",
+      "colors": "GW",
+      "slug": "terrageddon"
+    },
+    {
       "name": "TerraOath",
       "colors": "GWr",
       "slug": "terraoath"
+    },
+    {
+      "name": "TerraOath Speculation",
+      "colors": "GWru",
+      "slug": "terraoath-speculation"
     }
   ],
   "matrix": {
     "BG Rock": {
-      "Darigaaz midrange": {
+      "Darigaaz Midrange": {
         "wins": 0,
         "losses": 1,
         "draws": 0,
@@ -135,7 +165,7 @@
         "winPercent": 100
       }
     },
-    "Darigaaz midrange": {
+    "Darigaaz Midrange": {
       "BG Rock": {
         "wins": 1,
         "losses": 0,
@@ -170,6 +200,27 @@
         "draws": 0,
         "matches": 1,
         "winPercent": 0
+      },
+      "Stasis": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "Stiflenought": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "TerraGeddon": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
       }
     },
     "Death & Taxes": {
@@ -187,7 +238,7 @@
         "matches": 1,
         "winPercent": 0
       },
-      "Darigaaz midrange": {
+      "Darigaaz Midrange": {
         "wins": 0,
         "losses": 1,
         "draws": 0,
@@ -231,7 +282,79 @@
       }
     },
     "Devourer": {
+      "Enchantress": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "Mono Black Control": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
       "MonoRed Ponza": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "Quiet Tribe": {
+        "wins": 2,
+        "losses": 0,
+        "draws": 0,
+        "matches": 2,
+        "winPercent": 100
+      },
+      "Reanimator": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "Stasis": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 1,
+        "matches": 2,
+        "winPercent": 25
+      },
+      "Stiflenought": {
+        "wins": 2,
+        "losses": 0,
+        "draws": 0,
+        "matches": 2,
+        "winPercent": 100
+      },
+      "TerraGeddon": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "TerraOath": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      }
+    },
+    "Enchantress": {
+      "Devourer": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "Mono Black Control": {
         "wins": 1,
         "losses": 0,
         "draws": 0,
@@ -245,19 +368,12 @@
         "matches": 1,
         "winPercent": 100
       },
-      "Reanimator": {
-        "wins": 1,
-        "losses": 0,
+      "TerraOath Speculation": {
+        "wins": 0,
+        "losses": 1,
         "draws": 0,
         "matches": 1,
-        "winPercent": 100
-      },
-      "TerraOath": {
-        "wins": 1,
-        "losses": 0,
-        "draws": 0,
-        "matches": 1,
-        "winPercent": 100
+        "winPercent": 0
       }
     },
     "Gro-a-tog": {
@@ -276,8 +392,38 @@
         "winPercent": 100
       }
     },
+    "Mono Black Control": {
+      "Devourer": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "Enchantress": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "Oath Stasis": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "Quiet Tribe": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      }
+    },
     "Monoblack": {
-      "Darigaaz midrange": {
+      "Darigaaz Midrange": {
         "wins": 0,
         "losses": 2,
         "draws": 0,
@@ -336,6 +482,29 @@
         "winPercent": 100
       }
     },
+    "Oath Stasis": {
+      "Mono Black Control": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "Stiflenought": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "TerraGeddon": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      }
+    },
     "Quiet Tribe": {
       "Death & Taxes": {
         "wins": 0,
@@ -345,6 +514,20 @@
         "winPercent": 0
       },
       "Devourer": {
+        "wins": 0,
+        "losses": 2,
+        "draws": 0,
+        "matches": 2,
+        "winPercent": 0
+      },
+      "Enchantress": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "Mono Black Control": {
         "wins": 0,
         "losses": 1,
         "draws": 0,
@@ -418,7 +601,7 @@
         "matches": 1,
         "winPercent": 100
       },
-      "Darigaaz midrange": {
+      "Darigaaz Midrange": {
         "wins": 2,
         "losses": 0,
         "draws": 0,
@@ -462,7 +645,7 @@
         "matches": 1,
         "winPercent": 0
       },
-      "Darigaaz midrange": {
+      "Darigaaz Midrange": {
         "wins": 1,
         "losses": 0,
         "draws": 0,
@@ -501,6 +684,20 @@
       }
     },
     "Stasis": {
+      "Darigaaz Midrange": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "Devourer": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 1,
+        "matches": 2,
+        "winPercent": 75
+      },
       "Monoblack": {
         "wins": 1,
         "losses": 0,
@@ -521,6 +718,36 @@
         "draws": 0,
         "matches": 1,
         "winPercent": 100
+      },
+      "TerraOath Speculation": {
+        "wins": 0,
+        "losses": 0,
+        "draws": 1,
+        "matches": 1,
+        "winPercent": 50
+      }
+    },
+    "Stiflenought": {
+      "Darigaaz Midrange": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "Devourer": {
+        "wins": 0,
+        "losses": 2,
+        "draws": 0,
+        "matches": 2,
+        "winPercent": 0
+      },
+      "Oath Stasis": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
       }
     },
     "Survival Infestation": {
@@ -532,6 +759,36 @@
         "winPercent": 0
       },
       "Quiet Tribe": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      }
+    },
+    "TerraGeddon": {
+      "Darigaaz Midrange": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "Devourer": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "Oath Stasis": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "TerraOath Speculation": {
         "wins": 0,
         "losses": 1,
         "draws": 0,
@@ -560,6 +817,29 @@
         "draws": 0,
         "matches": 1,
         "winPercent": 0
+      }
+    },
+    "TerraOath Speculation": {
+      "Enchantress": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "Stasis": {
+        "wins": 0,
+        "losses": 0,
+        "draws": 1,
+        "matches": 1,
+        "winPercent": 50
+      },
+      "TerraGeddon": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
       }
     }
   }
