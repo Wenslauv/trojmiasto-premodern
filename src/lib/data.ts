@@ -242,6 +242,10 @@ function recordTotal(record: RecordStat): number {
   return record.wins + record.losses + record.draws;
 }
 
+function isUnknownDeckName(name: string): boolean {
+  return normalizePlayerKey(name) === 'unknown deck';
+}
+
 function compareByWinPercentThenTotal(
   a: { matchWinPercent: number; match: RecordStat },
   b: { matchWinPercent: number; match: RecordStat },
@@ -259,6 +263,7 @@ function buildPlayerDeckStats(events: EventItem[], playerIds: Set<string>): Play
   for (const event of events) {
     for (const standing of event.standings) {
       if (!playerIds.has(standing.playerId)) continue;
+      if (isUnknownDeckName(standing.deck.name)) continue;
 
       const deckKey = normalizePlayerKey(standing.deck.name) || standing.deck.name;
       const current = deckAgg.get(deckKey) ?? {
@@ -275,6 +280,7 @@ function buildPlayerDeckStats(events: EventItem[], playerIds: Set<string>): Play
 
         const opponent = event.standings.find((row) => row.playerId === round.opponentPlayerId);
         if (!opponent) continue;
+        if (isUnknownDeckName(opponent.deck.name)) continue;
 
         const opponentKey = normalizePlayerKey(opponent.deck.name) || opponent.deck.name;
         const existingMatchup = current.matchups.get(opponentKey) ?? {
