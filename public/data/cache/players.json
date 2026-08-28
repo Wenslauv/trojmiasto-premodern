@@ -23,7 +23,7 @@
   },
   {
     "id": "p05",
-    "name": "Damian Krasny",
+    "name": "Damian Kraśny",
     "eventsCount": 5,
     "matchWinPercent": 23.33,
     "favoriteDeck": {
@@ -45,7 +45,7 @@
   },
   {
     "id": "p01",
-    "name": "Maciej Lbik",
+    "name": "Maciej Łbik",
     "eventsCount": 3,
     "matchWinPercent": 64.29,
     "favoriteDeck": {
@@ -100,7 +100,7 @@
   },
   {
     "id": "p13",
-    "name": "Piotr Orlowski",
+    "name": "Piotr Orłowski",
     "eventsCount": 2,
     "matchWinPercent": 33.33,
     "favoriteDeck": {
@@ -144,7 +144,7 @@
   },
   {
     "id": "p23",
-    "name": "Grzegorz Tal...",
+    "name": "Grzegorz Talewski",
     "eventsCount": 1,
     "matchWinPercent": 33.33,
     "favoriteDeck": {
@@ -166,7 +166,7 @@
   },
   {
     "id": "p12",
-    "name": "Janush Bulakowski",
+    "name": "Janusz Bułakowski",
     "eventsCount": 1,
     "matchWinPercent": 0,
     "favoriteDeck": {
@@ -210,7 +210,7 @@
   },
   {
     "id": "p22",
-    "name": "Michał Sekie...",
+    "name": "Michał Sękiewicz",
     "eventsCount": 1,
     "matchWinPercent": 66.67,
     "favoriteDeck": {

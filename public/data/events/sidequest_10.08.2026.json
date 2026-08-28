@@ -95,7 +95,7 @@
     {
       "localId": "Maciej",
       "rank": 2,
-      "playerName": "Maciej Lbik",
+      "playerName": "Maciej Łbik",
       "playerRef": "p01",
       "points": 7,
       "deck": {
@@ -182,7 +182,7 @@
     {
       "localId": "Piotr",
       "rank": 3,
-      "playerName": "Piotr Orlowski",
+      "playerName": "Piotr Orłowski",
       "playerRef": "new:piotr",
       "points": 6,
       "deck": {
@@ -269,7 +269,7 @@
     {
       "localId": "Damian",
       "rank": 4,
-      "playerName": "Damian Krasny",
+      "playerName": "Damian Kraśny",
       "playerRef": "p05",
       "points": 6,
       "deck": {

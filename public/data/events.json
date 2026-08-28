@@ -62,7 +62,7 @@
       {
         "rank": 4,
         "playerRef": "new:michal-sekierski",
-        "playerName": "Michał Sekie...",
+        "playerName": "Michał Sękiewicz",
         "points": 5,
         "deck": {
           "name": "Cradle Control",
@@ -80,7 +80,7 @@
       {
         "rank": 5,
         "playerRef": "p05",
-        "playerName": "Damian Krasny",
+        "playerName": "Damian Kraśny",
         "points": 4,
         "deck": {
           "name": "Darigaaz Midrange",
@@ -98,7 +98,7 @@
       {
         "rank": 6,
         "playerRef": "new:grzegorz-tal",
-        "playerName": "Grzegorz Tal...",
+        "playerName": "Grzegorz Talewski",
         "points": 3,
         "deck": {
           "name": "Stiflenought",
@@ -116,7 +116,7 @@
       {
         "rank": 7,
         "playerRef": "new:piotr",
-        "playerName": "Piotr Orlowski",
+        "playerName": "Piotr Orłowski",
         "points": 2,
         "deck": {
           "name": "The Rock",
@@ -378,7 +378,7 @@
       {
         "rank": 13,
         "playerRef": "p05",
-        "playerName": "Damian Krasny",
+        "playerName": "Damian Kraśny",
         "points": 3,
         "deck": {
           "name": "Unknown Deck",
@@ -514,7 +514,7 @@
       {
         "localId": "Maciej",
         "rank": 2,
-        "playerName": "Maciej Lbik",
+        "playerName": "Maciej Łbik",
         "playerRef": "p01",
         "points": 7,
         "deck": {
@@ -601,7 +601,7 @@
       {
         "localId": "Piotr",
         "rank": 3,
-        "playerName": "Piotr Orlowski",
+        "playerName": "Piotr Orłowski",
         "playerRef": "new:piotr",
         "points": 6,
         "deck": {
@@ -688,7 +688,7 @@
       {
         "localId": "Damian",
         "rank": 4,
-        "playerName": "Damian Krasny",
+        "playerName": "Damian Kraśny",
         "playerRef": "p05",
         "points": 6,
         "deck": {
@@ -1013,7 +1013,7 @@
       {
         "localId": "ML",
         "rank": 3,
-        "playerName": "Maciej Lbik",
+        "playerName": "Maciej Łbik",
         "points": 6,
         "deck": {
           "name": "Quiet Tribe",
@@ -1083,7 +1083,7 @@
       {
         "localId": "JB",
         "rank": 4,
-        "playerName": "Janush Bulakowski",
+        "playerName": "Janusz Bułakowski",
         "points": 3,
         "deck": {
           "name": "Survival Infestation",
@@ -1447,7 +1447,7 @@
       {
         "localId": "DK",
         "rank": 4,
-        "playerName": "Damian Krasny",
+        "playerName": "Damian Kraśny",
         "points": 0,
         "deck": {
           "name": "Moneyball",
@@ -2063,7 +2063,7 @@
       {
         "localId": "ML",
         "rank": 1,
-        "playerName": "Maciej Lbik",
+        "playerName": "Maciej Łbik",
         "points": 9,
         "deck": {
           "name": "Quiet Tribe",
@@ -2345,7 +2345,7 @@
       {
         "localId": "DK",
         "rank": 5,
-        "playerName": "Damian Krasny",
+        "playerName": "Damian Kraśny",
         "points": 3,
         "deck": {
           "name": "Sneak and Show",
