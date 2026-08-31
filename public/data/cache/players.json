@@ -2,19 +2,19 @@
   {
     "id": "p06",
     "name": "Marcin Kowalski",
-    "eventsCount": 7,
-    "matchWinPercent": 68,
+    "eventsCount": 8,
+    "matchWinPercent": 72.41,
     "favoriteDeck": {
       "name": "Devourer",
       "colors": "UR",
-      "count": 2
+      "count": 3
     }
   },
   {
     "id": "p05",
     "name": "Damian Kraśny",
-    "eventsCount": 6,
-    "matchWinPercent": 19.44,
+    "eventsCount": 7,
+    "matchWinPercent": 25,
     "favoriteDeck": {
       "name": "Darigaaz Midrange",
       "colors": "RBG",
@@ -35,19 +35,19 @@
   {
     "id": "p01",
     "name": "Maciej Łbik",
-    "eventsCount": 4,
-    "matchWinPercent": 45,
+    "eventsCount": 5,
+    "matchWinPercent": 50,
     "favoriteDeck": {
       "name": "Quiet Tribe",
-      "colors": "GWUR",
-      "count": 4
+      "colors": "GWUr",
+      "count": 5
     }
   },
   {
     "id": "p09",
     "name": "Piotr Zieliński",
-    "eventsCount": 4,
-    "matchWinPercent": 36.67,
+    "eventsCount": 5,
+    "matchWinPercent": 34.21,
     "favoriteDeck": {
       "name": "Mono Black Control",
       "colors": "B",
@@ -57,12 +57,23 @@
   {
     "id": "p02",
     "name": "Wiaczasłau Kukhtsiuk",
-    "eventsCount": 4,
-    "matchWinPercent": 84.62,
+    "eventsCount": 5,
+    "matchWinPercent": 82.35,
     "favoriteDeck": {
       "name": "Replenish",
       "colors": "UW",
-      "count": 3
+      "count": 4
+    }
+  },
+  {
+    "id": "p13",
+    "name": "Piotr Orłowski",
+    "eventsCount": 4,
+    "matchWinPercent": 35.71,
+    "favoriteDeck": {
+      "name": "Finkula",
+      "colors": "UWB",
+      "count": 1
     }
   },
   {
@@ -77,13 +88,24 @@
     }
   },
   {
-    "id": "p13",
-    "name": "Piotr Orłowski",
+    "id": "p23",
+    "name": "Grzegorz Talewski",
     "eventsCount": 3,
-    "matchWinPercent": 40,
+    "matchWinPercent": 27.27,
     "favoriteDeck": {
-      "name": "Enchantress",
-      "colors": "GW",
+      "name": "Stiflenought",
+      "colors": "U",
+      "count": 3
+    }
+  },
+  {
+    "id": "p12",
+    "name": "Janusz Bułakowski",
+    "eventsCount": 3,
+    "matchWinPercent": 50,
+    "favoriteDeck": {
+      "name": "Standstill",
+      "colors": "UW",
       "count": 1
     }
   },
@@ -95,28 +117,6 @@
     "favoriteDeck": {
       "name": "Unknown Deck",
       "colors": "?",
-      "count": 1
-    }
-  },
-  {
-    "id": "p23",
-    "name": "Grzegorz Talewski",
-    "eventsCount": 2,
-    "matchWinPercent": 42.86,
-    "favoriteDeck": {
-      "name": "Stiflenought",
-      "colors": "U",
-      "count": 2
-    }
-  },
-  {
-    "id": "p12",
-    "name": "Janusz Bułakowski",
-    "eventsCount": 2,
-    "matchWinPercent": 50,
-    "favoriteDeck": {
-      "name": "Stasis",
-      "colors": "U",
       "count": 1
     }
   },
@@ -194,6 +194,28 @@
     "favoriteDeck": {
       "name": "Unknown Deck",
       "colors": "?",
+      "count": 1
+    }
+  },
+  {
+    "id": "p27",
+    "name": "Jakub Szewczyk",
+    "eventsCount": 1,
+    "matchWinPercent": 62.5,
+    "favoriteDeck": {
+      "name": "Oath Control",
+      "colors": "UWG",
+      "count": 1
+    }
+  },
+  {
+    "id": "p26",
+    "name": "Marcin Gornowicz",
+    "eventsCount": 1,
+    "matchWinPercent": 50,
+    "favoriteDeck": {
+      "name": "Moneyball",
+      "colors": "B",
       "count": 1
     }
   },

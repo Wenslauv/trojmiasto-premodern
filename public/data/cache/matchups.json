@@ -31,6 +31,11 @@
       "slug": "enchantress"
     },
     {
+      "name": "Finkula",
+      "colors": "UWB",
+      "slug": "finkula"
+    },
+    {
       "name": "Gro-a-tog",
       "colors": "WUBG",
       "slug": "gro-a-tog"
@@ -51,13 +56,23 @@
       "slug": "monored-ponza"
     },
     {
+      "name": "Oath Control",
+      "colors": "UWG",
+      "slug": "oath-control"
+    },
+    {
       "name": "Oath Stasis",
       "colors": "UG",
       "slug": "oath-stasis"
     },
     {
+      "name": "Pit Rack",
+      "colors": "B",
+      "slug": "pit-rack"
+    },
+    {
       "name": "Quiet Tribe",
-      "colors": "GWUR",
+      "colors": "GWUr",
       "slug": "quiet-tribe"
     },
     {
@@ -79,6 +94,11 @@
       "name": "Sneak and Show",
       "colors": "UR",
       "slug": "sneak-and-show"
+    },
+    {
+      "name": "Standstill",
+      "colors": "UW",
+      "slug": "standstill"
     },
     {
       "name": "Stasis",
@@ -303,6 +323,13 @@
         "matches": 1,
         "winPercent": 100
       },
+      "Pit Rack": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
       "Quiet Tribe": {
         "wins": 2,
         "losses": 0,
@@ -317,6 +344,20 @@
         "matches": 1,
         "winPercent": 100
       },
+      "Replenish": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "Standstill": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
       "Stasis": {
         "wins": 0,
         "losses": 1,
@@ -325,10 +366,10 @@
         "winPercent": 25
       },
       "Stiflenought": {
-        "wins": 2,
+        "wins": 3,
         "losses": 0,
         "draws": 0,
-        "matches": 2,
+        "matches": 3,
         "winPercent": 100
       },
       "TerraGeddon": {
@@ -374,6 +415,36 @@
         "draws": 0,
         "matches": 1,
         "winPercent": 0
+      }
+    },
+    "Finkula": {
+      "Oath Control": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "Quiet Tribe": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "Replenish": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "Stiflenought": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
       }
     },
     "Gro-a-tog": {
@@ -437,6 +508,27 @@
         "matches": 2,
         "winPercent": 50
       },
+      "Oath Control": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "Pit Rack": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "Quiet Tribe": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
       "Replenish": {
         "wins": 0,
         "losses": 3,
@@ -451,12 +543,26 @@
         "matches": 1,
         "winPercent": 0
       },
+      "Standstill": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
       "Stasis": {
         "wins": 0,
         "losses": 1,
         "draws": 0,
         "matches": 1,
         "winPercent": 0
+      },
+      "Stiflenought": {
+        "wins": 2,
+        "losses": 0,
+        "draws": 0,
+        "matches": 2,
+        "winPercent": 100
       }
     },
     "MonoRed Ponza": {
@@ -482,6 +588,36 @@
         "winPercent": 100
       }
     },
+    "Oath Control": {
+      "Finkula": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "Monoblack": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "Quiet Tribe": {
+        "wins": 0,
+        "losses": 0,
+        "draws": 1,
+        "matches": 1,
+        "winPercent": 50
+      },
+      "Standstill": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      }
+    },
     "Oath Stasis": {
       "Mono Black Control": {
         "wins": 0,
@@ -498,6 +634,36 @@
         "winPercent": 0
       },
       "TerraGeddon": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      }
+    },
+    "Pit Rack": {
+      "Devourer": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "Monoblack": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "Quiet Tribe": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "Replenish": {
         "wins": 0,
         "losses": 1,
         "draws": 0,
@@ -527,6 +693,13 @@
         "matches": 1,
         "winPercent": 0
       },
+      "Finkula": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
       "Mono Black Control": {
         "wins": 0,
         "losses": 1,
@@ -534,12 +707,33 @@
         "matches": 1,
         "winPercent": 0
       },
+      "Monoblack": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
       "MonoRed Ponza": {
         "wins": 1,
         "losses": 0,
         "draws": 0,
         "matches": 1,
         "winPercent": 100
+      },
+      "Oath Control": {
+        "wins": 0,
+        "losses": 0,
+        "draws": 1,
+        "matches": 1,
+        "winPercent": 50
+      },
+      "Pit Rack": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
       },
       "Replenish": {
         "wins": 1,
@@ -615,11 +809,32 @@
         "matches": 2,
         "winPercent": 50
       },
+      "Devourer": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "Finkula": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
       "Monoblack": {
         "wins": 3,
         "losses": 0,
         "draws": 0,
         "matches": 3,
+        "winPercent": 100
+      },
+      "Pit Rack": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
         "winPercent": 100
       },
       "Quiet Tribe": {
@@ -630,6 +845,13 @@
         "winPercent": 0
       },
       "Sneak and Show": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "Standstill": {
         "wins": 1,
         "losses": 0,
         "draws": 0,
@@ -676,6 +898,36 @@
         "winPercent": 0
       },
       "Stasis": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      }
+    },
+    "Standstill": {
+      "Devourer": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "Monoblack": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "Oath Control": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "Replenish": {
         "wins": 0,
         "losses": 1,
         "draws": 0,
@@ -736,6 +988,20 @@
         "winPercent": 100
       },
       "Devourer": {
+        "wins": 0,
+        "losses": 3,
+        "draws": 0,
+        "matches": 3,
+        "winPercent": 0
+      },
+      "Finkula": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "Monoblack": {
         "wins": 0,
         "losses": 2,
         "draws": 0,
