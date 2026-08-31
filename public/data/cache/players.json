@@ -104,7 +104,7 @@
     "eventsCount": 3,
     "matchWinPercent": 50,
     "favoriteDeck": {
-      "name": "Standstill",
+      "name": "Landstill",
       "colors": "UW",
       "count": 1
     }
@@ -236,7 +236,7 @@
     "eventsCount": 1,
     "matchWinPercent": 66.67,
     "favoriteDeck": {
-      "name": "Standstill",
+      "name": "Landstill",
       "colors": "WU",
       "count": 1
     }

@@ -456,7 +456,7 @@
         "playerRef": "p12",
         "points": 6,
         "deck": {
-          "name": "Standstill",
+          "name": "Landstill",
           "colors": "UW"
         },
         "rounds": [
@@ -1895,7 +1895,7 @@
         "playerName": "Marek Pałub...",
         "points": 6,
         "deck": {
-          "name": "Standstill",
+          "name": "Landstill",
           "colors": "WU"
         },
         "match": {

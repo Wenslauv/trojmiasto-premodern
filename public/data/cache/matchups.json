@@ -41,6 +41,11 @@
       "slug": "gro-a-tog"
     },
     {
+      "name": "Landstill",
+      "colors": "UW",
+      "slug": "landstill"
+    },
+    {
       "name": "Mono Black Control",
       "colors": "B",
       "slug": "mono-black-control"
@@ -94,11 +99,6 @@
       "name": "Sneak and Show",
       "colors": "UR",
       "slug": "sneak-and-show"
-    },
-    {
-      "name": "Standstill",
-      "colors": "UW",
-      "slug": "standstill"
     },
     {
       "name": "Stasis",
@@ -309,6 +309,13 @@
         "matches": 1,
         "winPercent": 100
       },
+      "Landstill": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
       "Mono Black Control": {
         "wins": 1,
         "losses": 0,
@@ -345,13 +352,6 @@
         "winPercent": 100
       },
       "Replenish": {
-        "wins": 1,
-        "losses": 0,
-        "draws": 0,
-        "matches": 1,
-        "winPercent": 100
-      },
-      "Standstill": {
         "wins": 1,
         "losses": 0,
         "draws": 0,
@@ -463,6 +463,36 @@
         "winPercent": 100
       }
     },
+    "Landstill": {
+      "Devourer": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "Monoblack": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "Oath Control": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "Replenish": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      }
+    },
     "Mono Black Control": {
       "Devourer": {
         "wins": 0,
@@ -508,6 +538,13 @@
         "matches": 2,
         "winPercent": 50
       },
+      "Landstill": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
       "Oath Control": {
         "wins": 0,
         "losses": 1,
@@ -537,13 +574,6 @@
         "winPercent": 0
       },
       "RG Aggro": {
-        "wins": 0,
-        "losses": 1,
-        "draws": 0,
-        "matches": 1,
-        "winPercent": 0
-      },
-      "Standstill": {
         "wins": 0,
         "losses": 1,
         "draws": 0,
@@ -596,6 +626,13 @@
         "matches": 1,
         "winPercent": 100
       },
+      "Landstill": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
       "Monoblack": {
         "wins": 1,
         "losses": 0,
@@ -609,13 +646,6 @@
         "draws": 1,
         "matches": 1,
         "winPercent": 50
-      },
-      "Standstill": {
-        "wins": 0,
-        "losses": 1,
-        "draws": 0,
-        "matches": 1,
-        "winPercent": 0
       }
     },
     "Oath Stasis": {
@@ -823,6 +853,13 @@
         "matches": 1,
         "winPercent": 100
       },
+      "Landstill": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
       "Monoblack": {
         "wins": 3,
         "losses": 0,
@@ -845,13 +882,6 @@
         "winPercent": 0
       },
       "Sneak and Show": {
-        "wins": 1,
-        "losses": 0,
-        "draws": 0,
-        "matches": 1,
-        "winPercent": 100
-      },
-      "Standstill": {
         "wins": 1,
         "losses": 0,
         "draws": 0,
@@ -898,36 +928,6 @@
         "winPercent": 0
       },
       "Stasis": {
-        "wins": 0,
-        "losses": 1,
-        "draws": 0,
-        "matches": 1,
-        "winPercent": 0
-      }
-    },
-    "Standstill": {
-      "Devourer": {
-        "wins": 0,
-        "losses": 1,
-        "draws": 0,
-        "matches": 1,
-        "winPercent": 0
-      },
-      "Monoblack": {
-        "wins": 1,
-        "losses": 0,
-        "draws": 0,
-        "matches": 1,
-        "winPercent": 100
-      },
-      "Oath Control": {
-        "wins": 1,
-        "losses": 0,
-        "draws": 0,
-        "matches": 1,
-        "winPercent": 100
-      },
-      "Replenish": {
         "wins": 0,
         "losses": 1,
         "draws": 0,
