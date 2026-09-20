@@ -1,0 +1,586 @@
+{
+  "name": "SideQuest weekly",
+  "date": "2026-09-14",
+  "location": "Gdansk",
+  "place": "SideQuest",
+  "type": "weekly",
+  "mode": "roundByRound",
+  "standings": [
+    {
+      "localId": "PO",
+      "rank": 1,
+      "playerRef": "p13",
+      "points": 6,
+      "deck": {
+        "name": "hFEB",
+        "colors": "BGuw"
+      },
+      "rounds": [
+        {
+          "round": 1,
+          "opponentLocalId": "MK",
+          "game": {
+            "wins": 2,
+            "losses": 1,
+            "draws": 0
+          },
+          "resultType": "PLAYED",
+          "opponentPlayerId": "p06",
+          "match": {
+            "wins": 1,
+            "losses": 0,
+            "draws": 0
+          }
+        },
+        {
+          "round": 2,
+          "opponentLocalId": "AS",
+          "game": {
+            "wins": 2,
+            "losses": 0,
+            "draws": 0
+          },
+          "resultType": "PLAYED",
+          "opponentPlayerId": "p28",
+          "match": {
+            "wins": 1,
+            "losses": 0,
+            "draws": 0
+          }
+        },
+        {
+          "round": 3,
+          "opponentLocalId": "MG",
+          "game": {
+            "wins": 2,
+            "losses": 0,
+            "draws": 0
+          },
+          "resultType": "PLAYED",
+          "opponentPlayerId": "p26",
+          "match": {
+            "wins": 1,
+            "losses": 0,
+            "draws": 0
+          }
+        }
+      ],
+      "playerId": "p13",
+      "playerName": "Piotr Orłowski",
+      "match": {
+        "wins": 3,
+        "losses": 0,
+        "draws": 0
+      },
+      "game": {
+        "wins": 6,
+        "losses": 1,
+        "draws": 0
+      }
+    },
+    {
+      "localId": "MG",
+      "rank": 2,
+      "playerRef": "p26",
+      "points": 6,
+      "deck": {
+        "name": "Moneyball",
+        "colors": "B"
+      },
+      "rounds": [
+        {
+          "round": 1,
+          "opponentLocalId": "JR",
+          "game": {
+            "wins": 2,
+            "losses": 0,
+            "draws": 0
+          },
+          "resultType": "PLAYED",
+          "opponentPlayerId": "p04",
+          "match": {
+            "wins": 1,
+            "losses": 0,
+            "draws": 0
+          }
+        },
+        {
+          "round": 2,
+          "opponentLocalId": "WK",
+          "game": {
+            "wins": 2,
+            "losses": 0,
+            "draws": 0
+          },
+          "resultType": "PLAYED",
+          "opponentPlayerId": "p02",
+          "match": {
+            "wins": 1,
+            "losses": 0,
+            "draws": 0
+          }
+        },
+        {
+          "round": 3,
+          "opponentLocalId": "PO",
+          "game": {
+            "wins": 0,
+            "losses": 2,
+            "draws": 0
+          },
+          "resultType": "PLAYED",
+          "opponentPlayerId": "p13",
+          "match": {
+            "wins": 0,
+            "losses": 1,
+            "draws": 0
+          }
+        }
+      ],
+      "playerId": "p26",
+      "playerName": "Marcin Gornowicz",
+      "match": {
+        "wins": 2,
+        "losses": 1,
+        "draws": 0
+      },
+      "game": {
+        "wins": 4,
+        "losses": 2,
+        "draws": 0
+      }
+    },
+    {
+      "localId": "MK",
+      "rank": 3,
+      "playerRef": "p06",
+      "points": 6,
+      "deck": {
+        "name": "BG Rock",
+        "colors": "BG"
+      },
+      "rounds": [
+        {
+          "round": 1,
+          "opponentLocalId": "PO",
+          "game": {
+            "wins": 1,
+            "losses": 2,
+            "draws": 0
+          },
+          "resultType": "PLAYED",
+          "opponentPlayerId": "p13",
+          "match": {
+            "wins": 0,
+            "losses": 1,
+            "draws": 0
+          }
+        },
+        {
+          "round": 2,
+          "opponentLocalId": "PZ",
+          "game": {
+            "wins": 2,
+            "losses": 0,
+            "draws": 0
+          },
+          "resultType": "PLAYED",
+          "opponentPlayerId": "p09",
+          "match": {
+            "wins": 1,
+            "losses": 0,
+            "draws": 0
+          }
+        },
+        {
+          "round": 3,
+          "opponentLocalId": "AS",
+          "game": {
+            "wins": 2,
+            "losses": 0,
+            "draws": 0
+          },
+          "resultType": "PLAYED",
+          "opponentPlayerId": "p28",
+          "match": {
+            "wins": 1,
+            "losses": 0,
+            "draws": 0
+          }
+        }
+      ],
+      "playerId": "p06",
+      "playerName": "Marcin Kowalski",
+      "match": {
+        "wins": 2,
+        "losses": 1,
+        "draws": 0
+      },
+      "game": {
+        "wins": 5,
+        "losses": 2,
+        "draws": 0
+      }
+    },
+    {
+      "localId": "WK",
+      "rank": 4,
+      "playerRef": "p02",
+      "points": 6,
+      "deck": {
+        "name": "UWR Solution",
+        "colors": "UWR"
+      },
+      "rounds": [
+        {
+          "round": 1,
+          "opponentLocalId": "PZ",
+          "game": {
+            "wins": 2,
+            "losses": 0,
+            "draws": 0
+          },
+          "resultType": "PLAYED",
+          "opponentPlayerId": "p09",
+          "match": {
+            "wins": 1,
+            "losses": 0,
+            "draws": 0
+          }
+        },
+        {
+          "round": 2,
+          "opponentLocalId": "MG",
+          "game": {
+            "wins": 0,
+            "losses": 2,
+            "draws": 0
+          },
+          "resultType": "PLAYED",
+          "opponentPlayerId": "p26",
+          "match": {
+            "wins": 0,
+            "losses": 1,
+            "draws": 0
+          }
+        },
+        {
+          "round": 3,
+          "opponentLocalId": "MS",
+          "game": {
+            "wins": 2,
+            "losses": 1,
+            "draws": 0
+          },
+          "resultType": "PLAYED",
+          "opponentPlayerId": "p22",
+          "match": {
+            "wins": 1,
+            "losses": 0,
+            "draws": 0
+          }
+        }
+      ],
+      "playerId": "p02",
+      "playerName": "Wiaczasłau Kukhtsiuk",
+      "match": {
+        "wins": 2,
+        "losses": 1,
+        "draws": 0
+      },
+      "game": {
+        "wins": 4,
+        "losses": 3,
+        "draws": 0
+      }
+    },
+    {
+      "localId": "AS",
+      "rank": 5,
+      "playerName": "Amadeusz Sztangierski",
+      "points": 3,
+      "deck": {
+        "name": "Sligh",
+        "colors": "R"
+      },
+      "rounds": [
+        {
+          "round": 1,
+          "opponentLocalId": "MS",
+          "game": {
+            "wins": 2,
+            "losses": 1,
+            "draws": 0
+          },
+          "resultType": "PLAYED",
+          "opponentPlayerId": "p22",
+          "match": {
+            "wins": 1,
+            "losses": 0,
+            "draws": 0
+          }
+        },
+        {
+          "round": 2,
+          "opponentLocalId": "PO",
+          "game": {
+            "wins": 0,
+            "losses": 2,
+            "draws": 0
+          },
+          "resultType": "PLAYED",
+          "opponentPlayerId": "p13",
+          "match": {
+            "wins": 0,
+            "losses": 1,
+            "draws": 0
+          }
+        },
+        {
+          "round": 3,
+          "opponentLocalId": "MK",
+          "game": {
+            "wins": 0,
+            "losses": 2,
+            "draws": 0
+          },
+          "resultType": "PLAYED",
+          "opponentPlayerId": "p06",
+          "match": {
+            "wins": 0,
+            "losses": 1,
+            "draws": 0
+          }
+        }
+      ],
+      "playerId": "p28",
+      "match": {
+        "wins": 1,
+        "losses": 2,
+        "draws": 0
+      },
+      "game": {
+        "wins": 2,
+        "losses": 5,
+        "draws": 0
+      }
+    },
+    {
+      "localId": "PZ",
+      "rank": 6,
+      "playerRef": "p09",
+      "points": 3,
+      "deck": {
+        "name": "MonoBlack Ponza",
+        "colors": "B"
+      },
+      "rounds": [
+        {
+          "round": 1,
+          "opponentLocalId": "WK",
+          "game": {
+            "wins": 0,
+            "losses": 2,
+            "draws": 0
+          },
+          "resultType": "PLAYED",
+          "opponentPlayerId": "p02",
+          "match": {
+            "wins": 0,
+            "losses": 1,
+            "draws": 0
+          }
+        },
+        {
+          "round": 2,
+          "opponentLocalId": "MK",
+          "game": {
+            "wins": 0,
+            "losses": 2,
+            "draws": 0
+          },
+          "resultType": "PLAYED",
+          "opponentPlayerId": "p06",
+          "match": {
+            "wins": 0,
+            "losses": 1,
+            "draws": 0
+          }
+        },
+        {
+          "round": 3,
+          "opponentLocalId": "JR",
+          "game": {
+            "wins": 2,
+            "losses": 1,
+            "draws": 0
+          },
+          "resultType": "PLAYED",
+          "opponentPlayerId": "p04",
+          "match": {
+            "wins": 1,
+            "losses": 0,
+            "draws": 0
+          }
+        }
+      ],
+      "playerId": "p09",
+      "playerName": "Piotr Zieliński",
+      "match": {
+        "wins": 1,
+        "losses": 2,
+        "draws": 0
+      },
+      "game": {
+        "wins": 2,
+        "losses": 5,
+        "draws": 0
+      }
+    },
+    {
+      "localId": "MS",
+      "rank": 7,
+      "playerRef": "p22",
+      "points": 3,
+      "deck": {
+        "name": "Devourer",
+        "colors": "UR"
+      },
+      "rounds": [
+        {
+          "round": 1,
+          "opponentLocalId": "AS",
+          "game": {
+            "wins": 1,
+            "losses": 2,
+            "draws": 0
+          },
+          "resultType": "PLAYED",
+          "opponentPlayerId": "p28",
+          "match": {
+            "wins": 0,
+            "losses": 1,
+            "draws": 0
+          }
+        },
+        {
+          "round": 2,
+          "opponentLocalId": "JR",
+          "game": {
+            "wins": 2,
+            "losses": 0,
+            "draws": 0
+          },
+          "resultType": "PLAYED",
+          "opponentPlayerId": "p04",
+          "match": {
+            "wins": 1,
+            "losses": 0,
+            "draws": 0
+          }
+        },
+        {
+          "round": 3,
+          "opponentLocalId": "WK",
+          "game": {
+            "wins": 1,
+            "losses": 2,
+            "draws": 0
+          },
+          "resultType": "PLAYED",
+          "opponentPlayerId": "p02",
+          "match": {
+            "wins": 0,
+            "losses": 1,
+            "draws": 0
+          }
+        }
+      ],
+      "playerId": "p22",
+      "playerName": "Michał Sękiewicz",
+      "match": {
+        "wins": 1,
+        "losses": 2,
+        "draws": 0
+      },
+      "game": {
+        "wins": 4,
+        "losses": 4,
+        "draws": 0
+      }
+    },
+    {
+      "localId": "JR",
+      "rank": 8,
+      "playerRef": "p04",
+      "points": 0,
+      "deck": {
+        "name": "Oath Ponza",
+        "colors": "GW"
+      },
+      "rounds": [
+        {
+          "round": 1,
+          "opponentLocalId": "MG",
+          "game": {
+            "wins": 0,
+            "losses": 2,
+            "draws": 0
+          },
+          "resultType": "PLAYED",
+          "opponentPlayerId": "p26",
+          "match": {
+            "wins": 0,
+            "losses": 1,
+            "draws": 0
+          }
+        },
+        {
+          "round": 2,
+          "opponentLocalId": "MS",
+          "game": {
+            "wins": 0,
+            "losses": 2,
+            "draws": 0
+          },
+          "resultType": "PLAYED",
+          "opponentPlayerId": "p22",
+          "match": {
+            "wins": 0,
+            "losses": 1,
+            "draws": 0
+          }
+        },
+        {
+          "round": 3,
+          "opponentLocalId": "PZ",
+          "game": {
+            "wins": 1,
+            "losses": 2,
+            "draws": 0
+          },
+          "resultType": "PLAYED",
+          "opponentPlayerId": "p09",
+          "match": {
+            "wins": 0,
+            "losses": 1,
+            "draws": 0
+          }
+        }
+      ],
+      "playerId": "p04",
+      "playerName": "Jakub Rąbalsky",
+      "match": {
+        "wins": 0,
+        "losses": 3,
+        "draws": 0
+      },
+      "game": {
+        "wins": 1,
+        "losses": 6,
+        "draws": 0
+      }
+    }
+  ],
+  "id": "20260914-sidequest-weekly"
+}

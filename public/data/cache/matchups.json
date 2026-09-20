@@ -41,6 +41,11 @@
       "slug": "gro-a-tog"
     },
     {
+      "name": "hFEB",
+      "colors": "BGuw",
+      "slug": "hfeb"
+    },
+    {
       "name": "Landstill",
       "colors": "UW",
       "slug": "landstill"
@@ -56,6 +61,11 @@
       "slug": "monoblack"
     },
     {
+      "name": "MonoBlack Ponza",
+      "colors": "B",
+      "slug": "monoblack-ponza"
+    },
+    {
       "name": "MonoRed Ponza",
       "colors": "R",
       "slug": "monored-ponza"
@@ -64,6 +74,11 @@
       "name": "Oath Control",
       "colors": "UWG",
       "slug": "oath-control"
+    },
+    {
+      "name": "Oath Ponza",
+      "colors": "GW",
+      "slug": "oath-ponza"
     },
     {
       "name": "Oath Stasis",
@@ -94,6 +109,11 @@
       "name": "RG Aggro",
       "colors": "RG",
       "slug": "rg-aggro"
+    },
+    {
+      "name": "Sligh",
+      "colors": "R",
+      "slug": "sligh"
     },
     {
       "name": "Sneak and Show",
@@ -129,6 +149,11 @@
       "name": "TerraOath Speculation",
       "colors": "GWru",
       "slug": "terraoath-speculation"
+    },
+    {
+      "name": "UWR Solution",
+      "colors": "UWR",
+      "slug": "uwr-solution"
     }
   ],
   "matrix": {
@@ -147,6 +172,20 @@
         "matches": 1,
         "winPercent": 0
       },
+      "hFEB": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "MonoBlack Ponza": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
       "Replenish": {
         "wins": 0,
         "losses": 1,
@@ -155,6 +194,13 @@
         "winPercent": 0
       },
       "RG Aggro": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "Sligh": {
         "wins": 1,
         "losses": 0,
         "draws": 0,
@@ -330,6 +376,13 @@
         "matches": 1,
         "winPercent": 100
       },
+      "Oath Ponza": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
       "Pit Rack": {
         "wins": 1,
         "losses": 0,
@@ -358,6 +411,13 @@
         "matches": 1,
         "winPercent": 100
       },
+      "Sligh": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
       "Stasis": {
         "wins": 0,
         "losses": 1,
@@ -385,6 +445,13 @@
         "draws": 0,
         "matches": 1,
         "winPercent": 100
+      },
+      "UWR Solution": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
       }
     },
     "Enchantress": {
@@ -456,6 +523,29 @@
         "winPercent": 0
       },
       "Death & Taxes": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      }
+    },
+    "hFEB": {
+      "BG Rock": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "Monoblack": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "Sligh": {
         "wins": 1,
         "losses": 0,
         "draws": 0,
@@ -538,6 +628,13 @@
         "matches": 2,
         "winPercent": 50
       },
+      "hFEB": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
       "Landstill": {
         "wins": 0,
         "losses": 1,
@@ -551,6 +648,13 @@
         "draws": 0,
         "matches": 1,
         "winPercent": 0
+      },
+      "Oath Ponza": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
       },
       "Pit Rack": {
         "wins": 0,
@@ -593,6 +697,36 @@
         "draws": 0,
         "matches": 2,
         "winPercent": 100
+      },
+      "UWR Solution": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      }
+    },
+    "MonoBlack Ponza": {
+      "BG Rock": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "Oath Ponza": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "UWR Solution": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
       }
     },
     "MonoRed Ponza": {
@@ -646,6 +780,29 @@
         "draws": 1,
         "matches": 1,
         "winPercent": 50
+      }
+    },
+    "Oath Ponza": {
+      "Devourer": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "Monoblack": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "MonoBlack Ponza": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
       }
     },
     "Oath Stasis": {
@@ -919,6 +1076,29 @@
         "winPercent": 100
       }
     },
+    "Sligh": {
+      "BG Rock": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "Devourer": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "hFEB": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      }
+    },
     "Sneak and Show": {
       "Replenish": {
         "wins": 0,
@@ -1101,6 +1281,29 @@
         "winPercent": 50
       },
       "TerraGeddon": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      }
+    },
+    "UWR Solution": {
+      "Devourer": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "Monoblack": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "MonoBlack Ponza": {
         "wins": 1,
         "losses": 0,
         "draws": 0,

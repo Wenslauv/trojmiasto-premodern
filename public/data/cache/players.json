@@ -2,8 +2,8 @@
   {
     "id": "p06",
     "name": "Marcin Kowalski",
-    "eventsCount": 8,
-    "matchWinPercent": 72.41,
+    "eventsCount": 9,
+    "matchWinPercent": 71.88,
     "favoriteDeck": {
       "name": "Devourer",
       "colors": "UR",
@@ -24,12 +24,34 @@
   {
     "id": "p04",
     "name": "Jakub Rąbalsky",
-    "eventsCount": 6,
-    "matchWinPercent": 47.37,
+    "eventsCount": 7,
+    "matchWinPercent": 40.91,
     "favoriteDeck": {
       "name": "TerraOath",
       "colors": "GWr",
       "count": 2
+    }
+  },
+  {
+    "id": "p09",
+    "name": "Piotr Zieliński",
+    "eventsCount": 6,
+    "matchWinPercent": 34.09,
+    "favoriteDeck": {
+      "name": "Mono Black Control",
+      "colors": "B",
+      "count": 2
+    }
+  },
+  {
+    "id": "p02",
+    "name": "Wiaczasłau Kukhtsiuk",
+    "eventsCount": 6,
+    "matchWinPercent": 80,
+    "favoriteDeck": {
+      "name": "Replenish",
+      "colors": "UW",
+      "count": 4
     }
   },
   {
@@ -44,35 +66,13 @@
     }
   },
   {
-    "id": "p09",
-    "name": "Piotr Zieliński",
-    "eventsCount": 5,
-    "matchWinPercent": 34.21,
-    "favoriteDeck": {
-      "name": "Mono Black Control",
-      "colors": "B",
-      "count": 2
-    }
-  },
-  {
-    "id": "p02",
-    "name": "Wiaczasłau Kukhtsiuk",
-    "eventsCount": 5,
-    "matchWinPercent": 82.35,
-    "favoriteDeck": {
-      "name": "Replenish",
-      "colors": "UW",
-      "count": 4
-    }
-  },
-  {
     "id": "p13",
     "name": "Piotr Orłowski",
-    "eventsCount": 4,
-    "matchWinPercent": 35.71,
+    "eventsCount": 5,
+    "matchWinPercent": 47.06,
     "favoriteDeck": {
-      "name": "Finkula",
-      "colors": "UWB",
+      "name": "hFEB",
+      "colors": "BGuw",
       "count": 1
     }
   },
@@ -110,6 +110,17 @@
     }
   },
   {
+    "id": "p22",
+    "name": "Michał Sękiewicz",
+    "eventsCount": 3,
+    "matchWinPercent": 65,
+    "favoriteDeck": {
+      "name": "Devourer",
+      "colors": "UR",
+      "count": 2
+    }
+  },
+  {
     "id": "p07",
     "name": "Adam Modrzejewski",
     "eventsCount": 2,
@@ -132,13 +143,24 @@
     }
   },
   {
-    "id": "p22",
-    "name": "Michał Sękiewicz",
+    "id": "p26",
+    "name": "Marcin Gornowicz",
     "eventsCount": 2,
-    "matchWinPercent": 78.57,
+    "matchWinPercent": 57.14,
     "favoriteDeck": {
-      "name": "Devourer",
-      "colors": "UR",
+      "name": "Moneyball",
+      "colors": "B",
+      "count": 2
+    }
+  },
+  {
+    "id": "p28",
+    "name": "Amadeusz Sztangierski",
+    "eventsCount": 1,
+    "matchWinPercent": 33.33,
+    "favoriteDeck": {
+      "name": "Sligh",
+      "colors": "R",
       "count": 1
     }
   },
@@ -205,17 +227,6 @@
     "favoriteDeck": {
       "name": "Oath Control",
       "colors": "UWG",
-      "count": 1
-    }
-  },
-  {
-    "id": "p26",
-    "name": "Marcin Gornowicz",
-    "eventsCount": 1,
-    "matchWinPercent": 50,
-    "favoriteDeck": {
-      "name": "Moneyball",
-      "colors": "B",
       "count": 1
     }
   },
