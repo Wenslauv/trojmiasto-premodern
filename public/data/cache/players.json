@@ -2,8 +2,8 @@
   {
     "id": "p06",
     "name": "Marcin Kowalski",
-    "eventsCount": 9,
-    "matchWinPercent": 71.88,
+    "eventsCount": 10,
+    "matchWinPercent": 72.86,
     "favoriteDeck": {
       "name": "Devourer",
       "colors": "UR",
@@ -13,8 +13,8 @@
   {
     "id": "p05",
     "name": "Damian Kraśny",
-    "eventsCount": 7,
-    "matchWinPercent": 25,
+    "eventsCount": 8,
+    "matchWinPercent": 26,
     "favoriteDeck": {
       "name": "Darigaaz Midrange",
       "colors": "RBG",
@@ -24,8 +24,8 @@
   {
     "id": "p04",
     "name": "Jakub Rąbalsky",
-    "eventsCount": 7,
-    "matchWinPercent": 40.91,
+    "eventsCount": 8,
+    "matchWinPercent": 40,
     "favoriteDeck": {
       "name": "TerraOath",
       "colors": "GWr",
@@ -35,8 +35,8 @@
   {
     "id": "p09",
     "name": "Piotr Zieliński",
-    "eventsCount": 6,
-    "matchWinPercent": 34.09,
+    "eventsCount": 7,
+    "matchWinPercent": 34,
     "favoriteDeck": {
       "name": "Mono Black Control",
       "colors": "B",
@@ -46,12 +46,23 @@
   {
     "id": "p02",
     "name": "Wiaczasłau Kukhtsiuk",
-    "eventsCount": 6,
-    "matchWinPercent": 80,
+    "eventsCount": 7,
+    "matchWinPercent": 82.61,
     "favoriteDeck": {
       "name": "Replenish",
       "colors": "UW",
-      "count": 4
+      "count": 5
+    }
+  },
+  {
+    "id": "p13",
+    "name": "Piotr Orłowski",
+    "eventsCount": 6,
+    "matchWinPercent": 47.5,
+    "favoriteDeck": {
+      "name": "BG Rock",
+      "colors": "BG",
+      "count": 1
     }
   },
   {
@@ -66,14 +77,25 @@
     }
   },
   {
-    "id": "p13",
-    "name": "Piotr Orłowski",
-    "eventsCount": 5,
-    "matchWinPercent": 47.06,
+    "id": "p12",
+    "name": "Janusz Bułakowski",
+    "eventsCount": 4,
+    "matchWinPercent": 53.85,
     "favoriteDeck": {
-      "name": "hFEB",
-      "colors": "BGuw",
+      "name": "Moneyball",
+      "colors": "B",
       "count": 1
+    }
+  },
+  {
+    "id": "p22",
+    "name": "Michał Sękiewicz",
+    "eventsCount": 4,
+    "matchWinPercent": 50,
+    "favoriteDeck": {
+      "name": "Devourer",
+      "colors": "UR",
+      "count": 3
     }
   },
   {
@@ -96,28 +118,6 @@
       "name": "Stiflenought",
       "colors": "U",
       "count": 3
-    }
-  },
-  {
-    "id": "p12",
-    "name": "Janusz Bułakowski",
-    "eventsCount": 3,
-    "matchWinPercent": 50,
-    "favoriteDeck": {
-      "name": "Landstill",
-      "colors": "UW",
-      "count": 1
-    }
-  },
-  {
-    "id": "p22",
-    "name": "Michał Sękiewicz",
-    "eventsCount": 3,
-    "matchWinPercent": 65,
-    "favoriteDeck": {
-      "name": "Devourer",
-      "colors": "UR",
-      "count": 2
     }
   },
   {

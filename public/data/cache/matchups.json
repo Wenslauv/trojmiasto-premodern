@@ -11,8 +11,13 @@
       "slug": "bw-control"
     },
     {
+      "name": "Contamination",
+      "colors": "B",
+      "slug": "contamination"
+    },
+    {
       "name": "Darigaaz Midrange",
-      "colors": "RBG",
+      "colors": "BRG",
       "slug": "darigaaz-midrange"
     },
     {
@@ -158,6 +163,13 @@
   ],
   "matrix": {
     "BG Rock": {
+      "Contamination": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
       "Darigaaz Midrange": {
         "wins": 0,
         "losses": 1,
@@ -171,6 +183,20 @@
         "draws": 0,
         "matches": 1,
         "winPercent": 0
+      },
+      "Devourer": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "Finkula": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
       },
       "hFEB": {
         "wins": 0,
@@ -188,9 +214,9 @@
       },
       "Replenish": {
         "wins": 0,
-        "losses": 1,
+        "losses": 2,
         "draws": 0,
-        "matches": 1,
+        "matches": 2,
         "winPercent": 0
       },
       "RG Aggro": {
@@ -231,6 +257,29 @@
         "winPercent": 100
       }
     },
+    "Contamination": {
+      "BG Rock": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "Darigaaz Midrange": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "Replenish": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      }
+    },
     "Darigaaz Midrange": {
       "BG Rock": {
         "wins": 1,
@@ -239,7 +288,21 @@
         "matches": 1,
         "winPercent": 100
       },
+      "Contamination": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
       "Death & Taxes": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "Devourer": {
         "wins": 1,
         "losses": 0,
         "draws": 0,
@@ -248,10 +311,10 @@
       },
       "Monoblack": {
         "wins": 2,
-        "losses": 0,
+        "losses": 1,
         "draws": 0,
-        "matches": 2,
-        "winPercent": 100
+        "matches": 3,
+        "winPercent": 66.67
       },
       "Replenish": {
         "wins": 0,
@@ -348,12 +411,33 @@
       }
     },
     "Devourer": {
+      "BG Rock": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "Darigaaz Midrange": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
       "Enchantress": {
         "wins": 1,
         "losses": 0,
         "draws": 0,
         "matches": 1,
         "winPercent": 100
+      },
+      "Finkula": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
       },
       "Landstill": {
         "wins": 1,
@@ -485,6 +569,27 @@
       }
     },
     "Finkula": {
+      "BG Rock": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "Devourer": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "Monoblack": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
       "Oath Control": {
         "wins": 0,
         "losses": 1,
@@ -615,11 +720,11 @@
     },
     "Monoblack": {
       "Darigaaz Midrange": {
-        "wins": 0,
+        "wins": 1,
         "losses": 2,
         "draws": 0,
-        "matches": 2,
-        "winPercent": 0
+        "matches": 3,
+        "winPercent": 33.33
       },
       "Death & Taxes": {
         "wins": 1,
@@ -627,6 +732,13 @@
         "draws": 0,
         "matches": 2,
         "winPercent": 50
+      },
+      "Finkula": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
       },
       "hFEB": {
         "wins": 0,
@@ -672,9 +784,9 @@
       },
       "Replenish": {
         "wins": 0,
-        "losses": 3,
+        "losses": 4,
         "draws": 0,
-        "matches": 3,
+        "matches": 4,
         "winPercent": 0
       },
       "RG Aggro": {
@@ -976,6 +1088,13 @@
     },
     "Replenish": {
       "BG Rock": {
+        "wins": 2,
+        "losses": 0,
+        "draws": 0,
+        "matches": 2,
+        "winPercent": 100
+      },
+      "Contamination": {
         "wins": 1,
         "losses": 0,
         "draws": 0,
@@ -1018,10 +1137,10 @@
         "winPercent": 100
       },
       "Monoblack": {
-        "wins": 3,
+        "wins": 4,
         "losses": 0,
         "draws": 0,
-        "matches": 3,
+        "matches": 4,
         "winPercent": 100
       },
       "Pit Rack": {
