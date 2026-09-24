@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { formatDate, formatRecord, getPlayerById, matchWinPercent } from '../lib/data';
+import ManaPips from '../components/ManaPips';
 import type { PlayerDetail } from '../types';
 
 function getWinrateTone(value: number): string {
@@ -42,9 +43,16 @@ function PlayerPage() {
         <p>
           Overall winrate: <strong>{matchWinPercent(player.match).toFixed(2)}%</strong> ({formatRecord(player.match)})
         </p>
-        <p>
+        <p style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
           Favorite deck:{' '}
-          <strong>{player.favoriteDeck ? `${player.favoriteDeck.name} (${player.favoriteDeck.colors})` : 'Unknown'}</strong>
+          {player.favoriteDeck ? (
+            <>
+              <strong>{player.favoriteDeck.name}</strong>
+              <ManaPips colors={player.favoriteDeck.colors} />
+            </>
+          ) : (
+            <strong>Unknown</strong>
+          )}
         </p>
       </div>
       <div className="table-wrap">
@@ -72,7 +80,9 @@ function PlayerPage() {
                 <td>{formatDate(row.date)}</td>
                 <td>{row.points}</td>
                 <td>{row.rankDisplay}</td>
-                <td>{row.deck.colors}</td>
+                <td>
+                  <ManaPips colors={row.deck.colors} />
+                </td>
                 <td>
                   <button className="link-btn" onClick={() => navigate('/decks')}>
                     {row.deck.name}

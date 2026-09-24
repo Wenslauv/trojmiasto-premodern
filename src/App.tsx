@@ -9,15 +9,18 @@ import WinratesPage from './pages/WinratesPage';
 function App() {
   return (
     <div className="app-shell">
-      <aside className="sidebar">
-        <h1>Trojmiasto Premodern</h1>
+      <header className="topbar">
+        <h1 className="brand">
+          <span>Trojmiasto</span>
+          <span className="brand-format">Premodern</span>
+        </h1>
         <nav>
           <NavLink to="/events">Events</NavLink>
           <NavLink to="/players">Players</NavLink>
           <NavLink to="/decks">Decks</NavLink>
           <NavLink to="/winrates">Winrates</NavLink>
         </nav>
-      </aside>
+      </header>
       <main className="content">
         <Routes>
           <Route path="/" element={<Navigate to="/events" replace />} />

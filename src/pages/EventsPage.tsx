@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { formatDate, getEvents } from '../lib/data';
+import ManaPips from '../components/ManaPips';
 import type { EventItem } from '../types';
 
 function EventsPage() {
@@ -48,7 +49,9 @@ function EventsPage() {
                       {winner.playerName}
                     </button>
                   </td>
-                  <td>{winner.deck.colors}</td>
+                  <td>
+                    <ManaPips colors={winner.deck.colors} />
+                  </td>
                   <td>
                     <button
                       className="link-btn"

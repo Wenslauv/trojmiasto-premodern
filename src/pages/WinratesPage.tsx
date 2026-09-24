@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { getMatchups } from '../lib/data';
+import ManaPips from '../components/ManaPips';
 import type { DeckMatchupCell, DeckMatchupDeck, DeckMatchupMatrix } from '../types';
 
 function getCellTone(value: number): string {
@@ -74,7 +75,9 @@ function WinratesPage() {
               <tr key={rowDeck.name}>
                 <th className="matrix-row-head">
                   <span>{rowDeck.name}</span>
-                  <small>{rowDeck.colors}</small>
+                  <small>
+                    <ManaPips colors={rowDeck.colors} />
+                  </small>
                 </th>
                 {decks.map((colDeck) => {
                   if (rowDeck.name === colDeck.name) {

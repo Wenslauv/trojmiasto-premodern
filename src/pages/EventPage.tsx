@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { formatDate, formatRecord, getEventById } from '../lib/data';
+import ManaPips from '../components/ManaPips';
 import type { EventItem } from '../types';
 
 function formatRoundCell(round: EventItem['standings'][number]['rounds'][number] | undefined): string {
@@ -94,7 +95,9 @@ function EventPage() {
                     {row.deck.name}
                   </button>
                 </td>
-                <td>{row.deck.colors}</td>
+                <td>
+                  <ManaPips colors={row.deck.colors} />
+                </td>
                 {Array.from({ length: maxRounds }, (_, roundIndex) => {
                   const found = row.rounds.find((item) => item.round === roundIndex + 1);
                   const roundClass = getRoundResultClass(found);
