@@ -39,9 +39,6 @@ jobs:
       - name: Test
         run: npm test
 
-      - name: Generate derived cache
-        run: npm run generate-data
-
       - name: Build
         run: npm run build
 
