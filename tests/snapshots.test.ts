@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { spawnSync } from 'node:child_process';
-import { cpSync, mkdtempSync, readFileSync, rmSync } from 'node:fs';
+import { cpSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { test } from 'node:test';
@@ -61,10 +61,14 @@ test('site: player details', () => {
   matchSnapshot('site-player-details', details);
 });
 
-test('generate-data: cache files', () => {
+test('generate-data: events.json and cache files', () => {
   const workdir = mkdtempSync(path.join(tmpdir(), 'trojmiasto-generate-'));
   try {
-    cpSync(fixtureEvents, path.join(workdir, 'public/data/events.json'));
+    const eventsDir = path.join(workdir, 'data/events');
+    mkdirSync(eventsDir, { recursive: true });
+    for (const event of loadEvents()) {
+      writeFileSync(path.join(eventsDir, `${event.id}.json`), JSON.stringify(event, null, 2));
+    }
     cpSync(path.join(root, 'config'), path.join(workdir, 'config'), { recursive: true });
 
     const result = spawnSync(process.execPath, [path.join(root, 'scripts/generate-data.mjs')], {
@@ -72,6 +76,9 @@ test('generate-data: cache files', () => {
       encoding: 'utf8',
     });
     assert.equal(result.status, 0, result.stderr);
+
+    const generatedEvents = JSON.parse(readFileSync(path.join(workdir, 'public/data/events.json'), 'utf8'));
+    assert.deepStrictEqual(generatedEvents, loadEvents(), 'generated events.json must equal the event files');
 
     const read = (name: string) => JSON.parse(readFileSync(path.join(workdir, 'public/data/cache', name), 'utf8'));
     matchSnapshot('generated-players', read('players.json'));

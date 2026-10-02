@@ -194,6 +194,14 @@ function resolveByReference(reference, knownPlayers, hint) {
   return null;
 }
 
+// Fills fields that event files may omit: name ("<place> <type>") and mode ("roundByRound").
+export function applyEventDefaults(event) {
+  const result = structuredClone(event);
+  ensureEventMetadata(result);
+  result.mode = normalizeMode(result.mode);
+  return result;
+}
+
 export function normalizeIncomingEvent(incomingEvent, currentEvents) {
   const normalized = structuredClone(incomingEvent);
   const knownPlayers = buildKnownPlayers(currentEvents);

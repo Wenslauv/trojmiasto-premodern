@@ -1,9 +1,10 @@
 import { readFile, writeFile, mkdir, unlink } from 'node:fs/promises';
 import path from 'node:path';
 import { validateEventsArray } from './lib/events-validation.mjs';
+import { GENERATED_EVENTS_PATH, loadEvents } from './lib/event-store.mjs';
 
 const root = process.cwd();
-const sourcePath = path.resolve(root, 'public/data/events.json');
+const eventsOutPath = path.resolve(root, GENERATED_EVENTS_PATH);
 const outDir = path.resolve(root, 'public/data/cache');
 const matchupOutPath = path.resolve(outDir, 'matchups.json');
 const matchupRulesPath = path.resolve(root, 'config/matchup-deck-rules.json');
@@ -131,8 +132,7 @@ async function main() {
   const checkOnly = process.argv.includes('--check');
   const matrixOnly = process.argv.includes('--matrix-only');
   const resetMatchups = process.argv.includes('--reset-matchups');
-  const sourceRaw = await readFile(sourcePath, 'utf8');
-  const events = JSON.parse(sourceRaw);
+  const events = await loadEvents(root);
   const matchupRules = await loadMatchupDeckRules();
   const deckRuleAliasMap = buildDeckRuleAliasMap(matchupRules);
   validateEventsArray(events);
@@ -322,6 +322,8 @@ async function main() {
     }
   }
 
+  await writeFile(eventsOutPath, `${JSON.stringify(events, null, 2)}\n`, 'utf8');
+
   if (!matrixOnly) {
     await writeFile(path.resolve(outDir, 'players.json'), `${JSON.stringify(players, null, 2)}\n`, 'utf8');
     await writeFile(path.resolve(outDir, 'events-summary.json'), `${JSON.stringify(events.map((e) => ({
@@ -339,7 +341,7 @@ async function main() {
     return;
   }
 
-  console.log('Generated cache files in public/data/cache');
+  console.log('Generated public/data/events.json and cache files in public/data/cache');
 }
 
 main().catch((error) => {

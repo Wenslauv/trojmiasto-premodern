@@ -1,5 +1,6 @@
 import { copyFile, mkdir } from 'node:fs/promises';
 import path from 'node:path';
+import { INCOMING_DIR, TEMPLATES_DIR } from './lib/event-store.mjs';
 
 const root = process.cwd();
 
@@ -19,15 +20,15 @@ function todayEventDate() {
 
 function resolveTemplate(mode) {
   if (mode === 'standings') {
-    return path.resolve(root, 'public/data/templates/new-event.standings-only.template.json');
+    return path.resolve(root, TEMPLATES_DIR, 'new-event.standings-only.template.json');
   }
-  return path.resolve(root, 'public/data/templates/new-event.template.json');
+  return path.resolve(root, TEMPLATES_DIR, 'new-event.template.json');
 }
 
 function resolveOutput(mode, outArg) {
   if (outArg) return path.resolve(root, outArg);
   const suffix = mode === 'standings' ? '-standings' : '';
-  return path.resolve(root, `public/data/events/incoming_${todayEventDate()}${suffix}.json`);
+  return path.resolve(root, INCOMING_DIR, `incoming_${todayEventDate()}${suffix}.json`);
 }
 
 async function main() {
