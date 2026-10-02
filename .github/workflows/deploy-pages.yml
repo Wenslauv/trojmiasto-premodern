@@ -36,6 +36,9 @@ jobs:
       - name: Validate data
         run: npm run check-data
 
+      - name: Test
+        run: npm test
+
       - name: Generate derived cache
         run: npm run generate-data
 

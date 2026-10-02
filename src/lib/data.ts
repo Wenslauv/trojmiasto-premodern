@@ -29,7 +29,7 @@ function mergeRecord(left: RecordStat, right: RecordStat): RecordStat {
 // Byes are baked into a standing's overall match record, so we recompute the record from
 // individual rounds (excluding BYE) whenever round data is available. Standings-only events
 // have no rounds, so byes can't be separated there and the raw record is used as-is.
-function effectiveMatchRecord(standing: Standing): RecordStat {
+export function effectiveMatchRecord(standing: Standing): RecordStat {
   if (!standing.rounds || standing.rounds.length === 0) {
     return standing.match;
   }
@@ -132,10 +132,14 @@ async function fetchJson<T>(path: string): Promise<T> {
   return response.json() as Promise<T>;
 }
 
+export function sortEventsNewestFirst(events: EventItem[]): EventItem[] {
+  return [...events].sort((a, b) => b.date.localeCompare(a.date));
+}
+
 export async function getEvents(): Promise<EventItem[]> {
   if (cache.events) return cache.events;
   const data = await fetchJson<EventItem[]>('data/events.json');
-  cache.events = [...data].sort((a, b) => b.date.localeCompare(a.date));
+  cache.events = sortEventsNewestFirst(data);
   return cache.events;
 }
 
@@ -152,7 +156,10 @@ export async function getEventById(id: string): Promise<EventItem | undefined> {
 }
 
 export async function getPlayersList(): Promise<PlayerListItem[]> {
-  const events = await getEvents();
+  return buildPlayersList(await getEvents());
+}
+
+export function buildPlayersList(events: EventItem[]): PlayerListItem[] {
   const { buckets } = buildPlayerBuckets(events);
 
   return [...buckets.values()]
@@ -172,7 +179,10 @@ export async function getPlayersList(): Promise<PlayerListItem[]> {
 }
 
 export async function getPlayerById(id: string): Promise<PlayerDetail | undefined> {
-  const events = await getEvents();
+  return buildPlayerDetail(await getEvents(), id);
+}
+
+export function buildPlayerDetail(events: EventItem[], id: string): PlayerDetail | undefined {
   const { buckets, idToBucketKey } = buildPlayerBuckets(events);
   const directKey = idToBucketKey.get(id);
   const normalizedIdAsName = normalizePlayerKey(id);

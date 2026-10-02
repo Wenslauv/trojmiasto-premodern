@@ -5,7 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --disable-warning=ExperimentalWarning --test \"tests/**/*.test.ts\"",
+    "test:update": "UPDATE_SNAPSHOTS=1 npm test",
     "preview": "vite preview",
     "new-event-file": "node scripts/new-event-file.mjs",
     "new-standings-file": "node scripts/new-event-file.mjs --mode standings",
@@ -31,6 +34,6 @@
     "vite": "^5.4.10"
   },
   "engines": {
-    "node": ">=20.0.0"
+    "node": ">=22.6.0"
   }
 }
