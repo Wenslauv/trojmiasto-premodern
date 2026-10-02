@@ -14,13 +14,16 @@ import {
 import type { EventItem } from '../src/types.ts';
 import { matchSnapshot } from './helpers/snapshot.ts';
 
-// Snapshots of the numbers the site shows today. Refactoring must not change them;
-// intended data changes are accepted with `npm run test:update` and reviewed in the diff.
+// Snapshots of the numbers the site shows, computed from a frozen copy of the events
+// (tests/fixtures/events.json), so adding new events never breaks the tests.
+// Refactoring must not change them; intended changes are accepted with
+// `npm run test:update` and reviewed in the diff.
 
 const root = path.join(import.meta.dirname, '..');
+const fixtureEvents = path.join(import.meta.dirname, 'fixtures/events.json');
 
 function loadEvents(): EventItem[] {
-  const raw = JSON.parse(readFileSync(path.join(root, 'public/data/events.json'), 'utf8')) as EventItem[];
+  const raw = JSON.parse(readFileSync(fixtureEvents, 'utf8')) as EventItem[];
   return sortEventsNewestFirst(raw);
 }
 
@@ -61,7 +64,7 @@ test('site: player details', () => {
 test('generate-data: cache files', () => {
   const workdir = mkdtempSync(path.join(tmpdir(), 'trojmiasto-generate-'));
   try {
-    cpSync(path.join(root, 'public/data/events.json'), path.join(workdir, 'public/data/events.json'));
+    cpSync(fixtureEvents, path.join(workdir, 'public/data/events.json'));
     cpSync(path.join(root, 'config'), path.join(workdir, 'config'), { recursive: true });
 
     const result = spawnSync(process.execPath, [path.join(root, 'scripts/generate-data.mjs')], {
