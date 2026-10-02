@@ -10,7 +10,7 @@
       {
         "localId": "WK",
         "rank": 1,
-        "playerRef": "p02",
+        "playerRef": "wiaczaslau-kukhtsiuk",
         "playerName": "Wiaczasłau Kukhtsiuk",
         "points": 9,
         "deck": {
@@ -27,7 +27,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p09",
+            "opponentPlayerId": "piotr-zielinski",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -43,7 +43,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p12",
+            "opponentPlayerId": "janusz-bulakowski",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -59,7 +59,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p13",
+            "opponentPlayerId": "piotr-orlowski",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -67,7 +67,7 @@
             }
           }
         ],
-        "playerId": "p02",
+        "playerId": "wiaczaslau-kukhtsiuk",
         "match": {
           "wins": 3,
           "losses": 0,
@@ -82,7 +82,7 @@
       {
         "localId": "MK",
         "rank": 2,
-        "playerRef": "p06",
+        "playerRef": "marcin-kowalski",
         "playerName": "Marcin Kowalski",
         "points": 7,
         "deck": {
@@ -99,7 +99,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p22",
+            "opponentPlayerId": "michal-sekiewicz",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -115,7 +115,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p13",
+            "opponentPlayerId": "piotr-orlowski",
             "match": {
               "wins": 0,
               "losses": 0,
@@ -131,7 +131,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p09",
+            "opponentPlayerId": "piotr-zielinski",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -139,7 +139,7 @@
             }
           }
         ],
-        "playerId": "p06",
+        "playerId": "marcin-kowalski",
         "match": {
           "wins": 2,
           "losses": 0,
@@ -154,7 +154,7 @@
       {
         "localId": "JB",
         "rank": 3,
-        "playerRef": "p12",
+        "playerRef": "janusz-bulakowski",
         "playerName": "Janusz Bułakowski",
         "points": 6,
         "deck": {
@@ -171,7 +171,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p04",
+            "opponentPlayerId": "jakub-rabalsky",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -187,7 +187,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p02",
+            "opponentPlayerId": "wiaczaslau-kukhtsiuk",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -203,7 +203,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p05",
+            "opponentPlayerId": "damian-krasny",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -211,7 +211,7 @@
             }
           }
         ],
-        "playerId": "p12",
+        "playerId": "janusz-bulakowski",
         "match": {
           "wins": 2,
           "losses": 1,
@@ -226,7 +226,7 @@
       {
         "localId": "PO",
         "rank": 4,
-        "playerRef": "p13",
+        "playerRef": "piotr-orlowski",
         "playerName": "Piotr Orłowski",
         "points": 4,
         "deck": {
@@ -243,7 +243,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p05",
+            "opponentPlayerId": "damian-krasny",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -259,7 +259,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p06",
+            "opponentPlayerId": "marcin-kowalski",
             "match": {
               "wins": 0,
               "losses": 0,
@@ -275,7 +275,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p02",
+            "opponentPlayerId": "wiaczaslau-kukhtsiuk",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -283,7 +283,7 @@
             }
           }
         ],
-        "playerId": "p13",
+        "playerId": "piotr-orlowski",
         "match": {
           "wins": 1,
           "losses": 1,
@@ -298,7 +298,7 @@
       {
         "localId": "PZ",
         "rank": 5,
-        "playerRef": "p09",
+        "playerRef": "piotr-zielinski",
         "playerName": "Piotr Zieliński",
         "points": 3,
         "deck": {
@@ -315,7 +315,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p02",
+            "opponentPlayerId": "wiaczaslau-kukhtsiuk",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -331,7 +331,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p04",
+            "opponentPlayerId": "jakub-rabalsky",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -347,7 +347,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p06",
+            "opponentPlayerId": "marcin-kowalski",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -355,7 +355,7 @@
             }
           }
         ],
-        "playerId": "p09",
+        "playerId": "piotr-zielinski",
         "match": {
           "wins": 1,
           "losses": 2,
@@ -370,7 +370,7 @@
       {
         "localId": "DK",
         "rank": 6,
-        "playerRef": "p05",
+        "playerRef": "damian-krasny",
         "playerName": "Damian Kraśny",
         "points": 3,
         "deck": {
@@ -387,7 +387,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p13",
+            "opponentPlayerId": "piotr-orlowski",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -403,7 +403,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p22",
+            "opponentPlayerId": "michal-sekiewicz",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -419,7 +419,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p12",
+            "opponentPlayerId": "janusz-bulakowski",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -427,7 +427,7 @@
             }
           }
         ],
-        "playerId": "p05",
+        "playerId": "damian-krasny",
         "match": {
           "wins": 1,
           "losses": 2,
@@ -442,7 +442,7 @@
       {
         "localId": "JR",
         "rank": 7,
-        "playerRef": "p04",
+        "playerRef": "jakub-rabalsky",
         "playerName": "Jakub Rąbalsky",
         "points": 3,
         "deck": {
@@ -459,7 +459,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p12",
+            "opponentPlayerId": "janusz-bulakowski",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -475,7 +475,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p09",
+            "opponentPlayerId": "piotr-zielinski",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -491,7 +491,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p22",
+            "opponentPlayerId": "michal-sekiewicz",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -499,7 +499,7 @@
             }
           }
         ],
-        "playerId": "p04",
+        "playerId": "jakub-rabalsky",
         "match": {
           "wins": 1,
           "losses": 2,
@@ -514,7 +514,7 @@
       {
         "localId": "MS",
         "rank": 8,
-        "playerRef": "p22",
+        "playerRef": "michal-sekiewicz",
         "playerName": "Michał Sękiewicz",
         "points": 0,
         "deck": {
@@ -531,7 +531,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p06",
+            "opponentPlayerId": "marcin-kowalski",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -547,7 +547,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p05",
+            "opponentPlayerId": "damian-krasny",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -563,7 +563,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p04",
+            "opponentPlayerId": "jakub-rabalsky",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -571,7 +571,7 @@
             }
           }
         ],
-        "playerId": "p22",
+        "playerId": "michal-sekiewicz",
         "match": {
           "wins": 0,
           "losses": 3,
@@ -597,7 +597,7 @@
       {
         "localId": "PO",
         "rank": 1,
-        "playerRef": "p13",
+        "playerRef": "piotr-orlowski",
         "points": 6,
         "deck": {
           "name": "hFEB",
@@ -613,7 +613,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p06",
+            "opponentPlayerId": "marcin-kowalski",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -629,7 +629,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p28",
+            "opponentPlayerId": "amadeusz-sztangierski",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -645,7 +645,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p26",
+            "opponentPlayerId": "marcin-gornowicz",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -653,7 +653,7 @@
             }
           }
         ],
-        "playerId": "p13",
+        "playerId": "piotr-orlowski",
         "playerName": "Piotr Orłowski",
         "match": {
           "wins": 3,
@@ -669,7 +669,7 @@
       {
         "localId": "MG",
         "rank": 2,
-        "playerRef": "p26",
+        "playerRef": "marcin-gornowicz",
         "points": 6,
         "deck": {
           "name": "Moneyball",
@@ -685,7 +685,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p04",
+            "opponentPlayerId": "jakub-rabalsky",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -701,7 +701,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p02",
+            "opponentPlayerId": "wiaczaslau-kukhtsiuk",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -717,7 +717,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p13",
+            "opponentPlayerId": "piotr-orlowski",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -725,7 +725,7 @@
             }
           }
         ],
-        "playerId": "p26",
+        "playerId": "marcin-gornowicz",
         "playerName": "Marcin Gornowicz",
         "match": {
           "wins": 2,
@@ -741,7 +741,7 @@
       {
         "localId": "MK",
         "rank": 3,
-        "playerRef": "p06",
+        "playerRef": "marcin-kowalski",
         "points": 6,
         "deck": {
           "name": "BG Rock",
@@ -757,7 +757,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p13",
+            "opponentPlayerId": "piotr-orlowski",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -773,7 +773,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p09",
+            "opponentPlayerId": "piotr-zielinski",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -789,7 +789,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p28",
+            "opponentPlayerId": "amadeusz-sztangierski",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -797,7 +797,7 @@
             }
           }
         ],
-        "playerId": "p06",
+        "playerId": "marcin-kowalski",
         "playerName": "Marcin Kowalski",
         "match": {
           "wins": 2,
@@ -813,7 +813,7 @@
       {
         "localId": "WK",
         "rank": 4,
-        "playerRef": "p02",
+        "playerRef": "wiaczaslau-kukhtsiuk",
         "points": 6,
         "deck": {
           "name": "UWR Solution",
@@ -829,7 +829,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p09",
+            "opponentPlayerId": "piotr-zielinski",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -845,7 +845,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p26",
+            "opponentPlayerId": "marcin-gornowicz",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -861,7 +861,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p22",
+            "opponentPlayerId": "michal-sekiewicz",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -869,7 +869,7 @@
             }
           }
         ],
-        "playerId": "p02",
+        "playerId": "wiaczaslau-kukhtsiuk",
         "playerName": "Wiaczasłau Kukhtsiuk",
         "match": {
           "wins": 2,
@@ -901,7 +901,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p22",
+            "opponentPlayerId": "michal-sekiewicz",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -917,7 +917,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p13",
+            "opponentPlayerId": "piotr-orlowski",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -933,7 +933,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p06",
+            "opponentPlayerId": "marcin-kowalski",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -941,7 +941,7 @@
             }
           }
         ],
-        "playerId": "p28",
+        "playerId": "amadeusz-sztangierski",
         "match": {
           "wins": 1,
           "losses": 2,
@@ -956,7 +956,7 @@
       {
         "localId": "PZ",
         "rank": 6,
-        "playerRef": "p09",
+        "playerRef": "piotr-zielinski",
         "points": 3,
         "deck": {
           "name": "MonoBlack Ponza",
@@ -972,7 +972,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p02",
+            "opponentPlayerId": "wiaczaslau-kukhtsiuk",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -988,7 +988,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p06",
+            "opponentPlayerId": "marcin-kowalski",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -1004,7 +1004,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p04",
+            "opponentPlayerId": "jakub-rabalsky",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -1012,7 +1012,7 @@
             }
           }
         ],
-        "playerId": "p09",
+        "playerId": "piotr-zielinski",
         "playerName": "Piotr Zieliński",
         "match": {
           "wins": 1,
@@ -1028,7 +1028,7 @@
       {
         "localId": "MS",
         "rank": 7,
-        "playerRef": "p22",
+        "playerRef": "michal-sekiewicz",
         "points": 3,
         "deck": {
           "name": "Devourer",
@@ -1044,7 +1044,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p28",
+            "opponentPlayerId": "amadeusz-sztangierski",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -1060,7 +1060,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p04",
+            "opponentPlayerId": "jakub-rabalsky",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -1076,7 +1076,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p02",
+            "opponentPlayerId": "wiaczaslau-kukhtsiuk",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -1084,7 +1084,7 @@
             }
           }
         ],
-        "playerId": "p22",
+        "playerId": "michal-sekiewicz",
         "playerName": "Michał Sękiewicz",
         "match": {
           "wins": 1,
@@ -1100,7 +1100,7 @@
       {
         "localId": "JR",
         "rank": 8,
-        "playerRef": "p04",
+        "playerRef": "jakub-rabalsky",
         "points": 0,
         "deck": {
           "name": "Oath Ponza",
@@ -1116,7 +1116,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p26",
+            "opponentPlayerId": "marcin-gornowicz",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -1132,7 +1132,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p22",
+            "opponentPlayerId": "michal-sekiewicz",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -1148,7 +1148,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p09",
+            "opponentPlayerId": "piotr-zielinski",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -1156,7 +1156,7 @@
             }
           }
         ],
-        "playerId": "p04",
+        "playerId": "jakub-rabalsky",
         "playerName": "Jakub Rąbalsky",
         "match": {
           "wins": 0,
@@ -1184,9 +1184,9 @@
       {
         "localId": "MK",
         "rank": 1,
-        "playerId": "p06",
+        "playerId": "marcin-kowalski",
         "playerName": "Marcin Kowalski",
-        "playerRef": "p06",
+        "playerRef": "marcin-kowalski",
         "points": 12,
         "deck": {
           "name": "Devourer",
@@ -1197,7 +1197,7 @@
             "round": 1,
             "opponentLocalId": "GT",
             "resultType": "PLAYED",
-            "opponentPlayerId": "p23",
+            "opponentPlayerId": "grzegorz-talewski",
             "game": {
               "wins": 2,
               "losses": 1,
@@ -1213,7 +1213,7 @@
             "round": 2,
             "opponentLocalId": "JB",
             "resultType": "PLAYED",
-            "opponentPlayerId": "p12",
+            "opponentPlayerId": "janusz-bulakowski",
             "game": {
               "wins": 2,
               "losses": 1,
@@ -1229,7 +1229,7 @@
             "round": 3,
             "opponentLocalId": "WK",
             "resultType": "PLAYED",
-            "opponentPlayerId": "p02",
+            "opponentPlayerId": "wiaczaslau-kukhtsiuk",
             "game": {
               "wins": 2,
               "losses": 0,
@@ -1245,7 +1245,7 @@
             "round": 4,
             "opponentLocalId": "DK",
             "resultType": "PLAYED",
-            "opponentPlayerId": "p05",
+            "opponentPlayerId": "damian-krasny",
             "game": {
               "wins": 2,
               "losses": 0,
@@ -1272,9 +1272,9 @@
       {
         "localId": "WK",
         "rank": 2,
-        "playerId": "p02",
+        "playerId": "wiaczaslau-kukhtsiuk",
         "playerName": "Wiaczasłau Kukhtsiuk",
-        "playerRef": "p02",
+        "playerRef": "wiaczaslau-kukhtsiuk",
         "points": 9,
         "deck": {
           "name": "Replenish",
@@ -1285,7 +1285,7 @@
             "round": 1,
             "opponentLocalId": "PO",
             "resultType": "PLAYED",
-            "opponentPlayerId": "p13",
+            "opponentPlayerId": "piotr-orlowski",
             "game": {
               "wins": 2,
               "losses": 0,
@@ -1301,7 +1301,7 @@
             "round": 2,
             "opponentLocalId": "DK",
             "resultType": "PLAYED",
-            "opponentPlayerId": "p05",
+            "opponentPlayerId": "damian-krasny",
             "game": {
               "wins": 2,
               "losses": 0,
@@ -1317,7 +1317,7 @@
             "round": 3,
             "opponentLocalId": "MK",
             "resultType": "PLAYED",
-            "opponentPlayerId": "p06",
+            "opponentPlayerId": "marcin-kowalski",
             "game": {
               "wins": 0,
               "losses": 2,
@@ -1333,7 +1333,7 @@
             "round": 4,
             "opponentLocalId": "JB",
             "resultType": "PLAYED",
-            "opponentPlayerId": "p12",
+            "opponentPlayerId": "janusz-bulakowski",
             "game": {
               "wins": 2,
               "losses": 0,
@@ -1360,7 +1360,7 @@
       {
         "localId": "JS",
         "rank": 3,
-        "playerId": "p27",
+        "playerId": "jakub-szewczyk",
         "playerName": "Jakub Szewczyk",
         "playerRef": "new:js",
         "points": 7,
@@ -1373,7 +1373,7 @@
             "round": 1,
             "opponentLocalId": "ML",
             "resultType": "PLAYED",
-            "opponentPlayerId": "p01",
+            "opponentPlayerId": "maciej-lbik",
             "game": {
               "wins": 1,
               "losses": 1,
@@ -1389,7 +1389,7 @@
             "round": 2,
             "opponentLocalId": "MG",
             "resultType": "PLAYED",
-            "opponentPlayerId": "p26",
+            "opponentPlayerId": "marcin-gornowicz",
             "game": {
               "wins": 2,
               "losses": 0,
@@ -1405,7 +1405,7 @@
             "round": 3,
             "opponentLocalId": "JB",
             "resultType": "PLAYED",
-            "opponentPlayerId": "p12",
+            "opponentPlayerId": "janusz-bulakowski",
             "game": {
               "wins": 1,
               "losses": 2,
@@ -1421,7 +1421,7 @@
             "round": 4,
             "opponentLocalId": "PO",
             "resultType": "PLAYED",
-            "opponentPlayerId": "p13",
+            "opponentPlayerId": "piotr-orlowski",
             "game": {
               "wins": 2,
               "losses": 1,
@@ -1448,9 +1448,9 @@
       {
         "localId": "ML",
         "rank": 4,
-        "playerId": "p01",
+        "playerId": "maciej-lbik",
         "playerName": "Maciej Łbik",
-        "playerRef": "p01",
+        "playerRef": "maciej-lbik",
         "points": 7,
         "deck": {
           "name": "Quiet Tribe",
@@ -1461,7 +1461,7 @@
             "round": 1,
             "opponentLocalId": "JS",
             "resultType": "PLAYED",
-            "opponentPlayerId": "p27",
+            "opponentPlayerId": "jakub-szewczyk",
             "game": {
               "wins": 1,
               "losses": 1,
@@ -1477,7 +1477,7 @@
             "round": 2,
             "opponentLocalId": "PO",
             "resultType": "PLAYED",
-            "opponentPlayerId": "p13",
+            "opponentPlayerId": "piotr-orlowski",
             "game": {
               "wins": 2,
               "losses": 0,
@@ -1493,7 +1493,7 @@
             "round": 3,
             "opponentLocalId": "DK",
             "resultType": "PLAYED",
-            "opponentPlayerId": "p05",
+            "opponentPlayerId": "damian-krasny",
             "game": {
               "wins": 0,
               "losses": 2,
@@ -1509,7 +1509,7 @@
             "round": 4,
             "opponentLocalId": "PZ",
             "resultType": "PLAYED",
-            "opponentPlayerId": "p09",
+            "opponentPlayerId": "piotr-zielinski",
             "game": {
               "wins": 2,
               "losses": 0,
@@ -1536,9 +1536,9 @@
       {
         "localId": "DK",
         "rank": 5,
-        "playerId": "p05",
+        "playerId": "damian-krasny",
         "playerName": "Damian Kraśny",
-        "playerRef": "p05",
+        "playerRef": "damian-krasny",
         "points": 6,
         "deck": {
           "name": "Pit Rack",
@@ -1549,7 +1549,7 @@
             "round": 1,
             "opponentLocalId": "MG",
             "resultType": "PLAYED",
-            "opponentPlayerId": "p26",
+            "opponentPlayerId": "marcin-gornowicz",
             "game": {
               "wins": 2,
               "losses": 1,
@@ -1565,7 +1565,7 @@
             "round": 2,
             "opponentLocalId": "WK",
             "resultType": "PLAYED",
-            "opponentPlayerId": "p02",
+            "opponentPlayerId": "wiaczaslau-kukhtsiuk",
             "game": {
               "wins": 0,
               "losses": 2,
@@ -1581,7 +1581,7 @@
             "round": 3,
             "opponentLocalId": "ML",
             "resultType": "PLAYED",
-            "opponentPlayerId": "p01",
+            "opponentPlayerId": "maciej-lbik",
             "game": {
               "wins": 2,
               "losses": 0,
@@ -1597,7 +1597,7 @@
             "round": 4,
             "opponentLocalId": "MK",
             "resultType": "PLAYED",
-            "opponentPlayerId": "p06",
+            "opponentPlayerId": "marcin-kowalski",
             "game": {
               "wins": 0,
               "losses": 2,
@@ -1624,9 +1624,9 @@
       {
         "localId": "JB",
         "rank": 6,
-        "playerId": "p12",
+        "playerId": "janusz-bulakowski",
         "playerName": "Janusz Bułakowski",
-        "playerRef": "p12",
+        "playerRef": "janusz-bulakowski",
         "points": 6,
         "deck": {
           "name": "Landstill",
@@ -1637,7 +1637,7 @@
             "round": 1,
             "opponentLocalId": "PZ",
             "resultType": "PLAYED",
-            "opponentPlayerId": "p09",
+            "opponentPlayerId": "piotr-zielinski",
             "game": {
               "wins": 2,
               "losses": 1,
@@ -1653,7 +1653,7 @@
             "round": 2,
             "opponentLocalId": "MK",
             "resultType": "PLAYED",
-            "opponentPlayerId": "p06",
+            "opponentPlayerId": "marcin-kowalski",
             "game": {
               "wins": 1,
               "losses": 2,
@@ -1669,7 +1669,7 @@
             "round": 3,
             "opponentLocalId": "JS",
             "resultType": "PLAYED",
-            "opponentPlayerId": "p27",
+            "opponentPlayerId": "jakub-szewczyk",
             "game": {
               "wins": 2,
               "losses": 1,
@@ -1685,7 +1685,7 @@
             "round": 4,
             "opponentLocalId": "WK",
             "resultType": "PLAYED",
-            "opponentPlayerId": "p02",
+            "opponentPlayerId": "wiaczaslau-kukhtsiuk",
             "game": {
               "wins": 0,
               "losses": 2,
@@ -1712,7 +1712,7 @@
       {
         "localId": "MG",
         "rank": 7,
-        "playerId": "p26",
+        "playerId": "marcin-gornowicz",
         "playerName": "Marcin Gornowicz",
         "playerRef": "new:mg",
         "points": 6,
@@ -1725,7 +1725,7 @@
             "round": 1,
             "opponentLocalId": "DK",
             "resultType": "PLAYED",
-            "opponentPlayerId": "p05",
+            "opponentPlayerId": "damian-krasny",
             "game": {
               "wins": 1,
               "losses": 2,
@@ -1741,7 +1741,7 @@
             "round": 2,
             "opponentLocalId": "JS",
             "resultType": "PLAYED",
-            "opponentPlayerId": "p27",
+            "opponentPlayerId": "jakub-szewczyk",
             "game": {
               "wins": 0,
               "losses": 2,
@@ -1757,7 +1757,7 @@
             "round": 3,
             "opponentLocalId": "PZ",
             "resultType": "PLAYED",
-            "opponentPlayerId": "p09",
+            "opponentPlayerId": "piotr-zielinski",
             "game": {
               "wins": 2,
               "losses": 0,
@@ -1773,7 +1773,7 @@
             "round": 4,
             "opponentLocalId": "GT",
             "resultType": "PLAYED",
-            "opponentPlayerId": "p23",
+            "opponentPlayerId": "grzegorz-talewski",
             "game": {
               "wins": 2,
               "losses": 1,
@@ -1800,9 +1800,9 @@
       {
         "localId": "PO",
         "rank": 8,
-        "playerId": "p13",
+        "playerId": "piotr-orlowski",
         "playerName": "Piotr Orłowski",
-        "playerRef": "p13",
+        "playerRef": "piotr-orlowski",
         "points": 3,
         "deck": {
           "name": "Finkula",
@@ -1813,7 +1813,7 @@
             "round": 1,
             "opponentLocalId": "WK",
             "resultType": "PLAYED",
-            "opponentPlayerId": "p02",
+            "opponentPlayerId": "wiaczaslau-kukhtsiuk",
             "game": {
               "wins": 0,
               "losses": 2,
@@ -1829,7 +1829,7 @@
             "round": 2,
             "opponentLocalId": "ML",
             "resultType": "PLAYED",
-            "opponentPlayerId": "p01",
+            "opponentPlayerId": "maciej-lbik",
             "game": {
               "wins": 0,
               "losses": 2,
@@ -1845,7 +1845,7 @@
             "round": 3,
             "opponentLocalId": "GT",
             "resultType": "PLAYED",
-            "opponentPlayerId": "p23",
+            "opponentPlayerId": "grzegorz-talewski",
             "game": {
               "wins": 2,
               "losses": 1,
@@ -1861,7 +1861,7 @@
             "round": 4,
             "opponentLocalId": "JS",
             "resultType": "PLAYED",
-            "opponentPlayerId": "p27",
+            "opponentPlayerId": "jakub-szewczyk",
             "game": {
               "wins": 1,
               "losses": 2,
@@ -1888,9 +1888,9 @@
       {
         "localId": "PZ",
         "rank": 9,
-        "playerId": "p09",
+        "playerId": "piotr-zielinski",
         "playerName": "Piotr Zieliński",
-        "playerRef": "p09",
+        "playerRef": "piotr-zielinski",
         "points": 3,
         "deck": {
           "name": "MonoBlack",
@@ -1901,7 +1901,7 @@
             "round": 1,
             "opponentLocalId": "JB",
             "resultType": "PLAYED",
-            "opponentPlayerId": "p12",
+            "opponentPlayerId": "janusz-bulakowski",
             "game": {
               "wins": 1,
               "losses": 2,
@@ -1917,7 +1917,7 @@
             "round": 2,
             "opponentLocalId": "GT",
             "resultType": "PLAYED",
-            "opponentPlayerId": "p23",
+            "opponentPlayerId": "grzegorz-talewski",
             "game": {
               "wins": 2,
               "losses": 1,
@@ -1933,7 +1933,7 @@
             "round": 3,
             "opponentLocalId": "MG",
             "resultType": "PLAYED",
-            "opponentPlayerId": "p26",
+            "opponentPlayerId": "marcin-gornowicz",
             "game": {
               "wins": 0,
               "losses": 2,
@@ -1949,7 +1949,7 @@
             "round": 4,
             "opponentLocalId": "ML",
             "resultType": "PLAYED",
-            "opponentPlayerId": "p01",
+            "opponentPlayerId": "maciej-lbik",
             "game": {
               "wins": 0,
               "losses": 2,
@@ -1976,9 +1976,9 @@
       {
         "localId": "GT",
         "rank": 10,
-        "playerId": "p23",
+        "playerId": "grzegorz-talewski",
         "playerName": "Grzegorz Talewski",
-        "playerRef": "p23",
+        "playerRef": "grzegorz-talewski",
         "points": 0,
         "deck": {
           "name": "Stiflenought",
@@ -1989,7 +1989,7 @@
             "round": 1,
             "opponentLocalId": "MK",
             "resultType": "PLAYED",
-            "opponentPlayerId": "p06",
+            "opponentPlayerId": "marcin-kowalski",
             "game": {
               "wins": 1,
               "losses": 2,
@@ -2005,7 +2005,7 @@
             "round": 2,
             "opponentLocalId": "PZ",
             "resultType": "PLAYED",
-            "opponentPlayerId": "p09",
+            "opponentPlayerId": "piotr-zielinski",
             "game": {
               "wins": 1,
               "losses": 2,
@@ -2021,7 +2021,7 @@
             "round": 3,
             "opponentLocalId": "PO",
             "resultType": "PLAYED",
-            "opponentPlayerId": "p13",
+            "opponentPlayerId": "piotr-orlowski",
             "game": {
               "wins": 1,
               "losses": 2,
@@ -2037,7 +2037,7 @@
             "round": 4,
             "opponentLocalId": "MG",
             "resultType": "PLAYED",
-            "opponentPlayerId": "p26",
+            "opponentPlayerId": "marcin-gornowicz",
             "game": {
               "wins": 1,
               "losses": 2,
@@ -2105,7 +2105,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p13",
+            "opponentPlayerId": "piotr-orlowski",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -2121,7 +2121,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p25",
+            "opponentPlayerId": "pawel-pidsudko",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -2137,7 +2137,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p12",
+            "opponentPlayerId": "janusz-bulakowski",
             "match": {
               "wins": 0,
               "losses": 0,
@@ -2155,13 +2155,13 @@
           "losses": 1,
           "draws": 0
         },
-        "playerId": "p24"
+        "playerId": "andrzej-pracki"
       },
       {
         "localId": "MS",
         "rank": 2,
         "playerName": "Michał Sękiewicz",
-        "playerRef": "p22",
+        "playerRef": "michal-sekiewicz",
         "points": 10,
         "deck": {
           "name": "Devourer",
@@ -2177,7 +2177,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p01",
+            "opponentPlayerId": "maciej-lbik",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -2193,7 +2193,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p23",
+            "opponentPlayerId": "grzegorz-talewski",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -2209,7 +2209,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p12",
+            "opponentPlayerId": "janusz-bulakowski",
             "match": {
               "wins": 0,
               "losses": 0,
@@ -2225,7 +2225,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p13",
+            "opponentPlayerId": "piotr-orlowski",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -2243,13 +2243,13 @@
           "losses": 2,
           "draws": 0
         },
-        "playerId": "p22"
+        "playerId": "michal-sekiewicz"
       },
       {
         "localId": "MK",
         "rank": 3,
         "playerName": "Marcin Kowalski",
-        "playerRef": "p06",
+        "playerRef": "marcin-kowalski",
         "points": 9,
         "deck": {
           "name": "Devourer",
@@ -2265,7 +2265,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p25",
+            "opponentPlayerId": "pawel-pidsudko",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -2281,7 +2281,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p12",
+            "opponentPlayerId": "janusz-bulakowski",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -2297,7 +2297,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p09",
+            "opponentPlayerId": "piotr-zielinski",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -2313,7 +2313,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p23",
+            "opponentPlayerId": "grzegorz-talewski",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -2331,13 +2331,13 @@
           "losses": 2,
           "draws": 0
         },
-        "playerId": "p06"
+        "playerId": "marcin-kowalski"
       },
       {
         "localId": "JB",
         "rank": 4,
         "playerName": "Janusz Bułakowski",
-        "playerRef": "p12",
+        "playerRef": "janusz-bulakowski",
         "points": 8,
         "deck": {
           "name": "Stasis",
@@ -2353,7 +2353,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p05",
+            "opponentPlayerId": "damian-krasny",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -2369,7 +2369,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p06",
+            "opponentPlayerId": "marcin-kowalski",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -2385,7 +2385,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p22",
+            "opponentPlayerId": "michal-sekiewicz",
             "match": {
               "wins": 0,
               "losses": 0,
@@ -2401,7 +2401,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p24",
+            "opponentPlayerId": "andrzej-pracki",
             "match": {
               "wins": 0,
               "losses": 0,
@@ -2419,13 +2419,13 @@
           "losses": 4,
           "draws": 0
         },
-        "playerId": "p12"
+        "playerId": "janusz-bulakowski"
       },
       {
         "localId": "PO",
         "rank": 5,
         "playerName": "Piotr Orłowski",
-        "playerRef": "p13",
+        "playerRef": "piotr-orlowski",
         "points": 6,
         "deck": {
           "name": "Enchantress",
@@ -2441,7 +2441,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p09",
+            "opponentPlayerId": "piotr-zielinski",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -2457,7 +2457,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p24",
+            "opponentPlayerId": "andrzej-pracki",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -2473,7 +2473,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p01",
+            "opponentPlayerId": "maciej-lbik",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -2489,7 +2489,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p22",
+            "opponentPlayerId": "michal-sekiewicz",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -2507,7 +2507,7 @@
           "losses": 4,
           "draws": 0
         },
-        "playerId": "p13"
+        "playerId": "piotr-orlowski"
       },
       {
         "localId": "PP",
@@ -2529,7 +2529,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p06",
+            "opponentPlayerId": "marcin-kowalski",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -2545,7 +2545,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p03",
+            "opponentPlayerId": "wojciech-cwiklinski",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -2561,7 +2561,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p24",
+            "opponentPlayerId": "andrzej-pracki",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -2577,7 +2577,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p05",
+            "opponentPlayerId": "damian-krasny",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -2595,13 +2595,13 @@
           "losses": 4,
           "draws": 0
         },
-        "playerId": "p25"
+        "playerId": "pawel-pidsudko"
       },
       {
         "localId": "GT",
         "rank": 7,
         "playerName": "Grzegorz Talewski",
-        "playerRef": "p23",
+        "playerRef": "grzegorz-talewski",
         "points": 6,
         "deck": {
           "name": "Stiflenought",
@@ -2617,7 +2617,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p03",
+            "opponentPlayerId": "wojciech-cwiklinski",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -2633,7 +2633,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p22",
+            "opponentPlayerId": "michal-sekiewicz",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -2649,7 +2649,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p05",
+            "opponentPlayerId": "damian-krasny",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -2665,7 +2665,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p06",
+            "opponentPlayerId": "marcin-kowalski",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -2683,13 +2683,13 @@
           "losses": 5,
           "draws": 0
         },
-        "playerId": "p23"
+        "playerId": "grzegorz-talewski"
       },
       {
         "localId": "PZ",
         "rank": 8,
         "playerName": "Piotr Zieliński",
-        "playerRef": "p09",
+        "playerRef": "piotr-zielinski",
         "points": 6,
         "deck": {
           "name": "Mono Black Control",
@@ -2705,7 +2705,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p13",
+            "opponentPlayerId": "piotr-orlowski",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -2721,7 +2721,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p01",
+            "opponentPlayerId": "maciej-lbik",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -2737,7 +2737,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p06",
+            "opponentPlayerId": "marcin-kowalski",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -2753,7 +2753,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p03",
+            "opponentPlayerId": "wojciech-cwiklinski",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -2771,13 +2771,13 @@
           "losses": 5,
           "draws": 0
         },
-        "playerId": "p09"
+        "playerId": "piotr-zielinski"
       },
       {
         "localId": "ML",
         "rank": 9,
         "playerName": "Maciej Łbik",
-        "playerRef": "p01",
+        "playerRef": "maciej-lbik",
         "points": 3,
         "deck": {
           "name": "Quiet Tribe",
@@ -2793,7 +2793,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p22",
+            "opponentPlayerId": "michal-sekiewicz",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -2809,7 +2809,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p09",
+            "opponentPlayerId": "piotr-zielinski",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -2825,7 +2825,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p13",
+            "opponentPlayerId": "piotr-orlowski",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -2858,13 +2858,13 @@
           "losses": 6,
           "draws": 0
         },
-        "playerId": "p01"
+        "playerId": "maciej-lbik"
       },
       {
         "localId": "DK",
         "rank": 10,
         "playerName": "Damian Kraśny",
-        "playerRef": "p05",
+        "playerRef": "damian-krasny",
         "points": 3,
         "deck": {
           "name": "Darigaaz Midrange",
@@ -2880,7 +2880,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p12",
+            "opponentPlayerId": "janusz-bulakowski",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -2911,7 +2911,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p23",
+            "opponentPlayerId": "grzegorz-talewski",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -2927,7 +2927,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p25",
+            "opponentPlayerId": "pawel-pidsudko",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -2945,13 +2945,13 @@
           "losses": 6,
           "draws": 0
         },
-        "playerId": "p05"
+        "playerId": "damian-krasny"
       },
       {
         "localId": "WC",
         "rank": 11,
         "playerName": "Wojciech Ćwikliński",
-        "playerRef": "p03",
+        "playerRef": "wojciech-cwiklinski",
         "points": 3,
         "deck": {
           "name": "Oath Stasis",
@@ -2967,7 +2967,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p23",
+            "opponentPlayerId": "grzegorz-talewski",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -2983,7 +2983,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p25",
+            "opponentPlayerId": "pawel-pidsudko",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -3014,7 +3014,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p09",
+            "opponentPlayerId": "piotr-zielinski",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -3032,7 +3032,7 @@
           "losses": 6,
           "draws": 0
         },
-        "playerId": "p03"
+        "playerId": "wojciech-cwiklinski"
       }
     ],
     "place": "SideQuest",
@@ -3046,7 +3046,7 @@
     "standings": [
       {
         "rank": 1,
-        "playerRef": "p04",
+        "playerRef": "jakub-rabalsky",
         "playerName": "Jakub Rąbalsky",
         "points": 7,
         "deck": {
@@ -3059,7 +3059,7 @@
           "draws": 1
         },
         "localId": "s1",
-        "playerId": "p04",
+        "playerId": "jakub-rabalsky",
         "rounds": []
       },
       {
@@ -3077,12 +3077,12 @@
           "draws": 0
         },
         "localId": "s2",
-        "playerId": "p21",
+        "playerId": "marek-palub",
         "rounds": []
       },
       {
         "rank": 3,
-        "playerRef": "p06",
+        "playerRef": "marcin-kowalski",
         "playerName": "Marcin Kowalski",
         "points": 6,
         "deck": {
@@ -3095,7 +3095,7 @@
           "draws": 0
         },
         "localId": "s3",
-        "playerId": "p06",
+        "playerId": "marcin-kowalski",
         "rounds": []
       },
       {
@@ -3113,12 +3113,12 @@
           "draws": 2
         },
         "localId": "s4",
-        "playerId": "p22",
+        "playerId": "michal-sekiewicz",
         "rounds": []
       },
       {
         "rank": 5,
-        "playerRef": "p05",
+        "playerRef": "damian-krasny",
         "playerName": "Damian Kraśny",
         "points": 4,
         "deck": {
@@ -3131,7 +3131,7 @@
           "draws": 1
         },
         "localId": "s5",
-        "playerId": "p05",
+        "playerId": "damian-krasny",
         "rounds": []
       },
       {
@@ -3149,7 +3149,7 @@
           "draws": 0
         },
         "localId": "s6",
-        "playerId": "p23",
+        "playerId": "grzegorz-talewski",
         "rounds": []
       },
       {
@@ -3167,12 +3167,12 @@
           "draws": 2
         },
         "localId": "s7",
-        "playerId": "p13",
+        "playerId": "piotr-orlowski",
         "rounds": []
       },
       {
         "rank": 8,
-        "playerRef": "p09",
+        "playerRef": "piotr-zielinski",
         "playerName": "Piotr Zieliński",
         "points": 0,
         "deck": {
@@ -3185,7 +3185,7 @@
           "draws": 0
         },
         "localId": "s8",
-        "playerId": "p09",
+        "playerId": "piotr-zielinski",
         "rounds": []
       }
     ],
@@ -3213,12 +3213,12 @@
           "draws": 1
         },
         "localId": "s1",
-        "playerId": "p14",
+        "playerId": "wiktor-witkowski",
         "rounds": []
       },
       {
         "rank": 2,
-        "playerRef": "p03",
+        "playerRef": "wojciech-cwiklinski",
         "playerName": "Wojciech Ćwikliński",
         "points": 9,
         "deck": {
@@ -3231,12 +3231,12 @@
           "draws": 0
         },
         "localId": "s2",
-        "playerId": "p03",
+        "playerId": "wojciech-cwiklinski",
         "rounds": []
       },
       {
         "rank": 3,
-        "playerRef": "p06",
+        "playerRef": "marcin-kowalski",
         "playerName": "Marcin Kowalski",
         "points": 9,
         "deck": {
@@ -3249,7 +3249,7 @@
           "draws": 0
         },
         "localId": "s3",
-        "playerId": "p06",
+        "playerId": "marcin-kowalski",
         "rounds": []
       },
       {
@@ -3267,12 +3267,12 @@
           "draws": 0
         },
         "localId": "s4",
-        "playerId": "p15",
+        "playerId": "jakub-domasla",
         "rounds": []
       },
       {
         "rank": 5,
-        "playerRef": "p09",
+        "playerRef": "piotr-zielinski",
         "playerName": "Piotr Zieliński",
         "points": 7,
         "deck": {
@@ -3285,12 +3285,12 @@
           "draws": 1
         },
         "localId": "s5",
-        "playerId": "p09",
+        "playerId": "piotr-zielinski",
         "rounds": []
       },
       {
         "rank": 6,
-        "playerRef": "p04",
+        "playerRef": "jakub-rabalsky",
         "playerName": "Jakub Rąbalsky",
         "points": 6,
         "deck": {
@@ -3303,7 +3303,7 @@
           "draws": 0
         },
         "localId": "s6",
-        "playerId": "p04",
+        "playerId": "jakub-rabalsky",
         "rounds": []
       },
       {
@@ -3321,12 +3321,12 @@
           "draws": 0
         },
         "localId": "s7",
-        "playerId": "p16",
+        "playerId": "antek-matusiak",
         "rounds": []
       },
       {
         "rank": 8,
-        "playerRef": "p08",
+        "playerRef": "maciek-maciek",
         "playerName": "Maciek Maciek",
         "points": 6,
         "deck": {
@@ -3339,7 +3339,7 @@
           "draws": 0
         },
         "localId": "s8",
-        "playerId": "p08",
+        "playerId": "maciek-maciek",
         "rounds": []
       },
       {
@@ -3357,7 +3357,7 @@
           "draws": 0
         },
         "localId": "s9",
-        "playerId": "p17",
+        "playerId": "michael-barge",
         "rounds": []
       },
       {
@@ -3375,7 +3375,7 @@
           "draws": 0
         },
         "localId": "s10",
-        "playerId": "p18",
+        "playerId": "marek-bien",
         "rounds": []
       },
       {
@@ -3393,7 +3393,7 @@
           "draws": 0
         },
         "localId": "s11",
-        "playerId": "p19",
+        "playerId": "bartlomiej-bry",
         "rounds": []
       },
       {
@@ -3411,12 +3411,12 @@
           "draws": 0
         },
         "localId": "s12",
-        "playerId": "p20",
+        "playerId": "arkadiusz-haber",
         "rounds": []
       },
       {
         "rank": 13,
-        "playerRef": "p05",
+        "playerRef": "damian-krasny",
         "playerName": "Damian Kraśny",
         "points": 3,
         "deck": {
@@ -3429,12 +3429,12 @@
           "draws": 0
         },
         "localId": "s13",
-        "playerId": "p05",
+        "playerId": "damian-krasny",
         "rounds": []
       },
       {
         "rank": 14,
-        "playerRef": "p07",
+        "playerRef": "adam-modrzejewski",
         "playerName": "Adam Modrzejewski",
         "points": 0,
         "deck": {
@@ -3447,7 +3447,7 @@
           "draws": 0
         },
         "localId": "s14",
-        "playerId": "p07",
+        "playerId": "adam-modrzejewski",
         "rounds": []
       }
     ],
@@ -3466,7 +3466,7 @@
         "localId": "Marcin",
         "rank": 1,
         "playerName": "Marcin Kowalski",
-        "playerRef": "p06",
+        "playerRef": "marcin-kowalski",
         "points": 12,
         "deck": {
           "name": "Devourer",
@@ -3482,7 +3482,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p01",
+            "opponentPlayerId": "maciej-lbik",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -3498,7 +3498,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p13",
+            "opponentPlayerId": "piotr-orlowski",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -3514,7 +3514,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p04",
+            "opponentPlayerId": "jakub-rabalsky",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -3530,7 +3530,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p05",
+            "opponentPlayerId": "damian-krasny",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -3548,13 +3548,13 @@
           "losses": 0,
           "draws": 0
         },
-        "playerId": "p06"
+        "playerId": "marcin-kowalski"
       },
       {
         "localId": "Maciej",
         "rank": 2,
         "playerName": "Maciej Łbik",
-        "playerRef": "p01",
+        "playerRef": "maciej-lbik",
         "points": 7,
         "deck": {
           "name": "Quiet Tribe",
@@ -3570,7 +3570,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p06",
+            "opponentPlayerId": "marcin-kowalski",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -3601,7 +3601,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p13",
+            "opponentPlayerId": "piotr-orlowski",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -3617,7 +3617,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p04",
+            "opponentPlayerId": "jakub-rabalsky",
             "match": {
               "wins": 0,
               "losses": 0,
@@ -3635,7 +3635,7 @@
           "losses": 3,
           "draws": 0
         },
-        "playerId": "p01"
+        "playerId": "maciej-lbik"
       },
       {
         "localId": "Piotr",
@@ -3657,7 +3657,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p05",
+            "opponentPlayerId": "damian-krasny",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -3673,7 +3673,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p06",
+            "opponentPlayerId": "marcin-kowalski",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -3689,7 +3689,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p01",
+            "opponentPlayerId": "maciej-lbik",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -3722,13 +3722,13 @@
           "losses": 4,
           "draws": 0
         },
-        "playerId": "p13"
+        "playerId": "piotr-orlowski"
       },
       {
         "localId": "Damian",
         "rank": 4,
         "playerName": "Damian Kraśny",
-        "playerRef": "p05",
+        "playerRef": "damian-krasny",
         "points": 6,
         "deck": {
           "name": "Reanimator",
@@ -3744,7 +3744,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p13",
+            "opponentPlayerId": "piotr-orlowski",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -3760,7 +3760,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p04",
+            "opponentPlayerId": "jakub-rabalsky",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -3791,7 +3791,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p06",
+            "opponentPlayerId": "marcin-kowalski",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -3809,13 +3809,13 @@
           "losses": 5,
           "draws": 0
         },
-        "playerId": "p05"
+        "playerId": "damian-krasny"
       },
       {
         "localId": "Jakub",
         "rank": 5,
         "playerName": "Jakub Rąbalsky",
-        "playerRef": "p04",
+        "playerRef": "jakub-rabalsky",
         "points": 4,
         "deck": {
           "name": "TerraOath",
@@ -3846,7 +3846,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p05",
+            "opponentPlayerId": "damian-krasny",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -3862,7 +3862,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p06",
+            "opponentPlayerId": "marcin-kowalski",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -3878,7 +3878,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p01",
+            "opponentPlayerId": "maciej-lbik",
             "match": {
               "wins": 0,
               "losses": 0,
@@ -3896,7 +3896,7 @@
           "losses": 5,
           "draws": 0
         },
-        "playerId": "p04"
+        "playerId": "jakub-rabalsky"
       }
     ],
     "type": "weekly",
@@ -3927,7 +3927,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p11",
+            "opponentPlayerId": "wojciech-cwiklinski",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -3943,7 +3943,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p12",
+            "opponentPlayerId": "janusz-bulakowski",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -3959,7 +3959,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p06",
+            "opponentPlayerId": "marcin-kowalski",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -3967,7 +3967,7 @@
             }
           }
         ],
-        "playerId": "p10",
+        "playerId": "wiaczaslau-kukhtsiuk",
         "match": {
           "wins": 3,
           "losses": 0,
@@ -3998,7 +3998,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p10",
+            "opponentPlayerId": "wiaczaslau-kukhtsiuk",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -4014,7 +4014,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p06",
+            "opponentPlayerId": "marcin-kowalski",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -4037,7 +4037,7 @@
             }
           }
         ],
-        "playerId": "p11",
+        "playerId": "wojciech-cwiklinski",
         "match": {
           "wins": 2,
           "losses": 1,
@@ -4068,7 +4068,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p06",
+            "opponentPlayerId": "marcin-kowalski",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -4099,7 +4099,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p12",
+            "opponentPlayerId": "janusz-bulakowski",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -4107,7 +4107,7 @@
             }
           }
         ],
-        "playerId": "p01",
+        "playerId": "maciej-lbik",
         "match": {
           "wins": 2,
           "losses": 1,
@@ -4153,7 +4153,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p10",
+            "opponentPlayerId": "wiaczaslau-kukhtsiuk",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -4169,7 +4169,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p01",
+            "opponentPlayerId": "maciej-lbik",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -4177,7 +4177,7 @@
             }
           }
         ],
-        "playerId": "p12",
+        "playerId": "janusz-bulakowski",
         "match": {
           "wins": 1,
           "losses": 2,
@@ -4208,7 +4208,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p01",
+            "opponentPlayerId": "maciej-lbik",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -4224,7 +4224,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p11",
+            "opponentPlayerId": "wojciech-cwiklinski",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -4240,7 +4240,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p10",
+            "opponentPlayerId": "wiaczaslau-kukhtsiuk",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -4248,7 +4248,7 @@
             }
           }
         ],
-        "playerId": "p06",
+        "playerId": "marcin-kowalski",
         "match": {
           "wins": 1,
           "losses": 2,
@@ -4289,7 +4289,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p10",
+            "opponentPlayerId": "wiaczaslau-kukhtsiuk",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -4305,7 +4305,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p05",
+            "opponentPlayerId": "damian-krasny",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -4321,7 +4321,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p06",
+            "opponentPlayerId": "marcin-kowalski",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -4329,7 +4329,7 @@
             }
           }
         ],
-        "playerId": "p04",
+        "playerId": "jakub-rabalsky",
         "match": {
           "wins": 2,
           "losses": 1,
@@ -4360,7 +4360,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p04",
+            "opponentPlayerId": "jakub-rabalsky",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -4376,7 +4376,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p06",
+            "opponentPlayerId": "marcin-kowalski",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -4392,7 +4392,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p05",
+            "opponentPlayerId": "damian-krasny",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -4400,7 +4400,7 @@
             }
           }
         ],
-        "playerId": "p10",
+        "playerId": "wiaczaslau-kukhtsiuk",
         "match": {
           "wins": 2,
           "losses": 1,
@@ -4431,7 +4431,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p05",
+            "opponentPlayerId": "damian-krasny",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -4447,7 +4447,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p10",
+            "opponentPlayerId": "wiaczaslau-kukhtsiuk",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -4463,7 +4463,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p04",
+            "opponentPlayerId": "jakub-rabalsky",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -4471,7 +4471,7 @@
             }
           }
         ],
-        "playerId": "p06",
+        "playerId": "marcin-kowalski",
         "match": {
           "wins": 2,
           "losses": 1,
@@ -4502,7 +4502,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p06",
+            "opponentPlayerId": "marcin-kowalski",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -4518,7 +4518,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p04",
+            "opponentPlayerId": "jakub-rabalsky",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -4534,7 +4534,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p10",
+            "opponentPlayerId": "wiaczaslau-kukhtsiuk",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -4542,7 +4542,7 @@
             }
           }
         ],
-        "playerId": "p05",
+        "playerId": "damian-krasny",
         "match": {
           "wins": 0,
           "losses": 3,
@@ -4584,7 +4584,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p08",
+            "opponentPlayerId": "maciek-maciek",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -4600,7 +4600,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p04",
+            "opponentPlayerId": "jakub-rabalsky",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -4616,7 +4616,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p09",
+            "opponentPlayerId": "piotr-zielinski",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -4632,7 +4632,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p06",
+            "opponentPlayerId": "marcin-kowalski",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -4640,7 +4640,7 @@
             }
           }
         ],
-        "playerId": "p02",
+        "playerId": "wiaczaslau-kukhtsiuk",
         "match": {
           "wins": 4,
           "losses": 0,
@@ -4671,7 +4671,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p07",
+            "opponentPlayerId": "adam-modrzejewski",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -4687,7 +4687,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p09",
+            "opponentPlayerId": "piotr-zielinski",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -4703,7 +4703,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p08",
+            "opponentPlayerId": "maciek-maciek",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -4719,7 +4719,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p02",
+            "opponentPlayerId": "wiaczaslau-kukhtsiuk",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -4727,7 +4727,7 @@
             }
           }
         ],
-        "playerId": "p06",
+        "playerId": "marcin-kowalski",
         "match": {
           "wins": 2,
           "losses": 2,
@@ -4758,7 +4758,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p09",
+            "opponentPlayerId": "piotr-zielinski",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -4774,7 +4774,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p02",
+            "opponentPlayerId": "wiaczaslau-kukhtsiuk",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -4790,7 +4790,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p07",
+            "opponentPlayerId": "adam-modrzejewski",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -4806,7 +4806,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p08",
+            "opponentPlayerId": "maciek-maciek",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -4814,7 +4814,7 @@
             }
           }
         ],
-        "playerId": "p04",
+        "playerId": "jakub-rabalsky",
         "match": {
           "wins": 2,
           "losses": 2,
@@ -4845,7 +4845,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p06",
+            "opponentPlayerId": "marcin-kowalski",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -4861,7 +4861,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p08",
+            "opponentPlayerId": "maciek-maciek",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -4877,7 +4877,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p04",
+            "opponentPlayerId": "jakub-rabalsky",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -4893,7 +4893,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p09",
+            "opponentPlayerId": "piotr-zielinski",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -4901,7 +4901,7 @@
             }
           }
         ],
-        "playerId": "p07",
+        "playerId": "adam-modrzejewski",
         "match": {
           "wins": 2,
           "losses": 2,
@@ -4932,7 +4932,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p02",
+            "opponentPlayerId": "wiaczaslau-kukhtsiuk",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -4948,7 +4948,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p07",
+            "opponentPlayerId": "adam-modrzejewski",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -4964,7 +4964,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p06",
+            "opponentPlayerId": "marcin-kowalski",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -4980,7 +4980,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p04",
+            "opponentPlayerId": "jakub-rabalsky",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -4988,7 +4988,7 @@
             }
           }
         ],
-        "playerId": "p08",
+        "playerId": "maciek-maciek",
         "match": {
           "wins": 1,
           "losses": 3,
@@ -5019,7 +5019,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p04",
+            "opponentPlayerId": "jakub-rabalsky",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -5035,7 +5035,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p06",
+            "opponentPlayerId": "marcin-kowalski",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -5051,7 +5051,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p02",
+            "opponentPlayerId": "wiaczaslau-kukhtsiuk",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -5067,7 +5067,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p07",
+            "opponentPlayerId": "adam-modrzejewski",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -5075,7 +5075,7 @@
             }
           }
         ],
-        "playerId": "p09",
+        "playerId": "piotr-zielinski",
         "match": {
           "wins": 1,
           "losses": 3,
@@ -5133,7 +5133,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p02",
+            "opponentPlayerId": "wiaczaslau-kukhtsiuk",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -5149,7 +5149,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p03",
+            "opponentPlayerId": "wojciech-cwiklinski",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -5157,7 +5157,7 @@
             }
           }
         ],
-        "playerId": "p01",
+        "playerId": "maciej-lbik",
         "match": {
           "wins": 3,
           "losses": 0,
@@ -5188,7 +5188,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p04",
+            "opponentPlayerId": "jakub-rabalsky",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -5204,7 +5204,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p01",
+            "opponentPlayerId": "maciej-lbik",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -5220,7 +5220,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p05",
+            "opponentPlayerId": "damian-krasny",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -5228,7 +5228,7 @@
             }
           }
         ],
-        "playerId": "p02",
+        "playerId": "wiaczaslau-kukhtsiuk",
         "match": {
           "wins": 2,
           "losses": 1,
@@ -5259,7 +5259,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p05",
+            "opponentPlayerId": "damian-krasny",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -5275,7 +5275,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p04",
+            "opponentPlayerId": "jakub-rabalsky",
             "match": {
               "wins": 1,
               "losses": 0,
@@ -5291,7 +5291,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p01",
+            "opponentPlayerId": "maciej-lbik",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -5299,7 +5299,7 @@
             }
           }
         ],
-        "playerId": "p03",
+        "playerId": "wojciech-cwiklinski",
         "match": {
           "wins": 2,
           "losses": 1,
@@ -5330,7 +5330,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p02",
+            "opponentPlayerId": "wiaczaslau-kukhtsiuk",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -5346,7 +5346,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p03",
+            "opponentPlayerId": "wojciech-cwiklinski",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -5369,7 +5369,7 @@
             }
           }
         ],
-        "playerId": "p04",
+        "playerId": "jakub-rabalsky",
         "match": {
           "wins": 1,
           "losses": 2,
@@ -5400,7 +5400,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p03",
+            "opponentPlayerId": "wojciech-cwiklinski",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -5431,7 +5431,7 @@
               "draws": 0
             },
             "resultType": "PLAYED",
-            "opponentPlayerId": "p02",
+            "opponentPlayerId": "wiaczaslau-kukhtsiuk",
             "match": {
               "wins": 0,
               "losses": 1,
@@ -5439,7 +5439,7 @@
             }
           }
         ],
-        "playerId": "p05",
+        "playerId": "damian-krasny",
         "match": {
           "wins": 1,
           "losses": 2,

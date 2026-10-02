@@ -6,7 +6,7 @@
   "standings": [
     {
       "rank": 1,
-      "playerRef": "p04",
+      "playerRef": "jakub-rabalsky",
       "playerName": "Jakub Rąbalsky",
       "points": 7,
       "deck": {
@@ -19,7 +19,7 @@
         "draws": 1
       },
       "localId": "s1",
-      "playerId": "p04",
+      "playerId": "jakub-rabalsky",
       "rounds": []
     },
     {
@@ -37,12 +37,12 @@
         "draws": 0
       },
       "localId": "s2",
-      "playerId": "p21",
+      "playerId": "marek-palub",
       "rounds": []
     },
     {
       "rank": 3,
-      "playerRef": "p06",
+      "playerRef": "marcin-kowalski",
       "playerName": "Marcin Kowalski",
       "points": 6,
       "deck": {
@@ -55,7 +55,7 @@
         "draws": 0
       },
       "localId": "s3",
-      "playerId": "p06",
+      "playerId": "marcin-kowalski",
       "rounds": []
     },
     {
@@ -73,12 +73,12 @@
         "draws": 2
       },
       "localId": "s4",
-      "playerId": "p22",
+      "playerId": "michal-sekiewicz",
       "rounds": []
     },
     {
       "rank": 5,
-      "playerRef": "p05",
+      "playerRef": "damian-krasny",
       "playerName": "Damian Kraśny",
       "points": 4,
       "deck": {
@@ -91,7 +91,7 @@
         "draws": 1
       },
       "localId": "s5",
-      "playerId": "p05",
+      "playerId": "damian-krasny",
       "rounds": []
     },
     {
@@ -109,7 +109,7 @@
         "draws": 0
       },
       "localId": "s6",
-      "playerId": "p23",
+      "playerId": "grzegorz-talewski",
       "rounds": []
     },
     {
@@ -127,12 +127,12 @@
         "draws": 2
       },
       "localId": "s7",
-      "playerId": "p13",
+      "playerId": "piotr-orlowski",
       "rounds": []
     },
     {
       "rank": 8,
-      "playerRef": "p09",
+      "playerRef": "piotr-zielinski",
       "playerName": "Piotr Zieliński",
       "points": 0,
       "deck": {
@@ -145,7 +145,7 @@
         "draws": 0
       },
       "localId": "s8",
-      "playerId": "p09",
+      "playerId": "piotr-zielinski",
       "rounds": []
     }
   ],

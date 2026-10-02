@@ -8,7 +8,7 @@
       "localId": "Marcin",
       "rank": 1,
       "playerName": "Marcin Kowalski",
-      "playerRef": "p06",
+      "playerRef": "marcin-kowalski",
       "points": 12,
       "deck": {
         "name": "Devourer",
@@ -24,7 +24,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p01",
+          "opponentPlayerId": "maciej-lbik",
           "match": {
             "wins": 1,
             "losses": 0,
@@ -40,7 +40,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p13",
+          "opponentPlayerId": "piotr-orlowski",
           "match": {
             "wins": 1,
             "losses": 0,
@@ -56,7 +56,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p04",
+          "opponentPlayerId": "jakub-rabalsky",
           "match": {
             "wins": 1,
             "losses": 0,
@@ -72,7 +72,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p05",
+          "opponentPlayerId": "damian-krasny",
           "match": {
             "wins": 1,
             "losses": 0,
@@ -90,13 +90,13 @@
         "losses": 0,
         "draws": 0
       },
-      "playerId": "p06"
+      "playerId": "marcin-kowalski"
     },
     {
       "localId": "Maciej",
       "rank": 2,
       "playerName": "Maciej Łbik",
-      "playerRef": "p01",
+      "playerRef": "maciej-lbik",
       "points": 7,
       "deck": {
         "name": "Quiet Tribe",
@@ -112,7 +112,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p06",
+          "opponentPlayerId": "marcin-kowalski",
           "match": {
             "wins": 0,
             "losses": 1,
@@ -143,7 +143,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p13",
+          "opponentPlayerId": "piotr-orlowski",
           "match": {
             "wins": 1,
             "losses": 0,
@@ -159,7 +159,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p04",
+          "opponentPlayerId": "jakub-rabalsky",
           "match": {
             "wins": 0,
             "losses": 0,
@@ -177,7 +177,7 @@
         "losses": 3,
         "draws": 0
       },
-      "playerId": "p01"
+      "playerId": "maciej-lbik"
     },
     {
       "localId": "Piotr",
@@ -199,7 +199,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p05",
+          "opponentPlayerId": "damian-krasny",
           "match": {
             "wins": 1,
             "losses": 0,
@@ -215,7 +215,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p06",
+          "opponentPlayerId": "marcin-kowalski",
           "match": {
             "wins": 0,
             "losses": 1,
@@ -231,7 +231,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p01",
+          "opponentPlayerId": "maciej-lbik",
           "match": {
             "wins": 0,
             "losses": 1,
@@ -264,13 +264,13 @@
         "losses": 4,
         "draws": 0
       },
-      "playerId": "p13"
+      "playerId": "piotr-orlowski"
     },
     {
       "localId": "Damian",
       "rank": 4,
       "playerName": "Damian Kraśny",
-      "playerRef": "p05",
+      "playerRef": "damian-krasny",
       "points": 6,
       "deck": {
         "name": "Reanimator",
@@ -286,7 +286,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p13",
+          "opponentPlayerId": "piotr-orlowski",
           "match": {
             "wins": 0,
             "losses": 1,
@@ -302,7 +302,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p04",
+          "opponentPlayerId": "jakub-rabalsky",
           "match": {
             "wins": 1,
             "losses": 0,
@@ -333,7 +333,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p06",
+          "opponentPlayerId": "marcin-kowalski",
           "match": {
             "wins": 0,
             "losses": 1,
@@ -351,13 +351,13 @@
         "losses": 5,
         "draws": 0
       },
-      "playerId": "p05"
+      "playerId": "damian-krasny"
     },
     {
       "localId": "Jakub",
       "rank": 5,
       "playerName": "Jakub Rąbalsky",
-      "playerRef": "p04",
+      "playerRef": "jakub-rabalsky",
       "points": 4,
       "deck": {
         "name": "TerraOath",
@@ -388,7 +388,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p05",
+          "opponentPlayerId": "damian-krasny",
           "match": {
             "wins": 0,
             "losses": 1,
@@ -404,7 +404,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p06",
+          "opponentPlayerId": "marcin-kowalski",
           "match": {
             "wins": 0,
             "losses": 1,
@@ -420,7 +420,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p01",
+          "opponentPlayerId": "maciej-lbik",
           "match": {
             "wins": 0,
             "losses": 0,
@@ -438,7 +438,7 @@
         "losses": 5,
         "draws": 0
       },
-      "playerId": "p04"
+      "playerId": "jakub-rabalsky"
     }
   ],
   "type": "weekly",

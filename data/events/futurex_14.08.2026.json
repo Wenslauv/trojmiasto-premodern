@@ -18,12 +18,12 @@
         "draws": 1
       },
       "localId": "s1",
-      "playerId": "p14",
+      "playerId": "wiktor-witkowski",
       "rounds": []
     },
     {
       "rank": 2,
-      "playerRef": "p03",
+      "playerRef": "wojciech-cwiklinski",
       "playerName": "Wojciech Ćwikliński",
       "points": 9,
       "deck": {
@@ -36,12 +36,12 @@
         "draws": 0
       },
       "localId": "s2",
-      "playerId": "p03",
+      "playerId": "wojciech-cwiklinski",
       "rounds": []
     },
     {
       "rank": 3,
-      "playerRef": "p06",
+      "playerRef": "marcin-kowalski",
       "playerName": "Marcin Kowalski",
       "points": 9,
       "deck": {
@@ -54,7 +54,7 @@
         "draws": 0
       },
       "localId": "s3",
-      "playerId": "p06",
+      "playerId": "marcin-kowalski",
       "rounds": []
     },
     {
@@ -72,12 +72,12 @@
         "draws": 0
       },
       "localId": "s4",
-      "playerId": "p15",
+      "playerId": "jakub-domasla",
       "rounds": []
     },
     {
       "rank": 5,
-      "playerRef": "p09",
+      "playerRef": "piotr-zielinski",
       "playerName": "Piotr Zieliński",
       "points": 7,
       "deck": {
@@ -90,12 +90,12 @@
         "draws": 1
       },
       "localId": "s5",
-      "playerId": "p09",
+      "playerId": "piotr-zielinski",
       "rounds": []
     },
     {
       "rank": 6,
-      "playerRef": "p04",
+      "playerRef": "jakub-rabalsky",
       "playerName": "Jakub Rąbalsky",
       "points": 6,
       "deck": {
@@ -108,7 +108,7 @@
         "draws": 0
       },
       "localId": "s6",
-      "playerId": "p04",
+      "playerId": "jakub-rabalsky",
       "rounds": []
     },
     {
@@ -126,12 +126,12 @@
         "draws": 0
       },
       "localId": "s7",
-      "playerId": "p16",
+      "playerId": "antek-matusiak",
       "rounds": []
     },
     {
       "rank": 8,
-      "playerRef": "p08",
+      "playerRef": "maciek-maciek",
       "playerName": "Maciek Maciek",
       "points": 6,
       "deck": {
@@ -144,7 +144,7 @@
         "draws": 0
       },
       "localId": "s8",
-      "playerId": "p08",
+      "playerId": "maciek-maciek",
       "rounds": []
     },
     {
@@ -162,7 +162,7 @@
         "draws": 0
       },
       "localId": "s9",
-      "playerId": "p17",
+      "playerId": "michael-barge",
       "rounds": []
     },
     {
@@ -180,7 +180,7 @@
         "draws": 0
       },
       "localId": "s10",
-      "playerId": "p18",
+      "playerId": "marek-bien",
       "rounds": []
     },
     {
@@ -198,7 +198,7 @@
         "draws": 0
       },
       "localId": "s11",
-      "playerId": "p19",
+      "playerId": "bartlomiej-bry",
       "rounds": []
     },
     {
@@ -216,12 +216,12 @@
         "draws": 0
       },
       "localId": "s12",
-      "playerId": "p20",
+      "playerId": "arkadiusz-haber",
       "rounds": []
     },
     {
       "rank": 13,
-      "playerRef": "p05",
+      "playerRef": "damian-krasny",
       "playerName": "Damian Kraśny",
       "points": 3,
       "deck": {
@@ -234,12 +234,12 @@
         "draws": 0
       },
       "localId": "s13",
-      "playerId": "p05",
+      "playerId": "damian-krasny",
       "rounds": []
     },
     {
       "rank": 14,
-      "playerRef": "p07",
+      "playerRef": "adam-modrzejewski",
       "playerName": "Adam Modrzejewski",
       "points": 0,
       "deck": {
@@ -252,7 +252,7 @@
         "draws": 0
       },
       "localId": "s14",
-      "playerId": "p07",
+      "playerId": "adam-modrzejewski",
       "rounds": []
     }
   ],

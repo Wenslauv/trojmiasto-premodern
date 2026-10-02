@@ -21,7 +21,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p10",
+          "opponentPlayerId": "wiaczaslau-kukhtsiuk",
           "match": {
             "wins": 0,
             "losses": 1,
@@ -37,7 +37,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p05",
+          "opponentPlayerId": "damian-krasny",
           "match": {
             "wins": 1,
             "losses": 0,
@@ -53,7 +53,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p06",
+          "opponentPlayerId": "marcin-kowalski",
           "match": {
             "wins": 1,
             "losses": 0,
@@ -61,7 +61,7 @@
           }
         }
       ],
-      "playerId": "p04",
+      "playerId": "jakub-rabalsky",
       "match": {
         "wins": 2,
         "losses": 1,
@@ -92,7 +92,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p04",
+          "opponentPlayerId": "jakub-rabalsky",
           "match": {
             "wins": 1,
             "losses": 0,
@@ -108,7 +108,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p06",
+          "opponentPlayerId": "marcin-kowalski",
           "match": {
             "wins": 0,
             "losses": 1,
@@ -124,7 +124,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p05",
+          "opponentPlayerId": "damian-krasny",
           "match": {
             "wins": 1,
             "losses": 0,
@@ -132,7 +132,7 @@
           }
         }
       ],
-      "playerId": "p10",
+      "playerId": "wiaczaslau-kukhtsiuk",
       "match": {
         "wins": 2,
         "losses": 1,
@@ -163,7 +163,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p05",
+          "opponentPlayerId": "damian-krasny",
           "match": {
             "wins": 1,
             "losses": 0,
@@ -179,7 +179,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p10",
+          "opponentPlayerId": "wiaczaslau-kukhtsiuk",
           "match": {
             "wins": 1,
             "losses": 0,
@@ -195,7 +195,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p04",
+          "opponentPlayerId": "jakub-rabalsky",
           "match": {
             "wins": 0,
             "losses": 1,
@@ -203,7 +203,7 @@
           }
         }
       ],
-      "playerId": "p06",
+      "playerId": "marcin-kowalski",
       "match": {
         "wins": 2,
         "losses": 1,
@@ -234,7 +234,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p06",
+          "opponentPlayerId": "marcin-kowalski",
           "match": {
             "wins": 0,
             "losses": 1,
@@ -250,7 +250,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p04",
+          "opponentPlayerId": "jakub-rabalsky",
           "match": {
             "wins": 0,
             "losses": 1,
@@ -266,7 +266,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p10",
+          "opponentPlayerId": "wiaczaslau-kukhtsiuk",
           "match": {
             "wins": 0,
             "losses": 1,
@@ -274,7 +274,7 @@
           }
         }
       ],
-      "playerId": "p05",
+      "playerId": "damian-krasny",
       "match": {
         "wins": 0,
         "losses": 3,

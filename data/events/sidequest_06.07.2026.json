@@ -37,7 +37,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p02",
+          "opponentPlayerId": "wiaczaslau-kukhtsiuk",
           "match": {
             "wins": 1,
             "losses": 0,
@@ -53,7 +53,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p03",
+          "opponentPlayerId": "wojciech-cwiklinski",
           "match": {
             "wins": 1,
             "losses": 0,
@@ -61,7 +61,7 @@
           }
         }
       ],
-      "playerId": "p01",
+      "playerId": "maciej-lbik",
       "match": {
         "wins": 3,
         "losses": 0,
@@ -92,7 +92,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p04",
+          "opponentPlayerId": "jakub-rabalsky",
           "match": {
             "wins": 1,
             "losses": 0,
@@ -108,7 +108,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p01",
+          "opponentPlayerId": "maciej-lbik",
           "match": {
             "wins": 0,
             "losses": 1,
@@ -124,7 +124,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p05",
+          "opponentPlayerId": "damian-krasny",
           "match": {
             "wins": 1,
             "losses": 0,
@@ -132,7 +132,7 @@
           }
         }
       ],
-      "playerId": "p02",
+      "playerId": "wiaczaslau-kukhtsiuk",
       "match": {
         "wins": 2,
         "losses": 1,
@@ -163,7 +163,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p05",
+          "opponentPlayerId": "damian-krasny",
           "match": {
             "wins": 1,
             "losses": 0,
@@ -179,7 +179,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p04",
+          "opponentPlayerId": "jakub-rabalsky",
           "match": {
             "wins": 1,
             "losses": 0,
@@ -195,7 +195,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p01",
+          "opponentPlayerId": "maciej-lbik",
           "match": {
             "wins": 0,
             "losses": 1,
@@ -203,7 +203,7 @@
           }
         }
       ],
-      "playerId": "p03",
+      "playerId": "wojciech-cwiklinski",
       "match": {
         "wins": 2,
         "losses": 1,
@@ -234,7 +234,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p02",
+          "opponentPlayerId": "wiaczaslau-kukhtsiuk",
           "match": {
             "wins": 0,
             "losses": 1,
@@ -250,7 +250,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p03",
+          "opponentPlayerId": "wojciech-cwiklinski",
           "match": {
             "wins": 0,
             "losses": 1,
@@ -273,7 +273,7 @@
           }
         }
       ],
-      "playerId": "p04",
+      "playerId": "jakub-rabalsky",
       "match": {
         "wins": 1,
         "losses": 2,
@@ -304,7 +304,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p03",
+          "opponentPlayerId": "wojciech-cwiklinski",
           "match": {
             "wins": 0,
             "losses": 1,
@@ -335,7 +335,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p02",
+          "opponentPlayerId": "wiaczaslau-kukhtsiuk",
           "match": {
             "wins": 0,
             "losses": 1,
@@ -343,7 +343,7 @@
           }
         }
       ],
-      "playerId": "p05",
+      "playerId": "damian-krasny",
       "match": {
         "wins": 1,
         "losses": 2,

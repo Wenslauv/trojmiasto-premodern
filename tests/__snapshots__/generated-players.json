@@ -1,6 +1,6 @@
 [
   {
-    "id": "p06",
+    "id": "marcin-kowalski",
     "name": "Marcin Kowalski",
     "eventsCount": 10,
     "matchWinPercent": 72.86,
@@ -11,7 +11,7 @@
     }
   },
   {
-    "id": "p05",
+    "id": "damian-krasny",
     "name": "Damian Kraśny",
     "eventsCount": 8,
     "matchWinPercent": 26,
@@ -22,7 +22,7 @@
     }
   },
   {
-    "id": "p04",
+    "id": "jakub-rabalsky",
     "name": "Jakub Rąbalsky",
     "eventsCount": 8,
     "matchWinPercent": 40,
@@ -33,7 +33,7 @@
     }
   },
   {
-    "id": "p09",
+    "id": "piotr-zielinski",
     "name": "Piotr Zieliński",
     "eventsCount": 7,
     "matchWinPercent": 34,
@@ -44,7 +44,7 @@
     }
   },
   {
-    "id": "p02",
+    "id": "wiaczaslau-kukhtsiuk",
     "name": "Wiaczasłau Kukhtsiuk",
     "eventsCount": 7,
     "matchWinPercent": 82.61,
@@ -55,7 +55,7 @@
     }
   },
   {
-    "id": "p13",
+    "id": "piotr-orlowski",
     "name": "Piotr Orłowski",
     "eventsCount": 6,
     "matchWinPercent": 47.5,
@@ -66,7 +66,7 @@
     }
   },
   {
-    "id": "p01",
+    "id": "maciej-lbik",
     "name": "Maciej Łbik",
     "eventsCount": 5,
     "matchWinPercent": 50,
@@ -77,7 +77,7 @@
     }
   },
   {
-    "id": "p12",
+    "id": "janusz-bulakowski",
     "name": "Janusz Bułakowski",
     "eventsCount": 4,
     "matchWinPercent": 53.85,
@@ -88,7 +88,7 @@
     }
   },
   {
-    "id": "p22",
+    "id": "michal-sekiewicz",
     "name": "Michał Sękiewicz",
     "eventsCount": 4,
     "matchWinPercent": 50,
@@ -99,7 +99,7 @@
     }
   },
   {
-    "id": "p03",
+    "id": "wojciech-cwiklinski",
     "name": "Wojciech Ćwikliński",
     "eventsCount": 4,
     "matchWinPercent": 50,
@@ -110,7 +110,7 @@
     }
   },
   {
-    "id": "p23",
+    "id": "grzegorz-talewski",
     "name": "Grzegorz Talewski",
     "eventsCount": 3,
     "matchWinPercent": 27.27,
@@ -121,7 +121,7 @@
     }
   },
   {
-    "id": "p07",
+    "id": "adam-modrzejewski",
     "name": "Adam Modrzejewski",
     "eventsCount": 2,
     "matchWinPercent": 25,
@@ -132,7 +132,7 @@
     }
   },
   {
-    "id": "p08",
+    "id": "maciek-maciek",
     "name": "Maciek Maciek",
     "eventsCount": 2,
     "matchWinPercent": 37.5,
@@ -143,7 +143,7 @@
     }
   },
   {
-    "id": "p26",
+    "id": "marcin-gornowicz",
     "name": "Marcin Gornowicz",
     "eventsCount": 2,
     "matchWinPercent": 57.14,
@@ -154,7 +154,7 @@
     }
   },
   {
-    "id": "p28",
+    "id": "amadeusz-sztangierski",
     "name": "Amadeusz Sztangierski",
     "eventsCount": 1,
     "matchWinPercent": 33.33,
@@ -165,7 +165,7 @@
     }
   },
   {
-    "id": "p24",
+    "id": "andrzej-pracki",
     "name": "Andrzej Pracki",
     "eventsCount": 1,
     "matchWinPercent": 83.33,
@@ -176,7 +176,7 @@
     }
   },
   {
-    "id": "p16",
+    "id": "antek-matusiak",
     "name": "Antek Matusiak",
     "eventsCount": 1,
     "matchWinPercent": 50,
@@ -187,7 +187,7 @@
     }
   },
   {
-    "id": "p20",
+    "id": "arkadiusz-haber",
     "name": "Arkadiusz Haber",
     "eventsCount": 1,
     "matchWinPercent": 25,
@@ -198,7 +198,7 @@
     }
   },
   {
-    "id": "p19",
+    "id": "bartlomiej-bry",
     "name": "Bartłomiej Bry...",
     "eventsCount": 1,
     "matchWinPercent": 25,
@@ -209,7 +209,7 @@
     }
   },
   {
-    "id": "p15",
+    "id": "jakub-domasla",
     "name": "Jakub Domasła...",
     "eventsCount": 1,
     "matchWinPercent": 75,
@@ -220,7 +220,7 @@
     }
   },
   {
-    "id": "p27",
+    "id": "jakub-szewczyk",
     "name": "Jakub Szewczyk",
     "eventsCount": 1,
     "matchWinPercent": 62.5,
@@ -231,7 +231,7 @@
     }
   },
   {
-    "id": "p18",
+    "id": "marek-bien",
     "name": "Marek Bień",
     "eventsCount": 1,
     "matchWinPercent": 50,
@@ -242,7 +242,7 @@
     }
   },
   {
-    "id": "p21",
+    "id": "marek-palub",
     "name": "Marek Pałub...",
     "eventsCount": 1,
     "matchWinPercent": 66.67,
@@ -253,7 +253,7 @@
     }
   },
   {
-    "id": "p17",
+    "id": "michael-barge",
     "name": "Michael Barge",
     "eventsCount": 1,
     "matchWinPercent": 50,
@@ -264,7 +264,7 @@
     }
   },
   {
-    "id": "p25",
+    "id": "pawel-pidsudko",
     "name": "Paweł Pidsudko",
     "eventsCount": 1,
     "matchWinPercent": 50,
@@ -275,7 +275,7 @@
     }
   },
   {
-    "id": "p14",
+    "id": "wiktor-witkowski",
     "name": "Wiktor Witkowski",
     "eventsCount": 1,
     "matchWinPercent": 87.5,

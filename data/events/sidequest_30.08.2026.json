@@ -10,19 +10,19 @@
     {
       "localId": "MK",
       "rank": 1,
-      "playerId": "p06",
+      "playerId": "marcin-kowalski",
       "playerName": "Marcin Kowalski",
-      "playerRef": "p06",
+      "playerRef": "marcin-kowalski",
       "points": 12,
       "deck": {
         "name": "Devourer",
         "colors": "UR"
       },
       "rounds": [
-        { "round": 1, "opponentLocalId": "GT", "resultType": "PLAYED", "opponentPlayerId": "p23", "game": { "wins": 2, "losses": 1, "draws": 0 }, "match": { "wins": 1, "losses": 0, "draws": 0 } },
-        { "round": 2, "opponentLocalId": "JB", "resultType": "PLAYED", "opponentPlayerId": "p12", "game": { "wins": 2, "losses": 1, "draws": 0 }, "match": { "wins": 1, "losses": 0, "draws": 0 } },
-        { "round": 3, "opponentLocalId": "WK", "resultType": "PLAYED", "opponentPlayerId": "p02", "game": { "wins": 2, "losses": 0, "draws": 0 }, "match": { "wins": 1, "losses": 0, "draws": 0 } },
-        { "round": 4, "opponentLocalId": "DK", "resultType": "PLAYED", "opponentPlayerId": "p05", "game": { "wins": 2, "losses": 0, "draws": 0 }, "match": { "wins": 1, "losses": 0, "draws": 0 } }
+        { "round": 1, "opponentLocalId": "GT", "resultType": "PLAYED", "opponentPlayerId": "grzegorz-talewski", "game": { "wins": 2, "losses": 1, "draws": 0 }, "match": { "wins": 1, "losses": 0, "draws": 0 } },
+        { "round": 2, "opponentLocalId": "JB", "resultType": "PLAYED", "opponentPlayerId": "janusz-bulakowski", "game": { "wins": 2, "losses": 1, "draws": 0 }, "match": { "wins": 1, "losses": 0, "draws": 0 } },
+        { "round": 3, "opponentLocalId": "WK", "resultType": "PLAYED", "opponentPlayerId": "wiaczaslau-kukhtsiuk", "game": { "wins": 2, "losses": 0, "draws": 0 }, "match": { "wins": 1, "losses": 0, "draws": 0 } },
+        { "round": 4, "opponentLocalId": "DK", "resultType": "PLAYED", "opponentPlayerId": "damian-krasny", "game": { "wins": 2, "losses": 0, "draws": 0 }, "match": { "wins": 1, "losses": 0, "draws": 0 } }
       ],
       "match": { "wins": 4, "losses": 0, "draws": 0 },
       "game": { "wins": 8, "losses": 2, "draws": 0 }
@@ -30,19 +30,19 @@
     {
       "localId": "WK",
       "rank": 2,
-      "playerId": "p02",
+      "playerId": "wiaczaslau-kukhtsiuk",
       "playerName": "Wiaczasłau Kukhtsiuk",
-      "playerRef": "p02",
+      "playerRef": "wiaczaslau-kukhtsiuk",
       "points": 9,
       "deck": {
         "name": "Replenish",
         "colors": "UW"
       },
       "rounds": [
-        { "round": 1, "opponentLocalId": "PO", "resultType": "PLAYED", "opponentPlayerId": "p13", "game": { "wins": 2, "losses": 0, "draws": 0 }, "match": { "wins": 1, "losses": 0, "draws": 0 } },
-        { "round": 2, "opponentLocalId": "DK", "resultType": "PLAYED", "opponentPlayerId": "p05", "game": { "wins": 2, "losses": 0, "draws": 0 }, "match": { "wins": 1, "losses": 0, "draws": 0 } },
-        { "round": 3, "opponentLocalId": "MK", "resultType": "PLAYED", "opponentPlayerId": "p06", "game": { "wins": 0, "losses": 2, "draws": 0 }, "match": { "wins": 0, "losses": 1, "draws": 0 } },
-        { "round": 4, "opponentLocalId": "JB", "resultType": "PLAYED", "opponentPlayerId": "p12", "game": { "wins": 2, "losses": 0, "draws": 0 }, "match": { "wins": 1, "losses": 0, "draws": 0 } }
+        { "round": 1, "opponentLocalId": "PO", "resultType": "PLAYED", "opponentPlayerId": "piotr-orlowski", "game": { "wins": 2, "losses": 0, "draws": 0 }, "match": { "wins": 1, "losses": 0, "draws": 0 } },
+        { "round": 2, "opponentLocalId": "DK", "resultType": "PLAYED", "opponentPlayerId": "damian-krasny", "game": { "wins": 2, "losses": 0, "draws": 0 }, "match": { "wins": 1, "losses": 0, "draws": 0 } },
+        { "round": 3, "opponentLocalId": "MK", "resultType": "PLAYED", "opponentPlayerId": "marcin-kowalski", "game": { "wins": 0, "losses": 2, "draws": 0 }, "match": { "wins": 0, "losses": 1, "draws": 0 } },
+        { "round": 4, "opponentLocalId": "JB", "resultType": "PLAYED", "opponentPlayerId": "janusz-bulakowski", "game": { "wins": 2, "losses": 0, "draws": 0 }, "match": { "wins": 1, "losses": 0, "draws": 0 } }
       ],
       "match": { "wins": 3, "losses": 1, "draws": 0 },
       "game": { "wins": 6, "losses": 2, "draws": 0 }
@@ -50,7 +50,7 @@
     {
       "localId": "JS",
       "rank": 3,
-      "playerId": "p27",
+      "playerId": "jakub-szewczyk",
       "playerName": "Jakub Szewczyk",
       "playerRef": "new:js",
       "points": 7,
@@ -59,10 +59,10 @@
         "colors": "UWG"
       },
       "rounds": [
-        { "round": 1, "opponentLocalId": "ML", "resultType": "PLAYED", "opponentPlayerId": "p01", "game": { "wins": 1, "losses": 1, "draws": 0 }, "match": { "wins": 0, "losses": 0, "draws": 1 } },
-        { "round": 2, "opponentLocalId": "MG", "resultType": "PLAYED", "opponentPlayerId": "p26", "game": { "wins": 2, "losses": 0, "draws": 0 }, "match": { "wins": 1, "losses": 0, "draws": 0 } },
-        { "round": 3, "opponentLocalId": "JB", "resultType": "PLAYED", "opponentPlayerId": "p12", "game": { "wins": 1, "losses": 2, "draws": 0 }, "match": { "wins": 0, "losses": 1, "draws": 0 } },
-        { "round": 4, "opponentLocalId": "PO", "resultType": "PLAYED", "opponentPlayerId": "p13", "game": { "wins": 2, "losses": 1, "draws": 0 }, "match": { "wins": 1, "losses": 0, "draws": 0 } }
+        { "round": 1, "opponentLocalId": "ML", "resultType": "PLAYED", "opponentPlayerId": "maciej-lbik", "game": { "wins": 1, "losses": 1, "draws": 0 }, "match": { "wins": 0, "losses": 0, "draws": 1 } },
+        { "round": 2, "opponentLocalId": "MG", "resultType": "PLAYED", "opponentPlayerId": "marcin-gornowicz", "game": { "wins": 2, "losses": 0, "draws": 0 }, "match": { "wins": 1, "losses": 0, "draws": 0 } },
+        { "round": 3, "opponentLocalId": "JB", "resultType": "PLAYED", "opponentPlayerId": "janusz-bulakowski", "game": { "wins": 1, "losses": 2, "draws": 0 }, "match": { "wins": 0, "losses": 1, "draws": 0 } },
+        { "round": 4, "opponentLocalId": "PO", "resultType": "PLAYED", "opponentPlayerId": "piotr-orlowski", "game": { "wins": 2, "losses": 1, "draws": 0 }, "match": { "wins": 1, "losses": 0, "draws": 0 } }
       ],
       "match": { "wins": 2, "losses": 1, "draws": 1 },
       "game": { "wins": 6, "losses": 4, "draws": 0 }
@@ -70,19 +70,19 @@
     {
       "localId": "ML",
       "rank": 4,
-      "playerId": "p01",
+      "playerId": "maciej-lbik",
       "playerName": "Maciej Łbik",
-      "playerRef": "p01",
+      "playerRef": "maciej-lbik",
       "points": 7,
       "deck": {
         "name": "Quiet Tribe",
         "colors": "GWUr"
       },
       "rounds": [
-        { "round": 1, "opponentLocalId": "JS", "resultType": "PLAYED", "opponentPlayerId": "p27", "game": { "wins": 1, "losses": 1, "draws": 0 }, "match": { "wins": 0, "losses": 0, "draws": 1 } },
-        { "round": 2, "opponentLocalId": "PO", "resultType": "PLAYED", "opponentPlayerId": "p13", "game": { "wins": 2, "losses": 0, "draws": 0 }, "match": { "wins": 1, "losses": 0, "draws": 0 } },
-        { "round": 3, "opponentLocalId": "DK", "resultType": "PLAYED", "opponentPlayerId": "p05", "game": { "wins": 0, "losses": 2, "draws": 0 }, "match": { "wins": 0, "losses": 1, "draws": 0 } },
-        { "round": 4, "opponentLocalId": "PZ", "resultType": "PLAYED", "opponentPlayerId": "p09", "game": { "wins": 2, "losses": 0, "draws": 0 }, "match": { "wins": 1, "losses": 0, "draws": 0 } }
+        { "round": 1, "opponentLocalId": "JS", "resultType": "PLAYED", "opponentPlayerId": "jakub-szewczyk", "game": { "wins": 1, "losses": 1, "draws": 0 }, "match": { "wins": 0, "losses": 0, "draws": 1 } },
+        { "round": 2, "opponentLocalId": "PO", "resultType": "PLAYED", "opponentPlayerId": "piotr-orlowski", "game": { "wins": 2, "losses": 0, "draws": 0 }, "match": { "wins": 1, "losses": 0, "draws": 0 } },
+        { "round": 3, "opponentLocalId": "DK", "resultType": "PLAYED", "opponentPlayerId": "damian-krasny", "game": { "wins": 0, "losses": 2, "draws": 0 }, "match": { "wins": 0, "losses": 1, "draws": 0 } },
+        { "round": 4, "opponentLocalId": "PZ", "resultType": "PLAYED", "opponentPlayerId": "piotr-zielinski", "game": { "wins": 2, "losses": 0, "draws": 0 }, "match": { "wins": 1, "losses": 0, "draws": 0 } }
       ],
       "match": { "wins": 2, "losses": 1, "draws": 1 },
       "game": { "wins": 5, "losses": 3, "draws": 0 }
@@ -90,19 +90,19 @@
     {
       "localId": "DK",
       "rank": 5,
-      "playerId": "p05",
+      "playerId": "damian-krasny",
       "playerName": "Damian Kraśny",
-      "playerRef": "p05",
+      "playerRef": "damian-krasny",
       "points": 6,
       "deck": {
         "name": "Pit Rack",
         "colors": "B"
       },
       "rounds": [
-        { "round": 1, "opponentLocalId": "MG", "resultType": "PLAYED", "opponentPlayerId": "p26", "game": { "wins": 2, "losses": 1, "draws": 0 }, "match": { "wins": 1, "losses": 0, "draws": 0 } },
-        { "round": 2, "opponentLocalId": "WK", "resultType": "PLAYED", "opponentPlayerId": "p02", "game": { "wins": 0, "losses": 2, "draws": 0 }, "match": { "wins": 0, "losses": 1, "draws": 0 } },
-        { "round": 3, "opponentLocalId": "ML", "resultType": "PLAYED", "opponentPlayerId": "p01", "game": { "wins": 2, "losses": 0, "draws": 0 }, "match": { "wins": 1, "losses": 0, "draws": 0 } },
-        { "round": 4, "opponentLocalId": "MK", "resultType": "PLAYED", "opponentPlayerId": "p06", "game": { "wins": 0, "losses": 2, "draws": 0 }, "match": { "wins": 0, "losses": 1, "draws": 0 } }
+        { "round": 1, "opponentLocalId": "MG", "resultType": "PLAYED", "opponentPlayerId": "marcin-gornowicz", "game": { "wins": 2, "losses": 1, "draws": 0 }, "match": { "wins": 1, "losses": 0, "draws": 0 } },
+        { "round": 2, "opponentLocalId": "WK", "resultType": "PLAYED", "opponentPlayerId": "wiaczaslau-kukhtsiuk", "game": { "wins": 0, "losses": 2, "draws": 0 }, "match": { "wins": 0, "losses": 1, "draws": 0 } },
+        { "round": 3, "opponentLocalId": "ML", "resultType": "PLAYED", "opponentPlayerId": "maciej-lbik", "game": { "wins": 2, "losses": 0, "draws": 0 }, "match": { "wins": 1, "losses": 0, "draws": 0 } },
+        { "round": 4, "opponentLocalId": "MK", "resultType": "PLAYED", "opponentPlayerId": "marcin-kowalski", "game": { "wins": 0, "losses": 2, "draws": 0 }, "match": { "wins": 0, "losses": 1, "draws": 0 } }
       ],
       "match": { "wins": 2, "losses": 2, "draws": 0 },
       "game": { "wins": 4, "losses": 5, "draws": 0 }
@@ -110,19 +110,19 @@
     {
       "localId": "JB",
       "rank": 6,
-      "playerId": "p12",
+      "playerId": "janusz-bulakowski",
       "playerName": "Janusz Bułakowski",
-      "playerRef": "p12",
+      "playerRef": "janusz-bulakowski",
       "points": 6,
       "deck": {
         "name": "Landstill",
         "colors": "UW"
       },
       "rounds": [
-        { "round": 1, "opponentLocalId": "PZ", "resultType": "PLAYED", "opponentPlayerId": "p09", "game": { "wins": 2, "losses": 1, "draws": 0 }, "match": { "wins": 1, "losses": 0, "draws": 0 } },
-        { "round": 2, "opponentLocalId": "MK", "resultType": "PLAYED", "opponentPlayerId": "p06", "game": { "wins": 1, "losses": 2, "draws": 0 }, "match": { "wins": 0, "losses": 1, "draws": 0 } },
-        { "round": 3, "opponentLocalId": "JS", "resultType": "PLAYED", "opponentPlayerId": "p27", "game": { "wins": 2, "losses": 1, "draws": 0 }, "match": { "wins": 1, "losses": 0, "draws": 0 } },
-        { "round": 4, "opponentLocalId": "WK", "resultType": "PLAYED", "opponentPlayerId": "p02", "game": { "wins": 0, "losses": 2, "draws": 0 }, "match": { "wins": 0, "losses": 1, "draws": 0 } }
+        { "round": 1, "opponentLocalId": "PZ", "resultType": "PLAYED", "opponentPlayerId": "piotr-zielinski", "game": { "wins": 2, "losses": 1, "draws": 0 }, "match": { "wins": 1, "losses": 0, "draws": 0 } },
+        { "round": 2, "opponentLocalId": "MK", "resultType": "PLAYED", "opponentPlayerId": "marcin-kowalski", "game": { "wins": 1, "losses": 2, "draws": 0 }, "match": { "wins": 0, "losses": 1, "draws": 0 } },
+        { "round": 3, "opponentLocalId": "JS", "resultType": "PLAYED", "opponentPlayerId": "jakub-szewczyk", "game": { "wins": 2, "losses": 1, "draws": 0 }, "match": { "wins": 1, "losses": 0, "draws": 0 } },
+        { "round": 4, "opponentLocalId": "WK", "resultType": "PLAYED", "opponentPlayerId": "wiaczaslau-kukhtsiuk", "game": { "wins": 0, "losses": 2, "draws": 0 }, "match": { "wins": 0, "losses": 1, "draws": 0 } }
       ],
       "match": { "wins": 2, "losses": 2, "draws": 0 },
       "game": { "wins": 5, "losses": 6, "draws": 0 }
@@ -130,7 +130,7 @@
     {
       "localId": "MG",
       "rank": 7,
-      "playerId": "p26",
+      "playerId": "marcin-gornowicz",
       "playerName": "Marcin Gornowicz",
       "playerRef": "new:mg",
       "points": 6,
@@ -139,10 +139,10 @@
         "colors": "B"
       },
       "rounds": [
-        { "round": 1, "opponentLocalId": "DK", "resultType": "PLAYED", "opponentPlayerId": "p05", "game": { "wins": 1, "losses": 2, "draws": 0 }, "match": { "wins": 0, "losses": 1, "draws": 0 } },
-        { "round": 2, "opponentLocalId": "JS", "resultType": "PLAYED", "opponentPlayerId": "p27", "game": { "wins": 0, "losses": 2, "draws": 0 }, "match": { "wins": 0, "losses": 1, "draws": 0 } },
-        { "round": 3, "opponentLocalId": "PZ", "resultType": "PLAYED", "opponentPlayerId": "p09", "game": { "wins": 2, "losses": 0, "draws": 0 }, "match": { "wins": 1, "losses": 0, "draws": 0 } },
-        { "round": 4, "opponentLocalId": "GT", "resultType": "PLAYED", "opponentPlayerId": "p23", "game": { "wins": 2, "losses": 1, "draws": 0 }, "match": { "wins": 1, "losses": 0, "draws": 0 } }
+        { "round": 1, "opponentLocalId": "DK", "resultType": "PLAYED", "opponentPlayerId": "damian-krasny", "game": { "wins": 1, "losses": 2, "draws": 0 }, "match": { "wins": 0, "losses": 1, "draws": 0 } },
+        { "round": 2, "opponentLocalId": "JS", "resultType": "PLAYED", "opponentPlayerId": "jakub-szewczyk", "game": { "wins": 0, "losses": 2, "draws": 0 }, "match": { "wins": 0, "losses": 1, "draws": 0 } },
+        { "round": 3, "opponentLocalId": "PZ", "resultType": "PLAYED", "opponentPlayerId": "piotr-zielinski", "game": { "wins": 2, "losses": 0, "draws": 0 }, "match": { "wins": 1, "losses": 0, "draws": 0 } },
+        { "round": 4, "opponentLocalId": "GT", "resultType": "PLAYED", "opponentPlayerId": "grzegorz-talewski", "game": { "wins": 2, "losses": 1, "draws": 0 }, "match": { "wins": 1, "losses": 0, "draws": 0 } }
       ],
       "match": { "wins": 2, "losses": 2, "draws": 0 },
       "game": { "wins": 5, "losses": 5, "draws": 0 }
@@ -150,19 +150,19 @@
     {
       "localId": "PO",
       "rank": 8,
-      "playerId": "p13",
+      "playerId": "piotr-orlowski",
       "playerName": "Piotr Orłowski",
-      "playerRef": "p13",
+      "playerRef": "piotr-orlowski",
       "points": 3,
       "deck": {
         "name": "Finkula",
         "colors": "UWB"
       },
       "rounds": [
-        { "round": 1, "opponentLocalId": "WK", "resultType": "PLAYED", "opponentPlayerId": "p02", "game": { "wins": 0, "losses": 2, "draws": 0 }, "match": { "wins": 0, "losses": 1, "draws": 0 } },
-        { "round": 2, "opponentLocalId": "ML", "resultType": "PLAYED", "opponentPlayerId": "p01", "game": { "wins": 0, "losses": 2, "draws": 0 }, "match": { "wins": 0, "losses": 1, "draws": 0 } },
-        { "round": 3, "opponentLocalId": "GT", "resultType": "PLAYED", "opponentPlayerId": "p23", "game": { "wins": 2, "losses": 1, "draws": 0 }, "match": { "wins": 1, "losses": 0, "draws": 0 } },
-        { "round": 4, "opponentLocalId": "JS", "resultType": "PLAYED", "opponentPlayerId": "p27", "game": { "wins": 1, "losses": 2, "draws": 0 }, "match": { "wins": 0, "losses": 1, "draws": 0 } }
+        { "round": 1, "opponentLocalId": "WK", "resultType": "PLAYED", "opponentPlayerId": "wiaczaslau-kukhtsiuk", "game": { "wins": 0, "losses": 2, "draws": 0 }, "match": { "wins": 0, "losses": 1, "draws": 0 } },
+        { "round": 2, "opponentLocalId": "ML", "resultType": "PLAYED", "opponentPlayerId": "maciej-lbik", "game": { "wins": 0, "losses": 2, "draws": 0 }, "match": { "wins": 0, "losses": 1, "draws": 0 } },
+        { "round": 3, "opponentLocalId": "GT", "resultType": "PLAYED", "opponentPlayerId": "grzegorz-talewski", "game": { "wins": 2, "losses": 1, "draws": 0 }, "match": { "wins": 1, "losses": 0, "draws": 0 } },
+        { "round": 4, "opponentLocalId": "JS", "resultType": "PLAYED", "opponentPlayerId": "jakub-szewczyk", "game": { "wins": 1, "losses": 2, "draws": 0 }, "match": { "wins": 0, "losses": 1, "draws": 0 } }
       ],
       "match": { "wins": 1, "losses": 3, "draws": 0 },
       "game": { "wins": 3, "losses": 7, "draws": 0 }
@@ -170,19 +170,19 @@
     {
       "localId": "PZ",
       "rank": 9,
-      "playerId": "p09",
+      "playerId": "piotr-zielinski",
       "playerName": "Piotr Zieliński",
-      "playerRef": "p09",
+      "playerRef": "piotr-zielinski",
       "points": 3,
       "deck": {
         "name": "MonoBlack",
         "colors": "B"
       },
       "rounds": [
-        { "round": 1, "opponentLocalId": "JB", "resultType": "PLAYED", "opponentPlayerId": "p12", "game": { "wins": 1, "losses": 2, "draws": 0 }, "match": { "wins": 0, "losses": 1, "draws": 0 } },
-        { "round": 2, "opponentLocalId": "GT", "resultType": "PLAYED", "opponentPlayerId": "p23", "game": { "wins": 2, "losses": 1, "draws": 0 }, "match": { "wins": 1, "losses": 0, "draws": 0 } },
-        { "round": 3, "opponentLocalId": "MG", "resultType": "PLAYED", "opponentPlayerId": "p26", "game": { "wins": 0, "losses": 2, "draws": 0 }, "match": { "wins": 0, "losses": 1, "draws": 0 } },
-        { "round": 4, "opponentLocalId": "ML", "resultType": "PLAYED", "opponentPlayerId": "p01", "game": { "wins": 0, "losses": 2, "draws": 0 }, "match": { "wins": 0, "losses": 1, "draws": 0 } }
+        { "round": 1, "opponentLocalId": "JB", "resultType": "PLAYED", "opponentPlayerId": "janusz-bulakowski", "game": { "wins": 1, "losses": 2, "draws": 0 }, "match": { "wins": 0, "losses": 1, "draws": 0 } },
+        { "round": 2, "opponentLocalId": "GT", "resultType": "PLAYED", "opponentPlayerId": "grzegorz-talewski", "game": { "wins": 2, "losses": 1, "draws": 0 }, "match": { "wins": 1, "losses": 0, "draws": 0 } },
+        { "round": 3, "opponentLocalId": "MG", "resultType": "PLAYED", "opponentPlayerId": "marcin-gornowicz", "game": { "wins": 0, "losses": 2, "draws": 0 }, "match": { "wins": 0, "losses": 1, "draws": 0 } },
+        { "round": 4, "opponentLocalId": "ML", "resultType": "PLAYED", "opponentPlayerId": "maciej-lbik", "game": { "wins": 0, "losses": 2, "draws": 0 }, "match": { "wins": 0, "losses": 1, "draws": 0 } }
       ],
       "match": { "wins": 1, "losses": 3, "draws": 0 },
       "game": { "wins": 3, "losses": 7, "draws": 0 }
@@ -190,19 +190,19 @@
     {
       "localId": "GT",
       "rank": 10,
-      "playerId": "p23",
+      "playerId": "grzegorz-talewski",
       "playerName": "Grzegorz Talewski",
-      "playerRef": "p23",
+      "playerRef": "grzegorz-talewski",
       "points": 0,
       "deck": {
         "name": "Stiflenought",
         "colors": "U"
       },
       "rounds": [
-        { "round": 1, "opponentLocalId": "MK", "resultType": "PLAYED", "opponentPlayerId": "p06", "game": { "wins": 1, "losses": 2, "draws": 0 }, "match": { "wins": 0, "losses": 1, "draws": 0 } },
-        { "round": 2, "opponentLocalId": "PZ", "resultType": "PLAYED", "opponentPlayerId": "p09", "game": { "wins": 1, "losses": 2, "draws": 0 }, "match": { "wins": 0, "losses": 1, "draws": 0 } },
-        { "round": 3, "opponentLocalId": "PO", "resultType": "PLAYED", "opponentPlayerId": "p13", "game": { "wins": 1, "losses": 2, "draws": 0 }, "match": { "wins": 0, "losses": 1, "draws": 0 } },
-        { "round": 4, "opponentLocalId": "MG", "resultType": "PLAYED", "opponentPlayerId": "p26", "game": { "wins": 1, "losses": 2, "draws": 0 }, "match": { "wins": 0, "losses": 1, "draws": 0 } }
+        { "round": 1, "opponentLocalId": "MK", "resultType": "PLAYED", "opponentPlayerId": "marcin-kowalski", "game": { "wins": 1, "losses": 2, "draws": 0 }, "match": { "wins": 0, "losses": 1, "draws": 0 } },
+        { "round": 2, "opponentLocalId": "PZ", "resultType": "PLAYED", "opponentPlayerId": "piotr-zielinski", "game": { "wins": 1, "losses": 2, "draws": 0 }, "match": { "wins": 0, "losses": 1, "draws": 0 } },
+        { "round": 3, "opponentLocalId": "PO", "resultType": "PLAYED", "opponentPlayerId": "piotr-orlowski", "game": { "wins": 1, "losses": 2, "draws": 0 }, "match": { "wins": 0, "losses": 1, "draws": 0 } },
+        { "round": 4, "opponentLocalId": "MG", "resultType": "PLAYED", "opponentPlayerId": "marcin-gornowicz", "game": { "wins": 1, "losses": 2, "draws": 0 }, "match": { "wins": 0, "losses": 1, "draws": 0 } }
       ],
       "match": { "wins": 0, "losses": 4, "draws": 0 },
       "game": { "wins": 4, "losses": 8, "draws": 0 }

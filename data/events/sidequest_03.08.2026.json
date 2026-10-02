@@ -22,7 +22,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p11",
+          "opponentPlayerId": "wojciech-cwiklinski",
           "match": {
             "wins": 1,
             "losses": 0,
@@ -38,7 +38,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p12",
+          "opponentPlayerId": "janusz-bulakowski",
           "match": {
             "wins": 1,
             "losses": 0,
@@ -54,7 +54,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p06",
+          "opponentPlayerId": "marcin-kowalski",
           "match": {
             "wins": 1,
             "losses": 0,
@@ -62,7 +62,7 @@
           }
         }
       ],
-      "playerId": "p10",
+      "playerId": "wiaczaslau-kukhtsiuk",
       "match": {
         "wins": 3,
         "losses": 0,
@@ -93,7 +93,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p10",
+          "opponentPlayerId": "wiaczaslau-kukhtsiuk",
           "match": {
             "wins": 0,
             "losses": 1,
@@ -109,7 +109,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p06",
+          "opponentPlayerId": "marcin-kowalski",
           "match": {
             "wins": 1,
             "losses": 0,
@@ -132,7 +132,7 @@
           }
         }
       ],
-      "playerId": "p11",
+      "playerId": "wojciech-cwiklinski",
       "match": {
         "wins": 2,
         "losses": 1,
@@ -163,7 +163,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p06",
+          "opponentPlayerId": "marcin-kowalski",
           "match": {
             "wins": 0,
             "losses": 1,
@@ -194,7 +194,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p12",
+          "opponentPlayerId": "janusz-bulakowski",
           "match": {
             "wins": 1,
             "losses": 0,
@@ -202,7 +202,7 @@
           }
         }
       ],
-      "playerId": "p01",
+      "playerId": "maciej-lbik",
       "match": {
         "wins": 2,
         "losses": 1,
@@ -248,7 +248,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p10",
+          "opponentPlayerId": "wiaczaslau-kukhtsiuk",
           "match": {
             "wins": 0,
             "losses": 1,
@@ -264,7 +264,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p01",
+          "opponentPlayerId": "maciej-lbik",
           "match": {
             "wins": 0,
             "losses": 1,
@@ -272,7 +272,7 @@
           }
         }
       ],
-      "playerId": "p12",
+      "playerId": "janusz-bulakowski",
       "match": {
         "wins": 1,
         "losses": 2,
@@ -303,7 +303,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p01",
+          "opponentPlayerId": "maciej-lbik",
           "match": {
             "wins": 1,
             "losses": 0,
@@ -319,7 +319,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p11",
+          "opponentPlayerId": "wojciech-cwiklinski",
           "match": {
             "wins": 0,
             "losses": 1,
@@ -335,7 +335,7 @@
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "p10",
+          "opponentPlayerId": "wiaczaslau-kukhtsiuk",
           "match": {
             "wins": 0,
             "losses": 1,
@@ -343,7 +343,7 @@
           }
         }
       ],
-      "playerId": "p06",
+      "playerId": "marcin-kowalski",
       "match": {
         "wins": 1,
         "losses": 2,
