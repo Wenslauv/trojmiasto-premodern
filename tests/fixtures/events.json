@@ -584,7 +584,7 @@
         }
       }
     ],
-    "id": "20260921-sidequest-weekly"
+    "id": "2026-09-21-sidequest-weekly"
   },
   {
     "name": "SideQuest weekly",
@@ -1170,10 +1170,10 @@
         }
       }
     ],
-    "id": "20260914-sidequest-weekly"
+    "id": "2026-09-14-sidequest-weekly"
   },
   {
-    "id": "20260830-sidequest-weekly",
+    "id": "2026-08-30-sidequest-weekly",
     "name": "SideQuest weekly",
     "date": "2026-08-30",
     "location": "Gdansk",
@@ -2064,7 +2064,7 @@
     ]
   },
   {
-    "id": "20260824-sidequest-weekly",
+    "id": "2026-08-24-sidequest-weekly",
     "name": "SideQuest weekly",
     "date": "2026-08-24",
     "location": "Gdansk",
@@ -3039,7 +3039,7 @@
     "type": "weekly"
   },
   {
-    "id": "20260817-sidequest-weekly-premodern-17-08-2026",
+    "id": "2026-08-17-sidequest-weekly",
     "date": "2026-08-17",
     "location": "Gdansk",
     "mode": "standingsOnly",
@@ -3451,13 +3451,13 @@
         "rounds": []
       }
     ],
-    "id": "20260814-futurex-monthly-premodern-14-08-2026",
+    "id": "2026-08-14-futurex-monthly",
     "type": "monthly",
     "place": "Futurex",
     "name": "Futurex monthly"
   },
   {
-    "id": "20260810-sidequest-weekly-10-08-2026",
+    "id": "2026-08-10-sidequest-weekly",
     "date": "2026-08-10",
     "location": "Gdansk",
     "mode": "roundByRound",
@@ -4261,7 +4261,7 @@
         }
       }
     ],
-    "id": "20260803-sidequest-weekly-03-08-2026",
+    "id": "2026-08-03-sidequest-weekly",
     "type": "weekly",
     "place": "SideQuest",
     "name": "SideQuest weekly"
@@ -4555,7 +4555,7 @@
         }
       }
     ],
-    "id": "20260720-sidequest-weekly-20-07-2026",
+    "id": "2026-07-20-sidequest-weekly",
     "mode": "roundByRound",
     "type": "weekly",
     "place": "SideQuest",
@@ -5088,14 +5088,14 @@
         }
       }
     ],
-    "id": "20260718-futurex-monthly-18-07-2026",
+    "id": "2026-07-18-futurex-monthly",
     "type": "monthly",
     "place": "Futurex",
     "name": "Futurex monthly",
     "mode": "roundByRound"
   },
   {
-    "id": "20260706-sidequest-weekly-06-07-2026",
+    "id": "2026-07-06-sidequest-weekly",
     "date": "2026-07-06",
     "location": "Gdansk",
     "standings": [

@@ -1,26 +1,30 @@
 {
-  "date": "2026-07-18",
-  "location": "Gdynia",
+  "name": "SideQuest weekly",
+  "date": "2026-09-14",
+  "location": "Gdansk",
+  "place": "SideQuest",
+  "type": "weekly",
+  "mode": "roundByRound",
   "standings": [
     {
-      "localId": "WK",
+      "localId": "PO",
       "rank": 1,
-      "playerName": "Wiaczasłau Kukhtsiuk",
-      "points": 12,
+      "playerRef": "piotr-orlowski",
+      "points": 6,
       "deck": {
-        "name": "Replenish"
+        "name": "hFEB"
       },
       "rounds": [
         {
           "round": 1,
-          "opponentLocalId": "MM",
+          "opponentLocalId": "MK",
           "game": {
             "wins": 2,
             "losses": 1,
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "maciek-maciek",
+          "opponentPlayerId": "marcin-kowalski",
           "match": {
             "wins": 1,
             "losses": 0,
@@ -29,10 +33,65 @@
         },
         {
           "round": 2,
+          "opponentLocalId": "AS",
+          "game": {
+            "wins": 2,
+            "losses": 0,
+            "draws": 0
+          },
+          "resultType": "PLAYED",
+          "opponentPlayerId": "amadeusz-sztangierski",
+          "match": {
+            "wins": 1,
+            "losses": 0,
+            "draws": 0
+          }
+        },
+        {
+          "round": 3,
+          "opponentLocalId": "MG",
+          "game": {
+            "wins": 2,
+            "losses": 0,
+            "draws": 0
+          },
+          "resultType": "PLAYED",
+          "opponentPlayerId": "marcin-gornowicz",
+          "match": {
+            "wins": 1,
+            "losses": 0,
+            "draws": 0
+          }
+        }
+      ],
+      "playerId": "piotr-orlowski",
+      "playerName": "Piotr Orłowski",
+      "match": {
+        "wins": 3,
+        "losses": 0,
+        "draws": 0
+      },
+      "game": {
+        "wins": 6,
+        "losses": 1,
+        "draws": 0
+      }
+    },
+    {
+      "localId": "MG",
+      "rank": 2,
+      "playerRef": "marcin-gornowicz",
+      "points": 6,
+      "deck": {
+        "name": "Moneyball"
+      },
+      "rounds": [
+        {
+          "round": 1,
           "opponentLocalId": "JR",
           "game": {
             "wins": 2,
-            "losses": 1,
+            "losses": 0,
             "draws": 0
           },
           "resultType": "PLAYED",
@@ -44,7 +103,78 @@
           }
         },
         {
+          "round": 2,
+          "opponentLocalId": "WK",
+          "game": {
+            "wins": 2,
+            "losses": 0,
+            "draws": 0
+          },
+          "resultType": "PLAYED",
+          "opponentPlayerId": "wiaczaslau-kukhtsiuk",
+          "match": {
+            "wins": 1,
+            "losses": 0,
+            "draws": 0
+          }
+        },
+        {
           "round": 3,
+          "opponentLocalId": "PO",
+          "game": {
+            "wins": 0,
+            "losses": 2,
+            "draws": 0
+          },
+          "resultType": "PLAYED",
+          "opponentPlayerId": "piotr-orlowski",
+          "match": {
+            "wins": 0,
+            "losses": 1,
+            "draws": 0
+          }
+        }
+      ],
+      "playerId": "marcin-gornowicz",
+      "playerName": "Marcin Gornowicz",
+      "match": {
+        "wins": 2,
+        "losses": 1,
+        "draws": 0
+      },
+      "game": {
+        "wins": 4,
+        "losses": 2,
+        "draws": 0
+      }
+    },
+    {
+      "localId": "MK",
+      "rank": 3,
+      "playerRef": "marcin-kowalski",
+      "points": 6,
+      "deck": {
+        "name": "BG Rock"
+      },
+      "rounds": [
+        {
+          "round": 1,
+          "opponentLocalId": "PO",
+          "game": {
+            "wins": 1,
+            "losses": 2,
+            "draws": 0
+          },
+          "resultType": "PLAYED",
+          "opponentPlayerId": "piotr-orlowski",
+          "match": {
+            "wins": 0,
+            "losses": 1,
+            "draws": 0
+          }
+        },
+        {
+          "round": 2,
           "opponentLocalId": "PZ",
           "game": {
             "wins": 2,
@@ -60,15 +190,86 @@
           }
         },
         {
-          "round": 4,
-          "opponentLocalId": "MK",
+          "round": 3,
+          "opponentLocalId": "AS",
+          "game": {
+            "wins": 2,
+            "losses": 0,
+            "draws": 0
+          },
+          "resultType": "PLAYED",
+          "opponentPlayerId": "amadeusz-sztangierski",
+          "match": {
+            "wins": 1,
+            "losses": 0,
+            "draws": 0
+          }
+        }
+      ],
+      "playerId": "marcin-kowalski",
+      "playerName": "Marcin Kowalski",
+      "match": {
+        "wins": 2,
+        "losses": 1,
+        "draws": 0
+      },
+      "game": {
+        "wins": 5,
+        "losses": 2,
+        "draws": 0
+      }
+    },
+    {
+      "localId": "WK",
+      "rank": 4,
+      "playerRef": "wiaczaslau-kukhtsiuk",
+      "points": 6,
+      "deck": {
+        "name": "UWR Solution"
+      },
+      "rounds": [
+        {
+          "round": 1,
+          "opponentLocalId": "PZ",
+          "game": {
+            "wins": 2,
+            "losses": 0,
+            "draws": 0
+          },
+          "resultType": "PLAYED",
+          "opponentPlayerId": "piotr-zielinski",
+          "match": {
+            "wins": 1,
+            "losses": 0,
+            "draws": 0
+          }
+        },
+        {
+          "round": 2,
+          "opponentLocalId": "MG",
+          "game": {
+            "wins": 0,
+            "losses": 2,
+            "draws": 0
+          },
+          "resultType": "PLAYED",
+          "opponentPlayerId": "marcin-gornowicz",
+          "match": {
+            "wins": 0,
+            "losses": 1,
+            "draws": 0
+          }
+        },
+        {
+          "round": 3,
+          "opponentLocalId": "MS",
           "game": {
             "wins": 2,
             "losses": 1,
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "marcin-kowalski",
+          "opponentPlayerId": "michal-sekiewicz",
           "match": {
             "wins": 1,
             "losses": 0,
@@ -77,313 +278,56 @@
         }
       ],
       "playerId": "wiaczaslau-kukhtsiuk",
+      "playerName": "Wiaczasłau Kukhtsiuk",
       "match": {
-        "wins": 4,
-        "losses": 0,
+        "wins": 2,
+        "losses": 1,
         "draws": 0
       },
       "game": {
-        "wins": 8,
+        "wins": 4,
         "losses": 3,
         "draws": 0
       }
     },
     {
-      "localId": "MK",
-      "rank": 2,
-      "playerName": "Marcin Kowalski",
-      "points": 6,
-      "deck": {
-        "name": "Death & Taxes"
-      },
-      "rounds": [
-        {
-          "round": 1,
-          "opponentLocalId": "AM",
-          "game": {
-            "wins": 2,
-            "losses": 0,
-            "draws": 0
-          },
-          "resultType": "PLAYED",
-          "opponentPlayerId": "adam-modrzejewski",
-          "match": {
-            "wins": 1,
-            "losses": 0,
-            "draws": 0
-          }
-        },
-        {
-          "round": 2,
-          "opponentLocalId": "PZ",
-          "game": {
-            "wins": 0,
-            "losses": 2,
-            "draws": 0
-          },
-          "resultType": "PLAYED",
-          "opponentPlayerId": "piotr-zielinski",
-          "match": {
-            "wins": 0,
-            "losses": 1,
-            "draws": 0
-          }
-        },
-        {
-          "round": 3,
-          "opponentLocalId": "MM",
-          "game": {
-            "wins": 2,
-            "losses": 0,
-            "draws": 0
-          },
-          "resultType": "PLAYED",
-          "opponentPlayerId": "maciek-maciek",
-          "match": {
-            "wins": 1,
-            "losses": 0,
-            "draws": 0
-          }
-        },
-        {
-          "round": 4,
-          "opponentLocalId": "WK",
-          "game": {
-            "wins": 1,
-            "losses": 2,
-            "draws": 0
-          },
-          "resultType": "PLAYED",
-          "opponentPlayerId": "wiaczaslau-kukhtsiuk",
-          "match": {
-            "wins": 0,
-            "losses": 1,
-            "draws": 0
-          }
-        }
-      ],
-      "playerId": "marcin-kowalski",
-      "match": {
-        "wins": 2,
-        "losses": 2,
-        "draws": 0
-      },
-      "game": {
-        "wins": 5,
-        "losses": 4,
-        "draws": 0
-      }
-    },
-    {
-      "localId": "JR",
-      "rank": 3,
-      "playerName": "Jakub Rąbalsky",
-      "points": 6,
-      "deck": {
-        "name": "Darigaaz midrange"
-      },
-      "rounds": [
-        {
-          "round": 1,
-          "opponentLocalId": "PZ",
-          "game": {
-            "wins": 2,
-            "losses": 0,
-            "draws": 0
-          },
-          "resultType": "PLAYED",
-          "opponentPlayerId": "piotr-zielinski",
-          "match": {
-            "wins": 1,
-            "losses": 0,
-            "draws": 0
-          }
-        },
-        {
-          "round": 2,
-          "opponentLocalId": "WK",
-          "game": {
-            "wins": 1,
-            "losses": 2,
-            "draws": 0
-          },
-          "resultType": "PLAYED",
-          "opponentPlayerId": "wiaczaslau-kukhtsiuk",
-          "match": {
-            "wins": 0,
-            "losses": 1,
-            "draws": 0
-          }
-        },
-        {
-          "round": 3,
-          "opponentLocalId": "AM",
-          "game": {
-            "wins": 0,
-            "losses": 2,
-            "draws": 0
-          },
-          "resultType": "PLAYED",
-          "opponentPlayerId": "adam-modrzejewski",
-          "match": {
-            "wins": 0,
-            "losses": 1,
-            "draws": 0
-          }
-        },
-        {
-          "round": 4,
-          "opponentLocalId": "MM",
-          "game": {
-            "wins": 2,
-            "losses": 1,
-            "draws": 0
-          },
-          "resultType": "PLAYED",
-          "opponentPlayerId": "maciek-maciek",
-          "match": {
-            "wins": 1,
-            "losses": 0,
-            "draws": 0
-          }
-        }
-      ],
-      "playerId": "jakub-rabalsky",
-      "match": {
-        "wins": 2,
-        "losses": 2,
-        "draws": 0
-      },
-      "game": {
-        "wins": 5,
-        "losses": 5,
-        "draws": 0
-      }
-    },
-    {
-      "localId": "AM",
-      "rank": 4,
-      "playerName": "Adam Modrzejewski",
-      "points": 6,
-      "deck": {
-        "name": "RG Aggro"
-      },
-      "rounds": [
-        {
-          "round": 1,
-          "opponentLocalId": "MK",
-          "game": {
-            "wins": 0,
-            "losses": 2,
-            "draws": 0
-          },
-          "resultType": "PLAYED",
-          "opponentPlayerId": "marcin-kowalski",
-          "match": {
-            "wins": 0,
-            "losses": 1,
-            "draws": 0
-          }
-        },
-        {
-          "round": 2,
-          "opponentLocalId": "MM",
-          "game": {
-            "wins": 1,
-            "losses": 2,
-            "draws": 0
-          },
-          "resultType": "PLAYED",
-          "opponentPlayerId": "maciek-maciek",
-          "match": {
-            "wins": 0,
-            "losses": 1,
-            "draws": 0
-          }
-        },
-        {
-          "round": 3,
-          "opponentLocalId": "JR",
-          "game": {
-            "wins": 2,
-            "losses": 0,
-            "draws": 0
-          },
-          "resultType": "PLAYED",
-          "opponentPlayerId": "jakub-rabalsky",
-          "match": {
-            "wins": 1,
-            "losses": 0,
-            "draws": 0
-          }
-        },
-        {
-          "round": 4,
-          "opponentLocalId": "PZ",
-          "game": {
-            "wins": 2,
-            "losses": 1,
-            "draws": 0
-          },
-          "resultType": "PLAYED",
-          "opponentPlayerId": "piotr-zielinski",
-          "match": {
-            "wins": 1,
-            "losses": 0,
-            "draws": 0
-          }
-        }
-      ],
-      "playerId": "adam-modrzejewski",
-      "match": {
-        "wins": 2,
-        "losses": 2,
-        "draws": 0
-      },
-      "game": {
-        "wins": 5,
-        "losses": 5,
-        "draws": 0
-      }
-    },
-    {
-      "localId": "MM",
+      "localId": "AS",
       "rank": 5,
-      "playerName": "Maciek Maciek",
+      "playerName": "Amadeusz Sztangierski",
       "points": 3,
       "deck": {
-        "name": "BG Rock"
+        "name": "Sligh"
       },
       "rounds": [
         {
           "round": 1,
-          "opponentLocalId": "WK",
-          "game": {
-            "wins": 1,
-            "losses": 2,
-            "draws": 0
-          },
-          "resultType": "PLAYED",
-          "opponentPlayerId": "wiaczaslau-kukhtsiuk",
-          "match": {
-            "wins": 0,
-            "losses": 1,
-            "draws": 0
-          }
-        },
-        {
-          "round": 2,
-          "opponentLocalId": "AM",
+          "opponentLocalId": "MS",
           "game": {
             "wins": 2,
             "losses": 1,
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "adam-modrzejewski",
+          "opponentPlayerId": "michal-sekiewicz",
           "match": {
             "wins": 1,
             "losses": 0,
+            "draws": 0
+          }
+        },
+        {
+          "round": 2,
+          "opponentLocalId": "PO",
+          "game": {
+            "wins": 0,
+            "losses": 2,
+            "draws": 0
+          },
+          "resultType": "PLAYED",
+          "opponentPlayerId": "piotr-orlowski",
+          "match": {
+            "wins": 0,
+            "losses": 1,
             "draws": 0
           }
         },
@@ -402,79 +346,31 @@
             "losses": 1,
             "draws": 0
           }
-        },
-        {
-          "round": 4,
-          "opponentLocalId": "JR",
-          "game": {
-            "wins": 1,
-            "losses": 2,
-            "draws": 0
-          },
-          "resultType": "PLAYED",
-          "opponentPlayerId": "jakub-rabalsky",
-          "match": {
-            "wins": 0,
-            "losses": 1,
-            "draws": 0
-          }
         }
       ],
-      "playerId": "maciek-maciek",
+      "playerId": "amadeusz-sztangierski",
       "match": {
         "wins": 1,
-        "losses": 3,
+        "losses": 2,
         "draws": 0
       },
       "game": {
-        "wins": 4,
-        "losses": 7,
+        "wins": 2,
+        "losses": 5,
         "draws": 0
       }
     },
     {
       "localId": "PZ",
       "rank": 6,
-      "playerName": "Piotr Zieliński",
+      "playerRef": "piotr-zielinski",
       "points": 3,
       "deck": {
-        "name": "Monoblack"
+        "name": "MonoBlack Ponza"
       },
       "rounds": [
         {
           "round": 1,
-          "opponentLocalId": "JR",
-          "game": {
-            "wins": 0,
-            "losses": 2,
-            "draws": 0
-          },
-          "resultType": "PLAYED",
-          "opponentPlayerId": "jakub-rabalsky",
-          "match": {
-            "wins": 0,
-            "losses": 1,
-            "draws": 0
-          }
-        },
-        {
-          "round": 2,
-          "opponentLocalId": "MK",
-          "game": {
-            "wins": 2,
-            "losses": 0,
-            "draws": 0
-          },
-          "resultType": "PLAYED",
-          "opponentPlayerId": "marcin-kowalski",
-          "match": {
-            "wins": 1,
-            "losses": 0,
-            "draws": 0
-          }
-        },
-        {
-          "round": 3,
           "opponentLocalId": "WK",
           "game": {
             "wins": 0,
@@ -490,15 +386,102 @@
           }
         },
         {
-          "round": 4,
-          "opponentLocalId": "AM",
+          "round": 2,
+          "opponentLocalId": "MK",
+          "game": {
+            "wins": 0,
+            "losses": 2,
+            "draws": 0
+          },
+          "resultType": "PLAYED",
+          "opponentPlayerId": "marcin-kowalski",
+          "match": {
+            "wins": 0,
+            "losses": 1,
+            "draws": 0
+          }
+        },
+        {
+          "round": 3,
+          "opponentLocalId": "JR",
+          "game": {
+            "wins": 2,
+            "losses": 1,
+            "draws": 0
+          },
+          "resultType": "PLAYED",
+          "opponentPlayerId": "jakub-rabalsky",
+          "match": {
+            "wins": 1,
+            "losses": 0,
+            "draws": 0
+          }
+        }
+      ],
+      "playerId": "piotr-zielinski",
+      "playerName": "Piotr Zieliński",
+      "match": {
+        "wins": 1,
+        "losses": 2,
+        "draws": 0
+      },
+      "game": {
+        "wins": 2,
+        "losses": 5,
+        "draws": 0
+      }
+    },
+    {
+      "localId": "MS",
+      "rank": 7,
+      "playerRef": "michal-sekiewicz",
+      "points": 3,
+      "deck": {
+        "name": "Devourer"
+      },
+      "rounds": [
+        {
+          "round": 1,
+          "opponentLocalId": "AS",
           "game": {
             "wins": 1,
             "losses": 2,
             "draws": 0
           },
           "resultType": "PLAYED",
-          "opponentPlayerId": "adam-modrzejewski",
+          "opponentPlayerId": "amadeusz-sztangierski",
+          "match": {
+            "wins": 0,
+            "losses": 1,
+            "draws": 0
+          }
+        },
+        {
+          "round": 2,
+          "opponentLocalId": "JR",
+          "game": {
+            "wins": 2,
+            "losses": 0,
+            "draws": 0
+          },
+          "resultType": "PLAYED",
+          "opponentPlayerId": "jakub-rabalsky",
+          "match": {
+            "wins": 1,
+            "losses": 0,
+            "draws": 0
+          }
+        },
+        {
+          "round": 3,
+          "opponentLocalId": "WK",
+          "game": {
+            "wins": 1,
+            "losses": 2,
+            "draws": 0
+          },
+          "resultType": "PLAYED",
+          "opponentPlayerId": "wiaczaslau-kukhtsiuk",
           "match": {
             "wins": 0,
             "losses": 1,
@@ -506,20 +489,90 @@
           }
         }
       ],
-      "playerId": "piotr-zielinski",
+      "playerId": "michal-sekiewicz",
+      "playerName": "Michał Sękiewicz",
       "match": {
         "wins": 1,
+        "losses": 2,
+        "draws": 0
+      },
+      "game": {
+        "wins": 4,
+        "losses": 4,
+        "draws": 0
+      }
+    },
+    {
+      "localId": "JR",
+      "rank": 8,
+      "playerRef": "jakub-rabalsky",
+      "points": 0,
+      "deck": {
+        "name": "Oath Ponza"
+      },
+      "rounds": [
+        {
+          "round": 1,
+          "opponentLocalId": "MG",
+          "game": {
+            "wins": 0,
+            "losses": 2,
+            "draws": 0
+          },
+          "resultType": "PLAYED",
+          "opponentPlayerId": "marcin-gornowicz",
+          "match": {
+            "wins": 0,
+            "losses": 1,
+            "draws": 0
+          }
+        },
+        {
+          "round": 2,
+          "opponentLocalId": "MS",
+          "game": {
+            "wins": 0,
+            "losses": 2,
+            "draws": 0
+          },
+          "resultType": "PLAYED",
+          "opponentPlayerId": "michal-sekiewicz",
+          "match": {
+            "wins": 0,
+            "losses": 1,
+            "draws": 0
+          }
+        },
+        {
+          "round": 3,
+          "opponentLocalId": "PZ",
+          "game": {
+            "wins": 1,
+            "losses": 2,
+            "draws": 0
+          },
+          "resultType": "PLAYED",
+          "opponentPlayerId": "piotr-zielinski",
+          "match": {
+            "wins": 0,
+            "losses": 1,
+            "draws": 0
+          }
+        }
+      ],
+      "playerId": "jakub-rabalsky",
+      "playerName": "Jakub Rąbalsky",
+      "match": {
+        "wins": 0,
         "losses": 3,
         "draws": 0
       },
       "game": {
-        "wins": 3,
+        "wins": 1,
         "losses": 6,
         "draws": 0
       }
     }
   ],
-  "id": "20260718-futurex-monthly-18-07-2026",
-  "type": "monthly",
-  "place": "Futurex"
+  "id": "2026-09-14-sidequest-weekly"
 }
