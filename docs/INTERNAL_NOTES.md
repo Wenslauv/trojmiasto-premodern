@@ -67,7 +67,7 @@ npm run add-event-compact -- --file data/incoming/incoming-2026-08-10.compact.js
 ```
 
 Event id is optional in incoming files.
-- If `id` is omitted, `add-event` generates it automatically from `date + name`.
+- If `id` is omitted, `add-event` generates it from date, place and type: `2026-09-21-sidequest-weekly`. The event file is named after the id: `data/events/2026-09-21-sidequest-weekly.json`; `check-data` fails on a file named differently.
 - If generated id already exists, script appends numeric suffix (`-2`, `-3`, ...).
 - If an event with the same date, place and type already exists, `add-event` / `add-event-compact` stop, so the same event is not imported twice. For a genuinely different event on the same day, add `--allow-same-day`.
 
@@ -173,18 +173,18 @@ npm run add-event -- --file data/incoming/incoming-2026-07-15.json --delete-sour
 
 Use this flow when you need to correct player name, deck name, points, or match/game results.
 
-1. Edit the event file directly, for example `data/events/sidequest_21.09.2026.json`.
+1. Edit the event file directly, for example `data/events/2026-09-21-sidequest-weekly.json`.
 
 2. Validate the edit (dry run):
 
 ```bash
-npm run update-event -- --file data/events/sidequest_21.09.2026.json --dry-run
+npm run update-event -- --file data/events/2026-09-21-sidequest-weekly.json --dry-run
 ```
 
 3. Apply: re-normalizes the file in place (resolves players, recalculates standings totals from rounds):
 
 ```bash
-npm run update-event -- --file data/events/sidequest_21.09.2026.json
+npm run update-event -- --file data/events/2026-09-21-sidequest-weekly.json
 ```
 
 4. Check, then commit the event file:

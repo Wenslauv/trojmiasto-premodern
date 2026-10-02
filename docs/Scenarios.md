@@ -33,7 +33,7 @@ cp data/templates/new-event.template.json data/incoming/incoming_DD.MM.YYYY.json
 npm run add-event -- --file data/incoming/incoming_DD.MM.YYYY.json --dry-run
 ```
 
-4. Add the event (creates `data/events/<place>_DD.MM.YYYY.json`):
+4. Add the event (creates `data/events/<date>-<place>-<type>.json`, e.g. `2026-09-21-sidequest-weekly.json`):
 
 ```bash
 npm run add-event -- --file data/incoming/incoming_DD.MM.YYYY.json
