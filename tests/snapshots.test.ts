@@ -50,7 +50,9 @@ after(() => {
 });
 
 test('site: players list', () => {
-  const rows = players.map((p) => `${p.id} | ${p.name} | events ${p.eventsCount} | ${p.matchWinPercent.toFixed(2)}%`);
+  const rows = players.map(
+    (p) => `${p.id} | ${p.name} | ${p.preferredColors || '-'} | events ${p.eventsCount} | ${p.matchWinPercent.toFixed(2)}%`,
+  );
   matchSnapshot('site-players', rows);
 });
 

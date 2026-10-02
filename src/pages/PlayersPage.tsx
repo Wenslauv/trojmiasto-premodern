@@ -1,5 +1,6 @@
 import { Link, useNavigate } from 'react-router-dom';
 import { getPlayersList } from '../lib/data';
+import ManaPips from '../components/ManaPips';
 import { rowClick } from '../lib/rowClick';
 import { ErrorMessage, Loading } from '../components/Status';
 import { useData } from '../lib/useData';
@@ -28,7 +29,9 @@ function PlayersPage() {
           <tbody>
             {players.map((player) => (
               <tr key={player.id} className="clickable-row" onClick={rowClick(() => navigate(`/player/${player.id}`))}>
-                <td>{player.preferredColors}</td>
+                <td>
+                  <ManaPips colors={player.preferredColors} />
+                </td>
                 <td>
                   <Link className="link-btn" to={`/player/${player.id}`}>
                     {player.name}

@@ -103,6 +103,12 @@ export function sortEventsNewestFirst(events: EventItem[]): EventItem[] {
   return [...events].sort((a, b) => b.date.localeCompare(a.date));
 }
 
+// Colors of the player's favorite deck; empty when only "Unknown Deck" was recorded.
+function preferredColorsOf(events: EventItem[], playerId: string): string {
+  const favorite = buildPlayerDetail(events, playerId)?.favoriteDeck;
+  return favorite && !isUnknownDeckName(favorite.name) ? favorite.colors : '';
+}
+
 export function buildPlayersList(events: EventItem[]): PlayerListItem[] {
   const { buckets } = buildPlayerBuckets(events);
 
@@ -110,7 +116,7 @@ export function buildPlayersList(events: EventItem[]): PlayerListItem[] {
     .map((value) => ({
       id: value.id,
       name: value.name,
-      preferredColors: '',
+      preferredColors: preferredColorsOf(events, value.id),
       eventsCount: value.events,
       matchWinPercent: Number(matchWinPercent(value.match).toFixed(2)),
     }))
