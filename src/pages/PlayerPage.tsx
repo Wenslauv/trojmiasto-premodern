@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { formatDate, formatRecord, getPlayerById, matchWinPercent } from '../lib/data';
 import ManaPips from '../components/ManaPips';
 import type { PlayerDetail } from '../types';
@@ -18,7 +18,6 @@ function PlayerPage() {
   const { id } = useParams();
   const [player, setPlayer] = useState<PlayerDetail | null>(null);
   const [error, setError] = useState<string>('');
-  const navigate = useNavigate();
 
   useEffect(() => {
     if (!id) return;
@@ -73,9 +72,9 @@ function PlayerPage() {
             {player.events.map((row) => (
               <tr key={`${row.eventId}-${row.date}`}>
                 <td>
-                  <button className="link-btn" onClick={() => navigate(`/event/${row.eventId}`)}>
+                  <Link className="link-btn" to={`/event/${row.eventId}`}>
                     {row.eventName}
-                  </button>
+                  </Link>
                 </td>
                 <td>{formatDate(row.date)}</td>
                 <td>{row.points}</td>
@@ -84,9 +83,9 @@ function PlayerPage() {
                   <ManaPips colors={row.deck.colors} />
                 </td>
                 <td>
-                  <button className="link-btn" onClick={() => navigate('/decks')}>
+                  <Link className="link-btn" to="/decks">
                     {row.deck.name}
-                  </button>
+                  </Link>
                 </td>
                 <td>{formatRecord(row.match)}</td>
                 <td>{formatRecord(row.game ?? row.match)}</td>

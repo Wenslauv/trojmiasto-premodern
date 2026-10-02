@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { formatDate, getEventsIndex } from '../lib/data';
 import ManaPips from '../components/ManaPips';
+import { rowClick } from '../lib/rowClick';
 import type { EventsIndexItem } from '../types';
 
 function EventsPage() {
@@ -34,34 +35,26 @@ function EventsPage() {
             {events.map((event) => {
               const { winner } = event;
               return (
-                <tr key={event.id} onClick={() => navigate(`/event/${event.id}`)}>
-                  <td>{event.name}</td>
+                <tr key={event.id} className="clickable-row" onClick={rowClick(() => navigate(`/event/${event.id}`))}>
+                  <td>
+                    <Link className="link-btn" to={`/event/${event.id}`}>
+                      {event.name}
+                    </Link>
+                  </td>
                   <td>{formatDate(event.date)}</td>
                   <td>{event.playersCount}</td>
                   <td>
-                    <button
-                      className="link-btn"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        navigate(`/player/${winner.playerId}`);
-                      }}
-                    >
+                    <Link className="link-btn" to={`/player/${winner.playerId}`}>
                       {winner.playerName}
-                    </button>
+                    </Link>
                   </td>
                   <td>
                     <ManaPips colors={winner.deck.colors} />
                   </td>
                   <td>
-                    <button
-                      className="link-btn"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        navigate('/decks');
-                      }}
-                    >
+                    <Link className="link-btn" to="/decks">
                       {winner.deck.name}
-                    </button>
+                    </Link>
                   </td>
                 </tr>
               );

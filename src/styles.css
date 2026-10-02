@@ -149,7 +149,7 @@ thead th {
   z-index: 1;
 }
 
-tbody tr {
+tbody tr.clickable-row {
   cursor: pointer;
 }
 
@@ -170,6 +170,12 @@ tbody tr:last-child td {
 
 .link-btn:hover {
   text-decoration: underline;
+}
+
+.link-btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
 }
 
 td.round-win {

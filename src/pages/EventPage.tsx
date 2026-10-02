@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { formatDate, formatRecord, getEventById } from '../lib/data';
 import ManaPips from '../components/ManaPips';
 import type { EventItem } from '../types';
@@ -26,7 +26,6 @@ function EventPage() {
   const { id } = useParams();
   const [eventData, setEventData] = useState<EventItem | null>(null);
   const [error, setError] = useState<string>('');
-  const navigate = useNavigate();
 
   useEffect(() => {
     if (!id) return;
@@ -83,17 +82,17 @@ function EventPage() {
               <tr key={row.playerId}>
                 <td>{row.rank}</td>
                 <td>
-                  <button className="link-btn" onClick={() => navigate(`/player/${row.playerId}`)}>
+                  <Link className="link-btn" to={`/player/${row.playerId}`}>
                     {row.playerName}
-                  </button>
+                  </Link>
                 </td>
                 <td>{row.points}</td>
                 <td>{formatRecord(row.match)}</td>
                 {hasGames && <td>{formatRecord(row.game)}</td>}
                 <td>
-                  <button className="link-btn" onClick={() => navigate('/decks')}>
+                  <Link className="link-btn" to="/decks">
                     {row.deck.name}
-                  </button>
+                  </Link>
                 </td>
                 <td>
                   <ManaPips colors={row.deck.colors} />

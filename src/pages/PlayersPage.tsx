@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { getPlayersList } from '../lib/data';
+import { rowClick } from '../lib/rowClick';
 import type { PlayerListItem } from '../types';
 
 function PlayersPage() {
@@ -29,9 +30,13 @@ function PlayersPage() {
           </thead>
           <tbody>
             {players.map((player) => (
-              <tr key={player.id} onClick={() => navigate(`/player/${player.id}`)}>
+              <tr key={player.id} className="clickable-row" onClick={rowClick(() => navigate(`/player/${player.id}`))}>
                 <td>{player.preferredColors}</td>
-                <td>{player.name}</td>
+                <td>
+                  <Link className="link-btn" to={`/player/${player.id}`}>
+                    {player.name}
+                  </Link>
+                </td>
                 <td>{player.eventsCount}</td>
                 <td>{player.matchWinPercent.toFixed(2)}%</td>
               </tr>
