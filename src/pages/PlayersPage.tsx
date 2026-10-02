@@ -1,19 +1,16 @@
-import { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { getPlayersList } from '../lib/data';
 import { rowClick } from '../lib/rowClick';
-import type { PlayerListItem } from '../types';
+import { ErrorMessage, Loading } from '../components/Status';
+import { useData } from '../lib/useData';
 
 function PlayersPage() {
-  const [players, setPlayers] = useState<PlayerListItem[]>([]);
-  const [error, setError] = useState<string>('');
+  const state = useData(getPlayersList, []);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    getPlayersList().then(setPlayers).catch((e: Error) => setError(e.message));
-  }, []);
-
-  if (error) return <p>{error}</p>;
+  if (state.status === 'loading') return <Loading />;
+  if (state.status === 'error') return <ErrorMessage message={state.error} />;
+  const players = state.data;
 
   return (
     <section>

@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { formatDate, formatRecord, getPlayerById, matchWinPercent } from '../lib/data';
 import ManaPips from '../components/ManaPips';
-import type { PlayerDetail } from '../types';
+import { ErrorMessage, Loading } from '../components/Status';
+import { useData } from '../lib/useData';
 
 function getWinrateTone(value: number): string {
   if (value > 55) return 'winrates-good';
@@ -16,24 +16,12 @@ function formatRecordTotal(record: { wins: number; losses: number; draws: number
 
 function PlayerPage() {
   const { id } = useParams();
-  const [player, setPlayer] = useState<PlayerDetail | null>(null);
-  const [error, setError] = useState<string>('');
+  const state = useData(() => (id ? getPlayerById(id) : Promise.resolve(undefined)), [id]);
 
-  useEffect(() => {
-    if (!id) return;
-    getPlayerById(id)
-      .then((result) => {
-        if (!result) {
-          setError('Player not found');
-          return;
-        }
-        setPlayer(result);
-      })
-      .catch((e: Error) => setError(e.message));
-  }, [id]);
-
-  if (error) return <p>{error}</p>;
-  if (!player) return <p>Loading...</p>;
+  if (state.status === 'loading') return <Loading />;
+  if (state.status === 'error') return <ErrorMessage message={state.error} />;
+  const player = state.data;
+  if (!player) return <ErrorMessage message="Player not found" />;
 
   return (
     <section>

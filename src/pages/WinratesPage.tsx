@@ -1,7 +1,8 @@
-import { useEffect, useState } from 'react';
 import { getMatchups } from '../lib/data';
 import ManaPips from '../components/ManaPips';
-import type { DeckMatchupCell, DeckMatchupDeck, DeckMatchupMatrix } from '../types';
+import { ErrorMessage, Loading } from '../components/Status';
+import { useData } from '../lib/useData';
+import type { DeckMatchupCell, DeckMatchupDeck } from '../types';
 
 function getCellTone(value: number): string {
   if (value >= 55) return 'winrates-good';
@@ -27,17 +28,12 @@ function cellKey(rowDeck: string, colDeck: string): string {
 }
 
 function WinratesPage() {
-  const [data, setData] = useState<DeckMatchupMatrix | null>(null);
-  const [error, setError] = useState('');
+  const state = useData(getMatchups, []);
 
-  useEffect(() => {
-    getMatchups().then(setData).catch((e: Error) => setError(e.message));
-  }, []);
+  if (state.status === 'loading') return <Loading />;
+  if (state.status === 'error') return <ErrorMessage message={state.error} />;
 
-  if (error) return <p>{error}</p>;
-  if (!data) return <p>Loading...</p>;
-
-  const { decks, matrix } = data;
+  const { decks, matrix } = state.data;
 
   return (
     <section>

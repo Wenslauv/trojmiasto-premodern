@@ -1,20 +1,17 @@
-import { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { formatDate, getEventsIndex } from '../lib/data';
 import ManaPips from '../components/ManaPips';
 import { rowClick } from '../lib/rowClick';
-import type { EventsIndexItem } from '../types';
+import { ErrorMessage, Loading } from '../components/Status';
+import { useData } from '../lib/useData';
 
 function EventsPage() {
-  const [events, setEvents] = useState<EventsIndexItem[]>([]);
-  const [error, setError] = useState<string>('');
+  const state = useData(getEventsIndex, []);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    getEventsIndex().then(setEvents).catch((e: Error) => setError(e.message));
-  }, []);
-
-  if (error) return <p>{error}</p>;
+  if (state.status === 'loading') return <Loading />;
+  if (state.status === 'error') return <ErrorMessage message={state.error} />;
+  const events = state.data;
 
   return (
     <section>

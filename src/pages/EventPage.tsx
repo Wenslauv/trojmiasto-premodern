@@ -1,7 +1,9 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useMemo } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { formatDate, formatRecord, getEventById } from '../lib/data';
 import ManaPips from '../components/ManaPips';
+import { ErrorMessage, Loading } from '../components/Status';
+import { useData } from '../lib/useData';
 import type { EventItem } from '../types';
 
 function formatRoundCell(round: EventItem['standings'][number]['rounds'][number] | undefined): string {
@@ -24,21 +26,8 @@ function getRoundResultClass(round: EventItem['standings'][number]['rounds'][num
 
 function EventPage() {
   const { id } = useParams();
-  const [eventData, setEventData] = useState<EventItem | null>(null);
-  const [error, setError] = useState<string>('');
-
-  useEffect(() => {
-    if (!id) return;
-    getEventById(id)
-      .then((result) => {
-        if (!result) {
-          setError('Event not found');
-          return;
-        }
-        setEventData(result);
-      })
-      .catch((e: Error) => setError(e.message));
-  }, [id]);
+  const state = useData(() => (id ? getEventById(id) : Promise.resolve(undefined)), [id]);
+  const eventData = state.status === 'ready' ? state.data : undefined;
 
   const maxRounds = useMemo(() => {
     if (!eventData) return 0;
@@ -50,8 +39,9 @@ function EventPage() {
     return eventData.standings.some((row) => row.game);
   }, [eventData]);
 
-  if (error) return <p>{error}</p>;
-  if (!eventData) return <p>Loading...</p>;
+  if (state.status === 'loading') return <Loading />;
+  if (state.status === 'error') return <ErrorMessage message={state.error} />;
+  if (!eventData) return <ErrorMessage message="Event not found" />;
 
   return (
     <section>

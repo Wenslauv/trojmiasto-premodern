@@ -441,6 +441,14 @@ td.round-loss {
   background: var(--surface-muted);
 }
 
+.status {
+  color: var(--text-secondary);
+}
+
+.status-error {
+  color: var(--bad-text);
+}
+
 .empty-state {
   border: 1px solid var(--border);
   border-radius: 14px;
