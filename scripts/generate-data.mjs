@@ -2,6 +2,7 @@ import { readFile, writeFile, mkdir, unlink } from 'node:fs/promises';
 import path from 'node:path';
 import { validateEventsArray } from './lib/events-validation.mjs';
 import { GENERATED_EVENTS_PATH, loadEvents } from './lib/event-store.mjs';
+import { assertKnownPlayerIds, loadPlayers } from './lib/players.mjs';
 
 const root = process.cwd();
 const eventsOutPath = path.resolve(root, GENERATED_EVENTS_PATH);
@@ -47,15 +48,6 @@ function slugify(value) {
 }
 
 function normalizeDeckKey(value) {
-  return String(value)
-    .normalize('NFKD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .toLowerCase()
-    .trim()
-    .replace(/\s+/g, ' ');
-}
-
-function normalizePlayerKey(value) {
   return String(value)
     .normalize('NFKD')
     .replace(/[\u0300-\u036f]/g, '')
@@ -136,11 +128,22 @@ async function main() {
   const matchupRules = await loadMatchupDeckRules();
   const deckRuleAliasMap = buildDeckRuleAliasMap(matchupRules);
   validateEventsArray(events);
+
+  // Players are identified by id; the displayed name always comes from the registry.
+  const registry = await loadPlayers(root);
+  assertKnownPlayerIds(events, registry);
+  const registryNames = new Map(registry.map((player) => [player.id, player.name]));
+  for (const event of events) {
+    for (const row of event.standings) {
+      row.playerName = registryNames.get(row.playerId);
+    }
+  }
+
   const byPlayer = new Map();
 
   for (const event of events) {
     for (const row of event.standings) {
-      const mergeKey = normalizePlayerKey(row.playerName) || String(row.playerId);
+      const mergeKey = String(row.playerId);
       const current = byPlayer.get(mergeKey) ?? {
         id: row.playerId,
         name: row.playerName,

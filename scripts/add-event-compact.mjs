@@ -2,6 +2,7 @@ import { readFile, unlink } from 'node:fs/promises';
 import path from 'node:path';
 import { validateEvent, validateEventsArray } from './lib/events-validation.mjs';
 import { normalizeIncomingEvent } from './lib/normalize-incoming-event.mjs';
+import { buildKnownPlayers, loadPlayers, resolvePlayerReference, savePlayers } from './lib/players.mjs';
 import { EVENTS_DIR, assertNotImportedTwice, eventFileName, loadEventFiles, writeEventFile } from './lib/event-store.mjs';
 
 const root = process.cwd();
@@ -86,101 +87,15 @@ function mergeRecord(a, b) {
   };
 }
 
-function aliasesFromName(name) {
-  const normalized = normalizeText(name);
-  if (!normalized) return [];
-
-  const tokens = normalized.split(' ').filter(Boolean);
-  const aliases = new Set([normalized]);
-
-  if (tokens.length >= 1) {
-    aliases.add(tokens[0]);
-  }
-
-  if (tokens.length >= 2) {
-    aliases.add(`${tokens[0]} ${tokens[tokens.length - 1]}`);
-    aliases.add(`${tokens[0][0]}${tokens[tokens.length - 1][0]}`);
-  }
-
-  return [...aliases].filter((alias) => alias.length >= 2);
-}
-
-function addAlias(aliasToIds, alias, localId) {
-  if (!aliasToIds.has(alias)) {
-    aliasToIds.set(alias, new Set([localId]));
-    return;
-  }
-  aliasToIds.get(alias).add(localId);
-}
-
-function buildKnownPlayers(events) {
-  const idToName = new Map();
-  const nameToId = new Map();
-  const aliasToIds = new Map();
-
-  for (const event of events) {
-    for (const standing of event.standings ?? []) {
-      if (typeof standing.playerId !== 'string') continue;
-
-      if (typeof standing.playerName === 'string' && standing.playerName.trim() !== '') {
-        if (!idToName.has(standing.playerId)) {
-          idToName.set(standing.playerId, standing.playerName);
-        }
-
-        const normalizedName = normalizeText(standing.playerName);
-        if (normalizedName && !nameToId.has(normalizedName)) {
-          nameToId.set(normalizedName, standing.playerId);
-        }
-
-        for (const alias of aliasesFromName(standing.playerName)) {
-          addAlias(aliasToIds, alias, standing.playerId);
-        }
-      }
-    }
-  }
-
-  return { idToName, nameToId, aliasToIds };
-}
-
 function resolveKnownPlayerRef(reference, knownPlayers, hint) {
   if (typeof reference !== 'string' || reference.trim() === '') {
     throw new Error(`Missing playerRef at ${hint}.`);
   }
-
-  const trimmed = reference.trim();
-  const normalizedRef = normalizeText(trimmed);
-
-  if (knownPlayers.idToName.has(trimmed)) {
-    return {
-      playerId: trimmed,
-      playerName: knownPlayers.idToName.get(trimmed),
-    };
+  const resolved = resolvePlayerReference(reference, knownPlayers, hint);
+  if (!resolved) {
+    throw new Error(`Unknown playerRef "${reference}" at ${hint}.`);
   }
-
-  if (knownPlayers.nameToId.has(normalizedRef)) {
-    const playerId = knownPlayers.nameToId.get(normalizedRef);
-    return {
-      playerId,
-      playerName: knownPlayers.idToName.get(playerId),
-    };
-  }
-
-  if (knownPlayers.aliasToIds.has(normalizedRef)) {
-    const ids = [...knownPlayers.aliasToIds.get(normalizedRef)];
-    if (ids.length === 1) {
-      return {
-        playerId: ids[0],
-        playerName: knownPlayers.idToName.get(ids[0]),
-      };
-    }
-
-    const options = ids
-      .map((id) => `${id}: ${knownPlayers.idToName.get(id) ?? 'unknown name'}`)
-      .join(', ');
-    throw new Error(`Ambiguous playerRef "${reference}" at ${hint}. Options: ${options}.`);
-  }
-
-  throw new Error(`Unknown playerRef "${reference}" at ${hint}.`);
+  return resolved;
 }
 
 function toInteger(value, fieldHint) {
@@ -516,6 +431,11 @@ function buildEventFromCompact(compact, knownPlayers) {
   };
 }
 
+function logNewPlayers(newPlayers, title) {
+  if (newPlayers.length === 0) return;
+  console.log(`${title}: ${newPlayers.map((player) => `${player.id} (${player.name})`).join(', ')}`);
+}
+
 async function main() {
   const fileArg = parseArg('--file');
   const dryRun = parseBoolean('--dry-run');
@@ -533,10 +453,11 @@ async function main() {
   const entries = await loadEventFiles(root);
   const currentEvents = entries.map((entry) => entry.event);
   validateEventsArray(currentEvents);
-  const knownPlayers = buildKnownPlayers(currentEvents);
+  const players = await loadPlayers(root);
+  const knownPlayers = buildKnownPlayers(players);
 
   const expandedEvent = buildEventFromCompact(compactEvent, knownPlayers);
-  const normalizedIncomingEvent = normalizeIncomingEvent(expandedEvent, currentEvents);
+  const { event: normalizedIncomingEvent, newPlayers } = normalizeIncomingEvent(expandedEvent, players);
   normalizedIncomingEvent.id = generateEventId(normalizedIncomingEvent, currentEvents);
   validateEvent(normalizedIncomingEvent, 'incomingEvent');
 
@@ -552,18 +473,23 @@ async function main() {
 
   if (dryRun) {
     console.log(`Dry run OK. Event ${normalizedIncomingEvent.id} can be added from compact format as ${EVENTS_DIR}/${file}.`);
+    logNewPlayers(newPlayers, 'Would add new players');
     return;
   }
 
   const written = await writeEventFile(root, file, normalizedIncomingEvent);
   console.log(`Added event ${normalizedIncomingEvent.id} -> ${written} (compact flow).`);
+  if (newPlayers.length > 0) {
+    await savePlayers(root, [...players, ...newPlayers]);
+    logNewPlayers(newPlayers, 'Added new players to data/players.json');
+  }
 
   if (deleteSource) {
     await unlink(incomingPath);
     console.log(`Deleted source file ${fileArg}`);
   }
 
-  console.log('Next step: commit the event file. Site data is regenerated by npm run generate-data.');
+  console.log('Next step: commit the event file (and data/players.json when new players were added). Site data is regenerated by npm run generate-data.');
 }
 
 main().catch((error) => {

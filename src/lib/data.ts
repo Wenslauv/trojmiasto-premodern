@@ -77,7 +77,7 @@ function buildPlayerBuckets(events: EventItem[]): {
 
   for (const event of events) {
     for (const row of event.standings) {
-      const key = normalizePlayerKey(row.playerName) || row.playerId;
+      const key = row.playerId;
       const current = buckets.get(key) ?? {
         key,
         id: row.playerId,

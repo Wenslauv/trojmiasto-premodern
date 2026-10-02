@@ -58,20 +58,28 @@ describe('effectiveMatchRecord', () => {
 });
 
 describe('buildPlayersList', () => {
-  test('merges the same player recorded under different ids', () => {
+  test('merges rows of the same player id across events', () => {
     const events = [
-      event('e2', '2026-02-01', [standing('p07', 'Jan  Nowak', rec(1, 1))]),
-      event('e1', '2026-01-01', [standing('p01', 'Jan Nowak', rec(2, 0))]),
+      event('e2', '2026-02-01', [standing('jan-nowak', 'Jan Nowak', rec(1, 1))]),
+      event('e1', '2026-01-01', [standing('jan-nowak', 'Jan Nowak', rec(2, 0))]),
     ];
     const players = buildPlayersList(events);
     assert.equal(players.length, 1);
-    assert.equal(players[0].id, 'p01');
+    assert.equal(players[0].id, 'jan-nowak');
     assert.equal(players[0].eventsCount, 2);
     assert.equal(players[0].matchWinPercent, 75);
   });
 
+  test('identifies players by id, not by name', () => {
+    const events = [
+      event('e2', '2026-02-01', [standing('jan-nowak-2', 'Jan Nowak', rec(1, 1))]),
+      event('e1', '2026-01-01', [standing('jan-nowak', 'Jan Nowak', rec(2, 0))]),
+    ];
+    assert.equal(buildPlayersList(events).length, 2);
+  });
+
   test('keeps different players apart', () => {
-    const events = [event('e1', '2026-01-01', [standing('p01', 'Jan Nowak', rec(1, 0)), standing('p02', 'Anna Nowak', rec(0, 1))])];
+    const events = [event('e1', '2026-01-01', [standing('jan-nowak', 'Jan Nowak', rec(1, 0)), standing('anna-nowak', 'Anna Nowak', rec(0, 1))])];
     assert.equal(buildPlayersList(events).length, 2);
   });
 });

@@ -1,3 +1,5 @@
+import { aliasesFromName, buildKnownPlayers, isTruncatedName, playerIdFromName, resolvePlayerReference } from './players.mjs';
+
 function normalizeText(value) {
   if (typeof value !== 'string') return '';
   return value
@@ -55,68 +57,12 @@ function ensureEventMetadata(event) {
   return event;
 }
 
-function aliasesFromName(name) {
-  const normalized = normalizeText(name);
-  if (!normalized) return [];
-
-  const tokens = normalized.split(' ').filter(Boolean);
-  const aliases = new Set([normalized]);
-
-  if (tokens.length >= 1) {
-    aliases.add(tokens[0]);
-  }
-  if (tokens.length >= 2) {
-    aliases.add(`${tokens[0][0]}${tokens[tokens.length - 1][0]}`);
-    aliases.add(`${tokens[0]} ${tokens[tokens.length - 1]}`);
-  }
-
-  return [...aliases].filter((item) => item.length >= 2);
-}
-
 function addAlias(aliasToIds, alias, playerId) {
   if (!aliasToIds.has(alias)) {
     aliasToIds.set(alias, new Set([playerId]));
     return;
   }
   aliasToIds.get(alias).add(playerId);
-}
-
-function buildKnownPlayers(events) {
-  const idToName = new Map();
-  const nameToId = new Map();
-  const aliasToIds = new Map();
-  let maxAutoId = 0;
-
-  for (const event of events) {
-    for (const standing of event.standings ?? []) {
-      if (typeof standing.playerId === 'string') {
-        const match = /^p(\d+)$/i.exec(standing.playerId);
-        if (match) {
-          const num = Number(match[1]);
-          if (Number.isInteger(num)) {
-            maxAutoId = Math.max(maxAutoId, num);
-          }
-        }
-
-        if (typeof standing.playerName === 'string' && standing.playerName.trim() !== '') {
-          if (!idToName.has(standing.playerId)) {
-            idToName.set(standing.playerId, standing.playerName);
-          }
-
-          const normalizedName = normalizeText(standing.playerName);
-          if (normalizedName && !nameToId.has(normalizedName)) {
-            nameToId.set(normalizedName, standing.playerId);
-          }
-
-          for (const alias of aliasesFromName(standing.playerName)) {
-            addAlias(aliasToIds, alias, standing.playerId);
-          }
-        }
-      }
-    }
-  }
-
-  return { idToName, nameToId, aliasToIds, maxAutoId };
 }
 
 function isTemporaryPlayerId(value) {
@@ -155,45 +101,6 @@ function matchFromGame(game) {
   return { wins: 0, losses: 0, draws: 1 };
 }
 
-function resolveByReference(reference, knownPlayers, hint) {
-  if (typeof reference !== 'string' || reference.trim() === '') return null;
-
-  const trimmed = reference.trim();
-  const normalizedRef = normalizeText(trimmed);
-
-  if (knownPlayers.idToName.has(trimmed)) {
-    return {
-      playerId: trimmed,
-      playerName: knownPlayers.idToName.get(trimmed),
-    };
-  }
-
-  if (knownPlayers.nameToId.has(normalizedRef)) {
-    const playerId = knownPlayers.nameToId.get(normalizedRef);
-    return {
-      playerId,
-      playerName: knownPlayers.idToName.get(playerId),
-    };
-  }
-
-  if (knownPlayers.aliasToIds.has(normalizedRef)) {
-    const ids = [...knownPlayers.aliasToIds.get(normalizedRef)];
-    if (ids.length === 1) {
-      return {
-        playerId: ids[0],
-        playerName: knownPlayers.idToName.get(ids[0]),
-      };
-    }
-
-    const options = ids
-      .map((id) => `${id}: ${knownPlayers.idToName.get(id) ?? 'unknown name'}`)
-      .join(', ');
-    throw new Error(`Ambiguous player reference "${reference}" at ${hint}. Use playerId. Options: ${options}.`);
-  }
-
-  return null;
-}
-
 // Fills fields that event files may omit: name ("<place> <type>") and mode ("roundByRound").
 export function applyEventDefaults(event) {
   const result = structuredClone(event);
@@ -202,13 +109,15 @@ export function applyEventDefaults(event) {
   return result;
 }
 
-export function normalizeIncomingEvent(incomingEvent, currentEvents) {
+// Resolves players against the registry (data/players.json) and returns the normalized
+// event plus players that are not in the registry yet: { event, newPlayers }.
+export function normalizeIncomingEvent(incomingEvent, players) {
   const normalized = structuredClone(incomingEvent);
-  const knownPlayers = buildKnownPlayers(currentEvents);
+  const knownPlayers = buildKnownPlayers(players);
+  const newPlayers = [];
   ensureEventMetadata(normalized);
   normalized.mode = normalizeMode(normalized.mode);
 
-  let nextAutoId = knownPlayers.maxAutoId + 1;
   const localIdMap = new Map();
   const localNameToId = new Map();
   const eventLocalToPlayerId = new Map();
@@ -225,14 +134,15 @@ export function normalizeIncomingEvent(incomingEvent, currentEvents) {
     }
 
     if (typeof originalId === 'string' && !isTemporaryPlayerId(originalId)) {
-      if (knownPlayers.idToName.has(originalId)) {
-        standing.playerId = originalId;
-        if (typeof standing.playerName !== 'string' || standing.playerName.trim() === '') {
-          standing.playerName = knownPlayers.idToName.get(originalId);
-        }
+      if (!knownPlayers.idToName.has(originalId)) {
+        throw new Error(`Unknown playerId "${originalId}" at ${playerHint}. Use playerRef or playerName instead.`);
+      }
+      standing.playerId = originalId;
+      if (typeof standing.playerName !== 'string' || standing.playerName.trim() === '') {
+        standing.playerName = knownPlayers.idToName.get(originalId);
       }
     } else {
-      const resolvedByRef = resolveByReference(ref, knownPlayers, `${playerHint}.playerRef`);
+      const resolvedByRef = resolvePlayerReference(ref, knownPlayers, `${playerHint}.playerRef`);
       if (resolvedByRef) {
         standing.playerId = resolvedByRef.playerId;
         if (typeof standing.playerName !== 'string' || standing.playerName.trim() === '') {
@@ -245,9 +155,15 @@ export function normalizeIncomingEvent(incomingEvent, currentEvents) {
           standing.playerName = knownPlayers.idToName.get(existingId);
         }
       } else {
-        const generated = `p${String(nextAutoId).padStart(2, '0')}`;
-        nextAutoId += 1;
+        if (!normalizedPlayerName) {
+          throw new Error(`Cannot resolve player at ${playerHint}. Provide playerRef for a known player or playerName for a new one.`);
+        }
+        const generated = playerIdFromName(standing.playerName, knownPlayers.idToName.keys());
         standing.playerId = generated;
+        newPlayers.push({ id: generated, name: standing.playerName.trim() });
+        if (isTruncatedName(standing.playerName)) {
+          console.warn(`Warning: new player name "${standing.playerName}" at ${playerHint} looks truncated. Check it is not an existing player.`);
+        }
       }
     }
 
@@ -306,7 +222,7 @@ export function normalizeIncomingEvent(incomingEvent, currentEvents) {
       }
 
       const roundRef = typeof round.opponentPlayerRef === 'string' ? round.opponentPlayerRef : null;
-      const resolvedRoundRef = resolveByReference(roundRef, knownPlayers, `${playerHint}.rounds[${round.round ?? '?'}].opponentPlayerRef`);
+      const resolvedRoundRef = resolvePlayerReference(roundRef, knownPlayers, `${playerHint}.rounds[${round.round ?? '?'}].opponentPlayerRef`);
       if (resolvedRoundRef) {
         round.opponentPlayerId = resolvedRoundRef.playerId;
       }
@@ -373,5 +289,5 @@ export function normalizeIncomingEvent(incomingEvent, currentEvents) {
     }
   }
 
-  return normalized;
+  return { event: normalized, newPlayers };
 }

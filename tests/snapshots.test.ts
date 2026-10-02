@@ -21,6 +21,7 @@ import { matchSnapshot } from './helpers/snapshot.ts';
 
 const root = path.join(import.meta.dirname, '..');
 const fixtureEvents = path.join(import.meta.dirname, 'fixtures/events.json');
+const fixturePlayers = path.join(import.meta.dirname, 'fixtures/players.json');
 
 function loadEvents(): EventItem[] {
   const raw = JSON.parse(readFileSync(fixtureEvents, 'utf8')) as EventItem[];
@@ -70,6 +71,7 @@ test('generate-data: events.json and cache files', () => {
       writeFileSync(path.join(eventsDir, `${event.id}.json`), JSON.stringify(event, null, 2));
     }
     cpSync(path.join(root, 'config'), path.join(workdir, 'config'), { recursive: true });
+    cpSync(fixturePlayers, path.join(workdir, 'data/players.json'));
 
     const result = spawnSync(process.execPath, [path.join(root, 'scripts/generate-data.mjs')], {
       cwd: workdir,
