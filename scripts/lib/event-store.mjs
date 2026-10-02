@@ -9,6 +9,34 @@ export const EVENTS_DIR = 'data/events';
 export const INCOMING_DIR = 'data/incoming';
 export const TEMPLATES_DIR = 'data/templates';
 
+// Event id: <date>-<place>-<type>, for example 2026-09-21-sidequest-weekly.
+// The event file is named after it: data/events/2026-09-21-sidequest-weekly.json.
+export const EVENT_ID_PATTERN = /^\d{4}-\d{2}-\d{2}-[a-z0-9]+(?:-[a-z0-9]+)*$/;
+
+function slug(value) {
+  return String(value ?? '')
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+// New id for an event; -2, -3... when another event already has it (same place and day).
+export function eventIdFor(event, takenIds) {
+  const what = event.place && event.type ? `${slug(event.place)}-${slug(event.type)}` : slug(event.name) || 'event';
+  const base = `${event.date}-${what}`;
+  const taken = new Set(takenIds);
+  if (!taken.has(base)) return base;
+  let n = 2;
+  while (taken.has(`${base}-${n}`)) n += 1;
+  return `${base}-${n}`;
+}
+
+export function eventFileName(event) {
+  return `${event.id}.json`;
+}
+
 export function sortEvents(events) {
   return [...events].sort((a, b) => {
     const byDate = b.date.localeCompare(a.date);
@@ -25,6 +53,12 @@ export async function loadEventFiles(root) {
   const entries = [];
   for (const file of files) {
     const raw = JSON.parse(await readFile(path.join(dir, file), 'utf8'));
+    if (!EVENT_ID_PATTERN.test(raw.id ?? '')) {
+      throw new Error(`Invalid event id "${raw.id}" in ${EVENTS_DIR}/${file}. Use <date>-<place>-<type>, e.g. 2026-09-21-sidequest-weekly.`);
+    }
+    if (file !== eventFileName(raw)) {
+      throw new Error(`${EVENTS_DIR}/${file} must be named ${eventFileName(raw)} after its id.`);
+    }
     entries.push({ file, event: applyEventDefaults(raw) });
   }
   applyDeckRegistry(
@@ -69,22 +103,6 @@ export function toSourceEvent(event) {
     if (standing.deck) standing.deck = { name: standing.deck.name };
   }
   return source;
-}
-
-// <place>_<DD.MM.YYYY>.json, with -2, -3... when the name is taken.
-export function eventFileName(event, existingFiles) {
-  const [year, month, day] = String(event.date).split('-');
-  const prefix =
-    String(event.place ?? event.name ?? 'event')
-      .toLowerCase()
-      .replace(/[^a-z0-9]+/g, '-')
-      .replace(/^-+|-+$/g, '') || 'event';
-  const base = `${prefix}_${day}.${month}.${year}`;
-  const taken = new Set(existingFiles);
-  if (!taken.has(`${base}.json`)) return `${base}.json`;
-  let n = 2;
-  while (taken.has(`${base}-${n}.json`)) n += 1;
-  return `${base}-${n}.json`;
 }
 
 export async function writeEventFile(root, file, event) {

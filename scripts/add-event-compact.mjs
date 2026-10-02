@@ -4,7 +4,7 @@ import { validateEvent, validateEventsArray } from './lib/events-validation.mjs'
 import { normalizeIncomingEvent } from './lib/normalize-incoming-event.mjs';
 import { buildKnownPlayers, loadPlayers, resolvePlayerReference, savePlayers } from './lib/players.mjs';
 import { loadDecks, saveDecks } from './lib/decks.mjs';
-import { EVENTS_DIR, assertNotImportedTwice, eventFileName, loadEventFiles, writeEventFile } from './lib/event-store.mjs';
+import { EVENTS_DIR, assertNotImportedTwice, EVENT_ID_PATTERN, eventFileName, eventIdFor, loadEventFiles, writeEventFile } from './lib/event-store.mjs';
 
 const root = process.cwd();
 
@@ -22,16 +22,6 @@ function emptyRecord() {
   return { wins: 0, losses: 0, draws: 0 };
 }
 
-function slugify(value) {
-  return String(value)
-    .normalize('NFKD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-+|-+$/g, '')
-    .slice(0, 60);
-}
-
 function normalizeText(value) {
   if (typeof value !== 'string') return '';
   return value
@@ -40,25 +30,6 @@ function normalizeText(value) {
     .toLowerCase()
     .trim()
     .replace(/\s+/g, ' ');
-}
-
-function generateEventId(incomingEvent, currentEvents) {
-  if (typeof incomingEvent.id === 'string' && incomingEvent.id.trim() !== '') {
-    return incomingEvent.id.trim();
-  }
-
-  const baseDate = String(incomingEvent.date ?? '').replace(/-/g, '');
-  const baseName = slugify(incomingEvent.name ?? 'event');
-  const base = `${baseDate || 'event'}-${baseName || 'event'}`;
-  const existing = new Set(currentEvents.map((event) => event.id));
-
-  if (!existing.has(base)) return base;
-
-  let n = 2;
-  while (existing.has(`${base}-${n}`)) {
-    n += 1;
-  }
-  return `${base}-${n}`;
 }
 
 function parseResultString(result, hint) {
@@ -465,7 +436,11 @@ async function main() {
   const expandedEvent = buildEventFromCompact(compactEvent, knownPlayers);
   const decks = await loadDecks(root);
   const { event: normalizedIncomingEvent, newPlayers, newDecks } = normalizeIncomingEvent(expandedEvent, players, decks);
-  normalizedIncomingEvent.id = generateEventId(normalizedIncomingEvent, currentEvents);
+  const explicitId = typeof normalizedIncomingEvent.id === 'string' ? normalizedIncomingEvent.id.trim() : '';
+  if (explicitId && !EVENT_ID_PATTERN.test(explicitId)) {
+    throw new Error(`Invalid event id "${explicitId}". Omit it or use <date>-<place>-<type>, e.g. 2026-09-21-sidequest-weekly.`);
+  }
+  normalizedIncomingEvent.id = explicitId || eventIdFor(normalizedIncomingEvent, currentEvents.map((event) => event.id));
   validateEvent(normalizedIncomingEvent, 'incomingEvent');
 
   const duplicate = currentEvents.find((event) => event.id === normalizedIncomingEvent.id);
@@ -476,7 +451,7 @@ async function main() {
 
   const nextEvents = sortEvents([...currentEvents, normalizedIncomingEvent]);
   validateEventsArray(nextEvents);
-  const file = eventFileName(normalizedIncomingEvent, entries.map((entry) => entry.file));
+  const file = eventFileName(normalizedIncomingEvent);
 
   if (dryRun) {
     console.log(`Dry run OK. Event ${normalizedIncomingEvent.id} can be added from compact format as ${EVENTS_DIR}/${file}.`);
