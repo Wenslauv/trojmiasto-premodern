@@ -40,6 +40,7 @@ cp data/templates/new-event.compact.template.json data/incoming/incoming-2026-08
 ```
 
 2. Fill compact file with:
+- `place` and `type` (`name` is optional and defaults to `<place> <type>`).
 - `rounds` object where keys are round numbers (`"1"`, `"2"`, ...).
 - Each round contains array of entries:
   - Match: `{ "player1": "A", "player2": "B", "result": "2-1" }`

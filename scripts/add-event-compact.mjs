@@ -469,12 +469,15 @@ function sortEvents(events) {
 }
 
 function buildEventFromCompact(compact, knownPlayers) {
-  const name = String(compact.name ?? '').trim();
+  const place = String(compact.place ?? '').trim();
+  const type = String(compact.type ?? '').trim();
+  // Same rule as for event files: without an explicit name it is "<place> <type>".
+  const name = String(compact.name ?? '').trim() || (place && type ? `${place} ${type}` : '');
   const date = String(compact.date ?? '').trim();
   const location = String(compact.location ?? '').trim();
 
   if (!name || !date || !location) {
-    throw new Error('Fields "name", "date", and "location" are required.');
+    throw new Error('Fields "date" and "location" are required, plus either "name" or both "place" and "type".');
   }
 
   const scoring = resolveScoring(compact);
@@ -504,6 +507,8 @@ function buildEventFromCompact(compact, knownPlayers) {
   return {
     id: typeof compact.id === 'string' ? compact.id.trim() : '',
     name,
+    ...(place ? { place } : {}),
+    ...(type ? { type } : {}),
     date,
     location,
     mode: 'roundByRound',
