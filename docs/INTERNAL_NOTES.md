@@ -28,6 +28,7 @@ Detailed project operations and data workflow notes.
 3. New events are drafted in `data/incoming/` from `data/templates/` and imported with `add-event` / `add-event-compact`, which write the event file.
 4. `npm run generate-data` computes all statistics from the event files and registries and writes ready files to `public/data/`; the browser only loads them. The calculations live in `src/lib/stats.ts`.
 5. Generation runs automatically before `npm run dev` / `npm run build` and in CI; generated files are not committed.
+6. The structure and rules of an event (pairings, BYE/ID results, unique players and rounds) are described once by the zod schema in `src/lib/schema.ts`. Importers and `check-data` validate with it, and the TypeScript event types are inferred from it.
 
 ## Add New Event (recommended flow)
 
