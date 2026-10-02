@@ -2,7 +2,7 @@ import { readFile, unlink } from 'node:fs/promises';
 import path from 'node:path';
 import { validateEvent, validateEventsArray } from './lib/events-validation.mjs';
 import { normalizeIncomingEvent } from './lib/normalize-incoming-event.mjs';
-import { EVENTS_DIR, eventFileName, loadEventFiles, sortEvents, writeEventFile } from './lib/event-store.mjs';
+import { EVENTS_DIR, assertNotImportedTwice, eventFileName, loadEventFiles, sortEvents, writeEventFile } from './lib/event-store.mjs';
 
 const root = process.cwd();
 
@@ -49,9 +49,10 @@ async function main() {
   const fileArg = parseArg('--file');
   const dryRun = parseBoolean('--dry-run');
   const deleteSource = parseBoolean('--delete-source');
+  const allowSameDay = parseBoolean('--allow-same-day');
 
   if (!fileArg) {
-    throw new Error('Usage: node scripts/add-event.mjs --file <path-to-event.json> [--dry-run] [--delete-source]');
+    throw new Error('Usage: node scripts/add-event.mjs --file <path-to-event.json> [--dry-run] [--delete-source] [--allow-same-day]');
   }
 
   const incomingPath = path.resolve(root, fileArg);
@@ -70,6 +71,7 @@ async function main() {
   if (duplicate) {
     throw new Error(`Event with id "${normalizedIncomingEvent.id}" already exists in ${EVENTS_DIR}.`);
   }
+  assertNotImportedTwice(currentEvents, normalizedIncomingEvent, allowSameDay);
 
   validateEventsArray(sortEvents([...currentEvents, normalizedIncomingEvent]));
   const file = eventFileName(normalizedIncomingEvent, entries.map((entry) => entry.file));

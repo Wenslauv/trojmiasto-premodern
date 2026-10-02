@@ -67,6 +67,7 @@ npm run add-event-compact -- --file data/incoming/incoming-2026-08-10.compact.js
 Event id is optional in incoming files.
 - If `id` is omitted, `add-event` generates it automatically from `date + name`.
 - If generated id already exists, script appends numeric suffix (`-2`, `-3`, ...).
+- If an event with the same date, place and type already exists, `add-event` / `add-event-compact` stop, so the same event is not imported twice. For a genuinely different event on the same day, add `--allow-same-day`.
 
 1. Copy template and fill it:
 

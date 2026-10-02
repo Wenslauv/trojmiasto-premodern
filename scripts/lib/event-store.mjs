@@ -33,6 +33,24 @@ export async function loadEvents(root) {
   return sortEvents((await loadEventFiles(root)).map((entry) => entry.event));
 }
 
+// An event with the same date, place and type is most likely the same event imported twice.
+export function findSameDayEvent(events, event) {
+  return events.find(
+    (other) =>
+      other.id !== event.id && other.date === event.date && other.place === event.place && other.type === event.type,
+  );
+}
+
+export function assertNotImportedTwice(events, event, allowSameDay) {
+  const sameDay = findSameDayEvent(events, event);
+  if (sameDay && !allowSameDay) {
+    throw new Error(
+      `Event "${event.name}" on ${event.date} already exists (${sameDay.id}). ` +
+        'If this is a different event on the same day, rerun with --allow-same-day.',
+    );
+  }
+}
+
 // Drops fields that equal their defaults, so event files stay minimal.
 export function toSourceEvent(event) {
   const source = structuredClone(event);
