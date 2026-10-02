@@ -32,7 +32,7 @@ When committing a newly added event, use:
 
 - event: add {event_name}
 
-The {event_name} must match the event JSON `name` field exactly.
+The {event_name} must match the event JSON `name` field exactly. If `name` is omitted in the event file, use `<place> <type>` (for example, `SideQuest weekly`).
 For standings-only events, an optional suffix is allowed:
 
 - event: add {event_name} (standings-only)
