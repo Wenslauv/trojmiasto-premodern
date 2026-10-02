@@ -1,6 +1,6 @@
 import { readFile, unlink } from 'node:fs/promises';
 import path from 'node:path';
-import { validateEvent, validateEventsArray } from './lib/events-validation.mjs';
+import { validateEvent, validateEventsArray } from '../src/lib/schema.ts';
 import { normalizeIncomingEvent } from './lib/normalize-incoming-event.mjs';
 import { buildKnownPlayers, loadPlayers, resolvePlayerReference, savePlayers } from './lib/players.mjs';
 import { loadDecks, saveDecks } from './lib/decks.mjs';

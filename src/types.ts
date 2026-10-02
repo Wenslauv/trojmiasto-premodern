@@ -1,49 +1,14 @@
-export type RecordStat = {
-  wins: number;
-  losses: number;
-  draws: number;
-};
+import type { z } from 'zod';
+import type { deckRefSchema, eventSchema, recordSchema, roundSchema, standingSchema } from './lib/schema';
 
-export type DeckRef = {
-  name: string;
-  colors: string;
-};
+// Event data types come from the schema in src/lib/schema.ts (one definition for validation and types).
+export type RecordStat = z.infer<typeof recordSchema>;
+export type DeckRef = z.infer<typeof deckRefSchema>;
+export type RoundResult = z.infer<typeof roundSchema>;
+export type Standing = z.infer<typeof standingSchema>;
+export type EventItem = z.infer<typeof eventSchema>;
 
-export type RoundResult = {
-  round: number;
-  opponentPlayerRef?: string;
-  opponentLocalId?: string | number;
-  opponentPlayerName?: string;
-  opponentPlayerId: string | null;
-  resultType?: 'PLAYED' | 'BYE' | 'ID';
-  match: RecordStat;
-  game?: RecordStat;
-};
-
-export type Standing = {
-  localId?: string | number;
-  playerRef?: string;
-  rank: number;
-  playerId: string;
-  playerName: string;
-  points: number;
-  deck: DeckRef;
-  match: RecordStat;
-  game?: RecordStat;
-  rounds: RoundResult[];
-};
-
-export type EventItem = {
-  id: string;
-  mode?: 'roundByRound' | 'standingsOnly';
-  type?: 'weekly' | 'monthly';
-  place?: 'Futurex' | 'SideQuest';
-  name: string;
-  date: string;
-  location: string;
-  standings: Standing[];
-};
-
+// Types of the files generated for the site (src/lib/stats.ts).
 export type EventsIndexItem = {
   id: string;
   name: string;

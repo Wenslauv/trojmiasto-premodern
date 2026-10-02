@@ -14,9 +14,9 @@
     "preview": "vite preview",
     "new-event-file": "node scripts/new-event-file.mjs",
     "new-standings-file": "node scripts/new-event-file.mjs --mode standings",
-    "add-event": "node scripts/add-event.mjs",
-    "add-event-compact": "node scripts/add-event-compact.mjs",
-    "update-event": "node scripts/update-event.mjs",
+    "add-event": "node --experimental-strip-types --disable-warning=ExperimentalWarning scripts/add-event.mjs",
+    "add-event-compact": "node --experimental-strip-types --disable-warning=ExperimentalWarning scripts/add-event-compact.mjs",
+    "update-event": "node --experimental-strip-types --disable-warning=ExperimentalWarning scripts/update-event.mjs",
     "rename-player": "node scripts/rename-player.mjs",
     "generate-data": "node --experimental-strip-types --disable-warning=ExperimentalWarning scripts/generate-data.mjs",
     "check-data": "node --experimental-strip-types --disable-warning=ExperimentalWarning scripts/generate-data.mjs --check"
@@ -24,7 +24,8 @@
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^6.28.0"
+    "react-router-dom": "^6.28.0",
+    "zod": "^4.6.5"
   },
   "devDependencies": {
     "@types/react": "^18.3.12",

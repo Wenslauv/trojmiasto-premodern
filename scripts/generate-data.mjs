@@ -1,6 +1,6 @@
 import { mkdir, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
-import { validateEventsArray } from './lib/events-validation.mjs';
+import { validateEventsArray } from '../src/lib/schema.ts';
 import { loadEvents } from './lib/event-store.mjs';
 import { assertKnownPlayerIds, loadPlayers } from './lib/players.mjs';
 import { buildEventsIndex, buildMatchups, buildPlayerDetail, buildPlayersList } from '../src/lib/stats.ts';
