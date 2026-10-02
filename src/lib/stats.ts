@@ -169,7 +169,12 @@ export function buildPlayerDetail(events: EventItem[], id: string): PlayerDetail
     deckCounter.set(row.deck.name, deckValue);
   }
 
-  const favoriteDeckEntry = [...deckCounter.entries()].sort((a, b) => b[1].count - a[1].count)[0];
+  // Favorite = most played deck; "Unknown Deck" only when the player has no known deck.
+  const deckEntries = [...deckCounter.entries()];
+  const knownDeckEntries = deckEntries.filter(([name]) => !isUnknownDeckName(name));
+  const favoriteDeckEntry = (knownDeckEntries.length > 0 ? knownDeckEntries : deckEntries).sort(
+    (a, b) => b[1].count - a[1].count,
+  )[0];
 
   const deckStats = buildPlayerDeckStats(events, allIds);
 
