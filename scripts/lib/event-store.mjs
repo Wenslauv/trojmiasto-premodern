@@ -4,11 +4,10 @@ import { applyEventDefaults } from './normalize-incoming-event.mjs';
 import { applyDeckRegistry, loadDecks } from './decks.mjs';
 
 // Event files in data/events are the single source of truth.
-// public/data/events.json and public/data/cache are generated from them.
+// Everything in public/data is generated from them by scripts/generate-data.mjs.
 export const EVENTS_DIR = 'data/events';
 export const INCOMING_DIR = 'data/incoming';
 export const TEMPLATES_DIR = 'data/templates';
-export const GENERATED_EVENTS_PATH = 'public/data/events.json';
 
 export function sortEvents(events) {
   return [...events].sort((a, b) => {

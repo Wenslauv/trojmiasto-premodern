@@ -1,16 +1,16 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { formatDate, getEvents } from '../lib/data';
+import { formatDate, getEventsIndex } from '../lib/data';
 import ManaPips from '../components/ManaPips';
-import type { EventItem } from '../types';
+import type { EventsIndexItem } from '../types';
 
 function EventsPage() {
-  const [events, setEvents] = useState<EventItem[]>([]);
+  const [events, setEvents] = useState<EventsIndexItem[]>([]);
   const [error, setError] = useState<string>('');
   const navigate = useNavigate();
 
   useEffect(() => {
-    getEvents().then(setEvents).catch((e: Error) => setError(e.message));
+    getEventsIndex().then(setEvents).catch((e: Error) => setError(e.message));
   }, []);
 
   if (error) return <p>{error}</p>;
@@ -32,12 +32,12 @@ function EventsPage() {
           </thead>
           <tbody>
             {events.map((event) => {
-              const winner = event.standings.find((row) => row.rank === 1) ?? event.standings[0];
+              const { winner } = event;
               return (
                 <tr key={event.id} onClick={() => navigate(`/event/${event.id}`)}>
                   <td>{event.name}</td>
                   <td>{formatDate(event.date)}</td>
-                  <td>{event.standings.length}</td>
+                  <td>{event.playersCount}</td>
                   <td>
                     <button
                       className="link-btn"

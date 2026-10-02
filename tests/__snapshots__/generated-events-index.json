@@ -1,0 +1,156 @@
+[
+  {
+    "id": "20260921-sidequest-weekly",
+    "name": "SideQuest weekly",
+    "date": "2026-09-21",
+    "playersCount": 8,
+    "winner": {
+      "playerId": "wiaczaslau-kukhtsiuk",
+      "playerName": "Wiaczasłau Kukhtsiuk",
+      "deck": {
+        "name": "Replenish",
+        "colors": "UW"
+      }
+    }
+  },
+  {
+    "id": "20260914-sidequest-weekly",
+    "name": "SideQuest weekly",
+    "date": "2026-09-14",
+    "playersCount": 8,
+    "winner": {
+      "playerId": "piotr-orlowski",
+      "playerName": "Piotr Orłowski",
+      "deck": {
+        "name": "hFEB",
+        "colors": "BGuw"
+      }
+    }
+  },
+  {
+    "id": "20260830-sidequest-weekly",
+    "name": "SideQuest weekly",
+    "date": "2026-08-30",
+    "playersCount": 10,
+    "winner": {
+      "playerId": "marcin-kowalski",
+      "playerName": "Marcin Kowalski",
+      "deck": {
+        "name": "Devourer",
+        "colors": "UR"
+      }
+    }
+  },
+  {
+    "id": "20260824-sidequest-weekly",
+    "name": "SideQuest weekly",
+    "date": "2026-08-24",
+    "playersCount": 11,
+    "winner": {
+      "playerId": "andrzej-pracki",
+      "playerName": "Andrzej Pracki",
+      "deck": {
+        "name": "TerraOath Speculation",
+        "colors": "GWru"
+      }
+    }
+  },
+  {
+    "id": "20260817-sidequest-weekly-premodern-17-08-2026",
+    "name": "SideQuest weekly",
+    "date": "2026-08-17",
+    "playersCount": 8,
+    "winner": {
+      "playerId": "jakub-rabalsky",
+      "playerName": "Jakub Rąbalsky",
+      "deck": {
+        "name": "TerraOath",
+        "colors": "GWr"
+      }
+    }
+  },
+  {
+    "id": "20260814-futurex-monthly-premodern-14-08-2026",
+    "name": "Futurex monthly",
+    "date": "2026-08-14",
+    "playersCount": 14,
+    "winner": {
+      "playerId": "wiktor-witkowski",
+      "playerName": "Wiktor Witkowski",
+      "deck": {
+        "name": "Unknown Deck",
+        "colors": "?"
+      }
+    }
+  },
+  {
+    "id": "20260810-sidequest-weekly-10-08-2026",
+    "name": "SideQuest weekly",
+    "date": "2026-08-10",
+    "playersCount": 5,
+    "winner": {
+      "playerId": "marcin-kowalski",
+      "playerName": "Marcin Kowalski",
+      "deck": {
+        "name": "Devourer",
+        "colors": "UR"
+      }
+    }
+  },
+  {
+    "id": "20260803-sidequest-weekly-03-08-2026",
+    "name": "SideQuest weekly",
+    "date": "2026-08-03",
+    "playersCount": 5,
+    "winner": {
+      "playerId": "wiaczaslau-kukhtsiuk",
+      "playerName": "Wiaczasłau Kukhtsiuk",
+      "deck": {
+        "name": "BW Control",
+        "colors": "WB"
+      }
+    }
+  },
+  {
+    "id": "20260720-sidequest-weekly-20-07-2026",
+    "name": "SideQuest weekly",
+    "date": "2026-07-20",
+    "playersCount": 4,
+    "winner": {
+      "playerId": "jakub-rabalsky",
+      "playerName": "Jakub Rąbalsky",
+      "deck": {
+        "name": "Darigaaz Midrange",
+        "colors": "BRG"
+      }
+    }
+  },
+  {
+    "id": "20260718-futurex-monthly-18-07-2026",
+    "name": "Futurex monthly",
+    "date": "2026-07-18",
+    "playersCount": 6,
+    "winner": {
+      "playerId": "wiaczaslau-kukhtsiuk",
+      "playerName": "Wiaczasłau Kukhtsiuk",
+      "deck": {
+        "name": "Replenish",
+        "colors": "UW"
+      }
+    }
+  },
+  {
+    "id": "20260706-sidequest-weekly-06-07-2026",
+    "name": "SideQuest weekly",
+    "date": "2026-07-06",
+    "playersCount": 5,
+    "winner": {
+      "playerId": "maciej-lbik",
+      "playerName": "Maciej Łbik",
+      "deck": {
+        "name": "Quiet Tribe",
+        "colors": "GWUR"
+      }
+    }
+  }
+]

@@ -1,73 +1,29 @@
-import { readFile, writeFile, mkdir, unlink } from 'node:fs/promises';
+import { mkdir, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { validateEventsArray } from './lib/events-validation.mjs';
-import { GENERATED_EVENTS_PATH, loadEvents } from './lib/event-store.mjs';
+import { loadEvents } from './lib/event-store.mjs';
 import { assertKnownPlayerIds, loadPlayers } from './lib/players.mjs';
+import { buildEventsIndex, buildMatchups, buildPlayerDetail, buildPlayersList } from '../src/lib/stats.ts';
+
+// Builds everything the site shows into public/data, so the browser only loads ready files:
+//   events-index.json   list of events (Events page)
+//   event/<id>.json     one event with standings and rounds (Event page)
+//   players.json        list of players (Players page)
+//   player/<id>.json    one player with history and deck stats (Player page)
+//   matchups.json       deck vs deck matrix (Winrates page)
+// With --check it only validates the data and runs the calculations, writing nothing.
 
 const root = process.cwd();
-const eventsOutPath = path.resolve(root, GENERATED_EVENTS_PATH);
-const outDir = path.resolve(root, 'public/data/cache');
-const matchupOutPath = path.resolve(outDir, 'matchups.json');
+const outDir = path.resolve(root, 'public/data');
 
-function mergeRecord(a, b) {
-  return {
-    wins: a.wins + b.wins,
-    losses: a.losses + b.losses,
-    draws: a.draws + b.draws,
-  };
-}
-
-// Byes are baked into a standing's overall match record, so we recompute the record from
-// individual rounds (excluding BYE) whenever round data is available. Standings-only events
-// have no rounds, so byes can't be separated there and the raw record is used as-is.
-function effectiveMatchRecord(standing) {
-  if (!Array.isArray(standing.rounds) || standing.rounds.length === 0) {
-    return standing.match;
-  }
-  let record = { wins: 0, losses: 0, draws: 0 };
-  for (const round of standing.rounds) {
-    if (round.resultType === 'BYE') continue;
-    record = mergeRecord(record, round.match);
-  }
-  return record;
-}
-
-function round2(value) {
-  return Math.round(value * 100) / 100;
-}
-
-function slugify(value) {
-  return String(value)
-    .normalize('NFKD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-+|-+$/g, '')
-    .slice(0, 60);
-}
-
-function normalizeDeckKey(value) {
-  return String(value)
-    .normalize('NFKD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .toLowerCase()
-    .trim()
-    .replace(/\s+/g, ' ');
-}
-
-function comparePlayerIds(a, b) {
-  const aMatch = /^p(\d+)$/i.exec(String(a));
-  const bMatch = /^p(\d+)$/i.exec(String(b));
-  if (aMatch && bMatch) {
-    return Number(aMatch[1]) - Number(bMatch[1]);
-  }
-  return String(a).localeCompare(String(b));
+async function writeJson(relativePath, value) {
+  const target = path.join(outDir, relativePath);
+  await mkdir(path.dirname(target), { recursive: true });
+  await writeFile(target, `${JSON.stringify(value, null, 2)}\n`, 'utf8');
 }
 
 async function main() {
   const checkOnly = process.argv.includes('--check');
-  const matrixOnly = process.argv.includes('--matrix-only');
-  const resetMatchups = process.argv.includes('--reset-matchups');
   const events = await loadEvents(root);
   validateEventsArray(events);
 
@@ -81,211 +37,32 @@ async function main() {
     }
   }
 
-  const byPlayer = new Map();
-
-  for (const event of events) {
-    for (const row of event.standings) {
-      const mergeKey = String(row.playerId);
-      const current = byPlayer.get(mergeKey) ?? {
-        id: row.playerId,
-        name: row.playerName,
-        ids: new Set(),
-        eventsCount: 0,
-        match: { wins: 0, losses: 0, draws: 0 },
-        decks: new Map(),
-      };
-
-      current.ids.add(row.playerId);
-      const canonicalId = [...current.ids].sort(comparePlayerIds)[0];
-      if (canonicalId) {
-        current.id = canonicalId;
-      }
-      current.eventsCount += 1;
-      current.match = mergeRecord(current.match, effectiveMatchRecord(row));
-
-      const deckCurrent = current.decks.get(row.deck.name) ?? {
-        name: row.deck.name,
-        colors: row.deck.colors,
-        count: 0,
-      };
-      deckCurrent.count += 1;
-      current.decks.set(row.deck.name, deckCurrent);
-
-      byPlayer.set(mergeKey, current);
-    }
-  }
-
-  const players = [...byPlayer.values()]
-    .map((player) => {
-      const played = player.match.wins + player.match.losses + player.match.draws;
-      const favoriteDeck = [...player.decks.values()].sort((a, b) => b.count - a.count)[0] ?? null;
-      return {
-        id: player.id,
-        name: player.name,
-        eventsCount: player.eventsCount,
-        matchWinPercent: played === 0 ? 0 : round2(((player.match.wins + player.match.draws * 0.5) / played) * 100),
-        favoriteDeck,
-      };
-    })
-    .sort((a, b) => b.eventsCount - a.eventsCount || a.name.localeCompare(b.name));
-
-  const deckMeta = new Map();
-  const deckNameKeyToCanonical = new Map();
-  const matrixCounters = new Map();
-  const seenPairRounds = new Set();
-
-  function isUnknownDeckName(value) {
-    return typeof value === 'string' && normalizeDeckKey(value) === 'unknown deck';
-  }
-
-  function ensureDeck(name, colors) {
-    if (isUnknownDeckName(name)) {
-      return null;
-    }
-
-    const deckKey = normalizeDeckKey(name);
-    const existingCanonical = deckNameKeyToCanonical.get(deckKey);
-    if (existingCanonical) {
-      return deckMeta.get(existingCanonical);
-    }
-
-    const canonical = {
-      name,
-      colors,
-      slug: slugify(name),
-    };
-    deckMeta.set(name, canonical);
-    deckNameKeyToCanonical.set(deckKey, name);
-    return canonical;
-  }
-
-  function getCounter(rowDeck, colDeck) {
-    const key = `${rowDeck}|||${colDeck}`;
-    if (!matrixCounters.has(key)) {
-      matrixCounters.set(key, { wins: 0, losses: 0, draws: 0, matches: 0 });
-    }
-    return matrixCounters.get(key);
-  }
-
-  function addDirectionalResult(rowDeck, colDeck, outcome) {
-    const counter = getCounter(rowDeck, colDeck);
-    if (outcome === 'win') counter.wins += 1;
-    if (outcome === 'loss') counter.losses += 1;
-    if (outcome === 'draw') counter.draws += 1;
-    counter.matches += 1;
-  }
-
-  for (const event of events) {
-    const playerToDeck = new Map();
-
-    if (event.mode !== 'standingsOnly') {
-      for (const row of event.standings) {
-        const deckName = row.deck?.name;
-        const deckColors = row.deck?.colors;
-        if (typeof deckName !== 'string' || typeof deckColors !== 'string') continue;
-        if (isUnknownDeckName(deckName)) continue;
-
-        const canonicalDeck = ensureDeck(deckName, deckColors);
-        if (!canonicalDeck) continue;
-
-        playerToDeck.set(row.playerId, { name: canonicalDeck.name, colors: canonicalDeck.colors });
-      }
-    }
-
-    if (event.mode === 'standingsOnly') continue;
-
-    for (const row of event.standings) {
-      const rowDeck = playerToDeck.get(row.playerId);
-      if (!rowDeck) continue;
-
-      for (const round of row.rounds ?? []) {
-        if ((round.resultType ?? 'PLAYED') !== 'PLAYED') continue;
-        if (!round.match) continue;
-        if (typeof round.opponentPlayerId !== 'string' || round.opponentPlayerId.trim() === '') continue;
-
-        const opponentDeck = playerToDeck.get(round.opponentPlayerId);
-        if (!opponentDeck) continue;
-
-        if (rowDeck.name === opponentDeck.name) continue;
-
-        const a = String(row.playerId);
-        const b = String(round.opponentPlayerId);
-        const pairKey = [a, b].sort().join('::');
-        const roundKey = `${event.id}::${round.round}::${pairKey}`;
-        if (seenPairRounds.has(roundKey)) continue;
-        seenPairRounds.add(roundKey);
-
-        let outcome = 'draw';
-        if (round.match.wins > round.match.losses) outcome = 'win';
-        if (round.match.wins < round.match.losses) outcome = 'loss';
-
-        addDirectionalResult(rowDeck.name, opponentDeck.name, outcome);
-        addDirectionalResult(
-          opponentDeck.name,
-          rowDeck.name,
-          outcome === 'win' ? 'loss' : outcome === 'loss' ? 'win' : 'draw',
-        );
-      }
-    }
-  }
-
-  const decks = [...deckMeta.values()].sort((a, b) => a.name.localeCompare(b.name));
-  const matrix = {};
-
-  for (const rowDeck of decks) {
-    matrix[rowDeck.name] = {};
-    for (const colDeck of decks) {
-      const key = `${rowDeck.name}|||${colDeck.name}`;
-      const counter = matrixCounters.get(key);
-      if (!counter) continue;
-      const played = counter.wins + counter.losses + counter.draws;
-      matrix[rowDeck.name][colDeck.name] = {
-        wins: counter.wins,
-        losses: counter.losses,
-        draws: counter.draws,
-        matches: counter.matches,
-        winPercent: played === 0 ? 0 : round2(((counter.wins + counter.draws * 0.5) / played) * 100),
-      };
-    }
-  }
+  const eventsIndex = buildEventsIndex(events);
+  const players = buildPlayersList(events);
+  const playerDetails = players.map((player) => {
+    const detail = buildPlayerDetail(events, player.id);
+    if (!detail) throw new Error(`Cannot build player page for ${player.id}.`);
+    return detail;
+  });
+  const matchups = buildMatchups(events);
 
   if (checkOnly) {
     console.log('Data check passed.');
     return;
   }
 
-  await mkdir(outDir, { recursive: true });
-  if (resetMatchups) {
-    try {
-      await unlink(matchupOutPath);
-      console.log('Cleared existing public/data/cache/matchups.json');
-    } catch (error) {
-      if (!(error && typeof error === 'object' && 'code' in error && error.code === 'ENOENT')) {
-        throw error;
-      }
-    }
+  await rm(outDir, { recursive: true, force: true });
+  await writeJson('events-index.json', eventsIndex);
+  for (const event of events) {
+    await writeJson(`event/${event.id}.json`, event);
   }
-
-  await writeFile(eventsOutPath, `${JSON.stringify(events, null, 2)}\n`, 'utf8');
-
-  if (!matrixOnly) {
-    await writeFile(path.resolve(outDir, 'players.json'), `${JSON.stringify(players, null, 2)}\n`, 'utf8');
-    await writeFile(path.resolve(outDir, 'events-summary.json'), `${JSON.stringify(events.map((e) => ({
-      id: e.id,
-      name: e.name,
-      date: e.date,
-      players: e.standings.length,
-    })), null, 2)}\n`, 'utf8');
+  await writeJson('players.json', players);
+  for (const detail of playerDetails) {
+    await writeJson(`player/${detail.id}.json`, detail);
   }
+  await writeJson('matchups.json', matchups);
 
-  await writeFile(matchupOutPath, `${JSON.stringify({ decks, matrix }, null, 2)}\n`, 'utf8');
-
-  if (matrixOnly) {
-    console.log('Generated matchup matrix in public/data/cache/matchups.json');
-    return;
-  }
-
-  console.log('Generated public/data/events.json and cache files in public/data/cache');
+  console.log(`Generated public/data: ${events.length} events, ${players.length} players, ${matchups.decks.length} decks in the matrix.`);
 }
 
 main().catch((error) => {

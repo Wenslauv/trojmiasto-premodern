@@ -44,6 +44,18 @@ export type EventItem = {
   standings: Standing[];
 };
 
+export type EventsIndexItem = {
+  id: string;
+  name: string;
+  date: string;
+  playersCount: number;
+  winner: {
+    playerId: string;
+    playerName: string;
+    deck: DeckRef;
+  };
+};
+
 export type DeckMatchupCell = {
   wins: number;
   losses: number;

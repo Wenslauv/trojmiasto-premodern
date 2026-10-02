@@ -1,12 +1,7 @@
 import assert from 'node:assert/strict';
 import { describe, test } from 'node:test';
-import {
-  buildPlayersList,
-  effectiveMatchRecord,
-  formatDate,
-  formatRecord,
-  matchWinPercent,
-} from '../src/lib/data.ts';
+import { formatDate, formatRecord } from '../src/lib/format.ts';
+import { buildPlayersList, effectiveMatchRecord, matchWinPercent } from '../src/lib/stats.ts';
 import type { EventItem, RecordStat, RoundResult, Standing } from '../src/types.ts';
 
 const rec = (wins: number, losses: number, draws = 0): RecordStat => ({ wins, losses, draws });

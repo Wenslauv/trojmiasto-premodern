@@ -4,20 +4,15 @@ import { cpSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } f
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { after, before, test } from 'node:test';
-import {
-  buildPlayerDetail,
-  buildPlayersList,
-  formatRecord,
-  matchWinPercent,
-  sortEventsNewestFirst,
-} from '../src/lib/data.ts';
-import type { EventItem } from '../src/types.ts';
+import { formatRecord } from '../src/lib/format.ts';
+import { matchWinPercent } from '../src/lib/stats.ts';
+import type { EventItem, EventsIndexItem, PlayerDetail, PlayerListItem } from '../src/types.ts';
 import { matchSnapshot } from './helpers/snapshot.ts';
 
 // Snapshots of the numbers the site shows. They are computed from frozen copies of the event
 // files and registries (tests/fixtures), so adding new events never breaks the tests.
-// The fixtures go through scripts/generate-data.mjs exactly like real data, and the site
-// numbers are computed from the generated events.json the site loads.
+// The fixtures go through scripts/generate-data.mjs exactly like real data, and the
+// snapshots are taken from the generated files the site loads.
 // Refactoring must not change them; intended changes are accepted with
 // `npm run test:update` and reviewed in the diff.
 
@@ -25,7 +20,8 @@ const root = path.join(import.meta.dirname, '..');
 const fixtures = path.join(import.meta.dirname, 'fixtures');
 
 let workdir = '';
-let generatedEvents: EventItem[] = [];
+let eventsIndex: EventsIndexItem[] = [];
+let players: PlayerListItem[] = [];
 
 const readGenerated = (name: string) => JSON.parse(readFileSync(path.join(workdir, 'public/data', name), 'utf8'));
 
@@ -40,12 +36,13 @@ before(() => {
   cpSync(path.join(fixtures, 'players.json'), path.join(workdir, 'data/players.json'));
   cpSync(path.join(fixtures, 'decks.json'), path.join(workdir, 'data/decks.json'));
 
-  const result = spawnSync(process.execPath, [path.join(root, 'scripts/generate-data.mjs')], {
+  const result = spawnSync(process.execPath, ['--experimental-strip-types', '--disable-warning=ExperimentalWarning', path.join(root, 'scripts/generate-data.mjs')], {
     cwd: workdir,
     encoding: 'utf8',
   });
   assert.equal(result.status, 0, result.stderr);
-  generatedEvents = sortEventsNewestFirst(readGenerated('events.json'));
+  eventsIndex = readGenerated('events-index.json');
+  players = readGenerated('players.json');
 });
 
 after(() => {
@@ -53,18 +50,15 @@ after(() => {
 });
 
 test('site: players list', () => {
-  const players = buildPlayersList(generatedEvents).map(
-    (p) => `${p.id} | ${p.name} | events ${p.eventsCount} | ${p.matchWinPercent.toFixed(2)}%`,
-  );
-  matchSnapshot('site-players', players);
+  const rows = players.map((p) => `${p.id} | ${p.name} | events ${p.eventsCount} | ${p.matchWinPercent.toFixed(2)}%`);
+  matchSnapshot('site-players', rows);
 });
 
 test('site: player details', () => {
   const details: Record<string, unknown> = {};
 
-  for (const { id } of buildPlayersList(generatedEvents)) {
-    const player = buildPlayerDetail(generatedEvents, id);
-    assert.ok(player, `player ${id} not found`);
+  for (const { id } of players) {
+    const player: PlayerDetail = readGenerated(`player/${id}.json`);
     details[id] = {
       name: player.name,
       record: formatRecord(player.match),
@@ -85,14 +79,15 @@ test('site: player details', () => {
   matchSnapshot('site-player-details', details);
 });
 
-test('generate-data: events.json uses registry names and colors', () => {
+test('generate-data: event pages use registry names and colors', () => {
   const players = new Map(
     JSON.parse(readFileSync(path.join(fixtures, 'players.json'), 'utf8')).map((p: { id: string; name: string }) => [p.id, p.name]),
   );
   const deckColors = new Map(
     JSON.parse(readFileSync(path.join(fixtures, 'decks.json'), 'utf8')).map((d: { name: string; colors: string }) => [d.name, d.colors]),
   );
-  for (const event of generatedEvents) {
+  for (const { id } of eventsIndex) {
+    const event: EventItem = readGenerated(`event/${id}.json`);
     for (const row of event.standings) {
       assert.equal(row.playerName, players.get(row.playerId));
       assert.equal(row.deck.colors, deckColors.get(row.deck.name), `${event.id}: ${row.deck.name}`);
@@ -100,8 +95,7 @@ test('generate-data: events.json uses registry names and colors', () => {
   }
 });
 
-test('generate-data: cache files', () => {
-  matchSnapshot('generated-players', readGenerated('cache/players.json'));
-  matchSnapshot('generated-events-summary', readGenerated('cache/events-summary.json'));
-  matchSnapshot('generated-matchups', readGenerated('cache/matchups.json'));
+test('generate-data: events index and matchups', () => {
+  matchSnapshot('generated-events-index', eventsIndex);
+  matchSnapshot('generated-matchups', readGenerated('matchups.json'));
 });
