@@ -12,8 +12,7 @@
       "playerRef": "new:ap",
       "points": 10,
       "deck": {
-        "name": "TerraOath Speculation",
-        "colors": "GWru"
+        "name": "TerraOath Speculation"
       },
       "rounds": [
         {
@@ -99,8 +98,7 @@
       "playerRef": "michal-sekiewicz",
       "points": 10,
       "deck": {
-        "name": "Devourer",
-        "colors": "UR"
+        "name": "Devourer"
       },
       "rounds": [
         {
@@ -187,8 +185,7 @@
       "playerRef": "marcin-kowalski",
       "points": 9,
       "deck": {
-        "name": "Devourer",
-        "colors": "UR"
+        "name": "Devourer"
       },
       "rounds": [
         {
@@ -275,8 +272,7 @@
       "playerRef": "janusz-bulakowski",
       "points": 8,
       "deck": {
-        "name": "Stasis",
-        "colors": "U"
+        "name": "Stasis"
       },
       "rounds": [
         {
@@ -363,8 +359,7 @@
       "playerRef": "piotr-orlowski",
       "points": 6,
       "deck": {
-        "name": "Enchantress",
-        "colors": "GW"
+        "name": "Enchantress"
       },
       "rounds": [
         {
@@ -451,8 +446,7 @@
       "playerRef": "new:pp",
       "points": 6,
       "deck": {
-        "name": "TerraGeddon",
-        "colors": "GW"
+        "name": "TerraGeddon"
       },
       "rounds": [
         {
@@ -539,8 +533,7 @@
       "playerRef": "grzegorz-talewski",
       "points": 6,
       "deck": {
-        "name": "Stiflenought",
-        "colors": "U"
+        "name": "Stiflenought"
       },
       "rounds": [
         {
@@ -627,8 +620,7 @@
       "playerRef": "piotr-zielinski",
       "points": 6,
       "deck": {
-        "name": "Mono Black Control",
-        "colors": "B"
+        "name": "Mono Black Control"
       },
       "rounds": [
         {
@@ -715,8 +707,7 @@
       "playerRef": "maciej-lbik",
       "points": 3,
       "deck": {
-        "name": "Quiet Tribe",
-        "colors": "GWUR"
+        "name": "Quiet Tribe"
       },
       "rounds": [
         {
@@ -802,8 +793,7 @@
       "playerRef": "damian-krasny",
       "points": 3,
       "deck": {
-        "name": "Darigaaz Midrange",
-        "colors": "RBG"
+        "name": "Darigaaz Midrange"
       },
       "rounds": [
         {
@@ -889,8 +879,7 @@
       "playerRef": "wojciech-cwiklinski",
       "points": 3,
       "deck": {
-        "name": "Oath Stasis",
-        "colors": "UG"
+        "name": "Oath Stasis"
       },
       "rounds": [
         {

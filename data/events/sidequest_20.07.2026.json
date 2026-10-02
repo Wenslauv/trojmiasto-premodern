@@ -8,8 +8,7 @@
       "playerName": "Jakub Rąbalsky",
       "points": 6,
       "deck": {
-        "name": "Darigaaz midrange",
-        "colors": "BRG"
+        "name": "Darigaaz midrange"
       },
       "rounds": [
         {
@@ -79,8 +78,7 @@
       "playerName": "Wiaczasłau Kukhtsiuk",
       "points": 6,
       "deck": {
-        "name": "Replenish",
-        "colors": "UW"
+        "name": "Replenish"
       },
       "rounds": [
         {
@@ -150,8 +148,7 @@
       "playerName": "Marcin Kowalski",
       "points": 6,
       "deck": {
-        "name": "Death & taxes",
-        "colors": "W"
+        "name": "Death & taxes"
       },
       "rounds": [
         {
@@ -221,8 +218,7 @@
       "playerName": "Damian Kraśny",
       "points": 0,
       "deck": {
-        "name": "Moneyball",
-        "colors": "B"
+        "name": "Moneyball"
       },
       "rounds": [
         {

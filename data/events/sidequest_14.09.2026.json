@@ -12,8 +12,7 @@
       "playerRef": "piotr-orlowski",
       "points": 6,
       "deck": {
-        "name": "hFEB",
-        "colors": "BGuw"
+        "name": "hFEB"
       },
       "rounds": [
         {
@@ -84,8 +83,7 @@
       "playerRef": "marcin-gornowicz",
       "points": 6,
       "deck": {
-        "name": "Moneyball",
-        "colors": "B"
+        "name": "Moneyball"
       },
       "rounds": [
         {
@@ -156,8 +154,7 @@
       "playerRef": "marcin-kowalski",
       "points": 6,
       "deck": {
-        "name": "BG Rock",
-        "colors": "BG"
+        "name": "BG Rock"
       },
       "rounds": [
         {
@@ -228,8 +225,7 @@
       "playerRef": "wiaczaslau-kukhtsiuk",
       "points": 6,
       "deck": {
-        "name": "UWR Solution",
-        "colors": "UWR"
+        "name": "UWR Solution"
       },
       "rounds": [
         {
@@ -300,8 +296,7 @@
       "playerName": "Amadeusz Sztangierski",
       "points": 3,
       "deck": {
-        "name": "Sligh",
-        "colors": "R"
+        "name": "Sligh"
       },
       "rounds": [
         {
@@ -371,8 +366,7 @@
       "playerRef": "piotr-zielinski",
       "points": 3,
       "deck": {
-        "name": "MonoBlack Ponza",
-        "colors": "B"
+        "name": "MonoBlack Ponza"
       },
       "rounds": [
         {
@@ -443,8 +437,7 @@
       "playerRef": "michal-sekiewicz",
       "points": 3,
       "deck": {
-        "name": "Devourer",
-        "colors": "UR"
+        "name": "Devourer"
       },
       "rounds": [
         {
@@ -515,8 +508,7 @@
       "playerRef": "jakub-rabalsky",
       "points": 0,
       "deck": {
-        "name": "Oath Ponza",
-        "colors": "GW"
+        "name": "Oath Ponza"
       },
       "rounds": [
         {

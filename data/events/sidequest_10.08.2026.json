@@ -11,8 +11,7 @@
       "playerRef": "marcin-kowalski",
       "points": 12,
       "deck": {
-        "name": "Devourer",
-        "colors": "UR"
+        "name": "Devourer"
       },
       "rounds": [
         {
@@ -99,8 +98,7 @@
       "playerRef": "maciej-lbik",
       "points": 7,
       "deck": {
-        "name": "Quiet Tribe",
-        "colors": "GWUR"
+        "name": "Quiet Tribe"
       },
       "rounds": [
         {
@@ -186,8 +184,7 @@
       "playerRef": "new:piotr",
       "points": 6,
       "deck": {
-        "name": "MonoRed Ponza",
-        "colors": "R"
+        "name": "MonoRed Ponza"
       },
       "rounds": [
         {
@@ -273,8 +270,7 @@
       "playerRef": "damian-krasny",
       "points": 6,
       "deck": {
-        "name": "Reanimator",
-        "colors": "UBR"
+        "name": "Reanimator"
       },
       "rounds": [
         {
@@ -360,8 +356,7 @@
       "playerRef": "jakub-rabalsky",
       "points": 4,
       "deck": {
-        "name": "TerraOath",
-        "colors": "GWr"
+        "name": "TerraOath"
       },
       "rounds": [
         {

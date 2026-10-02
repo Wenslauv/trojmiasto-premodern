@@ -9,8 +9,7 @@
       "playerName": "Wiaczasłau Kukhtsiuk",
       "points": 9,
       "deck": {
-        "name": "BW Control",
-        "colors": "WB"
+        "name": "BW Control"
       },
       "rounds": [
         {
@@ -80,8 +79,7 @@
       "playerName": "Wojciech Ćwikliński",
       "points": 6,
       "deck": {
-        "name": "Gro-a-tog",
-        "colors": "WUBG"
+        "name": "Gro-a-tog"
       },
       "rounds": [
         {
@@ -150,8 +148,7 @@
       "playerName": "Maciej Łbik",
       "points": 6,
       "deck": {
-        "name": "Quiet Tribe",
-        "colors": "GWUR"
+        "name": "Quiet Tribe"
       },
       "rounds": [
         {
@@ -220,8 +217,7 @@
       "playerName": "Janusz Bułakowski",
       "points": 3,
       "deck": {
-        "name": "Survival Infestation",
-        "colors": "BG"
+        "name": "Survival Infestation"
       },
       "rounds": [
         {
@@ -290,8 +286,7 @@
       "playerName": "Marcin Kowalski",
       "points": 3,
       "deck": {
-        "name": "Death & Taxes",
-        "colors": "W"
+        "name": "Death & Taxes"
       },
       "rounds": [
         {

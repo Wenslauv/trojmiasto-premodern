@@ -8,8 +8,7 @@
       "playerName": "Wiaczasłau Kukhtsiuk",
       "points": 12,
       "deck": {
-        "name": "Replenish",
-        "colors": "WU"
+        "name": "Replenish"
       },
       "rounds": [
         {
@@ -95,8 +94,7 @@
       "playerName": "Marcin Kowalski",
       "points": 6,
       "deck": {
-        "name": "Death & Taxes",
-        "colors": "W"
+        "name": "Death & Taxes"
       },
       "rounds": [
         {
@@ -182,8 +180,7 @@
       "playerName": "Jakub Rąbalsky",
       "points": 6,
       "deck": {
-        "name": "Darigaaz midrange",
-        "colors": "BRG"
+        "name": "Darigaaz midrange"
       },
       "rounds": [
         {
@@ -269,8 +266,7 @@
       "playerName": "Adam Modrzejewski",
       "points": 6,
       "deck": {
-        "name": "RG Aggro",
-        "colors": "RG"
+        "name": "RG Aggro"
       },
       "rounds": [
         {
@@ -356,8 +352,7 @@
       "playerName": "Maciek Maciek",
       "points": 3,
       "deck": {
-        "name": "BG Rock",
-        "colors": "BG"
+        "name": "BG Rock"
       },
       "rounds": [
         {
@@ -443,8 +438,7 @@
       "playerName": "Piotr Zieliński",
       "points": 3,
       "deck": {
-        "name": "Monoblack",
-        "colors": "B"
+        "name": "Monoblack"
       },
       "rounds": [
         {

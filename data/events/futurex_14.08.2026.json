@@ -9,8 +9,7 @@
       "playerName": "Wiktor Witkowski",
       "points": 10,
       "deck": {
-        "name": "Unknown Deck",
-        "colors": "?"
+        "name": "Unknown Deck"
       },
       "match": {
         "wins": 3,
@@ -27,8 +26,7 @@
       "playerName": "Wojciech Ćwikliński",
       "points": 9,
       "deck": {
-        "name": "Unknown Deck",
-        "colors": "?"
+        "name": "Unknown Deck"
       },
       "match": {
         "wins": 3,
@@ -45,8 +43,7 @@
       "playerName": "Marcin Kowalski",
       "points": 9,
       "deck": {
-        "name": "Unknown Deck",
-        "colors": "?"
+        "name": "Unknown Deck"
       },
       "match": {
         "wins": 3,
@@ -63,8 +60,7 @@
       "playerName": "Jakub Domasła...",
       "points": 9,
       "deck": {
-        "name": "Unknown Deck",
-        "colors": "?"
+        "name": "Unknown Deck"
       },
       "match": {
         "wins": 3,
@@ -81,8 +77,7 @@
       "playerName": "Piotr Zieliński",
       "points": 7,
       "deck": {
-        "name": "Unknown Deck",
-        "colors": "?"
+        "name": "Unknown Deck"
       },
       "match": {
         "wins": 2,
@@ -99,8 +94,7 @@
       "playerName": "Jakub Rąbalsky",
       "points": 6,
       "deck": {
-        "name": "Unknown Deck",
-        "colors": "?"
+        "name": "Unknown Deck"
       },
       "match": {
         "wins": 2,
@@ -117,8 +111,7 @@
       "playerName": "Antek Matusiak",
       "points": 6,
       "deck": {
-        "name": "Unknown Deck",
-        "colors": "?"
+        "name": "Unknown Deck"
       },
       "match": {
         "wins": 2,
@@ -135,8 +128,7 @@
       "playerName": "Maciek Maciek",
       "points": 6,
       "deck": {
-        "name": "Unknown Deck",
-        "colors": "?"
+        "name": "Unknown Deck"
       },
       "match": {
         "wins": 2,
@@ -153,8 +145,7 @@
       "playerName": "Michael Barge",
       "points": 6,
       "deck": {
-        "name": "Unknown Deck",
-        "colors": "?"
+        "name": "Unknown Deck"
       },
       "match": {
         "wins": 2,
@@ -171,8 +162,7 @@
       "playerName": "Marek Bień",
       "points": 6,
       "deck": {
-        "name": "Unknown Deck",
-        "colors": "?"
+        "name": "Unknown Deck"
       },
       "match": {
         "wins": 2,
@@ -189,8 +179,7 @@
       "playerName": "Bartłomiej Bry...",
       "points": 3,
       "deck": {
-        "name": "Unknown Deck",
-        "colors": "?"
+        "name": "Unknown Deck"
       },
       "match": {
         "wins": 1,
@@ -207,8 +196,7 @@
       "playerName": "Arkadiusz Haber",
       "points": 3,
       "deck": {
-        "name": "Unknown Deck",
-        "colors": "?"
+        "name": "Unknown Deck"
       },
       "match": {
         "wins": 1,
@@ -225,8 +213,7 @@
       "playerName": "Damian Kraśny",
       "points": 3,
       "deck": {
-        "name": "Unknown Deck",
-        "colors": "?"
+        "name": "Unknown Deck"
       },
       "match": {
         "wins": 1,
@@ -243,8 +230,7 @@
       "playerName": "Adam Modrzejewski",
       "points": 0,
       "deck": {
-        "name": "Unknown Deck",
-        "colors": "?"
+        "name": "Unknown Deck"
       },
       "match": {
         "wins": 0,

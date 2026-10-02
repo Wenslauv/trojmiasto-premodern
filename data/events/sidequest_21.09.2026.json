@@ -13,8 +13,7 @@
       "playerName": "Wiaczasłau Kukhtsiuk",
       "points": 9,
       "deck": {
-        "name": "Replenish",
-        "colors": "UW"
+        "name": "Replenish"
       },
       "rounds": [
         {
@@ -85,8 +84,7 @@
       "playerName": "Marcin Kowalski",
       "points": 7,
       "deck": {
-        "name": "BG Rock",
-        "colors": "BG"
+        "name": "BG Rock"
       },
       "rounds": [
         {
@@ -157,8 +155,7 @@
       "playerName": "Janusz Bułakowski",
       "points": 6,
       "deck": {
-        "name": "Moneyball",
-        "colors": "B"
+        "name": "Moneyball"
       },
       "rounds": [
         {
@@ -229,8 +226,7 @@
       "playerName": "Piotr Orłowski",
       "points": 4,
       "deck": {
-        "name": "BG Rock",
-        "colors": "BG"
+        "name": "BG Rock"
       },
       "rounds": [
         {
@@ -301,8 +297,7 @@
       "playerName": "Piotr Zieliński",
       "points": 3,
       "deck": {
-        "name": "Contamination",
-        "colors": "B"
+        "name": "Contamination"
       },
       "rounds": [
         {
@@ -373,8 +368,7 @@
       "playerName": "Damian Kraśny",
       "points": 3,
       "deck": {
-        "name": "Finkula",
-        "colors": "UWB"
+        "name": "Finkula"
       },
       "rounds": [
         {
@@ -445,8 +439,7 @@
       "playerName": "Jakub Rąbalsky",
       "points": 3,
       "deck": {
-        "name": "Darigaaz Midrange",
-        "colors": "BRG"
+        "name": "Darigaaz Midrange"
       },
       "rounds": [
         {
@@ -517,8 +510,7 @@
       "playerName": "Michał Sękiewicz",
       "points": 0,
       "deck": {
-        "name": "Devourer",
-        "colors": "UR"
+        "name": "Devourer"
       },
       "rounds": [
         {

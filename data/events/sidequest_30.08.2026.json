@@ -15,8 +15,7 @@
       "playerRef": "marcin-kowalski",
       "points": 12,
       "deck": {
-        "name": "Devourer",
-        "colors": "UR"
+        "name": "Devourer"
       },
       "rounds": [
         { "round": 1, "opponentLocalId": "GT", "resultType": "PLAYED", "opponentPlayerId": "grzegorz-talewski", "game": { "wins": 2, "losses": 1, "draws": 0 }, "match": { "wins": 1, "losses": 0, "draws": 0 } },
@@ -35,8 +34,7 @@
       "playerRef": "wiaczaslau-kukhtsiuk",
       "points": 9,
       "deck": {
-        "name": "Replenish",
-        "colors": "UW"
+        "name": "Replenish"
       },
       "rounds": [
         { "round": 1, "opponentLocalId": "PO", "resultType": "PLAYED", "opponentPlayerId": "piotr-orlowski", "game": { "wins": 2, "losses": 0, "draws": 0 }, "match": { "wins": 1, "losses": 0, "draws": 0 } },
@@ -55,8 +53,7 @@
       "playerRef": "new:js",
       "points": 7,
       "deck": {
-        "name": "Oath Control",
-        "colors": "UWG"
+        "name": "Oath Control"
       },
       "rounds": [
         { "round": 1, "opponentLocalId": "ML", "resultType": "PLAYED", "opponentPlayerId": "maciej-lbik", "game": { "wins": 1, "losses": 1, "draws": 0 }, "match": { "wins": 0, "losses": 0, "draws": 1 } },
@@ -75,8 +72,7 @@
       "playerRef": "maciej-lbik",
       "points": 7,
       "deck": {
-        "name": "Quiet Tribe",
-        "colors": "GWUr"
+        "name": "Quiet Tribe"
       },
       "rounds": [
         { "round": 1, "opponentLocalId": "JS", "resultType": "PLAYED", "opponentPlayerId": "jakub-szewczyk", "game": { "wins": 1, "losses": 1, "draws": 0 }, "match": { "wins": 0, "losses": 0, "draws": 1 } },
@@ -95,8 +91,7 @@
       "playerRef": "damian-krasny",
       "points": 6,
       "deck": {
-        "name": "Pit Rack",
-        "colors": "B"
+        "name": "Pit Rack"
       },
       "rounds": [
         { "round": 1, "opponentLocalId": "MG", "resultType": "PLAYED", "opponentPlayerId": "marcin-gornowicz", "game": { "wins": 2, "losses": 1, "draws": 0 }, "match": { "wins": 1, "losses": 0, "draws": 0 } },
@@ -115,8 +110,7 @@
       "playerRef": "janusz-bulakowski",
       "points": 6,
       "deck": {
-        "name": "Landstill",
-        "colors": "UW"
+        "name": "Landstill"
       },
       "rounds": [
         { "round": 1, "opponentLocalId": "PZ", "resultType": "PLAYED", "opponentPlayerId": "piotr-zielinski", "game": { "wins": 2, "losses": 1, "draws": 0 }, "match": { "wins": 1, "losses": 0, "draws": 0 } },
@@ -135,8 +129,7 @@
       "playerRef": "new:mg",
       "points": 6,
       "deck": {
-        "name": "Moneyball",
-        "colors": "B"
+        "name": "Moneyball"
       },
       "rounds": [
         { "round": 1, "opponentLocalId": "DK", "resultType": "PLAYED", "opponentPlayerId": "damian-krasny", "game": { "wins": 1, "losses": 2, "draws": 0 }, "match": { "wins": 0, "losses": 1, "draws": 0 } },
@@ -155,8 +148,7 @@
       "playerRef": "piotr-orlowski",
       "points": 3,
       "deck": {
-        "name": "Finkula",
-        "colors": "UWB"
+        "name": "Finkula"
       },
       "rounds": [
         { "round": 1, "opponentLocalId": "WK", "resultType": "PLAYED", "opponentPlayerId": "wiaczaslau-kukhtsiuk", "game": { "wins": 0, "losses": 2, "draws": 0 }, "match": { "wins": 0, "losses": 1, "draws": 0 } },
@@ -175,8 +167,7 @@
       "playerRef": "piotr-zielinski",
       "points": 3,
       "deck": {
-        "name": "MonoBlack",
-        "colors": "B"
+        "name": "MonoBlack"
       },
       "rounds": [
         { "round": 1, "opponentLocalId": "JB", "resultType": "PLAYED", "opponentPlayerId": "janusz-bulakowski", "game": { "wins": 1, "losses": 2, "draws": 0 }, "match": { "wins": 0, "losses": 1, "draws": 0 } },
@@ -195,8 +186,7 @@
       "playerRef": "grzegorz-talewski",
       "points": 0,
       "deck": {
-        "name": "Stiflenought",
-        "colors": "U"
+        "name": "Stiflenought"
       },
       "rounds": [
         { "round": 1, "opponentLocalId": "MK", "resultType": "PLAYED", "opponentPlayerId": "marcin-kowalski", "game": { "wins": 1, "losses": 2, "draws": 0 }, "match": { "wins": 0, "losses": 1, "draws": 0 } },
