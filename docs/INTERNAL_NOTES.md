@@ -220,6 +220,7 @@ The script updates the registry and every event file; old links to the player's 
 - The displayed name and the colors always come from the registry; `check-data` fails on an unknown deck name.
 - In incoming files `colors` is needed only for a new deck: the importer adds it to `data/decks.json`. For a known deck typed colors are ignored (with a warning if they differ).
 - To merge two names into one deck, move one name into the other deck's `aliases`. To fix a name or colors, edit the registry.
+- Optional `icon`: a file name in `public/icons/decks` (e.g. `"icon": "replenish.png"`) shown on the Winrates page; decks without it show initials. `check-data` fails when the file is missing.
 - Colors follow the usual card order (WU is written UW: blue goes first), splash colors in lowercase after the main ones (`GWr`).
 
 ## Local run

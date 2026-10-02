@@ -9,8 +9,8 @@ function getCellTone(value: number): string {
   return 'winrates-neutral';
 }
 
-function deckIconPath(deck: DeckMatchupDeck): string {
-  return `${import.meta.env.BASE_URL}icons/decks/${deck.slug}.png`;
+function deckIconPath(icon: string): string {
+  return `${import.meta.env.BASE_URL}icons/decks/${icon}`;
 }
 
 function deckInitials(name: string): string {
@@ -29,7 +29,6 @@ function cellKey(rowDeck: string, colDeck: string): string {
 function WinratesPage() {
   const [data, setData] = useState<DeckMatchupMatrix | null>(null);
   const [error, setError] = useState('');
-  const [iconBroken, setIconBroken] = useState<Set<string>>(new Set());
 
   useEffect(() => {
     getMatchups().then(setData).catch((e: Error) => setError(e.message));
@@ -47,27 +46,18 @@ function WinratesPage() {
           <thead>
             <tr>
               <th className="matrix-corner">Deck vs Deck</th>
-              {decks.map((deck) => {
-                const iconSrc = deckIconPath(deck);
-                const broken = iconBroken.has(iconSrc);
-                return (
-                  <th key={deck.name} className="matrix-col-head">
-                    {!broken ? (
-                      <img
-                        className="deck-icon"
-                        src={iconSrc}
-                        alt={`${deck.name} icon`}
-                        width={36}
-                        height={36}
-                        onError={() => setIconBroken((prev) => new Set(prev).add(iconSrc))}
-                      />
-                    ) : (
-                      <span className="deck-icon-fallback">{deckInitials(deck.name)}</span>
-                    )}
-                    <span>{deck.name}</span>
-                  </th>
-                );
-              })}
+              {decks.map((deck: DeckMatchupDeck) => (
+                <th key={deck.name} className="matrix-col-head">
+                  {deck.icon ? (
+                    <img className="deck-icon" src={deckIconPath(deck.icon)} alt="" width={36} height={36} />
+                  ) : (
+                    <span className="deck-icon-fallback" aria-hidden="true">
+                      {deckInitials(deck.name)}
+                    </span>
+                  )}
+                  <span>{deck.name}</span>
+                </th>
+              ))}
             </tr>
           </thead>
           <tbody>

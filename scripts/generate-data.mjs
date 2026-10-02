@@ -1,8 +1,9 @@
-import { mkdir, rm, writeFile } from 'node:fs/promises';
+import { access, mkdir, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { validateEventsArray } from '../src/lib/schema.ts';
 import { loadEvents } from './lib/event-store.mjs';
 import { assertKnownPlayerIds, loadPlayers } from './lib/players.mjs';
+import { DECK_ICONS_DIR, loadDecks } from './lib/decks.mjs';
 import { buildEventsIndex, buildMatchups, buildPlayerDetail, buildPlayersList } from '../src/lib/stats.ts';
 
 // Builds everything the site shows into public/data, so the browser only loads ready files:
@@ -45,6 +46,19 @@ async function main() {
     return detail;
   });
   const matchups = buildMatchups(events);
+
+  // Deck icons are listed in the registry, so the site never requests a missing image.
+  const iconByName = new Map((await loadDecks(root)).filter((deck) => deck.icon).map((deck) => [deck.name, deck.icon]));
+  for (const deck of matchups.decks) {
+    const icon = iconByName.get(deck.name);
+    if (!icon) continue;
+    try {
+      await access(path.resolve(root, DECK_ICONS_DIR, icon));
+    } catch {
+      throw new Error(`Icon ${DECK_ICONS_DIR}/${icon} for deck "${deck.name}" does not exist.`);
+    }
+    deck.icon = icon;
+  }
 
   if (checkOnly) {
     console.log('Data check passed.');

@@ -8,6 +8,8 @@ import { normalizeText, uniqueSlug } from './players.mjs';
 export const DECKS_PATH = 'data/decks.json';
 
 const DECK_ID_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+const ICON_PATTERN = /^[a-z0-9][a-z0-9-]*\.(?:png|jpg|webp|svg)$/;
+export const DECK_ICONS_DIR = 'public/icons/decks';
 
 export async function loadDecks(root) {
   const decks = JSON.parse(await readFile(path.resolve(root, DECKS_PATH), 'utf8'));
@@ -34,6 +36,9 @@ export function validateDecks(decks) {
     if (typeof deck.colors !== 'string' || deck.colors.trim() === '') throw new Error(`Deck "${deck.id}" must have colors.`);
     if (deck.aliases !== undefined && !(Array.isArray(deck.aliases) && deck.aliases.every((a) => typeof a === 'string'))) {
       throw new Error(`Deck "${deck.id}": aliases must be an array of strings.`);
+    }
+    if (deck.icon !== undefined && !(typeof deck.icon === 'string' && ICON_PATTERN.test(deck.icon))) {
+      throw new Error(`Deck "${deck.id}": icon must be a file name in ${DECK_ICONS_DIR}, e.g. "${deck.id}.png".`);
     }
     if (ids.has(deck.id)) throw new Error(`Duplicate deck id "${deck.id}" in ${DECKS_PATH}.`);
     ids.add(deck.id);

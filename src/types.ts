@@ -33,6 +33,8 @@ export type DeckMatchupDeck = {
   name: string;
   colors: string;
   slug: string;
+  // File name in public/icons/decks, set in data/decks.json; without it the initials are shown.
+  icon?: string;
 };
 
 export type DeckMatchupMatrix = {
