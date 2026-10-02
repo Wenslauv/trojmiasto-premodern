@@ -56,12 +56,17 @@
       "slug": "landstill"
     },
     {
+      "name": "Moneyball",
+      "colors": "B",
+      "slug": "moneyball"
+    },
+    {
       "name": "Mono Black Control",
       "colors": "B",
       "slug": "mono-black-control"
     },
     {
-      "name": "Monoblack",
+      "name": "MonoBlack",
       "colors": "B",
       "slug": "monoblack"
     },
@@ -309,12 +314,19 @@
         "matches": 1,
         "winPercent": 100
       },
-      "Monoblack": {
-        "wins": 2,
+      "Moneyball": {
+        "wins": 1,
         "losses": 1,
         "draws": 0,
-        "matches": 3,
-        "winPercent": 66.67
+        "matches": 2,
+        "winPercent": 50
+      },
+      "MonoBlack": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
       },
       "Replenish": {
         "wins": 0,
@@ -381,12 +393,19 @@
         "matches": 1,
         "winPercent": 0
       },
-      "Monoblack": {
+      "Moneyball": {
         "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "MonoBlack": {
+        "wins": 0,
         "losses": 1,
         "draws": 0,
-        "matches": 2,
-        "winPercent": 50
+        "matches": 1,
+        "winPercent": 0
       },
       "Quiet Tribe": {
         "wins": 1,
@@ -583,7 +602,7 @@
         "matches": 1,
         "winPercent": 100
       },
-      "Monoblack": {
+      "Moneyball": {
         "wins": 0,
         "losses": 1,
         "draws": 0,
@@ -643,7 +662,7 @@
         "matches": 1,
         "winPercent": 100
       },
-      "Monoblack": {
+      "Moneyball": {
         "wins": 1,
         "losses": 0,
         "draws": 0,
@@ -666,7 +685,7 @@
         "matches": 1,
         "winPercent": 0
       },
-      "Monoblack": {
+      "MonoBlack": {
         "wins": 1,
         "losses": 0,
         "draws": 0,
@@ -686,6 +705,92 @@
         "draws": 0,
         "matches": 1,
         "winPercent": 0
+      }
+    },
+    "Moneyball": {
+      "Darigaaz Midrange": {
+        "wins": 1,
+        "losses": 1,
+        "draws": 0,
+        "matches": 2,
+        "winPercent": 50
+      },
+      "Death & Taxes": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "Finkula": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "hFEB": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "MonoBlack": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "Oath Control": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "Oath Ponza": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "Pit Rack": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "Replenish": {
+        "wins": 0,
+        "losses": 3,
+        "draws": 0,
+        "matches": 3,
+        "winPercent": 0
+      },
+      "Stasis": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "Stiflenought": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
+      },
+      "UWR Solution": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
       }
     },
     "Mono Black Control": {
@@ -718,34 +823,20 @@
         "winPercent": 100
       }
     },
-    "Monoblack": {
+    "MonoBlack": {
       "Darigaaz Midrange": {
-        "wins": 1,
-        "losses": 2,
-        "draws": 0,
-        "matches": 3,
-        "winPercent": 33.33
-      },
-      "Death & Taxes": {
-        "wins": 1,
-        "losses": 1,
-        "draws": 0,
-        "matches": 2,
-        "winPercent": 50
-      },
-      "Finkula": {
-        "wins": 1,
-        "losses": 0,
-        "draws": 0,
-        "matches": 1,
-        "winPercent": 100
-      },
-      "hFEB": {
         "wins": 0,
         "losses": 1,
         "draws": 0,
         "matches": 1,
         "winPercent": 0
+      },
+      "Death & Taxes": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
+        "winPercent": 100
       },
       "Landstill": {
         "wins": 0,
@@ -754,21 +845,7 @@
         "matches": 1,
         "winPercent": 0
       },
-      "Oath Control": {
-        "wins": 0,
-        "losses": 1,
-        "draws": 0,
-        "matches": 1,
-        "winPercent": 0
-      },
-      "Oath Ponza": {
-        "wins": 1,
-        "losses": 0,
-        "draws": 0,
-        "matches": 1,
-        "winPercent": 100
-      },
-      "Pit Rack": {
+      "Moneyball": {
         "wins": 0,
         "losses": 1,
         "draws": 0,
@@ -784,9 +861,9 @@
       },
       "Replenish": {
         "wins": 0,
-        "losses": 4,
+        "losses": 1,
         "draws": 0,
-        "matches": 4,
+        "matches": 1,
         "winPercent": 0
       },
       "RG Aggro": {
@@ -796,21 +873,7 @@
         "matches": 1,
         "winPercent": 0
       },
-      "Stasis": {
-        "wins": 0,
-        "losses": 1,
-        "draws": 0,
-        "matches": 1,
-        "winPercent": 0
-      },
       "Stiflenought": {
-        "wins": 2,
-        "losses": 0,
-        "draws": 0,
-        "matches": 2,
-        "winPercent": 100
-      },
-      "UWR Solution": {
         "wins": 1,
         "losses": 0,
         "draws": 0,
@@ -879,7 +942,7 @@
         "matches": 1,
         "winPercent": 0
       },
-      "Monoblack": {
+      "Moneyball": {
         "wins": 1,
         "losses": 0,
         "draws": 0,
@@ -902,7 +965,7 @@
         "matches": 1,
         "winPercent": 0
       },
-      "Monoblack": {
+      "Moneyball": {
         "wins": 0,
         "losses": 1,
         "draws": 0,
@@ -948,7 +1011,7 @@
         "matches": 1,
         "winPercent": 0
       },
-      "Monoblack": {
+      "Moneyball": {
         "wins": 1,
         "losses": 0,
         "draws": 0,
@@ -1006,7 +1069,7 @@
         "matches": 1,
         "winPercent": 0
       },
-      "Monoblack": {
+      "MonoBlack": {
         "wins": 1,
         "losses": 0,
         "draws": 0,
@@ -1136,11 +1199,18 @@
         "matches": 1,
         "winPercent": 100
       },
-      "Monoblack": {
-        "wins": 4,
+      "Moneyball": {
+        "wins": 3,
         "losses": 0,
         "draws": 0,
-        "matches": 4,
+        "matches": 3,
+        "winPercent": 100
+      },
+      "MonoBlack": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "matches": 1,
         "winPercent": 100
       },
       "Pit Rack": {
@@ -1187,7 +1257,7 @@
         "matches": 1,
         "winPercent": 0
       },
-      "Monoblack": {
+      "MonoBlack": {
         "wins": 1,
         "losses": 0,
         "draws": 0,
@@ -1249,7 +1319,7 @@
         "matches": 2,
         "winPercent": 75
       },
-      "Monoblack": {
+      "Moneyball": {
         "wins": 1,
         "losses": 0,
         "draws": 0,
@@ -1300,11 +1370,18 @@
         "matches": 1,
         "winPercent": 0
       },
-      "Monoblack": {
+      "Moneyball": {
         "wins": 0,
-        "losses": 2,
+        "losses": 1,
         "draws": 0,
-        "matches": 2,
+        "matches": 1,
+        "winPercent": 0
+      },
+      "MonoBlack": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "matches": 1,
         "winPercent": 0
       },
       "Oath Stasis": {
@@ -1415,7 +1492,7 @@
         "matches": 1,
         "winPercent": 100
       },
-      "Monoblack": {
+      "Moneyball": {
         "wins": 0,
         "losses": 1,
         "draws": 0,

@@ -1,9 +1,3 @@
 {
-  "groups": [
-    {
-      "name": "Monoblack",
-      "colors": "B",
-      "aliases": ["Moneyball", "Monoblack"]
-    }
-  ]
+  "groups": []
 }
