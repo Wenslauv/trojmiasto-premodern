@@ -1,6 +1,7 @@
 import { readdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { applyEventDefaults } from './normalize-incoming-event.mjs';
+import { applyDeckRegistry, loadDecks } from './decks.mjs';
 
 // Event files in data/events are the single source of truth.
 // public/data/events.json and public/data/cache are generated from them.
@@ -17,7 +18,8 @@ export function sortEvents(events) {
   });
 }
 
-// Reads every event file with defaults applied (name = "<place> <type>", mode = "roundByRound").
+// Reads every event file with defaults applied (name = "<place> <type>", mode = "roundByRound")
+// and decks resolved through data/decks.json (registry name and colors).
 export async function loadEventFiles(root) {
   const dir = path.resolve(root, EVENTS_DIR);
   const files = (await readdir(dir)).filter((name) => name.endsWith('.json')).sort();
@@ -26,6 +28,10 @@ export async function loadEventFiles(root) {
     const raw = JSON.parse(await readFile(path.join(dir, file), 'utf8'));
     entries.push({ file, event: applyEventDefaults(raw) });
   }
+  applyDeckRegistry(
+    entries.map((entry) => entry.event),
+    await loadDecks(root),
+  );
   return entries;
 }
 
@@ -51,7 +57,7 @@ export function assertNotImportedTwice(events, event, allowSameDay) {
   }
 }
 
-// Drops fields that equal their defaults, so event files stay minimal.
+// Drops fields that equal their defaults or come from registries, so event files stay minimal.
 export function toSourceEvent(event) {
   const source = structuredClone(event);
   if (source.place && source.type && source.name === `${source.place} ${source.type}`) {
@@ -59,6 +65,9 @@ export function toSourceEvent(event) {
   }
   if (source.mode === 'roundByRound') {
     delete source.mode;
+  }
+  for (const standing of source.standings ?? []) {
+    if (standing.deck) standing.deck = { name: standing.deck.name };
   }
   return source;
 }

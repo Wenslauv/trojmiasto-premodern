@@ -3,7 +3,7 @@ import { spawnSync } from 'node:child_process';
 import { cpSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
-import { test } from 'node:test';
+import { after, before, test } from 'node:test';
 import {
   buildPlayerDetail,
   buildPlayersList,
@@ -14,33 +14,56 @@ import {
 import type { EventItem } from '../src/types.ts';
 import { matchSnapshot } from './helpers/snapshot.ts';
 
-// Snapshots of the numbers the site shows, computed from a frozen copy of the events
-// (tests/fixtures/events.json), so adding new events never breaks the tests.
+// Snapshots of the numbers the site shows. They are computed from frozen copies of the event
+// files and registries (tests/fixtures), so adding new events never breaks the tests.
+// The fixtures go through scripts/generate-data.mjs exactly like real data, and the site
+// numbers are computed from the generated events.json the site loads.
 // Refactoring must not change them; intended changes are accepted with
 // `npm run test:update` and reviewed in the diff.
 
 const root = path.join(import.meta.dirname, '..');
-const fixtureEvents = path.join(import.meta.dirname, 'fixtures/events.json');
-const fixturePlayers = path.join(import.meta.dirname, 'fixtures/players.json');
+const fixtures = path.join(import.meta.dirname, 'fixtures');
 
-function loadEvents(): EventItem[] {
-  const raw = JSON.parse(readFileSync(fixtureEvents, 'utf8')) as EventItem[];
-  return sortEventsNewestFirst(raw);
-}
+let workdir = '';
+let generatedEvents: EventItem[] = [];
+
+const readGenerated = (name: string) => JSON.parse(readFileSync(path.join(workdir, 'public/data', name), 'utf8'));
+
+before(() => {
+  workdir = mkdtempSync(path.join(tmpdir(), 'trojmiasto-generate-'));
+  const eventsDir = path.join(workdir, 'data/events');
+  mkdirSync(eventsDir, { recursive: true });
+  const events = JSON.parse(readFileSync(path.join(fixtures, 'events.json'), 'utf8')) as EventItem[];
+  for (const event of events) {
+    writeFileSync(path.join(eventsDir, `${event.id}.json`), JSON.stringify(event, null, 2));
+  }
+  cpSync(path.join(fixtures, 'players.json'), path.join(workdir, 'data/players.json'));
+  cpSync(path.join(fixtures, 'decks.json'), path.join(workdir, 'data/decks.json'));
+
+  const result = spawnSync(process.execPath, [path.join(root, 'scripts/generate-data.mjs')], {
+    cwd: workdir,
+    encoding: 'utf8',
+  });
+  assert.equal(result.status, 0, result.stderr);
+  generatedEvents = sortEventsNewestFirst(readGenerated('events.json'));
+});
+
+after(() => {
+  if (workdir) rmSync(workdir, { recursive: true, force: true });
+});
 
 test('site: players list', () => {
-  const players = buildPlayersList(loadEvents()).map(
+  const players = buildPlayersList(generatedEvents).map(
     (p) => `${p.id} | ${p.name} | events ${p.eventsCount} | ${p.matchWinPercent.toFixed(2)}%`,
   );
   matchSnapshot('site-players', players);
 });
 
 test('site: player details', () => {
-  const events = loadEvents();
   const details: Record<string, unknown> = {};
 
-  for (const { id } of buildPlayersList(events)) {
-    const player = buildPlayerDetail(events, id);
+  for (const { id } of buildPlayersList(generatedEvents)) {
+    const player = buildPlayerDetail(generatedEvents, id);
     assert.ok(player, `player ${id} not found`);
     details[id] = {
       name: player.name,
@@ -62,31 +85,23 @@ test('site: player details', () => {
   matchSnapshot('site-player-details', details);
 });
 
-test('generate-data: events.json and cache files', () => {
-  const workdir = mkdtempSync(path.join(tmpdir(), 'trojmiasto-generate-'));
-  try {
-    const eventsDir = path.join(workdir, 'data/events');
-    mkdirSync(eventsDir, { recursive: true });
-    for (const event of loadEvents()) {
-      writeFileSync(path.join(eventsDir, `${event.id}.json`), JSON.stringify(event, null, 2));
+test('generate-data: events.json uses registry names and colors', () => {
+  const players = new Map(
+    JSON.parse(readFileSync(path.join(fixtures, 'players.json'), 'utf8')).map((p: { id: string; name: string }) => [p.id, p.name]),
+  );
+  const deckColors = new Map(
+    JSON.parse(readFileSync(path.join(fixtures, 'decks.json'), 'utf8')).map((d: { name: string; colors: string }) => [d.name, d.colors]),
+  );
+  for (const event of generatedEvents) {
+    for (const row of event.standings) {
+      assert.equal(row.playerName, players.get(row.playerId));
+      assert.equal(row.deck.colors, deckColors.get(row.deck.name), `${event.id}: ${row.deck.name}`);
     }
-    cpSync(path.join(root, 'config'), path.join(workdir, 'config'), { recursive: true });
-    cpSync(fixturePlayers, path.join(workdir, 'data/players.json'));
-
-    const result = spawnSync(process.execPath, [path.join(root, 'scripts/generate-data.mjs')], {
-      cwd: workdir,
-      encoding: 'utf8',
-    });
-    assert.equal(result.status, 0, result.stderr);
-
-    const generatedEvents = JSON.parse(readFileSync(path.join(workdir, 'public/data/events.json'), 'utf8'));
-    assert.deepStrictEqual(generatedEvents, loadEvents(), 'generated events.json must equal the event files');
-
-    const read = (name: string) => JSON.parse(readFileSync(path.join(workdir, 'public/data/cache', name), 'utf8'));
-    matchSnapshot('generated-players', read('players.json'));
-    matchSnapshot('generated-events-summary', read('events-summary.json'));
-    matchSnapshot('generated-matchups', read('matchups.json'));
-  } finally {
-    rmSync(workdir, { recursive: true, force: true });
   }
+});
+
+test('generate-data: cache files', () => {
+  matchSnapshot('generated-players', readGenerated('cache/players.json'));
+  matchSnapshot('generated-events-summary', readGenerated('cache/events-summary.json'));
+  matchSnapshot('generated-matchups', readGenerated('cache/matchups.json'));
 });

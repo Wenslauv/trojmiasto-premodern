@@ -1,4 +1,5 @@
 import { aliasesFromName, buildKnownPlayers, isTruncatedName, playerIdFromName, resolvePlayerReference } from './players.mjs';
+import { buildKnownDecks, newDeck, resolveDeck } from './decks.mjs';
 
 function normalizeText(value) {
   if (typeof value !== 'string') return '';
@@ -109,12 +110,13 @@ export function applyEventDefaults(event) {
   return result;
 }
 
-// Resolves players against the registry (data/players.json) and returns the normalized
-// event plus players that are not in the registry yet: { event, newPlayers }.
-export function normalizeIncomingEvent(incomingEvent, players) {
+// Resolves players and decks against the registries (data/players.json, data/decks.json) and
+// returns the normalized event plus entries missing from them: { event, newPlayers, newDecks }.
+export function normalizeIncomingEvent(incomingEvent, players, decks) {
   const normalized = structuredClone(incomingEvent);
   const knownPlayers = buildKnownPlayers(players);
   const newPlayers = [];
+  const newDecks = [];
   ensureEventMetadata(normalized);
   normalized.mode = normalizeMode(normalized.mode);
 
@@ -122,6 +124,26 @@ export function normalizeIncomingEvent(incomingEvent, players) {
   const localNameToId = new Map();
   const eventLocalToPlayerId = new Map();
   const standings = normalized.standings ?? [];
+
+  for (const [index, standing] of standings.entries()) {
+    const hint = `standings[${index}].deck`;
+    const name = String(standing.deck?.name ?? '').trim();
+    const typedColors = String(standing.deck?.colors ?? '').trim();
+    if (!name) {
+      throw new Error(`Missing deck name at ${hint}.`);
+    }
+    let deck = resolveDeck(name, buildKnownDecks([...decks, ...newDecks]));
+    if (!deck) {
+      if (!typedColors) {
+        throw new Error(`New deck "${name}" at ${hint} needs colors.`);
+      }
+      deck = newDeck(name, typedColors, [...decks, ...newDecks]);
+      newDecks.push(deck);
+    } else if (typedColors && typedColors !== deck.colors) {
+      console.warn(`Warning: deck "${deck.name}" at ${hint} has colors ${typedColors}; using ${deck.colors} from data/decks.json.`);
+    }
+    standing.deck = { name: deck.name, colors: deck.colors };
+  }
 
   for (const [index, standing] of standings.entries()) {
     const originalId = standing.playerId;
@@ -289,5 +311,5 @@ export function normalizeIncomingEvent(incomingEvent, players) {
     }
   }
 
-  return { event: normalized, newPlayers };
+  return { event: normalized, newPlayers, newDecks };
 }

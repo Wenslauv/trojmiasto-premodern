@@ -8,7 +8,6 @@ const root = process.cwd();
 const eventsOutPath = path.resolve(root, GENERATED_EVENTS_PATH);
 const outDir = path.resolve(root, 'public/data/cache');
 const matchupOutPath = path.resolve(outDir, 'matchups.json');
-const matchupRulesPath = path.resolve(root, 'config/matchup-deck-rules.json');
 
 function mergeRecord(a, b) {
   return {
@@ -65,68 +64,11 @@ function comparePlayerIds(a, b) {
   return String(a).localeCompare(String(b));
 }
 
-function safeArray(value) {
-  return Array.isArray(value) ? value : [];
-}
-
-async function loadMatchupDeckRules() {
-  try {
-    const raw = await readFile(matchupRulesPath, 'utf8');
-    const parsed = JSON.parse(raw);
-    const groups = safeArray(parsed.groups)
-      .map((group) => ({
-        name: typeof group.name === 'string' ? group.name.trim() : '',
-        colors: typeof group.colors === 'string' ? group.colors.trim() : '',
-        aliases: safeArray(group.aliases).filter((alias) => typeof alias === 'string' && alias.trim() !== '').map((alias) => alias.trim()),
-      }))
-      .filter((group) => group.name !== '' && group.colors !== '' && group.aliases.length > 0);
-
-    return { groups };
-  } catch (error) {
-    if (error && typeof error === 'object' && 'code' in error && error.code === 'ENOENT') {
-      return { groups: [] };
-    }
-    throw error;
-  }
-}
-
-function buildDeckRuleAliasMap(rules) {
-  const aliasMap = new Map();
-
-  for (const group of rules.groups) {
-    const canonical = {
-      name: group.name,
-      colors: group.colors,
-    };
-
-    const aliases = [group.name, ...group.aliases];
-    for (const alias of aliases) {
-      aliasMap.set(normalizeDeckKey(alias), canonical);
-    }
-  }
-
-  return aliasMap;
-}
-
-function applyDeckRule(name, colors, aliasMap) {
-  const canonical = aliasMap.get(normalizeDeckKey(name));
-  if (!canonical) {
-    return { name, colors };
-  }
-
-  return {
-    name: canonical.name,
-    colors: canonical.colors,
-  };
-}
-
 async function main() {
   const checkOnly = process.argv.includes('--check');
   const matrixOnly = process.argv.includes('--matrix-only');
   const resetMatchups = process.argv.includes('--reset-matchups');
   const events = await loadEvents(root);
-  const matchupRules = await loadMatchupDeckRules();
-  const deckRuleAliasMap = buildDeckRuleAliasMap(matchupRules);
   validateEventsArray(events);
 
   // Players are identified by id; the displayed name always comes from the registry.
@@ -243,8 +185,7 @@ async function main() {
         if (typeof deckName !== 'string' || typeof deckColors !== 'string') continue;
         if (isUnknownDeckName(deckName)) continue;
 
-        const ruledDeck = applyDeckRule(deckName, deckColors, deckRuleAliasMap);
-        const canonicalDeck = ensureDeck(ruledDeck.name, ruledDeck.colors);
+        const canonicalDeck = ensureDeck(deckName, deckColors);
         if (!canonicalDeck) continue;
 
         playerToDeck.set(row.playerId, { name: canonicalDeck.name, colors: canonicalDeck.colors });

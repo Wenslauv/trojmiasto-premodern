@@ -13,7 +13,7 @@
       "2026-08-14 | Futurex monthly | 3/14 | Unknown Deck | 3-1-0",
       "2026-08-10 | SideQuest weekly | 1/5 | Devourer | 4-0-0",
       "2026-08-03 | SideQuest weekly | 5/5 | Death & Taxes | 1-2-0",
-      "2026-07-20 | SideQuest weekly | 3/4 | Death & taxes | 2-1-0",
+      "2026-07-20 | SideQuest weekly | 3/4 | Death & Taxes | 2-1-0",
       "2026-07-18 | Futurex monthly | 2/6 | Death & Taxes | 2-2-0"
     ],
     "decks": [
@@ -66,7 +66,7 @@
           "Replenish | 1-1-0 | 50%",
           "Gro-a-tog | 0-1-0 | 0%",
           "BW Control | 0-1-0 | 0%",
-          "Darigaaz midrange | 0-1-0 | 0%",
+          "Darigaaz Midrange | 0-1-0 | 0%",
           "Monoblack | 0-1-0 | 0%"
         ]
       }
@@ -76,15 +76,15 @@
     "name": "Jakub Rąbalsky",
     "record": "9-14-2",
     "winrate": "40.00",
-    "favoriteDeck": "TerraOath (GWr)",
+    "favoriteDeck": "Darigaaz Midrange (BRG)",
     "events": [
       "2026-09-21 | SideQuest weekly | 7/8 | Darigaaz Midrange | 1-2-0",
       "2026-09-14 | SideQuest weekly | 8/8 | Oath Ponza | 0-3-0",
       "2026-08-17 | SideQuest weekly | 1/8 | TerraOath | 2-0-1",
       "2026-08-14 | Futurex monthly | 6/14 | Unknown Deck | 2-2-0",
       "2026-08-10 | SideQuest weekly | 5/5 | TerraOath | 1-2-1",
-      "2026-07-20 | SideQuest weekly | 1/4 | Darigaaz midrange | 2-1-0",
-      "2026-07-18 | Futurex monthly | 3/6 | Darigaaz midrange | 2-2-0",
+      "2026-07-20 | SideQuest weekly | 1/4 | Darigaaz Midrange | 2-1-0",
+      "2026-07-18 | Futurex monthly | 3/6 | Darigaaz Midrange | 2-2-0",
       "2026-07-06 | SideQuest weekly | 4/5 | Moneyball | 1-2-0"
     ],
     "decks": [
@@ -94,7 +94,7 @@
         "winrate": 50,
         "matchups": [
           "Devourer | 1-0-0 | 100%",
-          "Death & taxes | 1-0-0 | 100%",
+          "Death & Taxes | 1-0-0 | 100%",
           "Monoblack | 1-0-0 | 100%",
           "BG Rock | 1-0-0 | 100%",
           "Moneyball | 1-1-0 | 50%",
@@ -138,7 +138,7 @@
     "name": "Damian Kraśny",
     "record": "6-18-1",
     "winrate": "26.00",
-    "favoriteDeck": "Darigaaz Midrange (RBG)",
+    "favoriteDeck": "Darigaaz Midrange (BRG)",
     "events": [
       "2026-09-21 | SideQuest weekly | 6/8 | Finkula | 1-2-0",
       "2026-08-30 | SideQuest weekly | 5/10 | Pit Rack | 2-2-0",
@@ -182,7 +182,7 @@
         ]
       },
       {
-        "deck": "Darigaaz Midrange (RBG)",
+        "deck": "Darigaaz Midrange (BRG)",
         "record": "1-4-1",
         "winrate": 25,
         "matchups": [
@@ -196,8 +196,8 @@
         "record": "0-3-0",
         "winrate": 0,
         "matchups": [
-          "Death & taxes | 0-1-0 | 0%",
-          "Darigaaz midrange | 0-1-0 | 0%",
+          "Death & Taxes | 0-1-0 | 0%",
+          "Darigaaz Midrange | 0-1-0 | 0%",
           "Replenish | 0-1-0 | 0%"
         ]
       },
@@ -244,14 +244,14 @@
         "matchups": [
           "Moneyball | 3-0-0 | 100%",
           "BG Rock | 2-0-0 | 100%",
-          "Darigaaz midrange | 2-0-0 | 100%",
+          "Darigaaz Midrange | 2-0-0 | 100%",
           "Contamination | 1-0-0 | 100%",
           "Finkula | 1-0-0 | 100%",
           "Pit Rack | 1-0-0 | 100%",
           "Landstill | 1-0-0 | 100%",
           "Monoblack | 1-0-0 | 100%",
           "Sneak and Show | 1-0-0 | 100%",
-          "Death & taxes | 1-1-0 | 50%",
+          "Death & Taxes | 1-1-0 | 50%",
           "Devourer | 0-1-0 | 0%",
           "Quiet Tribe | 0-1-0 | 0%"
         ]
@@ -272,11 +272,11 @@
     "name": "Piotr Zieliński",
     "record": "8-16-1",
     "winrate": "34.00",
-    "favoriteDeck": "Mono Black Control (B)",
+    "favoriteDeck": "Monoblack (B)",
     "events": [
       "2026-09-21 | SideQuest weekly | 5/8 | Contamination | 1-2-0",
       "2026-09-14 | SideQuest weekly | 6/8 | MonoBlack Ponza | 1-2-0",
-      "2026-08-30 | SideQuest weekly | 9/10 | MonoBlack | 1-3-0",
+      "2026-08-30 | SideQuest weekly | 9/10 | Monoblack | 1-3-0",
       "2026-08-24 | SideQuest weekly | 8/11 | Mono Black Control | 2-2-0",
       "2026-08-17 | SideQuest weekly | 8/8 | Mono Black Control | 0-3-0",
       "2026-08-14 | Futurex monthly | 5/14 | Unknown Deck | 2-1-1",
@@ -315,7 +315,7 @@
         ]
       },
       {
-        "deck": "MonoBlack (B)",
+        "deck": "Monoblack (B)",
         "record": "2-6-0",
         "winrate": 25,
         "matchups": [
@@ -324,7 +324,7 @@
           "Landstill | 0-1-0 | 0%",
           "Moneyball | 0-1-0 | 0%",
           "Quiet Tribe | 0-1-0 | 0%",
-          "Darigaaz midrange | 0-1-0 | 0%",
+          "Darigaaz Midrange | 0-1-0 | 0%",
           "Replenish | 0-1-0 | 0%",
           "RG Aggro | 0-1-0 | 0%"
         ]
@@ -341,7 +341,7 @@
       "2026-09-14 | SideQuest weekly | 1/8 | hFEB | 3-0-0",
       "2026-08-30 | SideQuest weekly | 8/10 | Finkula | 1-3-0",
       "2026-08-24 | SideQuest weekly | 5/11 | Enchantress | 2-2-0",
-      "2026-08-17 | SideQuest weekly | 7/8 | The Rock | 0-1-2",
+      "2026-08-17 | SideQuest weekly | 7/8 | BG Rock | 0-1-2",
       "2026-08-10 | SideQuest weekly | 3/5 | MonoRed Ponza | 2-2-0"
     ],
     "decks": [
@@ -368,19 +368,13 @@
       },
       {
         "deck": "BG Rock (BG)",
-        "record": "1-1-1",
-        "winrate": 50,
+        "record": "1-2-3",
+        "winrate": 41.67,
         "matchups": [
           "Finkula | 1-0-0 | 100%",
           "BG Rock | 0-0-1 | 50%",
           "Replenish | 0-1-0 | 0%"
         ]
-      },
-      {
-        "deck": "The Rock (BG)",
-        "record": "0-1-2",
-        "winrate": 33.33,
-        "matchups": []
       },
       {
         "deck": "MonoRed Ponza (R)",
@@ -409,7 +403,7 @@
     "name": "Maciej Łbik",
     "record": "6-6-2",
     "winrate": "50.00",
-    "favoriteDeck": "Quiet Tribe (GWUr)",
+    "favoriteDeck": "Quiet Tribe (GWUR)",
     "events": [
       "2026-08-30 | SideQuest weekly | 4/10 | Quiet Tribe | 2-1-1",
       "2026-08-24 | SideQuest weekly | 9/11 | Quiet Tribe | 1-3-0",
@@ -419,12 +413,12 @@
     ],
     "decks": [
       {
-        "deck": "Quiet Tribe (GWUr)",
+        "deck": "Quiet Tribe (GWUR)",
         "record": "6-6-2",
         "winrate": 50,
         "matchups": [
           "Finkula | 1-0-0 | 100%",
-          "MonoBlack | 1-0-0 | 100%",
+          "Monoblack | 1-0-0 | 100%",
           "MonoRed Ponza | 1-0-0 | 100%",
           "Survival Infestation | 1-0-0 | 100%",
           "Replenish | 1-0-0 | 100%",
@@ -477,7 +471,7 @@
         "record": "2-2-0",
         "winrate": 50,
         "matchups": [
-          "MonoBlack | 1-0-0 | 100%",
+          "Monoblack | 1-0-0 | 100%",
           "Oath Control | 1-0-0 | 100%",
           "Devourer | 0-1-0 | 0%",
           "Replenish | 0-1-0 | 0%"
@@ -593,7 +587,7 @@
           "Oath Stasis | 1-0-0 | 100%",
           "Darigaaz Midrange | 1-0-0 | 100%",
           "Devourer | 0-3-0 | 0%",
-          "MonoBlack | 0-1-0 | 0%",
+          "Monoblack | 0-1-0 | 0%",
           "Finkula | 0-1-0 | 0%",
           "Moneyball | 0-1-0 | 0%"
         ]
@@ -617,7 +611,7 @@
         "matchups": [
           "Oath Ponza | 1-0-0 | 100%",
           "UWR Solution | 1-0-0 | 100%",
-          "MonoBlack | 1-0-0 | 100%",
+          "Monoblack | 1-0-0 | 100%",
           "Stiflenought | 1-0-0 | 100%",
           "hFEB | 0-1-0 | 0%",
           "Pit Rack | 0-1-0 | 0%",
@@ -644,7 +638,7 @@
           "RG Aggro | 1-0-0 | 100%",
           "Replenish | 0-1-0 | 0%",
           "Death & Taxes | 0-1-0 | 0%",
-          "Darigaaz midrange | 0-1-0 | 0%"
+          "Darigaaz Midrange | 0-1-0 | 0%"
         ]
       }
     ]
@@ -664,7 +658,7 @@
         "record": "2-2-0",
         "winrate": 50,
         "matchups": [
-          "Darigaaz midrange | 1-0-0 | 100%",
+          "Darigaaz Midrange | 1-0-0 | 100%",
           "Monoblack | 1-0-0 | 100%",
           "Death & Taxes | 0-1-0 | 0%",
           "BG Rock | 0-1-0 | 0%"
@@ -717,13 +711,13 @@
     "name": "Marek Pałub...",
     "record": "2-1-0",
     "winrate": "66.67",
-    "favoriteDeck": "Landstill (WU)",
+    "favoriteDeck": "Landstill (UW)",
     "events": [
       "2026-08-17 | SideQuest weekly | 2/8 | Landstill | 2-1-0"
     ],
     "decks": [
       {
-        "deck": "Landstill (WU)",
+        "deck": "Landstill (UW)",
         "record": "2-1-0",
         "winrate": 66.67,
         "matchups": []

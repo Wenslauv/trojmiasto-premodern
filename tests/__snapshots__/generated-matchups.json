@@ -66,7 +66,7 @@
       "slug": "mono-black-control"
     },
     {
-      "name": "MonoBlack",
+      "name": "Monoblack",
       "colors": "B",
       "slug": "monoblack"
     },
@@ -102,7 +102,7 @@
     },
     {
       "name": "Quiet Tribe",
-      "colors": "GWUr",
+      "colors": "GWUR",
       "slug": "quiet-tribe"
     },
     {
@@ -321,7 +321,7 @@
         "matches": 2,
         "winPercent": 50
       },
-      "MonoBlack": {
+      "Monoblack": {
         "wins": 1,
         "losses": 0,
         "draws": 0,
@@ -400,7 +400,7 @@
         "matches": 1,
         "winPercent": 100
       },
-      "MonoBlack": {
+      "Monoblack": {
         "wins": 0,
         "losses": 1,
         "draws": 0,
@@ -685,7 +685,7 @@
         "matches": 1,
         "winPercent": 0
       },
-      "MonoBlack": {
+      "Monoblack": {
         "wins": 1,
         "losses": 0,
         "draws": 0,
@@ -736,7 +736,7 @@
         "matches": 1,
         "winPercent": 0
       },
-      "MonoBlack": {
+      "Monoblack": {
         "wins": 1,
         "losses": 0,
         "draws": 0,
@@ -823,7 +823,7 @@
         "winPercent": 100
       }
     },
-    "MonoBlack": {
+    "Monoblack": {
       "Darigaaz Midrange": {
         "wins": 0,
         "losses": 1,
@@ -1069,7 +1069,7 @@
         "matches": 1,
         "winPercent": 0
       },
-      "MonoBlack": {
+      "Monoblack": {
         "wins": 1,
         "losses": 0,
         "draws": 0,
@@ -1206,7 +1206,7 @@
         "matches": 3,
         "winPercent": 100
       },
-      "MonoBlack": {
+      "Monoblack": {
         "wins": 1,
         "losses": 0,
         "draws": 0,
@@ -1257,7 +1257,7 @@
         "matches": 1,
         "winPercent": 0
       },
-      "MonoBlack": {
+      "Monoblack": {
         "wins": 1,
         "losses": 0,
         "draws": 0,
@@ -1377,7 +1377,7 @@
         "matches": 1,
         "winPercent": 0
       },
-      "MonoBlack": {
+      "Monoblack": {
         "wins": 0,
         "losses": 1,
         "draws": 0,

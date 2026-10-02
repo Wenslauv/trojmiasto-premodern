@@ -41,7 +41,8 @@ export function isValidPlayerId(id) {
   return typeof id === 'string' && PLAYER_ID_PATTERN.test(id);
 }
 
-export function playerIdFromName(name, takenIds) {
+// Latin-letter slug of a name, unique among takenIds (-2, -3... for a namesake).
+export function uniqueSlug(name, takenIds) {
   const base =
     String(name)
       .replace(/[łŁđĐøØß]/g, (char) => TRANSLITERATION[char])
@@ -56,6 +57,8 @@ export function playerIdFromName(name, takenIds) {
   while (taken.has(`${base}-${n}`)) n += 1;
   return `${base}-${n}`;
 }
+
+export const playerIdFromName = uniqueSlug;
 
 export function isTruncatedName(name) {
   return /(\.\.\.|…)\s*$/.test(String(name ?? ''));

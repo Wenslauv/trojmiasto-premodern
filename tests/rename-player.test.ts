@@ -17,6 +17,7 @@ test('rename-player changes the id in the registry and in every event file', () 
       writeFileSync(path.join(eventsDir, `${event.id}.json`), JSON.stringify(event, null, 2));
     }
     cpSync(path.join(import.meta.dirname, 'fixtures/players.json'), path.join(workdir, 'data/players.json'));
+    cpSync(path.join(import.meta.dirname, 'fixtures/decks.json'), path.join(workdir, 'data/decks.json'));
 
     const run = (...args: string[]) =>
       spawnSync(process.execPath, [path.join(root, 'scripts/rename-player.mjs'), ...args], { cwd: workdir, encoding: 'utf8' });

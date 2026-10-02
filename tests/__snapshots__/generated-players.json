@@ -17,7 +17,7 @@
     "matchWinPercent": 26,
     "favoriteDeck": {
       "name": "Darigaaz Midrange",
-      "colors": "RBG",
+      "colors": "BRG",
       "count": 2
     }
   },
@@ -27,9 +27,9 @@
     "eventsCount": 8,
     "matchWinPercent": 40,
     "favoriteDeck": {
-      "name": "TerraOath",
-      "colors": "GWr",
-      "count": 2
+      "name": "Darigaaz Midrange",
+      "colors": "BRG",
+      "count": 3
     }
   },
   {
@@ -38,7 +38,7 @@
     "eventsCount": 7,
     "matchWinPercent": 34,
     "favoriteDeck": {
-      "name": "Mono Black Control",
+      "name": "Monoblack",
       "colors": "B",
       "count": 2
     }
@@ -62,7 +62,7 @@
     "favoriteDeck": {
       "name": "BG Rock",
       "colors": "BG",
-      "count": 1
+      "count": 2
     }
   },
   {
@@ -72,7 +72,7 @@
     "matchWinPercent": 50,
     "favoriteDeck": {
       "name": "Quiet Tribe",
-      "colors": "GWUr",
+      "colors": "GWUR",
       "count": 5
     }
   },
@@ -248,7 +248,7 @@
     "matchWinPercent": 66.67,
     "favoriteDeck": {
       "name": "Landstill",
-      "colors": "WU",
+      "colors": "UW",
       "count": 1
     }
   },
