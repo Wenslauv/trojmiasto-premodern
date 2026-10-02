@@ -1,0 +1,185 @@
+[
+  {
+    "id": "bg-rock",
+    "name": "BG Rock",
+    "colors": "BG",
+    "aliases": [
+      "The Rock"
+    ]
+  },
+  {
+    "id": "bw-control",
+    "name": "BW Control",
+    "colors": "WB"
+  },
+  {
+    "id": "contamination",
+    "name": "Contamination",
+    "colors": "B"
+  },
+  {
+    "id": "cradle-control",
+    "name": "Cradle Control",
+    "colors": "Gr"
+  },
+  {
+    "id": "darigaaz-midrange",
+    "name": "Darigaaz Midrange",
+    "colors": "BRG"
+  },
+  {
+    "id": "death-taxes",
+    "name": "Death & Taxes",
+    "colors": "W"
+  },
+  {
+    "id": "devourer",
+    "name": "Devourer",
+    "colors": "UR"
+  },
+  {
+    "id": "enchantress",
+    "name": "Enchantress",
+    "colors": "GW"
+  },
+  {
+    "id": "finkula",
+    "name": "Finkula",
+    "colors": "UWB"
+  },
+  {
+    "id": "gro-a-tog",
+    "name": "Gro-a-tog",
+    "colors": "WUBG"
+  },
+  {
+    "id": "hfeb",
+    "name": "hFEB",
+    "colors": "BGuw"
+  },
+  {
+    "id": "landstill",
+    "name": "Landstill",
+    "colors": "UW"
+  },
+  {
+    "id": "moneyball",
+    "name": "Moneyball",
+    "colors": "B"
+  },
+  {
+    "id": "mono-black-control",
+    "name": "Mono Black Control",
+    "colors": "B"
+  },
+  {
+    "id": "monoblack",
+    "name": "Monoblack",
+    "colors": "B"
+  },
+  {
+    "id": "monoblack-ponza",
+    "name": "MonoBlack Ponza",
+    "colors": "B"
+  },
+  {
+    "id": "monored-ponza",
+    "name": "MonoRed Ponza",
+    "colors": "R"
+  },
+  {
+    "id": "oath-control",
+    "name": "Oath Control",
+    "colors": "UWG"
+  },
+  {
+    "id": "oath-ponza",
+    "name": "Oath Ponza",
+    "colors": "GW"
+  },
+  {
+    "id": "oath-stasis",
+    "name": "Oath Stasis",
+    "colors": "UG"
+  },
+  {
+    "id": "pattern-rector",
+    "name": "Pattern Rector",
+    "colors": "WUB"
+  },
+  {
+    "id": "pit-rack",
+    "name": "Pit Rack",
+    "colors": "B"
+  },
+  {
+    "id": "quiet-tribe",
+    "name": "Quiet Tribe",
+    "colors": "GWUR"
+  },
+  {
+    "id": "reanimator",
+    "name": "Reanimator",
+    "colors": "UBR"
+  },
+  {
+    "id": "replenish",
+    "name": "Replenish",
+    "colors": "UW"
+  },
+  {
+    "id": "rg-aggro",
+    "name": "RG Aggro",
+    "colors": "RG"
+  },
+  {
+    "id": "sligh",
+    "name": "Sligh",
+    "colors": "R"
+  },
+  {
+    "id": "sneak-and-show",
+    "name": "Sneak and Show",
+    "colors": "UR"
+  },
+  {
+    "id": "stasis",
+    "name": "Stasis",
+    "colors": "U"
+  },
+  {
+    "id": "stiflenought",
+    "name": "Stiflenought",
+    "colors": "U"
+  },
+  {
+    "id": "survival-infestation",
+    "name": "Survival Infestation",
+    "colors": "BG"
+  },
+  {
+    "id": "terrageddon",
+    "name": "TerraGeddon",
+    "colors": "GW"
+  },
+  {
+    "id": "terraoath",
+    "name": "TerraOath",
+    "colors": "GWr"
+  },
+  {
+    "id": "terraoath-speculation",
+    "name": "TerraOath Speculation",
+    "colors": "GWru"
+  },
+  {
+    "id": "unknown-deck",
+    "name": "Unknown Deck",
+    "colors": "?"
+  },
+  {
+    "id": "uwr-solution",
+    "name": "UWR Solution",
+    "colors": "UWR"
+  }
+]
