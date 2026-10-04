@@ -4,6 +4,7 @@
     "name": "BG Rock",
     "colors": "BG",
     "aliases": [
+      "Rock",
       "The Rock"
     ]
   },
@@ -35,7 +36,10 @@
   {
     "id": "devourer",
     "name": "Devourer",
-    "colors": "UR"
+    "colors": "UR",
+    "aliases": [
+      "UR Devourer"
+    ]
   },
   {
     "id": "enchantress",
@@ -65,6 +69,11 @@
   {
     "id": "moneyball",
     "name": "Moneyball",
+    "colors": "B"
+  },
+  {
+    "id": "mono-black-clerics",
+    "name": "Mono Black Clerics",
     "colors": "B"
   },
   {
@@ -178,8 +187,18 @@
     "colors": "?"
   },
   {
+    "id": "uw-control",
+    "name": "UW Control",
+    "colors": "UW"
+  },
+  {
     "id": "uwr-solution",
     "name": "UWR Solution",
     "colors": "UWR"
+  },
+  {
+    "id": "zombies",
+    "name": "Zombies",
+    "colors": "B"
   }
 ]
