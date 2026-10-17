@@ -1,0 +1,163 @@
+{
+  "place": "SideQuest",
+  "type": "weekly",
+  "date": "2026-10-05",
+  "location": "Gdansk",
+  "mode": "standingsOnly",
+  "standings": [
+    {
+      "rank": 1,
+      "playerRef": "piotr-orlowski",
+      "points": 9,
+      "deck": {
+        "name": "TerraOath"
+      },
+      "match": {
+        "wins": 3,
+        "losses": 1,
+        "draws": 0
+      },
+      "localId": "s1",
+      "playerId": "piotr-orlowski",
+      "playerName": "Piotr Orłowski",
+      "rounds": []
+    },
+    {
+      "rank": 2,
+      "playerRef": "michal-sekiewicz",
+      "points": 9,
+      "deck": {
+        "name": "Devourer"
+      },
+      "match": {
+        "wins": 3,
+        "losses": 1,
+        "draws": 0
+      },
+      "localId": "s2",
+      "playerId": "michal-sekiewicz",
+      "playerName": "Michał Sękiewicz",
+      "rounds": []
+    },
+    {
+      "rank": 3,
+      "playerRef": "marcin-kowalski",
+      "points": 9,
+      "deck": {
+        "name": "Devourer"
+      },
+      "match": {
+        "wins": 3,
+        "losses": 1,
+        "draws": 0
+      },
+      "localId": "s3",
+      "playerId": "marcin-kowalski",
+      "playerName": "Marcin Kowalski",
+      "rounds": []
+    },
+    {
+      "rank": 4,
+      "playerRef": "andrzej-pracki",
+      "points": 6,
+      "deck": {
+        "name": "TerraOath Speculation"
+      },
+      "match": {
+        "wins": 2,
+        "losses": 2,
+        "draws": 0
+      },
+      "localId": "s4",
+      "playerId": "andrzej-pracki",
+      "playerName": "Andrzej Pracki",
+      "rounds": []
+    },
+    {
+      "rank": 5,
+      "playerRef": "jeremi-ziolkowski-lbik",
+      "points": 6,
+      "deck": {
+        "name": "Mono Black Clerics"
+      },
+      "match": {
+        "wins": 2,
+        "losses": 2,
+        "draws": 0
+      },
+      "localId": "s5",
+      "playerId": "jeremi-ziolkowski-lbik",
+      "playerName": "Jeremi Ziółkowski-Łbik",
+      "rounds": []
+    },
+    {
+      "rank": 6,
+      "playerRef": "grzegorz-talewski",
+      "points": 6,
+      "deck": {
+        "name": "RB Goblins"
+      },
+      "match": {
+        "wins": 2,
+        "losses": 2,
+        "draws": 0
+      },
+      "localId": "s6",
+      "playerId": "grzegorz-talewski",
+      "playerName": "Grzegorz Talewski",
+      "rounds": []
+    },
+    {
+      "rank": 7,
+      "playerRef": "damian-krasny",
+      "points": 6,
+      "deck": {
+        "name": "Sneak and Show"
+      },
+      "match": {
+        "wins": 2,
+        "losses": 2,
+        "draws": 0
+      },
+      "localId": "s7",
+      "playerId": "damian-krasny",
+      "playerName": "Damian Kraśny",
+      "rounds": []
+    },
+    {
+      "rank": 8,
+      "playerRef": "jakub-rabalsky",
+      "points": 4,
+      "deck": {
+        "name": "RG TerraOath"
+      },
+      "match": {
+        "wins": 1,
+        "losses": 2,
+        "draws": 1
+      },
+      "localId": "s8",
+      "playerId": "jakub-rabalsky",
+      "playerName": "Jakub Rąbalsky",
+      "rounds": []
+    },
+    {
+      "rank": 9,
+      "playerRef": "maciej-lbik",
+      "points": 4,
+      "deck": {
+        "name": "Ashen Ichorid"
+      },
+      "match": {
+        "wins": 1,
+        "losses": 2,
+        "draws": 1
+      },
+      "localId": "s9",
+      "playerId": "maciej-lbik",
+      "playerName": "Maciej Łbik",
+      "rounds": []
+    }
+  ],
+  "id": "2026-10-05-sidequest-weekly"
+}

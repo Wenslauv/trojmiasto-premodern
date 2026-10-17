@@ -1,5 +1,10 @@
 [
   {
+    "id": "ashen-ichorid",
+    "name": "Ashen Ichorid",
+    "colors": "UB"
+  },
+  {
     "id": "beef-breakfast",
     "name": "Beef Breakfast",
     "colors": "GWru"
@@ -135,6 +140,11 @@
     "id": "quiet-tribe",
     "name": "Quiet Tribe",
     "colors": "GWUR"
+  },
+  {
+    "id": "rb-goblins",
+    "name": "RB Goblins",
+    "colors": "RB"
   },
   {
     "id": "reanimator",
