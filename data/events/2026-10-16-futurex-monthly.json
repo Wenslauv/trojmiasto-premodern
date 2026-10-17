@@ -1,0 +1,77 @@
+{
+  "place": "Futurex",
+  "type": "monthly",
+  "date": "2026-10-16",
+  "location": "Gdynia",
+  "mode": "standingsOnly",
+  "standings": [
+    {
+      "rank": 1,
+      "playerRef": "marcin-kowalski",
+      "points": 6,
+      "deck": {
+        "name": "BG Rock"
+      },
+      "match": {
+        "wins": 2,
+        "losses": 1,
+        "draws": 0
+      },
+      "localId": "s1",
+      "playerId": "marcin-kowalski",
+      "playerName": "Marcin Kowalski",
+      "rounds": []
+    },
+    {
+      "rank": 2,
+      "playerRef": "michael-barge",
+      "points": 6,
+      "deck": {
+        "name": "Stiflenought"
+      },
+      "match": {
+        "wins": 2,
+        "losses": 1,
+        "draws": 0
+      },
+      "localId": "s2",
+      "playerId": "michael-barge",
+      "playerName": "Michael Barge",
+      "rounds": []
+    },
+    {
+      "rank": 3,
+      "playerRef": "adam-modrzejewski",
+      "points": 6,
+      "deck": {
+        "name": "Mono Black Aggro"
+      },
+      "match": {
+        "wins": 2,
+        "losses": 1,
+        "draws": 0
+      },
+      "localId": "s3",
+      "playerId": "adam-modrzejewski",
+      "playerName": "Adam Modrzejewski",
+      "rounds": []
+    },
+    {
+      "rank": 4,
+      "playerName": "Pawel Kawa",
+      "points": 0,
+      "deck": {
+        "name": "BW Control"
+      },
+      "match": {
+        "wins": 0,
+        "losses": 3,
+        "draws": 0
+      },
+      "localId": "s4",
+      "playerId": "pawel-kawa",
+      "rounds": []
+    }
+  ],
+  "id": "2026-10-16-futurex-monthly"
+}

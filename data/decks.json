@@ -72,6 +72,11 @@
     "colors": "B"
   },
   {
+    "id": "mono-black-aggro",
+    "name": "Mono Black Aggro",
+    "colors": "B"
+  },
+  {
     "id": "mono-black-clerics",
     "name": "Mono Black Clerics",
     "colors": "B"
