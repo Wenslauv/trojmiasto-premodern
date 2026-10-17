@@ -1,0 +1,129 @@
+{
+  "place": "SideQuest",
+  "type": "weekly",
+  "date": "2026-10-12",
+  "location": "Gdansk",
+  "mode": "standingsOnly",
+  "standings": [
+    {
+      "rank": 1,
+      "playerRef": "grzegorz-talewski",
+      "points": 9,
+      "deck": {
+        "name": "RG Burn"
+      },
+      "match": {
+        "wins": 3,
+        "losses": 0,
+        "draws": 0
+      },
+      "localId": "s1",
+      "playerId": "grzegorz-talewski",
+      "playerName": "Grzegorz Talewski",
+      "rounds": []
+    },
+    {
+      "rank": 2,
+      "playerRef": "piotr-orlowski",
+      "points": 6,
+      "deck": {
+        "name": "TerraGeddon"
+      },
+      "match": {
+        "wins": 2,
+        "losses": 1,
+        "draws": 0
+      },
+      "localId": "s2",
+      "playerId": "piotr-orlowski",
+      "playerName": "Piotr Orłowski",
+      "rounds": []
+    },
+    {
+      "rank": 3,
+      "playerRef": "janusz-bulakowski",
+      "points": 6,
+      "deck": {
+        "name": "Beef Breakfast"
+      },
+      "match": {
+        "wins": 2,
+        "losses": 1,
+        "draws": 0
+      },
+      "localId": "s3",
+      "playerId": "janusz-bulakowski",
+      "playerName": "Janusz Bułakowski",
+      "rounds": []
+    },
+    {
+      "rank": 4,
+      "playerRef": "jakub-rabalsky",
+      "points": 6,
+      "deck": {
+        "name": "RG TerraOath"
+      },
+      "match": {
+        "wins": 2,
+        "losses": 1,
+        "draws": 0
+      },
+      "localId": "s4",
+      "playerId": "jakub-rabalsky",
+      "playerName": "Jakub Rąbalsky",
+      "rounds": []
+    },
+    {
+      "rank": 5,
+      "playerRef": "jakub-domasla",
+      "points": 3,
+      "deck": {
+        "name": "hFEB"
+      },
+      "match": {
+        "wins": 1,
+        "losses": 2,
+        "draws": 0
+      },
+      "localId": "s5",
+      "playerId": "jakub-domasla",
+      "playerName": "Jakub Domasła...",
+      "rounds": []
+    },
+    {
+      "rank": 6,
+      "playerRef": "damian-krasny",
+      "points": 3,
+      "deck": {
+        "name": "Finkula"
+      },
+      "match": {
+        "wins": 1,
+        "losses": 2,
+        "draws": 0
+      },
+      "localId": "s6",
+      "playerId": "damian-krasny",
+      "playerName": "Damian Kraśny",
+      "rounds": []
+    },
+    {
+      "rank": 7,
+      "playerRef": "marcin-gornowicz",
+      "points": 3,
+      "deck": {
+        "name": "Pit Rack"
+      },
+      "match": {
+        "wins": 1,
+        "losses": 2,
+        "draws": 0
+      },
+      "localId": "s7",
+      "playerId": "marcin-gornowicz",
+      "playerName": "Marcin Gornowicz",
+      "rounds": []
+    }
+  ],
+  "id": "2026-10-12-sidequest-weekly"
+}

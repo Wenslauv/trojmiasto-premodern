@@ -1,5 +1,10 @@
 [
   {
+    "id": "beef-breakfast",
+    "name": "Beef Breakfast",
+    "colors": "GWru"
+  },
+  {
     "id": "bg-rock",
     "name": "BG Rock",
     "colors": "BG",
@@ -144,6 +149,16 @@
   {
     "id": "rg-aggro",
     "name": "RG Aggro",
+    "colors": "RG"
+  },
+  {
+    "id": "rg-burn",
+    "name": "RG Burn",
+    "colors": "RG"
+  },
+  {
+    "id": "rg-terraoath",
+    "name": "RG TerraOath",
     "colors": "RG"
   },
   {
