@@ -31,7 +31,10 @@
   {
     "id": "cradle-control",
     "name": "Cradle Control",
-    "colors": "Gr"
+    "colors": "Gr",
+    "aliases": [
+      "Survival Elves"
+    ]
   },
   {
     "id": "darigaaz-midrange",
@@ -50,6 +53,11 @@
     "aliases": [
       "UR Devourer"
     ]
+  },
+  {
+    "id": "draco-blast",
+    "name": "Draco Blast",
+    "colors": "UR"
   },
   {
     "id": "enchantress",
@@ -172,6 +180,11 @@
     "colors": "RG"
   },
   {
+    "id": "rw-goblins",
+    "name": "RW Goblins",
+    "colors": "RW"
+  },
+  {
     "id": "sligh",
     "name": "Sligh",
     "colors": "R"
@@ -225,6 +238,11 @@
     "id": "uwr-solution",
     "name": "UWR Solution",
     "colors": "UWR"
+  },
+  {
+    "id": "wurm-rack",
+    "name": "Wurm Rack",
+    "colors": "BG"
   },
   {
     "id": "zombies",

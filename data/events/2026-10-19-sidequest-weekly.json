@@ -1,0 +1,248 @@
+{
+  "place": "SideQuest",
+  "type": "weekly",
+  "date": "2026-10-19",
+  "location": "Gdansk",
+  "mode": "standingsOnly",
+  "standings": [
+    {
+      "rank": 1,
+      "points": 10,
+      "deck": {
+        "name": "Gro-a-tog"
+      },
+      "match": {
+        "wins": 3,
+        "losses": 0,
+        "draws": 1
+      },
+      "playerRef": "maciej-lbik",
+      "localId": "s1",
+      "playerId": "maciej-lbik",
+      "playerName": "Maciej Łbik",
+      "rounds": []
+    },
+    {
+      "rank": 2,
+      "points": 9,
+      "deck": {
+        "name": "Replenish"
+      },
+      "match": {
+        "wins": 3,
+        "losses": 1,
+        "draws": 0
+      },
+      "playerRef": "wiaczaslau-kukhtsiuk",
+      "localId": "s2",
+      "playerId": "wiaczaslau-kukhtsiuk",
+      "playerName": "Wiaczasłau Kukhtsiuk",
+      "rounds": []
+    },
+    {
+      "rank": 3,
+      "points": 9,
+      "deck": {
+        "name": "Gro-a-tog"
+      },
+      "match": {
+        "wins": 3,
+        "losses": 1,
+        "draws": 0
+      },
+      "playerRef": "andrzej-pracki",
+      "localId": "s3",
+      "playerId": "andrzej-pracki",
+      "playerName": "Andrzej Pracki",
+      "rounds": []
+    },
+    {
+      "rank": 4,
+      "points": 8,
+      "deck": {
+        "name": "Beef Breakfast"
+      },
+      "match": {
+        "wins": 2,
+        "losses": 0,
+        "draws": 2
+      },
+      "playerRef": "janusz-bulakowski",
+      "localId": "s4",
+      "playerId": "janusz-bulakowski",
+      "playerName": "Janusz Bułakowski",
+      "rounds": []
+    },
+    {
+      "rank": 5,
+      "points": 6,
+      "deck": {
+        "name": "Landstill"
+      },
+      "match": {
+        "wins": 2,
+        "losses": 2,
+        "draws": 0
+      },
+      "playerName": "Robert Jablonski",
+      "localId": "s5",
+      "playerId": "robert-jablonski",
+      "rounds": []
+    },
+    {
+      "rank": 6,
+      "points": 6,
+      "deck": {
+        "name": "Cradle Control",
+        "colors": "Gr"
+      },
+      "match": {
+        "wins": 2,
+        "losses": 2,
+        "draws": 0
+      },
+      "playerRef": "michal-sekiewicz",
+      "localId": "s6",
+      "playerId": "michal-sekiewicz",
+      "playerName": "Michał Sękiewicz",
+      "rounds": []
+    },
+    {
+      "rank": 7,
+      "points": 6,
+      "deck": {
+        "name": "TerraGeddon"
+      },
+      "match": {
+        "wins": 2,
+        "losses": 1,
+        "draws": 0
+      },
+      "playerRef": "piotr-orlowski",
+      "localId": "s7",
+      "playerId": "piotr-orlowski",
+      "playerName": "Piotr Orłowski",
+      "rounds": []
+    },
+    {
+      "rank": 8,
+      "points": 6,
+      "deck": {
+        "name": "RW Goblins"
+      },
+      "match": {
+        "wins": 2,
+        "losses": 2,
+        "draws": 0
+      },
+      "playerRef": "grzegorz-talewski",
+      "localId": "s8",
+      "playerId": "grzegorz-talewski",
+      "playerName": "Grzegorz Talewski",
+      "rounds": []
+    },
+    {
+      "rank": 9,
+      "points": 4,
+      "deck": {
+        "name": "Oath Control"
+      },
+      "match": {
+        "wins": 1,
+        "losses": 2,
+        "draws": 1
+      },
+      "playerRef": "jakub-rabalsky",
+      "localId": "s9",
+      "playerId": "jakub-rabalsky",
+      "playerName": "Jakub Rąbalsky",
+      "rounds": []
+    },
+    {
+      "rank": 10,
+      "points": 4,
+      "deck": {
+        "name": "MonoBlack Ponza"
+      },
+      "match": {
+        "wins": 1,
+        "losses": 2,
+        "draws": 1
+      },
+      "playerRef": "marcin-gornowicz",
+      "localId": "s10",
+      "playerId": "marcin-gornowicz",
+      "playerName": "Marcin Gornowicz",
+      "rounds": []
+    },
+    {
+      "rank": 11,
+      "points": 3,
+      "deck": {
+        "name": "Mono Black Control"
+      },
+      "match": {
+        "wins": 1,
+        "losses": 2,
+        "draws": 0
+      },
+      "playerRef": "piotr-zielinski",
+      "localId": "s11",
+      "playerId": "piotr-zielinski",
+      "playerName": "Piotr Zieliński",
+      "rounds": []
+    },
+    {
+      "rank": 12,
+      "points": 3,
+      "deck": {
+        "name": "BG Rock"
+      },
+      "match": {
+        "wins": 1,
+        "losses": 3,
+        "draws": 0
+      },
+      "playerRef": "marcin-kowalski",
+      "localId": "s12",
+      "playerId": "marcin-kowalski",
+      "playerName": "Marcin Kowalski",
+      "rounds": []
+    },
+    {
+      "rank": 13,
+      "points": 3,
+      "deck": {
+        "name": "Wurm Rack"
+      },
+      "match": {
+        "wins": 1,
+        "losses": 3,
+        "draws": 0
+      },
+      "playerRef": "jeremi-ziolkowski-lbik",
+      "localId": "s13",
+      "playerId": "jeremi-ziolkowski-lbik",
+      "playerName": "Jeremi Ziółkowski-Łbik",
+      "rounds": []
+    },
+    {
+      "rank": 14,
+      "points": 1,
+      "deck": {
+        "name": "Draco Blast"
+      },
+      "match": {
+        "wins": 0,
+        "losses": 3,
+        "draws": 1
+      },
+      "playerRef": "damian-krasny",
+      "localId": "s14",
+      "playerId": "damian-krasny",
+      "playerName": "Damian Kraśny",
+      "rounds": []
+    }
+  ],
+  "id": "2026-10-19-sidequest-weekly"
+}
