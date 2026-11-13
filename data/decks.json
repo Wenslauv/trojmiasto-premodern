@@ -1,5 +1,10 @@
 [
   {
+    "id": "4c-control",
+    "name": "4c Control",
+    "colors": "Uwrg"
+  },
+  {
     "id": "ashen-ichorid",
     "name": "Ashen Ichorid",
     "colors": "UB"
@@ -118,6 +123,11 @@
     "id": "monored-ponza",
     "name": "MonoRed Ponza",
     "colors": "R"
+  },
+  {
+    "id": "mud-red",
+    "name": "MUD Red",
+    "colors": "r"
   },
   {
     "id": "oath-control",

@@ -1,0 +1,78 @@
+{
+  "place": "SideQuest",
+  "type": "weekly",
+  "date": "2026-10-26",
+  "location": "Gdansk",
+  "mode": "standingsOnly",
+  "standings": [
+    {
+      "rank": 1,
+      "playerRef": "jakub-rabalsky",
+      "points": 6,
+      "deck": {
+        "name": "Oath Ponza"
+      },
+      "match": {
+        "wins": 2,
+        "losses": 1,
+        "draws": 0
+      },
+      "localId": "s1",
+      "playerId": "jakub-rabalsky",
+      "playerName": "Jakub Rąbalsky",
+      "rounds": []
+    },
+    {
+      "rank": 2,
+      "playerRef": "marcin-kowalski",
+      "points": 6,
+      "deck": {
+        "name": "BG Rock"
+      },
+      "match": {
+        "wins": 2,
+        "losses": 1,
+        "draws": 0
+      },
+      "localId": "s2",
+      "playerId": "marcin-kowalski",
+      "playerName": "Marcin Kowalski",
+      "rounds": []
+    },
+    {
+      "rank": 3,
+      "playerRef": "piotr-orlowski",
+      "points": 4,
+      "deck": {
+        "name": "MUD Red"
+      },
+      "match": {
+        "wins": 1,
+        "losses": 1,
+        "draws": 1
+      },
+      "localId": "s3",
+      "playerId": "piotr-orlowski",
+      "playerName": "Piotr Orłowski",
+      "rounds": []
+    },
+    {
+      "rank": 4,
+      "playerRef": "wiaczaslau-kukhtsiuk",
+      "points": 1,
+      "deck": {
+        "name": "4c Control"
+      },
+      "match": {
+        "wins": 0,
+        "losses": 2,
+        "draws": 1
+      },
+      "localId": "s4",
+      "playerId": "wiaczaslau-kukhtsiuk",
+      "playerName": "Wiaczasłau Kukhtsiuk",
+      "rounds": []
+    }
+  ],
+  "id": "2026-10-26-sidequest-weekly"
+}
