@@ -1,0 +1,145 @@
+{
+  "place": "SideQuest",
+  "type": "weekly",
+  "date": "2026-11-09",
+  "location": "Gdansk",
+  "mode": "standingsOnly",
+  "standings": [
+    {
+      "rank": 1,
+      "points": 9,
+      "deck": {
+        "name": "BG Rock"
+      },
+      "match": {
+        "wins": 3,
+        "losses": 0,
+        "draws": 0
+      },
+      "playerRef": "marcin-kowalski",
+      "localId": "s1",
+      "playerId": "marcin-kowalski",
+      "playerName": "Marcin Kowalski",
+      "rounds": []
+    },
+    {
+      "rank": 2,
+      "points": 6,
+      "deck": {
+        "name": "Moneyball"
+      },
+      "match": {
+        "wins": 2,
+        "losses": 1,
+        "draws": 0
+      },
+      "playerRef": "janusz-bulakowski",
+      "localId": "s2",
+      "playerId": "janusz-bulakowski",
+      "playerName": "Janusz Bułakowski",
+      "rounds": []
+    },
+    {
+      "rank": 3,
+      "points": 6,
+      "deck": {
+        "name": "Enchantress"
+      },
+      "match": {
+        "wins": 2,
+        "losses": 1,
+        "draws": 0
+      },
+      "playerRef": "jakub-domasla",
+      "localId": "s3",
+      "playerId": "jakub-domasla",
+      "playerName": "Jakub Domasła...",
+      "rounds": []
+    },
+    {
+      "rank": 4,
+      "points": 6,
+      "deck": {
+        "name": "Oath Control"
+      },
+      "match": {
+        "wins": 2,
+        "losses": 1,
+        "draws": 0
+      },
+      "playerRef": "jakub-rabalsky",
+      "localId": "s4",
+      "playerId": "jakub-rabalsky",
+      "playerName": "Jakub Rąbalsky",
+      "rounds": []
+    },
+    {
+      "rank": 5,
+      "points": 3,
+      "deck": {
+        "name": "Moneyball"
+      },
+      "match": {
+        "wins": 1,
+        "losses": 2,
+        "draws": 0
+      },
+      "playerName": "Adam Brze...",
+      "localId": "s5",
+      "playerId": "adam-brzezicki",
+      "rounds": []
+    },
+    {
+      "rank": 6,
+      "points": 3,
+      "deck": {
+        "name": "Mono Black Clerics"
+      },
+      "match": {
+        "wins": 1,
+        "losses": 2,
+        "draws": 0
+      },
+      "playerRef": "maciej-lbik",
+      "localId": "s6",
+      "playerId": "maciej-lbik",
+      "playerName": "Maciej Łbik",
+      "rounds": []
+    },
+    {
+      "rank": 7,
+      "points": 3,
+      "deck": {
+        "name": "Replenish"
+      },
+      "match": {
+        "wins": 1,
+        "losses": 2,
+        "draws": 0
+      },
+      "playerRef": "michal-sekiewicz",
+      "localId": "s7",
+      "playerId": "michal-sekiewicz",
+      "playerName": "Michał Sękiewicz",
+      "rounds": []
+    },
+    {
+      "rank": 8,
+      "points": 0,
+      "deck": {
+        "name": "Draco Blast"
+      },
+      "match": {
+        "wins": 0,
+        "losses": 3,
+        "draws": 0
+      },
+      "playerRef": "damian-krasny",
+      "localId": "s8",
+      "playerId": "damian-krasny",
+      "playerName": "Damian Kraśny",
+      "rounds": []
+    }
+  ],
+  "id": "2026-11-09-sidequest-weekly"
+}
