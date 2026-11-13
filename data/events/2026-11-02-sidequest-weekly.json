@@ -1,0 +1,95 @@
+{
+  "place": "SideQuest",
+  "type": "weekly",
+  "date": "2026-11-02",
+  "location": "Gdansk",
+  "mode": "standingsOnly",
+  "standings": [
+    {
+      "rank": 1,
+      "playerRef": "marcin-kowalski",
+      "points": 9,
+      "deck": {
+        "name": "BG Rock"
+      },
+      "match": {
+        "wins": 3,
+        "losses": 0,
+        "draws": 0
+      },
+      "localId": "s1",
+      "playerId": "marcin-kowalski",
+      "playerName": "Marcin Kowalski",
+      "rounds": []
+    },
+    {
+      "rank": 2,
+      "playerRef": "grzegorz-talewski",
+      "points": 6,
+      "deck": {
+        "name": "RG Aggro"
+      },
+      "match": {
+        "wins": 2,
+        "losses": 1,
+        "draws": 0
+      },
+      "localId": "s2",
+      "playerId": "grzegorz-talewski",
+      "playerName": "Grzegorz Talewski",
+      "rounds": []
+    },
+    {
+      "rank": 3,
+      "playerRef": "jakub-rabalsky",
+      "points": 6,
+      "deck": {
+        "name": "GW Threshold"
+      },
+      "match": {
+        "wins": 2,
+        "losses": 1,
+        "draws": 0
+      },
+      "localId": "s3",
+      "playerId": "jakub-rabalsky",
+      "playerName": "Jakub Rąbalsky",
+      "rounds": []
+    },
+    {
+      "rank": 4,
+      "playerRef": "damian-krasny",
+      "points": 3,
+      "deck": {
+        "name": "Draco Blast"
+      },
+      "match": {
+        "wins": 1,
+        "losses": 2,
+        "draws": 0
+      },
+      "localId": "s4",
+      "playerId": "damian-krasny",
+      "playerName": "Damian Kraśny",
+      "rounds": []
+    },
+    {
+      "rank": 5,
+      "playerRef": "piotr-orlowski",
+      "points": 0,
+      "deck": {
+        "name": "MUD Red"
+      },
+      "match": {
+        "wins": 0,
+        "losses": 2,
+        "draws": 0
+      },
+      "localId": "s5",
+      "playerId": "piotr-orlowski",
+      "playerName": "Piotr Orłowski",
+      "rounds": []
+    }
+  ],
+  "id": "2026-11-02-sidequest-weekly"
+}

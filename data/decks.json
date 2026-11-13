@@ -80,6 +80,11 @@
     "colors": "WUBG"
   },
   {
+    "id": "gw-threshold",
+    "name": "GW Threshold",
+    "colors": "GW"
+  },
+  {
     "id": "hfeb",
     "name": "hFEB",
     "colors": "BGuw"
