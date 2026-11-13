@@ -5,6 +5,11 @@
     "colors": "Uwrg"
   },
   {
+    "id": "5c-terravore",
+    "name": "5c Terravore",
+    "colors": "WUBRG"
+  },
+  {
     "id": "ashen-ichorid",
     "name": "Ashen Ichorid",
     "colors": "UB"
@@ -12,7 +17,10 @@
   {
     "id": "beef-breakfast",
     "name": "Beef Breakfast",
-    "colors": "GWru"
+    "colors": "GWru",
+    "aliases": [
+      "Survival FEB"
+    ]
   },
   {
     "id": "bg-rock",
@@ -92,7 +100,10 @@
   {
     "id": "landstill",
     "name": "Landstill",
-    "colors": "UW"
+    "colors": "UW",
+    "aliases": [
+      "UW Standstill"
+    ]
   },
   {
     "id": "moneyball",
@@ -247,6 +258,11 @@
   {
     "id": "uw-control",
     "name": "UW Control",
+    "colors": "UW"
+  },
+  {
+    "id": "uw-humans",
+    "name": "UW Humans",
     "colors": "UW"
   },
   {
