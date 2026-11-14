@@ -46,6 +46,9 @@ export type PlayerListItem = {
   id: string;
   name: string;
   preferredColors: string;
+  // Most played known deck and the player's match winrate on it; null when only "Unknown Deck" was recorded.
+  favoriteDeck: string | null;
+  favoriteDeckWinPercent: number | null;
   eventsCount: number;
   matchWinPercent: number;
 };

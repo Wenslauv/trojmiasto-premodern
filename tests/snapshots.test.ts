@@ -51,7 +51,8 @@ after(() => {
 
 test('site: players list', () => {
   const rows = players.map(
-    (p) => `${p.id} | ${p.name} | ${p.preferredColors || '-'} | events ${p.eventsCount} | ${p.matchWinPercent.toFixed(2)}%`,
+    (p) =>
+      `${p.id} | ${p.name} | ${p.preferredColors || '-'} | ${p.favoriteDeck ?? '-'} ${p.favoriteDeckWinPercent === null ? '-' : `${p.favoriteDeckWinPercent.toFixed(2)}%`} | events ${p.eventsCount} | ${p.matchWinPercent.toFixed(2)}%`,
   );
   matchSnapshot('site-players', rows);
 });

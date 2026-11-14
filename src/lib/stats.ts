@@ -103,10 +103,24 @@ export function sortEventsNewestFirst(events: EventItem[]): EventItem[] {
   return [...events].sort((a, b) => b.date.localeCompare(a.date));
 }
 
-// Colors of the player's favorite deck; empty when only "Unknown Deck" was recorded.
-function preferredColorsOf(events: EventItem[], playerId: string): string {
-  const favorite = buildPlayerDetail(events, playerId)?.favoriteDeck;
-  return favorite && !isUnknownDeckName(favorite.name) ? favorite.colors : '';
+// The player's favorite deck (see buildPlayerDetail) with its colors and the player's winrate
+// on it; empty when only "Unknown Deck" was recorded.
+function favoriteDeckSummary(
+  events: EventItem[],
+  playerId: string,
+): Pick<PlayerListItem, 'preferredColors' | 'favoriteDeck' | 'favoriteDeckWinPercent'> {
+  const detail = buildPlayerDetail(events, playerId);
+  const favorite = detail?.favoriteDeck;
+  if (!detail || !favorite || isUnknownDeckName(favorite.name)) {
+    return { preferredColors: '', favoriteDeck: null, favoriteDeckWinPercent: null };
+  }
+  const key = normalizePlayerKey(favorite.name);
+  const stat = detail.deckStats.find((deck) => normalizePlayerKey(deck.deckName) === key);
+  return {
+    preferredColors: favorite.colors,
+    favoriteDeck: favorite.name,
+    favoriteDeckWinPercent: stat ? stat.matchWinPercent : null,
+  };
 }
 
 export function buildPlayersList(events: EventItem[]): PlayerListItem[] {
@@ -116,7 +130,7 @@ export function buildPlayersList(events: EventItem[]): PlayerListItem[] {
     .map((value) => ({
       id: value.id,
       name: value.name,
-      preferredColors: preferredColorsOf(events, value.id),
+      ...favoriteDeckSummary(events, value.id),
       eventsCount: value.events,
       matchWinPercent: Number(matchWinPercent(value.match).toFixed(2)),
     }))

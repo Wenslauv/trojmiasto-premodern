@@ -77,6 +77,40 @@ describe('buildPlayersList', () => {
     const events = [event('e1', '2026-01-01', [standing('jan-nowak', 'Jan Nowak', rec(1, 0)), standing('anna-nowak', 'Anna Nowak', rec(0, 1))])];
     assert.equal(buildPlayersList(events).length, 2);
   });
+
+  const withDeck = (row: Standing, name: string, colors: string): Standing => ({ ...row, deck: { name, colors } });
+
+  test('shows the most played deck and the winrate on that deck only', () => {
+    const events = [
+      event('e3', '2026-03-01', [withDeck(standing('jan-nowak', 'Jan Nowak', rec(0, 3)), 'Goblins', 'R')]),
+      event('e2', '2026-02-01', [withDeck(standing('jan-nowak', 'Jan Nowak', rec(3, 0)), 'Replenish', 'UW')]),
+      event('e1', '2026-01-01', [withDeck(standing('jan-nowak', 'Jan Nowak', rec(2, 1)), 'Replenish', 'UW')]),
+    ];
+    const [player] = buildPlayersList(events);
+    assert.equal(player.favoriteDeck, 'Replenish');
+    assert.equal(player.preferredColors, 'UW');
+    assert.equal(player.favoriteDeckWinPercent, 83.33);
+    assert.equal(player.matchWinPercent, 55.56);
+  });
+
+  test('prefers a known deck over a more often recorded "Unknown Deck"', () => {
+    const events = [
+      event('e3', '2026-03-01', [withDeck(standing('jan-nowak', 'Jan Nowak', rec(1, 1)), 'Unknown Deck', '?')]),
+      event('e2', '2026-02-01', [withDeck(standing('jan-nowak', 'Jan Nowak', rec(1, 1)), 'Unknown Deck', '?')]),
+      event('e1', '2026-01-01', [withDeck(standing('jan-nowak', 'Jan Nowak', rec(2, 0)), 'Goblins', 'R')]),
+    ];
+    const [player] = buildPlayersList(events);
+    assert.equal(player.favoriteDeck, 'Goblins');
+    assert.equal(player.favoriteDeckWinPercent, 100);
+  });
+
+  test('leaves the deck columns empty when only "Unknown Deck" was recorded', () => {
+    const events = [event('e1', '2026-01-01', [withDeck(standing('jan-nowak', 'Jan Nowak', rec(2, 1)), 'Unknown Deck', '?')])];
+    const [player] = buildPlayersList(events);
+    assert.equal(player.favoriteDeck, null);
+    assert.equal(player.favoriteDeckWinPercent, null);
+    assert.equal(player.preferredColors, '');
+  });
 });
 
 describe('formatting', () => {
