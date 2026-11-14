@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/logo.png" alt="Trojmiasto Premodern" width="200" />
+</p>
+
 # Trojmiasto Premodern
 
 Frontend application for publishing local Premodern event standings and player statistics.
