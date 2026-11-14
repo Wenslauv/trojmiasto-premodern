@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/logo.png" alt="Trojmiasto Premodern" width="200" />
+  <img src="logo.png" alt="Trojmiasto Premodern" width="200" />
 </p>
 
 # Trojmiasto Premodern
